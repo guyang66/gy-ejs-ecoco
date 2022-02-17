@@ -25,3 +25,10 @@ yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
+tgz
+.vscode
+jsconfig.json
+.eslintignore
+.eslintrc
+.prettierignore
+.prettierrc.js
