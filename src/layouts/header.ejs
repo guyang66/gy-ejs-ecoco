@@ -1,0 +1,16 @@
+<!-- header-wrap -->
+<header class="header-wrap">
+  <div class="header-content">
+    <a class="logo fn-left" href="/">
+      <img src="<%= logo %>" alt="" />
+    </a>
+    <ul class="header-nav fn-left">
+      <% router.forEach(function(nav){ %>
+        <li class="<% if(key === nav.name){ %>active<% } %>">
+          <a href="<%= nav.name %>.html"><%= nav.title %></a>
+          <span></span>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="<%= favicon %>" type="image/x-icon">
+
+  <title><%= title %></title>
+</head>
+<body class="main-layout wrap-<%= key %>">
+
+    <%= header %>
+
+    <%= banner %>
+
+    <% if(tabsData.length) { %>
+      <%= tabs %>
+    <% } %>
+
+    <!-- main-wrap -->
+    <section class="main-wrap">
+      <div class="main-content">
+        <%= container %>
+      </div>
+    </section>
+    <%= footer %>
+
+</body>
+</html>
