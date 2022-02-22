@@ -1,7 +1,7 @@
 {
   "name": "gy-ejs-ecoco",
   "version": "1.0.0",
-  "description": "yy生活官网",
+  "description": "yy科技官网",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config build/webpack.config.js",
     "dev": "",

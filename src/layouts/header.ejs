@@ -1,16 +1,148 @@
 <!-- header-wrap -->
-<header class="header-wrap">
+<header class="header-wrap header-fixed">
+  <div class="header-bg"></div>
   <div class="header-content">
     <a class="logo fn-left" href="/">
-      <img src="<%= logo %>" alt="" />
+      <img class="v-img" src="<%= logo %>" alt="" />
     </a>
     <ul class="header-nav fn-left">
-      <% router.forEach(function(nav){ %>
-        <li class="<% if(key === nav.name){ %>active<% } %>">
-          <a href="<%= nav.name %>.html"><%= nav.title %></a>
-          <span></span>
+      <% menus.forEach(function(nav, index){ %>
+        <li class="header-item <% if(key === nav.name){ %>active<% } %>">
+          <!-- 没有二级导航栏的就直接跳转 -->
+          <% if(nav.hasHref){%>
+            <a href="<%=nav.href%>"><%= nav.title %></a>
+          <% } else { %>
+            <a style="cursor: pointer"><%= nav.title %></a>
+          <% } %>
+          <span class="empty-span"></span>
+          <% if(nav.viewStyle === 'tabs'){%>
+            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
+              <div class="m-tabs-left pad-t20 pad-b20 fn-left">
+                <% nav.children.forEach(function(childNav){ %>
+                  <div class="m-tabs-title-wrap">
+                    <div class="icon-img-wrap mar-l30 mar-r20">
+                      <img class="icon-img icon-normal" src="<%=childNav.iconN%>"  alt="yy科技"/>
+                      <img class="icon-img icon-active" src="<%=childNav.iconH%>" alt="yy科技"/>
+                    </div>
+                    <div class="text-title"><%=childNav.name%></div>
+                  </div>
+                <% }); %>
+              </div>
+              <div class="m-tabs-right pad20 fn-right">
+                <% nav.children.forEach(function(childNav){ %>
+                  <div class="m-tabs-item-wrap" style="display: none">
+                    <% if(childNav.layout === 'column-wrap'){%>
+                      <% childNav.content.forEach(function(contentItem, count){ %>
+                        <div class="content-item-wrap-column fn-left mar-b30 <% if(count !==  childNav.content.length - 1){ %>mar-r20<% } %>">
+                          <% contentItem.column.forEach(function(columnItem, index){ %>
+                            <div class="content-item-title <% if(index !== 0 ){ %>mar-t20<% } %>"><%=columnItem.title%></div>
+                            <% columnItem.data.forEach(function(dataItem){ %>
+                            <div class="data-item">
+                              <span><%=dataItem.name%></span>
+                              <% if(dataItem.tags && dataItem.tags.length > 0){%>
+                                <% dataItem.tags.forEach(function(tag){ %>
+                                  <span class="<% if(tag.type === 'hot'){ %>tag-hot<% } %> <% if(tag.type === 'new'){ %>tag-new<% } %>"><%=tag.text%></span>
+                                <% }); %>
+                              <% } %>
+                            </div>
+                            <% }); %>
+                          <% }); %>
+                        </div>
+                      <% }); %>
+                    <% } else if (childNav.layout === 'normal-cell'){ %>
+                      <% childNav.content.forEach(function(contentItem, count){ %>
+                        <div class="content-item-wrap-cell mar-b20">
+                          <div class="content-item-title"><%=contentItem.title%></div>
+                          <div class="content-item-desc"><%=contentItem.desc%></div>
+                        </div>
+                      <% }); %>
+
+                    <% } else if (childNav.layout === 'cell-n-4'){ %>
+                      <% childNav.content.forEach(function(contentItem, idx){ %>
+                        <div class="content-item-wrap-cell-n-4 <% if((idx + 1) % 4 !== 0 ){ %>mar-r20<% } %> <% if(idx <  childNav.content.length - 1 - 4 ){ %>mar-b20<% } %>">
+                          <div class="icon-img-wrap">
+                              <img src="<%=contentItem.icon%>"/>
+                          </div>
+                          <div class="content-item-title"><%=contentItem.title%></div>
+                          <div class="content-item-desc"><%=contentItem.desc%></div>
+                        </div>
+                       <% }); %>
+                    <% } %>
+                  </div>
+                <% }); %>
+              </div>
+            </div>
+
+          <% } else if((nav.viewStyle === 'n-4')){ %>
+            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
+              <div class="m-view-wrap pad20">
+                <% nav.children.forEach(function(childNav){ %>
+                  <div class="m-n-4-cell-wrap fn-left">
+                      <img class="icon icon-active" src="<%=childNav.iconH%>" style="display: none"/>
+                      <img class="icon icon-normal" src="<%=childNav.iconN%>" style="display: block"/>
+                      <div class="title"><%=childNav.name%></div>
+                      <div class="desc"><%=childNav.desc%></div>
+                  </div>
+                <% }); %>
+              </div>
+            </div>
+
+          <% } else if((nav.viewStyle === 'n-1')){ %>
+            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
+              <div class="m-view-wrap pad20">
+                <% nav.children.forEach(function(childNav, index){ %>
+                  <div class="m-n-1-wrap">
+                    <div class="pointer fn-left"></div>
+                    <div class="title"><%=childNav.name%></div>
+                      <% if(index < nav.children.length - 1){%>
+                        <div class="line"></div>
+                      <% } %>
+                    </div>
+                <% }); %>
+              </div>
+            </div>
+          <% } %>
         </li>
       <% }); %>
     </ul>
+    <a class="tel fn-right" href="tel:111-111-1111"><img src="<%= telicon %>" alt="自定义alt"/>888-888-8888</a>
   </div>
 </header>
+<script>
+  $(document).ready(function () {
+
+    $('.header-item').on('mouseenter',function (){
+      $(this).children('div.menu-wrap').addClass('menu-wrap-active')
+    })
+
+    $('.header-item').on('mouseleave',function (){
+      $('.menu-wrap').removeClass('menu-wrap-active')
+    })
+    // 初始化第一个item
+    $('.m-tabs-title-wrap').eq(4).addClass('m-tabs-title-wrap-active').children('.icon-img-wrap').children('.icon-active').show()
+    $('.m-tabs-title-wrap').eq(4).children('.icon-img-wrap').children('.icon-normal').hide()
+
+    $('.m-tabs-right .m-tabs-item-wrap').eq(4).show()
+
+    $('.m-tabs-title-wrap').on('mouseenter',function (){
+      $(this).addClass('m-tabs-title-wrap-active').siblings().removeClass('m-tabs-title-wrap-active')
+      $(this).children('.icon-img-wrap').children('.icon-active').show()
+      $(this).children('.icon-img-wrap').children('.icon-normal').hide()
+      $(this).siblings().children('.icon-img-wrap').children('.icon-active').hide()
+      $(this).siblings().children('.icon-img-wrap').children('.icon-normal').show()
+
+      $('.m-tabs-right .m-tabs-item-wrap').eq($(this).index()).show().siblings().hide()
+    })
+
+    $('.m-n-4-cell-wrap').on('mouseenter',function (){
+      console.log('123')
+      $(this).children('.icon-normal').hide()
+      $(this).children('.icon-active').show()
+    })
+    $('.m-n-4-cell-wrap').on('mouseleave',function (){
+      $(this).children('.icon-normal').show()
+      $(this).children('.icon-active').hide()
+    })
+
+  })
+</script>

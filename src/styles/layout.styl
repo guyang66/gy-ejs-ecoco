@@ -1,27 +1,37 @@
 @import '@/styles/global'
 @import '@/styles/component'
+@import '@/styles/variables'
 .main-layout
   position relative
   width 100%
-
   // header模块
+  .header-absolute
+    position absolute
+  .header-fixed
+    position fixed
+  .header-bg
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
   .header-wrap
     height 64px
+    width 100%
+    z-index 998
     line-height 64px
-    background #242424
     box-shadow 0 2px 4px rgba(0,21,41,.08)
     border-bottom 1px solid rgba(255, 255, 255, 0.1)
     .header-content
-      overflow hidden
       width 1280px
+      position relative
       margin 0 auto
-      img
+      .v-img
         vertical-align middle
-        height height-logo
+        height 40px
       .header-nav
         position relative
-        overflow hidden
-        left 52px
+        left 24px
         li
           position relative
           float left
@@ -42,7 +52,7 @@
           color #FFF
           opacity 0.7
           transition all .3s
-        span
+        .empty-span
           display block
           position absolute
           left 30px
@@ -52,10 +62,252 @@
           background #b8f1ed
           opacity 0
           transition all .3s
+        .menu-wrap
+          // 直接隐藏
+          opacity 0
+          visibility hidden
+          display none
+          //visibility visible
+          //display block
+          background #FFFFFF
+          left 0
+          border-radius 2px
+          position absolute
+          top 60px
+          overflow hidden
+          box-shadow 0 3px 6px -4px rgba(0,0,0,0.12), 0 6px 16px 0 rgba(0,0,0,0.08), 0 9px 28px 8px rgba(0,0,0,0.05)
+          .m-tabs-left
+            width 215px
+            height 100%
+            background-color #F0F5FF
+            .m-tabs-title-wrap
+              cursor pointer
+              position relative
+              font-size 14px
+              height 64px
+              width 100%
+              color #181818
+              .icon-img-wrap
+                width 32px
+                height 32px
+                background-color #D4D9E3
+                border-radius 16px
+                overflow hidden
+                float left
+                position relative
+                margin-top 16px
+                .icon-img
+                  width 24px
+                  height 24px
+                  margin-top 4px
+                  margin-left 4px
+              .text-title
+                font-size 14px
+                color #181818
+                height 64px
+                line-height 64px
+                display inline-block
+                font-weight 400
+                font-family "PingFang SC"
+                font-style normal
+            .m-tabs-title-wrap-active
+              background-color #E1EBFF
+              .icon-img-wrap
+                background linear-gradient(315deg,#01ebdd 13.19%,#5360fb 74.07%)
+              .text-title
+                color color-primary
+                font-weight 500
+          .m-tabs-right
+            width calc(100% - 215px)
+            height 100%
+            .m-tabs-item-wrap
+              width 100%
+              height 100%
+              .content-item-wrap-column
+                min-width 180px
+                .content-item-title
+                  font-size 14px
+                  color color-primary
+                  font-weight 500
+                  font-family "PingFang SC"
+                  height 40px
+                  line-height 40px
+                .data-item
+                  font-family "PingFang SC"
+                  font-size 14px
+                  font-weight 400
+                  height 32px
+                  line-height 32px
+                  cursor pointer
+                  color #444444
+                .data-item:hover
+                  color color-primary
+              .content-item-wrap-cell
+                width 100%
+                min-height 40px
+                .content-item-title
+                  font-size 16px
+                  cursor pointer
+                  color #444444
+                  font-weight 500
+                  font-family "PingFang SC"
+                  height 40px
+                  line-height 40px
+                .content-item-desc
+                  font-size 14px
+                  cursor pointer
+                  color #7e87a2
+                  font-weight 400
+                  font-family "PingFang SC"
+                  line-height 24px
+              .content-item-wrap-cell:hover
+                .content-item-title
+                  color color-primary
+                .content-item-desc
+                  color #444444
+              .content-item-wrap-cell-n-4
+                width 181.25px
+                box-shadow 0 2px 4px rgba(0,21,41,.08)
+                border 1px solid #eeeeee
+                float left
+                height 265px
+                .icon-img-wrap
+                  width 100%
+                  height auto
+                  img
+                    width 100%
+                    height auto
+                .content-item-title
+                  width 100%
+                  font-size 14px
+                  text-align center
+                  cursor pointer
+                  color #444444
+                  font-weight 500
+                  font-family "PingFang SC"
+                  height 40px
+                  line-height 40px
+                .content-item-desc
+                  font-size 12px
+                  cursor pointer
+                  padding-left 10px
+                  padding-right 10px
+                  color #7e87a2
+                  font-weight 400
+                  font-family "PingFang SC"
+                  line-height 20px
+                  text-align center
+          .m-view-wrap
+            width 100%
+            height 100%
+            position relative
+            .m-n-4-cell-wrap
+              height 120px
+              width 150px
+              margin 20px
+              overflow hidden
+              position relative
+              line-height 0
+              cursor pointer
+              .icon
+                position relative
+                width 24px
+                height 24px
+                margin-top 16px
+                margin-left 50%
+                transform translateX(-50%)
+                display inline-block
+                margin-bottom 4px
+              .title
+                font-size 14px
+                font-family "PingFang SC"
+                line-height 28px
+                height 28px
+                color #181818
+                text-align center
+              .desc
+                font-size 12px
+                font-family "PingFang SC"
+                line-height 24px
+                text-align center
+                padding-left 4px
+                color #444444
+                padding-right 4px
+            .m-n-4-cell-wrap:hover
+              .title
+                color color-primary
+            .m-n-1-wrap
+              position relative
+              line-height auto
+              height auto
+              .pointer
+                width 6px
+                height 6px
+                border-radius 4px
+                margin-top 11px
+                margin-left 8px
+                background-image: linear-gradient(90deg, #01ebdd 0%, #5360fb 100%);
+              .title
+                font-size 14px
+                color #444444
+                font-family "PingFang SC"
+                height 28px
+                line-height 28px
+                margin-left 24px
+                cursor pointer
+              .title:hover
+                color color-primary
+              .line
+                width 100%
+                height 1px
+                background-color #ebeff7
+                margin-top 15px
+                margin-bottom 15px
+        .menu-wrap-active
+          visibility visible
+          display block
+          opacity 1
+        .tag-hot
+          font-size 12px
+          padding-left 8px
+          padding-right 8px
+          height 20px
+          line-height 20px
+          background-color #ffe7e4
+          margin-left 12px
+          display inline-block
+          color #f67c71
+        .tag-new
+          font-size 12px
+          padding-left 8px
+          padding-right 8px
+          height 20px
+          line-height 20px
+          background-color #F0FFF0
+          margin-left 12px
+          display inline-block
+          color #32CD32
       .tel
         color #fff
+        animation breath 5s ease-in-out infinite
         font-size 14px
         img
-          width 18px
-          height 18px
+          width 24px
+          height 24px
           margin-right 8px
+          margin-top 18px
+
+@keyframes breath {
+  0% {
+    transform: scale(1)
+  }
+  25% {
+    transform: scale(1.1)
+  }
+  50% {
+    transform: scale(1)
+  }
+  75% {
+    transform: scale(1.1)
+  }
+}

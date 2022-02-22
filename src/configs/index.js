@@ -2,9 +2,13 @@
  * 项目相关配置文件
  */
 import router from './router';
+import logo from '@/assets/images/logo/white.svg';
+import telicon from '@/assets/images/phone/phone-white.svg';
 
 export default {
-  name: 'yy生活馆', // 项目名称
+  name: 'yy科技', // 项目名称
   favicon: null,
+  logo,
+  telicon,
   router
 }

@@ -4,14 +4,13 @@ import footer from './footer';
 
 import banner from '@/components/banner';
 import tabs from '@/components/tabs';
-
+import menus from '@/datas/menu'
 
 import configs from '@/configs';
 import { arrayToObj } from '@/utils/utils';
 
-const { router, name, logo } = configs;
+const { router, name, logo, telicon } = configs;
 const routerMaps = arrayToObj(router, 'name');
-
 
 const footerData = []
 
@@ -35,7 +34,7 @@ const htmlRender = ({
     tabsData,
     ...configs,
     title: `${routerMaps[key].title}-${name}`, // 页面标题
-    header: header({ key, logo, router}),
+    header: header({ key, logo, menus, telicon}),
     banner: banner({bannerData}),
     tabs: tabs({tabsData}),
     container: container || '',
