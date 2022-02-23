@@ -1,9 +1,70 @@
 <!-- footer-wrap -->
 <footer class="footer-wrap">
-  <div class="footer-content">
-    <div style="height: 1000px">这是footer</div>
-    <div style="height: 1000px">这是footer</div>
-
+  <div class="footer-content pad20">
+    <div class="footer-top-wrap mar-t40">
+      <% footerData.forEach(function(column, count){ %>
+        <div class="footer-item-wrap fn-left mar-r30">
+          <div class="item-title mar-b10"><%=column.title%></div>
+          <% column.child.forEach(function(item, count){ %>
+            <div class="item-text item-hover"><%=item.title%></div>
+          <% }); %>
+        </div>
+      <% }); %>
+      <div class="footer-item-wrap fn-right" style="min-width: 260px">
+        <div class="item-title mar-b10">联系我们</div>
+        <div class="item-text">业务咨询：xxxx@163.com</div>
+        <div class="item-text">市场合作：marketing@xxx.com</div>
+        <div class="item-text">电话：888-888-8888</div>
+        <div class="item-text">地址：浙江省杭州市西湖区xxxx园区xxx楼001</div>
+        <div class="qrcode-wrap mar-t20">
+          <img class="qrcode" src="/assets/images/qrcode/qrcode.png"/>
+          <div class="text-wrap fn-right">
+            <div class="text-container">
+              <div class="text">微信扫一扫</div>
+              <div class="text">关注我们公众号</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle-wrap mar-t20">
+      <div class="middle-cell">
+        <span class="txt">热门搜索：</span>
+        <a class="txt link-text mar-r10">数字化</a>
+        <a class="txt link-text mar-r10">数字孪生</a>
+        <a class="txt link-text mar-r10">反季水果</a>
+        <a class="txt link-text mar-r10">产品发布</a>
+        <a class="txt link-text mar-r10">最新获奖</a>
+        <a class="txt link-text mar-r10">品牌官宣</a>
+        <a class="txt link-text mar-r10">天眼</a>
+      </div>
+    </div>
+    <div class="footer-middle-wrap mar-t20">
+      <div class="middle-cell">
+        <span class="txt" style="line-height: 28px">友情赞助：</span>
+        <a class="icon-link mar-r10">
+          <img src="/assets/images/friends/f1.svg"/>
+        </a>
+        <a class="icon-link mar-r10">
+          <img src="/assets/images/friends/f2.svg"/>
+        </a>
+        <a class="icon-link mar-r10">
+          <img src="/assets/images/friends/f3.svg"/>
+        </a>
+        <a class="icon-link mar-r10">
+          <img src="/assets/images/friends/f4.svg"/>
+        </a>
+        <a class="icon-link mar-r10">
+          <img src="/assets/images/friends/f5.svg"/>
+        </a>
+      </div>
+    </div>
+    <div class="footer-line-wrap mar-t20"></div>
+    <div class="footer-bottom-wrap">
+      <div class="copy-right mar-t20">版权所有 © xxx超级无敌yy科技有限公司 2022 版权所有</div>
+      <div class="copy-right mar-t10">x公安网备 xxxxxxx号 xIOS备 0000000号-X xxxxxx许可证X X2-xxxxx，xxx-xxxxx
+      </div>
+    </div>
   </div>
 </footer>
 

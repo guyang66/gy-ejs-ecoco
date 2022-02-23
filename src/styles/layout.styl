@@ -15,6 +15,8 @@
     top 0
     width 100%
     height 100%
+    background-color rgb(24, 22, 22)
+    opacity 0.4
   .header-wrap
     height 64px
     width 100%
@@ -235,7 +237,7 @@
                 padding-right 4px
             .m-n-4-cell-wrap:hover
               .title
-                color color-primary
+                color #d4237a
             .m-n-1-wrap
               position relative
               line-height auto
@@ -296,7 +298,103 @@
           height 24px
           margin-right 8px
           margin-top 18px
-
+  .footer-wrap
+    background-color #242424
+    .footer-content
+      min-height 400px
+      overflow hidden
+      position relative
+      width 1280px
+      margin 0 auto
+      //background-color orange
+      .footer-top-wrap
+        .footer-item-wrap
+          height auto
+          min-width 120px
+          .item-title
+            line-height 40px
+            font-size 14px
+            color #FFFFFF
+            font-family "PingFang SC"
+          .item-text
+            font-size 14px
+            color rgba(255,255,255,0.4)
+            height 32px
+            line-height 32px
+          .item-hover
+            cursor pointer
+            transition all 0.3s ease-in-out
+          .item-hover:hover
+            color color-primary
+            padding-left 10px
+            all 0.5s ease-in-out
+          .qrcode-wrap
+            width 100%
+            height 100px
+            background-color rgba(255,255,255,0.08)
+            position relative
+            overflow hidden
+            img
+              width 80px
+              height 80px
+              margin-top 10px
+              margin-left 10px
+            .text-wrap
+              width calc(100% - 100px)
+              height 100px
+              position relative
+              .text-container
+                top 50%
+                position relative
+                transform translateY(-50%)
+                .text
+                  color rgba(255,255,255,0.6)
+                  font-size 14px
+                  height 24px
+                  line-height 24px
+                  padding-left 8px
+      .footer-top-wrap:after
+        visibility hidden
+        display block
+        font-size 0
+        content ""
+        clear both
+        height 0
+      .footer-middle-wrap
+        width 100%
+        .middle-cell
+          width 100%
+          .txt
+            font-size 14px
+            color rgba(255,255,255,0.4)
+          .link-text:hover
+            color color-primary
+            cursor pointer
+          .icon-link
+            width 28px
+            height 28px
+            border-radius 14px
+            display inline-block
+            background-color rgba(255,255,255,0.2)
+            cursor pointer
+            img
+              width 16px
+              height 16px
+              margin-top 6px
+              margin-left 6px
+      .footer-line-wrap
+        height 1px
+        width 100%
+        background #fff
+        opacity 0.1
+      .footer-bottom-wrap
+        position relative
+        margin 0 auto
+        overflow hidden
+        .copy-right
+          font-size 12px
+          text-align center
+          color rgba(255,255,255,0.3)
 @keyframes breath {
   0% {
     transform: scale(1)

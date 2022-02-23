@@ -9,10 +9,10 @@ import menus from '@/datas/menu'
 import configs from '@/configs';
 import { arrayToObj } from '@/utils/utils';
 
+import footerData from '@/datas/menu/footer'
 const { router, name, logo, telicon } = configs;
 const routerMaps = arrayToObj(router, 'name');
 
-const footerData = []
 
 /**
  *
