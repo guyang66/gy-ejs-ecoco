@@ -1,125 +1,125 @@
 <div class="apply-tabs-wrap" <% if(applyData.bg){ %>style="background: <%=advantageData.bg%>"<% } %>>
-  <div class="apply-content">
+    <div class="apply-content">
 
-    <!--标题-->
-    <% if(applyData.title) { %>
-      <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>"><%=applyData.title%></div>
-    <% } else { %>
-      <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>">应用场景</div>
-    <% } %>
+        <!--标题-->
+        <% if(applyData.title) { %>
+            <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>"><%=applyData.title%></div>
+        <% } else { %>
+           <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>">应用场景</div>
+        <% } %>
 
-    <!--描述-->
-    <% if(applyData.desc) { %>
-      <div class="c-module-desc"><%=applyData.desc%></div>
-    <% } %>
+        <!--描述-->
+        <% if(applyData.desc) { %>
+            <div class="c-module-desc"><%=applyData.desc%></div>
+        <% } %>
 
-    <!--tabs-->
-    <% if(applyData.content.length > 1) { %>
-      <div class="apply-tabs-wrap">
-        <ul class="tabs-content">
-          <% applyData.content.forEach(function (item){ %>
-          <li class="tab-cell" style="width: <%=1280 / applyData.content.length%>px">
-            <div class="tab-cell-wrap">
-              <h2 class="tabs-part" style="width: <%=1280 / applyData.content.length%>px"></h2>
-              <%= item.title %>
+        <!--tabs-->
+        <% if(applyData.content.length > 1) { %>
+            <div class="apply-tabs-wrap">
+                <ul class="tabs-content">
+                    <% applyData.content.forEach(function (item){ %>
+                        <li class="tab-cell" style="width: <%=1280 / applyData.content.length%>px">
+                            <div class="tab-cell-wrap">
+                                <h2 class="tabs-part" style="width: <%=1280 / applyData.content.length%>px"></h2>
+                                <%= item.title %>
+                            </div>
+                        </li>
+                    <% }); %>
+                </ul>
             </div>
-          </li>
-          <% }); %>
-        </ul>
-      </div>
-    <% } %>
+        <% } %>
 
-    <div class="swiper-container-apply-tabs apply-single-wrap c-module-b-60" style="width: 1280px">
-      <div class="swiper-wrapper">
-        <% applyData.content.forEach(function (applyItem){ %>
-          <div class="swiper-slide swiper-no-swiping">
+        <div class="swiper-container-apply-tabs apply-single-wrap c-module-b-60" style="width: 1280px">
+            <div class="swiper-wrapper">
+                <% applyData.content.forEach(function (applyItem){ %>
+                    <div class="swiper-slide swiper-no-swiping">
 
-            <div class="apply-content">
-              <div class="apply-view" style="height: <%=applyItem.height%>px">
-                <div class="structure-view">
-                  <div class="img-wrap" style="width: <%=applyItem.imageWidth%>px;height:<%=applyItem.imageHeight%>px;margin-left: -<%=applyItem.imageWidth / 2%>px;margin-top: -<%=applyItem.imageHeight / 2%>px;">
-                    <img src="<%=applyItem.image%>" alt="<%=applyItem.alt%>"/>
-                  </div>
-                </div>
+                        <div class="apply-content">
+                            <div class="apply-view" style="height: <%=applyItem.height%>px">
+                                <div class="structure-view">
+                                    <div class="img-wrap" style="width: <%=applyItem.imageWidth%>px;height:<%=applyItem.imageHeight%>px;margin-left: -<%=applyItem.imageWidth / 2%>px;margin-top: -<%=applyItem.imageHeight / 2%>px;">
+                                       <img src="<%=applyItem.image%>" alt="<%=applyItem.alt%>"/>
+                                    </div>
+                                </div>
 
-                <div class="desc-view <% if(applyItem.style === 'scene'){ %>bg-light-grey<% } %>">
+                                <div class="desc-view <% if(applyItem.style === 'scene'){ %>bg-light-grey<% } %>">
 
-                  <!--问题描述-->
-                  <% if(applyItem.title){%>
-                    <h2 class="main-content-title mar-t48 mar-l40 mar-r40"><%=applyItem.title%></h2>
-                    <p class="main-content-text mar-t8 mar-l40 mar-r40"><%=applyItem.desc%></p>
-                  <% } else { %>
-                    <p class="main-content-text mar-t48 mar-l40 mar-r40"><%=applyItem.desc%></p>
-                  <% } %>
+                                    <!--问题描述-->
+                                    <% if(applyItem.title){%>
+                                        <h2 class="main-content-title mar-t48 mar-l40 mar-r40"><%=applyItem.title%></h2>
+                                        <p class="main-content-text mar-t8 mar-l40 mar-r40"><%=applyItem.desc%></p>
+                                    <% } else { %>
+                                        <p class="main-content-text mar-t48 mar-l40 mar-r40"><%=applyItem.desc%></p>
+                                    <% } %>
 
-                  <a class="click-button" href="<%=applyItem.href%>"><%=applyItem.buttonText%></a>
+                                    <a class="click-button" href="<%=applyItem.href%>"><%=applyItem.buttonText%></a>
 
-                  <!--场景问题-->
-                  <% if(applyItem.scenes && applyItem.scenes.length > 0){%>
-                    <div class="main-content-title mar-t32 mar-l40 mar-r40">场景问题</div>
-                    <% applyItem.scenes.forEach(function(scene){ %>
-                    <div class="solute-cell">
-                      <div class="icon">
-                        <img alt="应用场景" src="/assets/images/common/wenhao-blue.svg"/>
-                      </div>
-                      <div class="item-text main-content-text"><%=scene%></div>
+                                    <!--场景问题-->
+                                    <% if(applyItem.scenes && applyItem.scenes.length > 0){%>
+                                        <div class="main-content-title mar-t32 mar-l40 mar-r40">场景问题</div>
+                                        <% applyItem.scenes.forEach(function(scene){ %>
+                                            <div class="solute-cell">
+                                                <div class="icon">
+                                                    <img alt="应用场景" src="/assets/images/common/wenhao-blue.svg"/>
+                                                </div>
+                                                <div class="item-text main-content-text"><%=scene%></div>
+                                            </div>
+                                        <% }); %>
+                                    <% } %>
+
+                                    <!--场景问题带副标题-->
+                                    <% if(applyItem.sceneProblems && applyItem.sceneProblems.length > 0){%>
+                                        <div class="main-content-title mar-t32 mar-l40 mar-r40">场景问题</div>
+                                        <% applyItem.sceneProblems.forEach(function(scene){ %>
+                                            <div class="solute-cell">
+                                                <div class="icon" style="margin-top: 2px">
+                                                    <img alt="应用场景" src="/assets/images/common/wenhao-blue.svg"/>
+                                                </div>
+                                                <div>
+                                                    <div class="item-title"><%=scene.title%></div>
+                                                    <div class="item-text main-content-text"><%=scene.desc%></div>
+                                                </div>
+                                            </div>
+                                        <% }); %>
+                                    <% } %>
+
+                                    <!--解决方案-->
+                                    <% if(applyItem.solutions && applyItem.solutions.length > 0){%>
+                                        <div class="main-content-title mar-t32 mar-l40 mar-r40">解决方案</div>
+                                        <% applyItem.solutions.forEach(function(solute){ %>
+                                            <div class="solute-cell">
+                                                <div class="icon">
+                                                    <img alt="应用场景" src="/assets/images/common/gou-blue.svg"/>
+                                                </div>
+                                                <div class="item-text main-content-text"><%=solute%></div>
+                                            </div>
+                                        <% }); %>
+                                    <% } %>
+
+                                    <!--关联产品-->
+                                    <% if(applyItem.products && applyItem.products.length > 0){%>
+                                        <div class="main-content-title mar-t32 mar-l40 mar-r40">关联产品</div>
+                                        <div class="products-wrap">
+                                            <% applyItem.products.forEach(function(product, index){ %>
+                                                <a class="product-cell <% if(applyItem.products.length - 1 > index){ %>mar-r16<% } %> <% if(applyItem.style === 'scene'){ %>bg-white<% } %>"
+                                                   href="<%=product.href%>"
+                                                >
+                                                    <div class="icon">
+                                                        <img src="<%=product.icon%>" alt="<%=product.alt%>"/>
+                                                    </div>
+                                                  <h3 class="text main-content-text"><%=product.name%></h3>
+                                                </a>
+                                            <% }); %>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <% }); %>
-                  <% } %>
-
-                  <!--场景问题带副标题-->
-                  <% if(applyItem.sceneProblems && applyItem.sceneProblems.length > 0){%>
-                    <div class="main-content-title mar-t32 mar-l40 mar-r40">场景问题</div>
-                    <% applyItem.sceneProblems.forEach(function(scene){ %>
-                    <div class="solute-cell">
-                      <div class="icon" style="margin-top: 2px">
-                        <img alt="应用场景" src="/assets/images/common/wenhao-blue.svg"/>
-                      </div>
-                      <div>
-                        <div class="item-title"><%=scene.title%></div>
-                        <div class="item-text main-content-text"><%=scene.desc%></div>
-                      </div>
-                    </div>
-                    <% }); %>
-                  <% } %>
-
-                  <!--解决方案-->
-                  <% if(applyItem.solutions && applyItem.solutions.length > 0){%>
-                    <div class="main-content-title mar-t32 mar-l40 mar-r40">解决方案</div>
-                    <% applyItem.solutions.forEach(function(solute){ %>
-                    <div class="solute-cell">
-                      <div class="icon">
-                        <img alt="应用场景" src="/assets/images/common/gou-blue.svg"/>
-                      </div>
-                      <div class="item-text main-content-text"><%=solute%></div>
-                    </div>
-                    <% }); %>
-                  <% } %>
-
-                  <!--关联产品-->
-                  <% if(applyItem.products && applyItem.products.length > 0){%>
-                    <div class="main-content-title mar-t32 mar-l40 mar-r40">关联产品</div>
-                    <div class="products-wrap">
-                      <% applyItem.products.forEach(function(product, index){ %>
-                        <a class="product-cell <% if(applyItem.products.length - 1 > index){ %>mar-r16<% } %> <% if(applyItem.style === 'scene'){ %>bg-white<% } %>"
-                           href="<%=product.href%>"
-                        >
-                          <div class="icon">
-                            <img src="<%=product.icon%>" alt="<%=product.alt%>"/>
-                          </div>
-                          <h3 class="text main-content-text"><%=product.name%></h3>
-                        </a>
-                      <% }); %>
-                    </div>
-                  <% } %>
-                </div>
-              </div>
+                <% }); %>
             </div>
-          </div>
-        <% }); %>
-      </div>
+        </div>
     </div>
-  </div>
 </div>
 <script>
   $(document).ready(function () {

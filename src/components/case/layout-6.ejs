@@ -1,57 +1,53 @@
 <div class="case-layout-6-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>"<% } %>>
-  <div class="case-content">
-    <!--标题-->
-    <% if(caseData.title) { %>
-      <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
-    <% } else { %>
-      <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
-    <% } %>
+    <div class="case-content">
+        <!--标题-->
+        <% if(caseData.title) { %>
+            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
+        <% } else { %>
+            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
+        <% } %>
 
-    <!--描述-->
-    <% if(caseData.desc) { %>
-    <div class="c-module-desc"><%=caseData.desc%></div>
-    <% } %>
+        <!--描述-->
+        <% if(caseData.desc) { %>
+            <div class="c-module-desc"><%=caseData.desc%></div>
+        <% } %>
 
-    <div class="case-view">
-      <% caseData.content.forEach(function(column, index){ %>
-        <div class="cell-column <% if(index < caseData.content.length - 1){ %>mar-r16<% } %>">
-          <% column.data.forEach(function(item){ %>
-          <div class="cell-wrap">
-            <div class="icon-view">
-              <img src="<%=item.cover%>" alt="客户案例"/>
-            </div>
-            <div class="active-content">
-              <div class="title-view">
-                <div class="logo">
-                  <img src="<%=item.logo%>" alt="客户案例"/>
+        <div class="case-view">
+            <% caseData.content.forEach(function(column, index){ %>
+                <div class="cell-column <% if(index < caseData.content.length - 1){ %>mar-r16<% } %>">
+                    <% column.data.forEach(function(item){ %>
+                        <div class="cell-wrap">
+                            <div class="icon-view">
+                                <img src="<%=item.cover%>" alt="客户案例"/>
+                            </div>
+                            <div class="active-content">
+                                <div class="title-view">
+                                    <div class="logo">
+                                        <img src="<%=item.logo%>" alt="客户案例"/>
+                                    </div>
+                                    <h3 class="title-text"><%=item.content.name%></h3>
+                                </div>
+                                <div class="point-title-view">
+                                    <div class="icon">
+                                        <img src="/assets/images/common/tixing-orange.svg" alt="客户案例"/>
+                                    </div>
+                                    <div class="p-title main-content-title"><%=caseData.pointTitle%></div>
+                                </div>
+                                <div class="desc-view main-content-text"><%=item.content.painPoint%></div>
+                                <div class="point-title-view">
+                                    <div class="icon">
+                                      <img src="/assets/images/common/shuju-orange.svg" alt="客户案例"/>
+                                    </div>
+                                    <div class="p-title main-content-title"><%=caseData.pointTitle2%></div>
+                                </div>
+                                <div class="desc-view main-content-text"><%=item.content.solution%></div>
+                            </div>
+                        </div>
+                    <% }) %>
                 </div>
-                <h3 class="title-text"><%=item.content.name%></h3>
-              </div>
-              <div class="point-title-view">
-                <div class="icon">
-                  <img src="/assets/images/common/tixing-orange.svg" alt="客户案例"/>
-                </div>
-                <div class="p-title main-content-title"><%=caseData.pointTitle%></div>
-              </div>
-              <div class="desc-view main-content-text">
-                <%=item.content.painPoint%>
-              </div>
-              <div class="point-title-view">
-                <div class="icon">
-                  <img src="/assets/images/common/shuju-orange.svg" alt="客户案例"/>
-                </div>
-                <div class="p-title main-content-title"><%=caseData.pointTitle2%></div>
-              </div>
-              <div class="desc-view main-content-text">
-                <%=item.content.solution%>
-              </div>
-            </div>
-          </div>
-          <% }) %>
+            <% }) %>
         </div>
-      <% }) %>
     </div>
-  </div>
 </div>
 <script>
   $('.cell-wrap').on('mouseenter',function (){

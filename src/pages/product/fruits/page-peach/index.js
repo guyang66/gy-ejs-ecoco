@@ -15,7 +15,7 @@ import historyData from "@/datas/product/fruits/peach/history";
 import caseData from "@/datas/product/fruits/peach/case";
 
 const tabsData = [{
-  name: '产品优势',
+  name: '产品特性',
   anchor: 'advantage',
 },{
   name: '核心功能',
