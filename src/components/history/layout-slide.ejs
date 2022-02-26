@@ -1,0 +1,83 @@
+<div class="history-slide-wrap" <% if(historyData.bg){ %>style="background: <%=historyData.bg%>"<% } %>>
+  <div class="history-content">
+    <!--标题-->
+    <% if(historyData.title) { %>
+      <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>"><%=historyData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>">产品动态</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(historyData.desc) { %>
+    <div class="c-module-desc"><%=historyData.desc%></div>
+    <% } %>
+
+    <!--内容-->
+    <div class="history-view c-module-b-60">
+      <div class="arrow-wrap left-btn fn-left">
+          <img src="/assets/images/common/angle-left.svg" alt="产品动态"/>
+      </div>
+      <div class="main-view fn-left">
+        <div class="swiper-history-slide-container">
+          <div class="swiper-wrapper">
+            <% historyData.content.forEach(function(item){ %>
+              <div class="swiper-slide slide-item">
+                <% item.data.forEach(function(item, index){ %>
+                  <div class="item-cell fn-left">
+                    <% if(item.mode === 'top') { %>
+                      <div class="top-view">
+                        <div class="balloon-wrap">
+                          <div class="triangle"></div>
+                          <span class="balloon-text"><%=item.year%></span>
+                        </div>
+                      </div>
+                    <% } else { %>
+                      <div class="bottom-view">
+                        <% if(item.href) { %>
+                          <a class="link-reverse" href="<%=item.href%>">查看详情</a>
+                        <% } %>
+                        <div class="history-text-reverse"><%=item.content%></div>
+                      </div>
+                    <% } %>
+                    <div class="middle-view">
+                      <div class="line-view"></div>
+                      <div class="point-view"></div>
+                    </div>
+                    <% if(item.mode === 'top') { %>
+                      <div class="bottom-view">
+                        <div class="history-text"><%=item.content%></div>
+                        <% if(item.href) { %>
+                          <a class="link" href="<%=item.href%>">查看详情</a>
+                        <% } %>
+                      </div>
+                    <% } else { %>
+                      <div class="top-view">
+                        <div class="balloon-wrap-reverse">
+                          <div class="triangle"></div>
+                          <span class="balloon-text"><%=item.year%></span>
+                        </div>
+                      </div>
+                    <% } %>
+                  </div>
+                <% }); %>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-wrap right-btn fn-right">
+        <img src="/assets/images/common/angle-right.svg" alt="产品动态"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    var historySwiper = new Swiper('.swiper-history-slide-container', {
+      speed: 500,
+      prevButton:'.left-btn',
+      nextButton:'.right-btn',
+    });
+  })
+</script>

@@ -1,5 +1,5 @@
 <!-- header-wrap -->
-<header class="header-wrap header-fixed">
+<header class="header-wrap header-absolute">
   <div class="header-bg"></div>
   <div class="header-content">
     <a class="logo fn-left" href="/">
@@ -16,7 +16,7 @@
           <% } %>
           <span class="empty-span"></span>
           <% if(nav.viewStyle === 'tabs'){%>
-            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
+            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px;left: -40px">
               <div class="m-tabs-left pad-t20 pad-b20 fn-left">
                 <% nav.children.forEach(function(childNav){ %>
                   <div class="m-tabs-title-wrap">
@@ -37,14 +37,14 @@
                           <% contentItem.column.forEach(function(columnItem, index){ %>
                             <div class="content-item-title <% if(index !== 0 ){ %>mar-t20<% } %>"><%=columnItem.title%></div>
                             <% columnItem.data.forEach(function(dataItem){ %>
-                            <div class="data-item">
-                              <span><%=dataItem.name%></span>
-                              <% if(dataItem.tags && dataItem.tags.length > 0){%>
-                                <% dataItem.tags.forEach(function(tag){ %>
-                                  <span class="<% if(tag.type === 'hot'){ %>tag-hot<% } %> <% if(tag.type === 'new'){ %>tag-new<% } %>"><%=tag.text%></span>
-                                <% }); %>
-                              <% } %>
-                            </div>
+                                <a class="data-item" href="<%=dataItem.href%>">
+                                  <span><%=dataItem.name%></span>
+                                  <% if(dataItem.tags && dataItem.tags.length > 0){%>
+                                    <% dataItem.tags.forEach(function(tag){ %>
+                                      <span class="<% if(tag.type === 'hot'){ %>tag-hot<% } %> <% if(tag.type === 'new'){ %>tag-new<% } %>"><%=tag.text%></span>
+                                    <% }); %>
+                                  <% } %>
+                                </a>
                             <% }); %>
                           <% }); %>
                         </div>
@@ -74,7 +74,7 @@
             </div>
 
           <% } else if((nav.viewStyle === 'n-4')){ %>
-            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
+            <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px;left:-40px">
               <div class="m-view-wrap pad20">
                 <% nav.children.forEach(function(childNav){ %>
                   <div class="m-n-4-cell-wrap fn-left">

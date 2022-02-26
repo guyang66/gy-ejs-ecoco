@@ -29,11 +29,11 @@ const menus = [
                 data: [
                   {
                     name: '香蕉',
-                    href: 'banana.html'
+                    href: '/product/fruits/banana.html'
                   },
                   {
-                    name: '芒果',
-                    href: 'mongo.html'
+                    name: '水蜜桃',
+                    href: '/product/fruits/peach.html'
                   },
                   {
                     name: '菠萝',
@@ -42,7 +42,7 @@ const menus = [
 
                   {
                     name: '奇异果',
-                    href: 'mongo.html'
+                    href: '/product/fruits/kiwi.html'
                   },
                   {
                     name: '西瓜',

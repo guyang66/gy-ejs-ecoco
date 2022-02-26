@@ -15,8 +15,18 @@ module.exports = [
   // 产品
   // 产品-水果
   {
-    name: 'banana',
+    name: 'product/fruits/banana',
     path: 'pages/product/fruits/page-banana',
     title: '香蕉'
+  },
+  {
+    name: 'product/fruits/peach',
+    path: 'pages/product/fruits/page-peach',
+    title: '香蕉'
+  },
+  {
+    name: 'product/fruits/kiwi',
+    path: 'pages/product/fruits/page-kiwi',
+    title: '猕猴桃'
   }
 ];

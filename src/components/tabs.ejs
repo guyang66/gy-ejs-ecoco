@@ -1,11 +1,11 @@
 <!-- content-menu -->
 <section class="tabs-wrap">
-  <ul class="tabs-content">
-    <% tabsData.forEach(function(item){ %>
-      <li>
-        <a href="#<%= item.anchor %>"><%= item.name %></a>
-        <span></span>
-      </li>
-    <% }); %>
-  </ul>
+    <ul class="tabs-content">
+        <% tabsData.forEach(function(item){ %>
+            <li>
+                <a data-name="<%= item.anchor %>"><%= item.name %></a>
+                <span></span>
+            </li>
+        <% }); %>
+    </ul>
 </section>

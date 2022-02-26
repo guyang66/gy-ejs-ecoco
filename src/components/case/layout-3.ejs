@@ -1,0 +1,77 @@
+<div class="case-layout-3-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>"<% } %>>
+    <div class="case-content">
+        <!--标题-->
+        <% if(caseData.title) { %>
+            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %> <% if(caseData.style === 'black'){ %>color-white<% } %>" ><%=caseData.title%></div>
+        <% } else { %>
+            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %> <% if(caseData.style === 'black'){ %>color-white<% } %>">客户案例</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(caseData.desc) { %>
+          <div class="c-module-desc"><%=caseData.desc%></div>
+        <% } %>
+
+        <div class="case-view">
+            <div class="left-view fn-left">
+                <% caseData.content.forEach(function (caseItem, index){ %>
+                    <div class="tabs-cell <% if(index < caseData.content.length - 1){ %>mar-b16<% } %>">
+                        <img class="mar-b8" src="<%=caseItem.logo%>" alt="<%=caseItem.alt%>"/>
+                        <div class="txt main-content-title2 color-white"><%=caseItem.name%></div>
+                    </div>
+                <% }) %>
+            </div>
+            <div class="right-view fn-right">
+                <div class="swiper-container-layout-3-tabs c-module-b-60">
+                    <div class="swiper-wrapper">
+                        <% caseData.content.forEach(function (item){ %>
+                            <div class="swiper-slide swiper-no-swiping" style="overflow: hidden">
+                                <div class="info-wrap">
+                                    <div class="title-view">
+                                        <div class="logo">
+                                            <img src="<%=item.logo%>" alt="客户案例"/>
+                                        </div>
+                                        <h3 class="title-text color-white"><%=item.name%></h3>
+                                    </div>
+                                    <div class="point-title-view">
+                                        <div class="icon">
+                                            <img src="/assets/images/common/baxin-white.svg" alt="客户案例"/>
+                                        </div>
+                                        <div class="p-title color-white"><%=caseData.pointTitle%></div>
+                                    </div>
+                                    <div class="desc-view main-content-text color-white">
+                                        <%=item.painPoint%>
+                                    </div>
+                                    <div class="point-title-view">
+                                        <div class="icon">
+                                            <img src="/assets/images/common/fangan-white.svg" alt="客户案例"/>
+                                        </div>
+                                        <div class="p-title color-white"><%=caseData.pointTitle2%></div>
+                                    </div>
+                                    <div class="desc-view main-content-text color-white">
+                                        <%=item.solution%>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function () {
+    let tabsSwiper = new Swiper('.swiper-container-layout-3-tabs', {
+      effect : 'fade',
+      noSwiping : true,
+      // autoHeight: true,
+      mousewheelControl: false,
+    });
+    $('.case-layout-3-wrap .case-view .tabs-cell').eq(0).addClass('active')
+    $('.case-layout-3-wrap .case-view .tabs-cell').on('mouseenter',function () {
+      $(this).addClass('active').siblings().removeClass('active')
+      tabsSwiper.slideTo($(this).index())
+    })
+  })
+</script>

@@ -1,7 +1,6 @@
 .banner-wrap
   width 100%
-  height 380px
-  background #242424
+  height 424px
   .banner-content
     position relative
     overflow hidden
@@ -12,6 +11,7 @@
       width 600px
       height 100%
       .title
+        margin-top 56px
         padding-top 64px
         line-height 56px
         font-size 38px
@@ -20,43 +20,57 @@
         padding-top 16px
         line-height 28px
         font-size 16px
-        color: #fff
+        color #fff
         opacity 0.85
       .button
+        display inline-block
         margin-top 36px
         width 108px
         height 36px
         line-height 36px
         font-size 14px
         text-align center
+        border-radius 2px
         color #fff
-        //background linear-gradient(315deg,#01ebdd %,#5360fb 74.07%)
         background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
         cursor pointer
+    .banner-figure-wrap
+      width 680px
+      height 100%
+      position relative
+      img
+        position absolute
+        right 0
+        top 50%
+        transform translateY(-50%)
 .tabs-wrap
   position relative
   overflow hidden
   width 100%
   height 50px
   background #FFFFFF
-  box-shadow 0 4px 10px 0 #EBEDF6
+  box-shadow 0 1px 1.5px 0 #EBEDF6
   z-index 200
   .tabs-content
     overflow hidden
-    width 1280px
-    height 100%
+    position relative
     margin 0 auto
+    width 1280px
+    //display inline-block
+    //left 50%
+    //transform translateX(-50%)
     li
       position relative
       float left
+      cursor pointer
       &.active
         a
-          color #374567
+          color #4169E1
         span
           opacity 1
       &:hover
         a
-          color #374567
+          color #4169E1
         span
           opacity 1
     a
@@ -76,3 +90,1081 @@
       text-indent -999
       opacity 0
       transition all .3s
+.tabs-wrap.fixed
+  position fixed
+  top 0
+  left 0
+  z-index 200
+.form-view-wrap
+  width 100%
+  background-image url('../assets/images/cssBg/bg_form.png')
+  background-attachment fixed
+  background-repeat repeat
+  background-size 100%
+  .form-view-content
+    width 100%
+    overflow hidden
+    margin 0 auto
+    height 240px
+    min-width 1280px
+    position relative
+    .form-title
+      font-size 30px
+      line-height 40px
+      letter-spacing 2px
+      text-align center
+      color #FFFFFF
+      padding-top 49px
+      font-weight 500
+    .form-desc
+      margin-top 16px
+      font-size 16px
+      text-align center
+      line-height 24px
+      color #FFFFFF
+    .form-button
+      width 108px
+      height 36px
+      border-radius 2px
+      background-color #FFFFFF
+      margin 20px auto
+      font-size 14px
+      color #F67463
+      line-height 36px
+      cursor pointer
+      text-align center
+
+// 产品优势一排三，样式——a
+.advantage-n-3-a,.advantage-n-3-b
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .advantage-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .advantage-view
+      position relative
+      .min-h-125
+        min-height 125px
+      .advantage-n-3-a-cell
+        width 360px
+        .module-icon-a-wrap
+          width 64px
+          height 64px
+          margin 0 auto 20px auto
+          img
+            width 100%
+            height 100%
+        .module-icon-b-wrap
+          width 48px
+          height 48px
+          img
+            width 100%
+            height 100%
+        .tit
+          width 100%
+          text-align center
+          font-size 18px
+          line-height 24px
+          height 24px
+          color #181818
+          margin-bottom 8px
+          font-family "PingFang SC"
+          font-weight 700
+        .tit-b
+          width calc(100% - 68px)
+          margin-left 68px
+          font-size 18px
+          line-height 24px
+          height 24px
+          color #181818
+          margin-bottom 12px
+          font-family "PingFang SC"
+          font-weight 700
+        .desc
+          font-size 14px
+          width 100%
+          padding-left 8px
+          text-align center
+          padding-right 8px
+          color #444444
+        .desc-b
+          font-size 14px
+          width calc(100% - 68px)
+          margin-left 68px
+          color #444444
+          text-align justify
+      .mar-r100
+        margin-right 100px
+      .mar-b24
+        margin-bottom 24px
+    .advantage-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+.advantage-layout-between-wrap
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .advantage-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .advantage-view
+      position relative
+      min-height 200px
+      .content-view
+        width 100%
+        height 200px
+      .middle-view
+        width 320px
+        height 240px
+        background-color #4169E1
+        position relative
+        overflow hidden
+        margin-left 50%
+        transform translateX(-50%)
+        img
+          width 320px
+          height auto
+          position absolute
+          left 0
+          top 0
+        .left-t
+          width 0
+          height 0
+          background-color transparent
+          border-bottom 240px solid transparent
+          border-left 60px solid white
+          position absolute
+          top 0
+          left 0
+        .left-d
+          width 0
+          height 0
+          background-color transparent
+          border-bottom 240px solid white
+          border-left 60px solid transparent
+          position absolute
+          top 0
+          right 0
+      .info-wrap
+        max-width calc(480px - 30px - 40px)
+        img
+          width 28px
+          height 28px
+        .tit
+          margin-left 40px
+        .txt
+          margin-left 40px
+          margin-top 12px
+      .info-wrap-0
+        position absolute
+        left 0
+        top 0
+      .info-wrap-1
+        position absolute
+        right 0
+        top 0
+      .info-wrap-2
+        position absolute
+        left 0
+        bottom 0
+      .info-wrap-3
+        position absolute
+        right 0
+        bottom 0
+    .advantage-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+.core-1-4-black-white
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .core-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .core-view
+      position relative
+      padding-left 24px
+      .slider-wrap
+        max-width 1232px
+        position relative
+        height 400px
+        overflow hidden
+        .tabs-box
+          position relative
+          list-style none
+          zoom 1
+          .core-1-4-cell
+            width 308px
+            height 400px
+            .content-view
+              padding 32px
+              .img-icon
+                margin-top 32px
+                width 92px
+                height 92px
+              .tit
+                width 100%
+                font-size 18px
+                line-height 24px
+                height 24px
+                margin-bottom 8px
+                font-family "PingFang SC"
+                font-weight 700
+              .desc
+                font-size 14px
+                width 100%
+          .core-1-4-cell:hover
+            background-color #1E90FF
+            .tit
+              color #ffffff
+            .desc
+              color #ffffff
+        .tabs-box:after
+          display block
+          content ''
+          clear both
+          visibility hidden
+    .core-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+    .arrow-left-wrap
+      width 48px
+      height 48px
+      background-color rgb(22, 100, 255)
+      position absolute
+      left 0
+      border-radius 24px
+      top 50%
+      transform translateY(-50%)
+      cursor pointer
+      img
+        width 20px
+        height 20px
+        margin-top 14px
+        margin-left 14px
+        animation slide-l 1s ease-in-out infinite
+    .arrow-right-wrap
+      width 48px
+      height 48px
+      background-color rgb(22, 100, 255)
+      position absolute
+      right 0
+      border-radius 24px
+      top 50%
+      transform translateY(-50%)
+      cursor pointer
+      img
+        width 20px
+        height 20px
+        margin-top 14px
+        margin-left 14px
+        animation slide-r 1s ease-in-out infinite
+.core-n-3-wrap
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .core-content
+    width 1280px
+    overflow hidden
+    position relative
+    margin 0 auto
+    .core-view
+      position relative
+      width 100%
+      .core-n-3-cell
+        width 410px
+        height 410px
+        background-color #FFFFFF
+        margin-bottom 25px
+        padding 32px
+        position relative
+        .img-wrap
+          width auto
+          height auto
+          position absolute
+          right 0
+          bottom 0
+      .mar-r25
+        margin-right 25px
+    .core-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+.core-layout-fade-wrap
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .core-content
+    width 1280px
+    overflow hidden
+    position relative
+    margin 0 auto
+    .core-view
+      position relative
+      width 100%
+      .core-layout-fade-cell
+        width 638px
+        margin-right 2px
+        margin-bottom 2px
+        background-color #4565A3
+        height 300px
+        transition all 0.5s ease-in-out
+        .info-wrap
+          position relative
+          svg
+            position absolute
+            width 638px
+            height 300px
+            top 0
+            left 0
+            line
+              stroke-width 3
+              stroke transparent
+              fill none
+              transition all .8s ease-in-out
+          .icon-view
+            width 88px
+            height 88px
+            margin-top 80px
+            margin-left 50%
+            transform translateX(-50%)
+            transition all 0.5s ease-in-out
+          .tit
+            font-size 20px
+            text-align center
+            width 100%
+            margin-top 12px
+            transition all 0.5s ease-in-out
+          .txt
+            margin-top 12px
+            transition all 0.5s ease-in-out
+            opacity 0
+            width 50%
+            margin-left 50%
+            transform translateX(-50%)
+            text-align center
+      .core-layout-fade-cell:hover
+        background-color transparent
+        .info-wrap
+          svg
+            line
+              transition-delay: 0.1s;
+              stroke #ffffff
+            .top
+              transform translateX(-1276px)
+            .bottom
+              transform translateX(1276px)
+            .left
+              transform translateY(600px)
+            .right
+              transform translateY(-600px)
+            .top,.bottom
+              stroke-dasharray: 638 638 638;
+            .left,.right
+              stroke-dasharray: 300 300 300;
+          .icon-view
+            margin-top 40px
+            transition all 0.5s ease-in-out
+          .txt
+            opacity 1
+    .core-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+.apply-single-wrap
+  width 100%
+  margin 0 auto
+  background-color white
+  overflow hidden
+  .apply-content
+    width 1280px
+    margin 0 auto
+    .apply-view
+      width 100%
+      background-color white
+      position relative
+      .structure-view
+        float left
+        width 728px
+        height 100%
+        background #EFF2FF
+        position relative
+        .img-wrap
+          position absolute
+          left 50%
+          top 50%
+          img
+            width 100%
+            height 100%
+      .desc-view
+        width 552px
+        float left
+        background-color #f9faff
+        height 100%
+        position relative
+        .mar-t48
+          margin-top 48px
+        .mar-t8
+          margin-top 8px
+        .mar-t32
+          margin-top 32px
+        .click-button
+          margin-left 40px
+          margin-top 16px
+          border-radius 2px
+          display block
+          background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+          line-height 36px
+          width 108px
+          height 36px
+          text-align center
+          cursor pointer
+          color #FFFFFF
+          font-size 14px
+        .solute-cell
+          width 468px
+          margin-top 8px
+          margin-left 40px
+          position relative
+          .icon
+            width 16px
+            height 16px
+            position absolute
+            left 4px
+            top 4px
+            img
+              width 100%
+              height 100%
+              position relative
+              top 50%
+              left 50%
+              transform translate(-50% , -50%)
+          .item-title
+            margin-left 32px
+            margin-right 32px
+            font-size 16px
+            color #444444
+          .item-text
+            margin-left 32px
+            width 447px
+            float left
+            text-align justify
+        .solute-cell:after
+          clear both
+          content: ""
+          display block
+          height 0
+          visibility hidden
+        .products-wrap
+          height 88px
+          margin-top 8px
+          position relative
+          margin-left 40px
+          .product-cell
+            float left
+            height 88px
+            border 1px solid #999999
+            margin-bottom 16px
+            cursor pointer
+            transition border 0.3s ease-in-out
+            .icon
+              width 24px
+              height 24px
+              position relative
+              left 50%
+              transform translateX(-50%)
+              margin-top 16px
+              margin-bottom 8px
+              img
+                width 100%
+                height 100%
+            .text
+              font-size 14px
+              padding-left 10px
+              padding-right 10px
+              min-width 104px
+              width 100%
+              text-align center
+          .product-cell:hover
+            border 1px solid #4169E1
+            transition border 0.3s ease-in-out
+            .text
+              color #4169E1
+          .mar-r16
+            margin-right 16px
+      .bg-light-grey
+        background-color #f9faff
+      .bg-white
+        background-color white
+.apply-tabs-wrap
+  width 100%
+  background white
+  .apply-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .apply-tabs-wrap
+      position relative
+      border 1px solid #e1e6f0
+      .tabs-content
+        width 1280px
+        height 64px
+        margin 0 auto
+        .tab-cell
+          position relative
+          float left
+          width 100%
+          cursor pointer
+          .tab-cell-wrap
+            font-size 20px
+            color #181818
+            text-align center
+            width 100%
+            height 100%
+            line-height 64px
+            border-right 1px solid #e1e6f0
+            z-index 5
+            overflow hidden
+            .tabs-part
+              position absolute
+              width 640px
+              height 4px
+              left 0
+              z-index 10
+              top 0
+              transition 0.3s
+          .active,.tab-cell-wrap:hover
+            color #4169E1
+            box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.15)
+            .tabs-part
+              background-color #4169E1
+.history-slide-wrap
+  width 100%
+  margin 0 auto
+  overflow hidden
+  background-color white
+  position relative
+  .history-content
+    width 1280px
+    margin 0 auto
+    position relative
+    .history-view
+      width 100%
+      height 260px
+      .arrow-wrap
+        width 48px
+        height 48px
+        border-radius 24px
+        margin-top 106px
+        background-color rgba(17,17,17,0.05)
+        cursor pointer
+        img
+          width 16px
+          height 16px
+          margin-top 16px
+          margin-left 16px
+      .main-view
+        width 1140px
+        margin-left 22px
+        height 100%
+        position relative
+        overflow hidden
+        .slide-item
+          width 100%
+          height 100%
+          .item-cell
+            width 285px
+            height 260px
+            .top-view
+              width 100%
+              height 126px
+              position relative
+              .balloon-wrap
+                width 100%
+                height 40px
+                position absolute
+                top 60px
+                text-align center
+                line-height 30px
+                min-height 40px
+                outline none
+                left 0
+                .triangle
+                  position absolute
+                  width 0
+                  height 0
+                  border-color transparent
+                  border-style solid
+                  bottom 0
+                  left 50%
+                  margin-left -8px
+                  border-bottom-color #fff
+                  border-width 0 8px 8px
+                  transform rotate(180deg)
+                .balloon-text
+                  display inline-block
+                  max-width 100%
+                  line-height 16px
+                  max-height 32px
+                  padding 8px 12px
+                  background-color #FFFFFF
+                  box-shadow 0 0 15px 0 rgba(0,0,0,0.15)
+                  color #444444
+              .balloon-wrap-reverse
+                margin-top 26px
+                width 100%
+                height 40px
+                line-height 30px
+                min-height 40px
+                outline none
+                text-align center
+                position relative
+                .triangle
+                  position absolute
+                  width 0
+                  height 0
+                  border-color transparent
+                  border-style solid
+                  top -8px
+                  left 50%
+                  margin-left -8px
+                  border-bottom-color #fff
+                  border-width 0 8px 8px
+                .balloon-text
+                  display inline-block
+                  max-width 100%
+                  line-height 16px
+                  max-height 32px
+                  padding 8px 12px
+                  background-color #FFFFFF
+                  text-align justify
+                  word-break break-all
+                  word-wrap break-word
+                  box-shadow 0 0 15px 0 rgba(0,0,0,0.15)
+            .middle-view
+              width 100%
+              height 8px
+              position relative
+              overflow hidden
+              .line-view
+                width 100%
+                height 1px
+                background-color #a0a0a0
+                margin-top 3.5px
+              .point-view
+                width 8px
+                height 8px
+                position absolute
+                top 0
+                left 50%
+                transform translateX(-50%)
+                border 1px solid #a0a0a0
+                background-color white
+                border-radius 4px
+            .bottom-view
+              width 100%
+              height 126px
+              position relative
+              .link
+                margin-top 4px
+                width 100%
+                text-align center
+                font-size 14px
+                color #4169E1
+                display inline-block
+              .link-reverse
+                margin-top 4px
+                width 100%
+                text-align center
+                font-size 14px
+                color #4169E1
+                display inline-block
+                position absolute
+                height 14px
+                line-height 14px
+                bottom 26px
+              .link:hover,.link-reverse:hover
+                text-decoration underline
+              .history-text-reverse
+                max-height 48px
+                position absolute
+                bottom 50px
+                left 0
+                padding-left 55px
+                padding-right 55px
+                line-height 24px
+                font-size 14px
+                text-align center
+                color #444444
+                margin-top 12px
+              .history-text
+                max-height 48px
+                width 100%
+                padding-left 55px
+                padding-right 55px
+                line-height 24px
+                font-size 14px
+                text-align center
+                color #444444
+                margin-top 12px
+.case-layout-6-wrap
+  width 100%
+  background #ffffff
+  .case-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .case-view
+      height 480px
+      width 1280px
+      position relative
+      margin-bottom 60px
+      .mar-r16
+        margin-right 16px
+      .cell-column
+        width 416px
+        height 100%
+        float left
+        overflow hidden
+        transition all 0.3s ease-in-out
+        .cell-wrap
+          width 416px
+          height 224px
+          background-color #FFFFFF
+          border 1px solid #EBF0FC
+          box-shadow 2px 2px 8px 0 rgba(235,237,246,0.90)
+          margin-bottom 16px
+          transition all 0.3s ease-in-out
+          overflow hidden
+          position relative
+          .icon-view
+            width 100%
+            height 100%
+            position relative
+            img
+              width 50%
+              height 50%
+              left 50%
+              top 50%
+              position absolute
+              transform translate(-50%,-50%)
+          .active-content
+            visibility hidden
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+            .title-view
+              width 576px
+              height 40px
+              margin-left 24px
+              margin-top 24px
+              position relative
+              .logo
+                width 40px
+                height 40px
+                float left
+                img
+                  width 100%
+                  height 100%
+              .title-text
+                margin-left 16px
+                font-size 16px
+                color #181818
+                float left
+                height 40px
+                font-weight 500
+                line-height 40px
+            .point-title-view
+              margin-left 24px
+              margin-top 32px
+              height 24px
+              width 576px
+              position relative
+              .icon
+                width 24px
+                height 24px
+                margin-top 2px
+                float left
+                img
+                  width 100%
+                  height 100%
+              .p-title
+                margin-left 16px
+                float left
+            .desc-view
+              width 528px
+              text-align justify
+              margin-top 16px
+              margin-left 64px
+      .mar-r16
+        margin-right 16px
+.case-layout-3-wrap
+  width 100%
+  overflow hidden
+  background #ffffff
+  .case-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .case-view
+      height 498px
+      width 1280px
+      position relative
+      margin-bottom 60px
+      .left-view
+        width 430px
+        height 100%
+        .tabs-cell
+          width 100%
+          height 155.33px
+          background-color #2C2C2C
+          padding 16px
+          img
+            width auto
+            height 64px
+            margin-left 50%
+            transform translateX(-50%)
+          .txt
+            text-align center
+            width 100%
+        .tabs-cell:hover,.active
+          background-color #4169E1
+        .mar-b8
+          margin-bottom 8px
+        .mar-b16
+          margin-bottom 16px
+      .right-view
+        height 100%
+        width 820px
+        background-color  #2C2C2C
+        padding 32px
+        .swiper-container-layout-3-tabs
+          width 100%
+          height 100%
+          background-color #4169E1
+          overflow hidden
+          .info-wrap
+            width 100%
+            height 100%
+            background-color #4169E1
+            overflow hidden
+            position relative
+            .title-view
+              width 100%
+              height 40px
+              margin-left 24px
+              margin-top 24px
+              position relative
+              .logo
+                width 40px
+                height 40px
+                float left
+                img
+                  width 100%
+                  height 100%
+              .title-text
+                margin-left 16px
+                font-size 16px
+                float left
+                height 40px
+                font-weight 500
+                line-height 40px
+            .point-title-view
+              margin-left 24px
+              margin-top 32px
+              height 24px
+              width 576px
+              position relative
+              .icon
+                width 24px
+                height 24px
+                margin-top 2px
+                float left
+                img
+                  width 100%
+                  height 100%
+              .p-title
+                margin-left 16px
+                float left
+                font-size 16px
+                line-height 28px
+            .desc-view
+              width calc(100% - 64px - 32px)
+              text-align justify
+              margin-top 16px
+              margin-left 64px
+    .case-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+.case-one-wrap
+  width 100%
+  background #ffffff
+  .case-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    .case-view
+      min-height 150px
+      width 1280px
+      position relative
+      margin-bottom 60px
+      .case-wrap
+        border 1px solid #dee4f3
+        width 100%
+
+        border-radius 2px
+        .case-top
+          width 100%
+          height 160px
+          border-bottom 1px solid #dee4f3
+          padding 32px
+          .logo-wrap
+            width 96px
+            height 96px
+            border 1px solid #ebf0fc
+            box-shadow 0 5px 8px 0 rgba(0,0,0,0.1)
+            border-radius 8px
+            position relative
+            img
+              width auto
+              height auto
+              margin-left 50%
+              margin-top 50%
+              transform translate(-50%,-50%)
+          .title-info-wrap
+            width calc(100% - 128px)
+            height 100%
+            margin-left 32px
+            position relative
+            .title-info-container
+              width auto
+              position absolute
+              top 50%
+              transform translateY(-50%)
+              .tit
+                font-size 18px
+                line-height 32px
+                font-weight 500
+              .desc
+                font-size 16px
+                line-height 28px
+          .title-info-wrap:after
+            visibility hidden
+            display block
+            font-size 0
+            content ""
+            clear both
+            height 0
+        .case-bottom
+          padding 32px
+          background-color rgb(252,253,254)
+          .info-title-wrap
+            height 32px
+            position relative
+            .info-title-icon
+              width 24px
+              height 24px
+              margin-top 4px
+              margin-right 16px
+              float left
+              img
+                width 100%
+                height 100%
+          .info-content-wrap:after
+            visibility hidden
+            display block
+            font-size 0
+            content ""
+            clear both
+            height 0
+          .info-content-wrap
+            margin-left 40px
+            margin-top 8px
+            width 1182px
+            height auto
+            position relative
+            .point
+              position absolute
+              width 6px
+              height 6px
+              background #181818
+              border-radius 3px
+              left 0
+              top 9px
+            .info-item-text
+              max-height 48px
+              margin-left 16px
+
+@keyframes slide-l {
+  0% {
+    transform: translateX(40%)
+    opacity: 0.5
+  }
+  25% {
+    transform: translateX(20%)
+    opacity: 0.75
+  }
+  50% {
+    transform: translateX(0)
+    opacity: 1
+  }
+  75% {
+    transform: translateX(-20%)
+    opacity: 0.75
+  }
+  100% {
+    transform: translateX(-40%)
+    opacity: 0.5
+  }
+}
+
+@keyframes slide-r {
+  0% {
+    transform: translateX(-40%)
+    opacity: 0.5
+  }
+  25% {
+    transform: translateX(-20%)
+    opacity: 0.75
+  }
+  50% {
+    transform: translateX(0)
+    opacity: 1
+  }
+  75% {
+    transform: translateX(20%)
+    opacity: 0.75
+  }
+  100% {
+    transform: translateX(40%)
+    opacity: 0.5
+  }
+}

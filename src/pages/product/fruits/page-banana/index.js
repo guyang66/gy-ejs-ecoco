@@ -1,28 +1,43 @@
 import template from './template';
 import htmlRender from '@/layouts/index';
+import form from '@/components/form'
+import advantage from '@/components/advantages/n-3-a'
+import core from '@/components/core/1-4-black-white'
+import apply from '@/components/apply/layout_tabs'
+import history from '@/components/history/layout-slide'
+import cases from '@/components/case/layout-6'
 
-const bannerData = {
-  title: '香蕉',
-  text: '西瓜是一种水果，西瓜是一种水果，西瓜是一种水果，西瓜是一种水果，西瓜是一种水果，西瓜是一种水果。',
-  button: true,
-}
+import bannerData from "@/datas/product/fruits/banana/banner";
+import advantageData from "@/datas/product/fruits/banana/advantage";
+import coreData from "@/datas/product/fruits/banana/core";
+import applyData from "@/datas/product/fruits/banana/apply";
+import historyData from "@/datas/product/fruits/banana/history";
+import caseData from "@/datas/product/fruits/banana/case";
 
 const tabsData = [{
-  name: 'tabs1',
-  anchor: 'tabs1',
+  name: '产品优势',
+  anchor: 'advantage',
 },{
-  name: 'tabs2',
-  anchor: 'tabs2',
+  name: '核心功能',
+  anchor: 'core',
 },{
-  name: 'tabs3',
-  anchor: 'tabs3',
+  name: '应用场景',
+  anchor: 'apply',
 },{
-  name: 'tabs4',
-  anchor: 'tabs5',
+  name: '客户案例',
+  anchor: 'case',
+},{
+  name: '产品动态',
+  anchor: 'history',
 }];
 
-const container = template();
-
+const formView = form()
+const advantageView = advantage({advantageData})
+const coreView = core({coreData})
+const applyView = apply({applyData})
+const historyView = history({historyData})
+const caseView = cases({caseData})
+const container = template({formView, advantageView, coreView, applyView, historyView, caseView});
 export default htmlRender({
   key: 'banana',
   navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块

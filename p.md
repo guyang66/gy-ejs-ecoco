@@ -10,3 +10,4 @@
     1.2
     如果报错 __webpack_base_uri__ is not defined，可能是html-webpack-plugin和webpack版本不兼容，适当升级或者降级二者。
 
+### 2.css background-image webpack打包路径不对

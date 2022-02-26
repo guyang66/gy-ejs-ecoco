@@ -33,7 +33,7 @@ const htmlRender = ({
     key, // 页面独立key
     tabsData,
     ...configs,
-    title: `${routerMaps[key].title}-${name}`, // 页面标题
+    title: `默认标题`, // 页面标题
     header: header({ key, logo, menus, telicon}),
     banner: banner({bannerData}),
     tabs: tabs({tabsData}),

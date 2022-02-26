@@ -1,12 +1,13 @@
-@import '@/styles/global'
-@import '@/styles/component'
 @import '@/styles/variables'
+
 .main-layout
   position relative
   width 100%
   // header模块
   .header-absolute
     position absolute
+    top 0
+    left 0
   .header-fixed
     position fixed
   .header-bg
@@ -142,6 +143,8 @@
                   line-height 32px
                   cursor pointer
                   color #444444
+                  display block
+                  padding 0
                 .data-item:hover
                   color color-primary
               .content-item-wrap-cell
@@ -409,3 +412,8 @@
     transform: scale(1.1)
   }
 }
+
+@import '@/styles/component'
+@import '@/styles/common'
+// global优先级最高
+@import '@/styles/global'
