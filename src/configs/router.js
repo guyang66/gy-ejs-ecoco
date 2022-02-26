@@ -25,6 +25,11 @@ module.exports = [
     title: '香蕉'
   },
   {
+    name: 'product/fruits/pomegranate',
+    path: 'pages/product/fruits/page-pomegranate',
+    title: '石榴'
+  },
+  {
     name: 'product/fruits/kiwi',
     path: 'pages/product/fruits/page-kiwi',
     title: '猕猴桃'

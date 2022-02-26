@@ -1,0 +1,28 @@
+<div class="advantage-layout-n-4-wrap" <% if(advantageData.bg){ %>style="background: <%=advantageData.bg%>"<% } %> >
+    <div class="advantage-content">
+        <!--标题-->
+        <% if(advantageData.title) { %>
+            <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>"><%=advantageData.title%></div>
+        <% } else { %>
+            <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(advantageData.desc) { %>
+            <div class="c-module-desc"><%=advantageData.desc%></div>
+        <% } %>
+
+        <!--内容-->
+        <div class="advantage-view c-module-b-60">
+            <% advantageData.content.forEach(function(item, index){ %>
+                <div class="advantage-n-4-cell fn-left <% if((index + 1) % advantageData.content.length !== 0){ %>mar-r128<% } %> <% if( index < advantageData.content.length - 4){ %>mar-b20<% } %>">
+                    <div class="module-icon-wrap fn-left">
+                        <img src="<%=item.icon%>" alt="<%=item.alt%>"/>
+                    </div>
+                    <div class="tit main-content-title"><%=item.title%></div>
+                    <div class="desc main-content-text"><%=item.text%></div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>

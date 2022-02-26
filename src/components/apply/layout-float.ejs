@@ -1,0 +1,36 @@
+<div class="apply-layout-float-wrap" <% if(applyData.bg){ %>style="background: <%=advantageData.bg%>"<% } %>>
+    <div class="apply-content">
+        <!--标题-->
+        <% if(applyData.title) { %>
+            <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>"><%=applyData.title%></div>
+        <% } else { %>
+            <div class="c-module-title <% if(!applyData.desc){ %>c-module-b-60<% } %>">应用场景</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(applyData.desc) { %>
+        <div class="c-module-desc"><%=applyData.desc%></div>
+        <% } %>
+
+        <div class="apply-view">
+            <% applyData.content.forEach(function(item, index){ %>
+                <div class="cell-wrap">
+                    <div class="img-wrap <% if(index % 2 === 0){ %>fn-left<% } else {%>fn-right<%} %>">
+                        <img src="<%=item.cover%>" alt="<%=item.alt%>"/>
+                    </div>
+                    <div class="desc-wrap <% if(index % 2 === 0){ %>fn-right<% } else {%>fn-left<%} %>">
+                        <h2 class="desc-title main-content-title"><%=item.title%></h2>
+                        <% item.data.forEach(function(descItem){ %>
+                        <div class="item-wrap">
+                            <div class="icon-wrap">
+                                <div class="icon"></div>
+                            </div>
+                            <div class="text main-content-text"><%=descItem%></div>
+                        </div>
+                        <% }); %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>

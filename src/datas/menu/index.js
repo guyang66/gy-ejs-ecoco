@@ -36,12 +36,12 @@ const menus = [
                     href: '/product/fruits/peach.html'
                   },
                   {
-                    name: '菠萝',
-                    href: 'mongo.html'
+                    name: '石榴',
+                    href: '/product/fruits/pomegranate.html'
                   },
 
                   {
-                    name: '奇异果',
+                    name: '猕猴桃',
                     href: '/product/fruits/kiwi.html'
                   },
                   {
