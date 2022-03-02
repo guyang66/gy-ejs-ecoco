@@ -1,0 +1,24 @@
+<div class="logo-view-wrap">
+    <div class="logo-view-content">
+        <% logoData.content.forEach(function(logoItem, index){ %>
+            <div class="logo-cell-wrap fn-left <% if((index + 1) % 6 !== 0){ %>mar-r24<% } %> <% if( index < logoData.content.length - 6){ %>mar-b24<% } %>">
+                <img class="logo icon-grey" src="<%=logoItem.normal%>" alt="yy科技"/>
+                <img class="logo icon-light" src="<%=logoItem.active%>" alt="yy科技" style="opacity: 0"/>
+            </div>
+        <% }); %>
+    </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('.logo-view-wrap .logo-cell-wrap').on('mouseenter',function (){
+      $(this).children('.icon-grey').css({opacity: 0})
+      $(this).css({transform: 'scale(1.1)', transition: 'transform 0.3s ease-in-out'})
+      $(this).children('.icon-light').css({opacity: 1})
+    })
+    $('.logo-view-wrap .logo-cell-wrap').on('mouseleave',function (){
+      $(this).children('.icon-grey').css({opacity: 1})
+      $(this).css({transform: 'scale(1)', transition: 'transform 0.3s ease-in-out'})
+      $(this).children('.icon-light').css({opacity: 0})
+    })
+  })
+</script>

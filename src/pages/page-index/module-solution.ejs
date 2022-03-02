@@ -1,0 +1,30 @@
+<div class="solution-wrap">
+    <div class="solution-content">
+        <% if(solutionData.title) { %>
+            <div class="c-module-title color-white <% if(!solutionData.desc){ %>c-module-b-60<% } %>"><%=solutionData.title%></div>
+        <% } else { %>
+            <div class="c-module-title color-white <% if(!solutionData.desc){ %>c-module-b-60<% } %>">解决方案</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(solutionData.desc) { %>
+            <div class="c-module-desc color-white"><%=solutionData.desc%></div>
+        <% } %>
+
+        <div class="solution-view">
+            <% solutionData.content.forEach(function(solution){ %>
+                <div class="solution-cell fn-left">
+                    <div class="solution-cell-view">
+                        <div class="icon-wrap">
+                            <img src="<%=solution.icon%>" alt="<%=solution.alt%>"/>
+                        </div>
+                        <div class="tit color-white main-content-title2"><%=solution.name%></div>
+                        <% solution.advantage.forEach(function(ad){ %>
+                            <div class="txt main-content-text"><%=ad%></div>
+                        <% }); %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="customer-wrap">
+    <div class="customer-content">
+        <% if(customerData.title) { %>
+          <div class="c-module-title <% if(!customerData.desc){ %>c-module-b-60<% } %>"><%=customerData.title%></div>
+        <% } else { %>
+          <div class="c-module-title <% if(!customerData.desc){ %>c-module-b-60<% } %>">客户展示</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(customerData.desc) { %>
+            <div class="c-module-desc"><%=customerData.desc%></div>
+        <% } %>
+
+        <div class="tabs-view">
+            <% customerData.content.forEach(function(cus, index){ %>
+                <div class="tab-cell">
+                    <div class="box-wrap">
+                        <div class="icon-wraps">
+                            <img src="<%=cus.icon%>" alt="<%=cus.alt%>"/>
+                        </div>
+                    </div>
+                    <div class="box-text"><%=cus.title%></div>
+                </div>
+                <% if(index < customerData.content.length - 1) { %>
+                    <div class="tab-line"></div>
+                <% } %>
+            <% }); %>
+        </div>
+
+        <div class="customer-view">
+            <div class="customer-swiper-container">
+                <div class="swiper-wrapper">
+                    <% customerData.content.forEach(function(cus, index){ %>
+                        <div class="customer-view-cell swiper-slide">
+                            <div class="left-view fn-left">
+                                <div class="cover-wrap">
+                                    <img src="<%=cus.cover%>" alt="客户说"/>
+                                </div>
+                                <div class="logo-wrap">
+                                    <% cus.logo.forEach(function(logo, count){ %>
+                                        <div class="img-wrap fn-left <% if(count < cus.logo.length - 1){ %>br<% } %>">
+                                            <img src="<%=logo%>" alt="logo"/>
+                                        </div>
+                                    <% }); %>
+                                </div>
+                            </div>
+                            <div class="right-view fn-right">
+                                <div class="info-wrap">
+                                    <div class="quotation color-white fn-left">“</div>
+                                    <div class="words color-white"><%=cus.data%></div>
+                                    <div class="name-wrap">
+                                        <% if(cus.speaker && cus.speaker !== '') { %>
+                                            <div class="speaker color-white fn-right mar-l20"><%=cus.speaker%></div>
+                                        <% } %>
+                                            <div class="name color-white fn-right"><%=cus.name%></div>
+                                        <div class="line fn-right mar-r20"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(function() {
+
+    let customerSwiper = new Swiper('.customer-swiper-container', {
+      effect : 'fade',
+      noSwiping : true,
+      mousewheelControl: false,
+    });
+
+    $('.customer-wrap .tab-cell').eq(0).addClass('tab-cell-active')
+    $('.customer-wrap .tab-cell').on('click',function (){
+      $(this).addClass('tab-cell-active')
+      $(this).siblings().removeClass('tab-cell-active')
+      customerSwiper.slideTo($(this).index() / 2)
+    })
+  })
+</script>

@@ -1,0 +1,71 @@
+<div class="main-banner-wrap">
+    <div class="swiper-container-banner">
+        <div class="swiper-wrapper">
+            <% bannerData.content.forEach(function(banner){ %>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="full-banner-wrap" style="background-image: url('<%=banner.backgroundImg%>')">
+                        <div class="banner-content-wrap">
+                            <div class="main-title <% if(banner.type === 'black'){ %>banner-black<% } %>"><%=banner.title%></div>
+                            <div class="desc-item-wrap">
+                                <% banner.desc.forEach(function(desc){ %>
+                                    <div class="main-desc <% if(banner.type === 'black'){ %>banner-black<% } %>"><%=desc%></div>
+                                <% }) %>
+                            </div>
+                            <% if(banner.button){ %>
+                                <% if(banner.action === 'other'){ %>
+                                    <div class="main-btn other-action"><%=banner.btnText%></div>
+                                <% } else { %>
+                                    <a class="main-btn"
+                                    <% if(banner.nofollow){ %> ref="nofollow" <% } %>
+                                       href="<%=banner.href%>"
+                                    <% if(banner.target === '_blank'){ %> target="_blank" <% } %>
+                                    >
+                                        <%=banner.btnText%>
+                                    </a>
+                                <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+          <% }); %>
+        </div>
+        <div class="banner-pagination"></div>
+    </div>
+
+    <!--// 悬浮栏目-->
+    <div class="column-wrap">
+        <div class="column-content">
+            <% columnData.content.forEach(function(columnItem){ %>
+                <div class="column-cell fn-left">
+                    <span class="tit main-content-title color-white"><%=columnItem.title%></span>
+                    <div class="desc color-white"><%=columnItem.text%></div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+<script>
+  $(function() {
+    let bannerSwiper = new Swiper('.swiper-container-banner', {
+      autoplay : 5000,
+      speed: 500,
+      loop: true,
+      effect : 'fade',
+      noSwiping : true,
+      pagination: '.banner-pagination',
+      mousewheelControl: false,
+      watchSlidesProgress: true,
+      autoplayDisableOnInteraction: false,
+      watchSlidesVisibility: true,
+      onSlideChangeStart : function (swiper){
+        // do something to change css
+      }
+    });
+
+    $(".banner-pagination").on("click","span",function(){
+      let index = $(this).index();
+      bannerSwiper.slideTo(index + 1);
+    })
+  })
+
+</script>

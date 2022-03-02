@@ -1,0 +1,42 @@
+<div class="product-wrap">
+    <div class="product-content">
+        <% if(productData.title) { %>
+            <div class="c-module-title <% if(!productData.desc){ %>c-module-b-60<% } %>"><%=productData.title%></div>
+        <% } else { %>
+            <div class="c-module-title <% if(!productData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(productData.desc) { %>
+            <div class="c-module-desc"><%=productData.desc%></div>
+        <% } %>
+
+        <div class="product-view">
+            <% productData.content.forEach(function(product, index){ %>
+                <div class="product-cell fn-left <% if((index + 1) % productData.content.length !== 0){ %>mar-r24<% } %>">
+                    <div class="product-cell-content">
+                        <div class="product-info-content color-white">
+                            <div class="icon-wrap">
+                                <img class="p-icon normal" src="<%=product.icon%>" alt="<%=product.alt%>"/>
+                                <img class="p-icon active" src="<%=product.iconH%>" alt="<%=product.alt%>" style="display: none"/>
+                            </div>
+                            <div class="tit main-content-title2"><%=product.name%></div>
+                            <div class="txt main-content-text"><%=product.desc%></div>
+                            <div class="btn">查看详情</div>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+<script>
+  $('.product-wrap .product-cell').on('mouseenter',function (){
+    console.log($(this).children('.normal'))
+    $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.normal').hide()
+    $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.active').show()
+  }).on('mouseleave',function (){
+    $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.active').hide()
+    $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.normal').show()
+  })
+</script>

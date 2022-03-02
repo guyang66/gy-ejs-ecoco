@@ -17,7 +17,7 @@
             <div class="slider-wrap">
                 <ul class="tabs-box" style="width: <%=coreData.content.length * 308 %>px">
                     <% coreData.content.forEach(function(item, index){ %>
-                        <li class="core-1-4-cell fn-left <% if(index % 2 === 0){ %>bg-black2<% } else {%>bg-white<% } %>">
+                        <li class="core-1-4-cell fn-left <% if(index % 2 === 0){ %>bg-black3<% } else {%>bg-white<% } %>">
                             <div class="content-view">
                                 <img class="img-icon" src="<%=item.icon%>"/>
                                 <div class="tit mar-t20 <% if(index % 2 === 0){ %>color-white<% } else {%>color-black2<% } %>"><%=item.title%></div>

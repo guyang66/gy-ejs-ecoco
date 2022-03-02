@@ -1,0 +1,35 @@
+<div class="statics-wrap">
+    <div class="statics-mask"></div>
+    <div class="statics-content">
+        <% if(staticsData.title) { %>
+            <div class="c-module-title mar-t40 color-white <% if(!staticsData.desc){ %>mar-b20<% } %>"><%=staticsData.title%></div>
+        <% } else { %>
+            <div class="c-module-title color-white <% if(!staticsData.desc){ %>mar-b20<% } %>">数据统计</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(staticsData.desc) { %>
+            <div class="c-module-desc color-white"><%=staticsData.desc%></div>
+        <% } %>
+
+
+        <div class="statics-info-wrap">
+            <div class="statics-view">
+                <% staticsData.content.forEach(function(statics, index){ %>
+                    <div class="statics-cell fn-left <% if((index + 1) % 4 !== 0){ %>mar-r40<% } %> <% if( index < staticsData.content.length - 4){ %>mar-b10<% } %>">
+                        <span class="number-wrap">
+                          <span class="number counter"><%=statics.text%></span>
+                          <span class="number">+</span>
+                        </span>
+                        <div class="txt"><%=statics.name%></div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('.statics-wrap .counter').countUp();
+  })
+</script>

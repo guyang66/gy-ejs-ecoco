@@ -24,6 +24,7 @@ const routerMaps = arrayToObj(router, 'name');
  */
 const htmlRender = ({
   key,
+  hasBanner = true,
   hasFooter = true,
   container,
   bannerData = {},
@@ -35,7 +36,7 @@ const htmlRender = ({
     ...configs,
     title: `默认标题`, // 页面标题
     header: header({ key, logo, menus, telicon}),
-    banner: banner({bannerData}),
+    banner: hasBanner ? banner({bannerData}) : '',
     tabs: tabs({tabsData}),
     container: container || '',
     footer: hasFooter ? footer({footerData, logo}) : ''
