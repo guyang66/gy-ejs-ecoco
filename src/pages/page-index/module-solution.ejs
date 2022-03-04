@@ -1,30 +1,139 @@
 <div class="solution-wrap">
     <div class="solution-content">
         <% if(solutionData.title) { %>
-            <div class="c-module-title color-white <% if(!solutionData.desc){ %>c-module-b-60<% } %>"><%=solutionData.title%></div>
+            <div class="c-module-title color-white transition-hide-bottom <% if(!solutionData.desc){ %>c-module-b-60<% } %>"><%=solutionData.title%></div>
         <% } else { %>
-            <div class="c-module-title color-white <% if(!solutionData.desc){ %>c-module-b-60<% } %>">解决方案</div>
+            <div class="c-module-title color-white transition-hide-bottom <% if(!solutionData.desc){ %>c-module-b-60<% } %>">解决方案</div>
         <% } %>
 
         <!--描述-->
         <% if(solutionData.desc) { %>
-            <div class="c-module-desc color-white"><%=solutionData.desc%></div>
+            <div class="c-module-desc color-white transition-hide-bottom"><%=solutionData.desc%></div>
         <% } %>
 
-        <div class="solution-view">
-            <% solutionData.content.forEach(function(solution){ %>
-                <div class="solution-cell fn-left">
+        <div class="solution-view transition-hide-bottom">
+            <% solutionData.content.forEach(function(solution, index){ %>
+                <div class="solution-cell"
+                     style="top:<%=Math.floor((index / 5))* 220 + 24 * (index < 5 ? 0 : 1)%>px;left:<%=(index % 5) * 216%>px"
+                     topValue="<%=Math.floor((index / 5))* 220 + 24 * (index < 5 ? 0 : 1)%>"
+                     leftValue="<%=(index % 5) * 216%>"
+                >
                     <div class="solution-cell-view">
-                        <div class="icon-wrap">
-                            <img src="<%=solution.icon%>" alt="<%=solution.alt%>"/>
+                        <div class="normal-box">
+                            <div class="icon-wrap">
+                                <img src="<%=solution.icon%>" alt="<%=solution.alt%>"/>
+                            </div>
+                            <div class="name color-white main-content-title2"><%=solution.name%></div>
+                            <% solution.advantage.forEach(function(ad){ %>
+                                <div class="txt main-content-text"><%=ad%></div>
+                            <% }); %>
                         </div>
-                        <div class="tit color-white main-content-title2"><%=solution.name%></div>
-                        <% solution.advantage.forEach(function(ad){ %>
-                            <div class="txt main-content-text"><%=ad%></div>
-                        <% }); %>
+
+                        <div class="active-box tr" style="display: none">
+                            <div class="tit color-white main-content-title2"><%=solution.title%></div>
+                            <div class="desc color-white main-content-text"><%=solution.desc%></div>
+                            <div class="tag-view">
+                                <% solution.advantage.forEach(function(ad){ %>
+                                <div class="tag-wrap">
+                                    <div class="icon-wrap fn-left">
+                                        <img src="/assets/images/common/gou-circle.svg" alt="解决方案"/>
+                                    </div>
+                                    <div class="desc main-content-text"><%=ad%></div>
+                                </div>
+                                <% }); %>
+                            </div>
+                            <a class="btn">查看完整解决方案 ></a>
+                        </div>
                     </div>
                 </div>
             <% }); %>
         </div>
     </div>
 </div>
+
+<script>
+
+  /**
+   *
+   * 计算位置 此计算规则只适用于2排（大于10 大于5个数），要适应不同个数，需要再适配
+   * 在hover那一列前面的元素位置不用动
+   * 在hover的那一列，hover的那个元素需要变大，另一个则后移
+   * @param idx
+   */
+
+  function changePosition(idx){
+    let columnCount = idx % 5
+    let rowCount = Math.floor(idx / 5)
+    let nodes = $('.solution-wrap .solution-cell')
+    let currentNode = nodes.eq(idx)
+    let length = nodes.length
+
+    // step.1 先计算当前选择元素的新位置
+    let leftValue = currentNode.attr("leftValue")
+    currentNode.css({left: leftValue + 'px', top : 0 + 'px', width: '412px',height: '456px'})
+
+    for(let i = 0; i < nodes.length; i++){
+      if(idx === i) {
+        // step.2 找到选中的元素直接结束，因为选中的元素在循环外step.1 已经计算过了，跳过此次计算
+        continue
+      }
+
+      if(idx < 5){
+        /* 第一行 */
+        // step.3 选中元素所在列前面列的所有元素还原到最初状态(选中元素所在列后面列的所有元素则需要重新计算位置)
+        if(i % 5 < columnCount){
+          let t = nodes.eq(i).attr("topValue")
+          let l = nodes.eq(i).attr("leftValue")
+          nodes.eq(i).css({left: l + 'px', top :  t + 'px', width: '220px', height: '216px'})
+          continue
+        }
+
+        // isCurrentColumnNode 是否是选中元素所在列的元素（因为step.2 过滤掉了选中元素，并且就2行，所以isCurrentColumnNode其实就是用于找到选中元素所在列的另一个元素）
+        let isCurrentColumnNode = Math.floor(i / 5) === rowCount
+        // step.4 剩余的元素的计算
+        let t = nodes.eq(i).attr("topValue")
+        let l = nodes.eq(i).attr("leftValue")
+        // 选中元素所在列的另一个元素需要后移1列距离，其他元素则是后移2列的距离
+        let nextL = l - 0 + 412 - ( isCurrentColumnNode ? 216 : 0)
+        nodes.eq(i).css({left: nextL + 'px', top : t + 'px',width: '220px', height: '216px'})
+      } else {
+        /* 第二行 */
+        if(i % 5 < columnCount){
+          let t = nodes.eq(i).attr("topValue")
+          let l = nodes.eq(i).attr("leftValue")
+          nodes.eq(i).css({left: l + 'px', top :  t + 'px', width: '220px', height: '216px'})
+          continue
+        }
+        let s = length - idx
+        if(i < s + columnCount){
+          // 大概思路就是
+          // 1.选中元素所在列之前列的所有元素还原最初位置
+          // 2.选中元素重新计算位置
+          // 3.选中元素所在列之后列的所有元素重新计算位置
+          //  3.1 计算选中元素所在列之后列的所有元素分2行，每行是元素的个数
+          //  3.2 计算第一行每个元素的位置，位置后移，没有补位的元素
+          //  3.3 计算第二行每个元素的位置，位置后移，有补位的元素，特殊的元素特殊补位
+          let t = Math.floor((i / (s + columnCount))) * 220 + 24 * (i < (s + columnCount) ? 0 : 1)
+          let l = (i % (s + columnCount)) * 216 + 412
+          nodes.eq(i).css({left: l + 'px', top :  t + 'px', width: '220px', height: '216px'})
+        } else {
+          let computedI = i < idx ? i : i - (idx % 4)
+          let t = Math.floor((computedI / (s + columnCount))) * 220 + 24 * (computedI < (s + columnCount) ? 0 : 1)
+          let l = (computedI % s) * 216 + 412  + (columnCount * 216)
+          nodes.eq(i).css({left: l + 'px', top :  t + 'px', width: '220px', height: '216px'})
+        }
+      }
+    }
+
+    currentNode.children('.solution-cell-view').children('.active-box').show().removeClass('tr')
+    currentNode.siblings().children('.solution-cell-view').children('.active-box').hide().addClass('tr')
+
+  }
+
+  $('.solution-wrap .solution-cell').on('mouseenter',function (){
+    changePosition($(this).index())
+  })
+
+  changePosition(2)
+
+</script>

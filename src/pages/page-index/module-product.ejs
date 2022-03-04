@@ -1,17 +1,17 @@
 <div class="product-wrap">
     <div class="product-content">
         <% if(productData.title) { %>
-            <div class="c-module-title <% if(!productData.desc){ %>c-module-b-60<% } %>"><%=productData.title%></div>
+            <div class="c-module-title transition-hide-bottom <% if(!productData.desc){ %>c-module-b-60<% } %>"><%=productData.title%></div>
         <% } else { %>
-            <div class="c-module-title <% if(!productData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+            <div class="c-module-title transition-hide-bottom <% if(!productData.desc){ %>c-module-b-60<% } %>">产品优势</div>
         <% } %>
 
         <!--描述-->
         <% if(productData.desc) { %>
-            <div class="c-module-desc"><%=productData.desc%></div>
+            <div class="c-module-desc transition-hide-bottom"><%=productData.desc%></div>
         <% } %>
 
-        <div class="product-view">
+        <div class="product-view transition-hide-bottom">
             <% productData.content.forEach(function(product, index){ %>
                 <div class="product-cell fn-left <% if((index + 1) % productData.content.length !== 0){ %>mar-r24<% } %>">
                     <div class="product-cell-content">
@@ -28,11 +28,13 @@
                 </div>
             <% }); %>
         </div>
+
+        <a class="more-btn transition-hide-bottom">查看更多 > </a>
+
     </div>
 </div>
 <script>
   $('.product-wrap .product-cell').on('mouseenter',function (){
-    console.log($(this).children('.normal'))
     $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.normal').hide()
     $(this).children('.product-cell-content').children('.product-info-content').children('.icon-wrap').children('.active').show()
   }).on('mouseleave',function (){

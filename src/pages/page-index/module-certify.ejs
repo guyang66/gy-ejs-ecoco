@@ -1,0 +1,41 @@
+<div class="certify-wrap">
+    <div class="certify-content">
+        <% if(certifyData.title) { %>
+           <div class="c-module-title transition-hide-bottom <% if(!certifyData.desc){ %>c-module-b-60<% } %>"><%=certifyData.title%></div>
+        <% } else { %>
+           <div class="c-module-title transition-hide-bottom <% if(!certifyData.desc){ %>c-module-b-60<% } %>">资质认证</div>
+        <% } %>
+
+        <!--描述-->
+        <% if(certifyData.desc) { %>
+            <div class="c-module-desc transition-hide-bottom"><%=certifyData.desc%></div>
+        <% } %>
+
+
+        <div class="certify-view transition-hide-bottom">
+            <div class="certify-swiper-container">
+                <div class="swiper-wrapper">
+                    <% certifyData.content.forEach(function(certify,index){ %>
+                        <div class="swiper-slide">
+                            <div class="icon-wrap">
+                                <img src="<%=certify.icon%>" alt="<%=certify.alt%>"/>
+                            </div>
+                            <div class="txt"><%=certify.name%></div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(function() {
+    var swiper = new Swiper('.certify-swiper-container', {
+      slidesPerView: 6,
+      autoplay: 2000,
+      slidesPerColumn: 2,
+      paginationClickable: true,
+      spaceBetween: 0
+    });
+  })
+</script>

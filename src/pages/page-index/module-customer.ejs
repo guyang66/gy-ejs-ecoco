@@ -1,17 +1,17 @@
 <div class="customer-wrap">
     <div class="customer-content">
         <% if(customerData.title) { %>
-          <div class="c-module-title <% if(!customerData.desc){ %>c-module-b-60<% } %>"><%=customerData.title%></div>
+          <div class="c-module-title transition-hide-bottom <% if(!customerData.desc){ %>c-module-b-60<% } %>"><%=customerData.title%></div>
         <% } else { %>
-          <div class="c-module-title <% if(!customerData.desc){ %>c-module-b-60<% } %>">客户展示</div>
+          <div class="c-module-title transition-hide-bottom <% if(!customerData.desc){ %>c-module-b-60<% } %>">客户展示</div>
         <% } %>
 
         <!--描述-->
         <% if(customerData.desc) { %>
-            <div class="c-module-desc"><%=customerData.desc%></div>
+            <div class="c-module-desc transition-hide-bottom"><%=customerData.desc%></div>
         <% } %>
 
-        <div class="tabs-view">
+        <div class="tabs-view transition-hide-bottom">
             <% customerData.content.forEach(function(cus, index){ %>
                 <div class="tab-cell">
                     <div class="box-wrap">
@@ -27,7 +27,7 @@
             <% }); %>
         </div>
 
-        <div class="customer-view">
+        <div class="customer-view transition-hide-bottom">
             <div class="customer-swiper-container">
                 <div class="swiper-wrapper">
                     <% customerData.content.forEach(function(cus, index){ %>

@@ -1,5 +1,5 @@
 <div class="logo-view-wrap">
-    <div class="logo-view-content">
+    <div class="logo-view-content transition-hide-bottom">
         <% logoData.content.forEach(function(logoItem, index){ %>
             <div class="logo-cell-wrap fn-left <% if((index + 1) % 6 !== 0){ %>mar-r24<% } %> <% if( index < logoData.content.length - 6){ %>mar-b24<% } %>">
                 <img class="logo icon-grey" src="<%=logoItem.normal%>" alt="yy科技"/>
