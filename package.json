@@ -4,7 +4,7 @@
   "description": "yy科技官网",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config build/webpack.config.js",
-    "dev": "",
+    "dev": "./script/filter/filter_start.sh -f $ENTRY_FILTER",
     "build": "cross-env NODE_ENV=production webpack --progress --config build/webpack.config.js",
     "tar": ""
   },
@@ -14,6 +14,7 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
+    "chalk": "^5.0.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
     "cross-env": "^7.0.3",
@@ -25,7 +26,7 @@
     "mini-css-extract-plugin": "^1.3.4",
     "postcss": "^8.2.4",
     "postcss-loader": "^4.1.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^7.4.2",
     "style-loader": "^2.0.0",
     "stylus": "^0.54.8",
     "stylus-loader": "^6.1.0",
