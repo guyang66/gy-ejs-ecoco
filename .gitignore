@@ -26,6 +26,7 @@ yarn-error.log*
 
 package-lock.json
 tgz
+*.tar.gz
 .vscode
 jsconfig.json
 .eslintignore

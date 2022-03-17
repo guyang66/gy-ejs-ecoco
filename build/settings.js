@@ -1,10 +1,10 @@
 const path =  require('path');
-const routers = require('../src/configs/router'); // 静态路由
+const routers = require('../src/config/router'); // 静态路由
 
 // 配置项
 const settings = {
   context: path.resolve(__dirname, '../src/'),  // 开发基础目录
-  pathContentBase: path.resolve(__dirname, '../src/pages'), // devser内容来源
+  pathContentBase: path.resolve(__dirname, '../src/page'), // devser内容来源
   pathEntry: paths=> path.resolve(__dirname, `../src/${paths}/main`),  // 入口文件路径
   pathTemplate: paths=> path.resolve(__dirname, `../src/${paths}/index`),  // 页面模板路径
   pathStaticCopy: ['src/assets', 'assets'], // 打包时静态文件copy路径
