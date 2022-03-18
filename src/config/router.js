@@ -201,5 +201,73 @@ module.exports = [
     name: 'product/vegetables/pumpkin',
     path: 'page/product/vegetables/page-pumpkin',
     title: '芹菜'
+  },
+
+  // 产品
+  // 产品-智能引擎
+  {
+    name: 'product/ai/speech',
+    path: 'page/product/ai/page-speech',
+    title: 'AI语音'
+  },
+  {
+    name: 'product/ai/discriminate',
+    path: 'page/product/ai/page-discriminate',
+    title: 'AI识别'
+  },
+  {
+    name: 'product/ai/algorithm',
+    path: 'page/product/ai/page-algorithm',
+    title: 'AI算法'
+  },
+  {
+    name: 'product/ai/enterprise',
+    path: 'page/product/ai/page-enterprise',
+    title: '企业云'
+  },
+  {
+    name: 'product/ai/digital',
+    path: 'page/product/ai/page-digital',
+    title: '数字云'
+  },
+  {
+    name: 'product/ai/qingshui',
+    path: 'page/product/ai/page-qingshui',
+    title: '清水'
+  },
+  {
+    name: 'product/ai/puti',
+    path: 'page/product/ai/page-puti',
+    title: '数字云'
+  },
+  {
+    name: 'product/ai/shuying',
+    path: 'page/product/ai/page-shuying',
+    title: '数字云'
+  },
+  {
+    name: 'product/ai/tianyan',
+    path: 'page/product/ai/page-tianyan',
+    title: '天眼杀'
+  },
+  {
+    name: 'product/ai/titi',
+    path: 'page/product/ai/page-titi',
+    title: '蹄蹄智能办公'
+  },
+  {
+    name: 'product/ai/colgi',
+    path: 'page/product/ai/page-colgi',
+    title: '干预系统colgi'
+  },
+  {
+    name: 'product/ai/xiyu',
+    path: 'page/product/ai/page-xiyu',
+    title: '细雨'
+  },
+  {
+    name: 'product/ai/uav',
+    path: 'page/product/ai/page-uav',
+    title: '智能无人机'
   }
 ];

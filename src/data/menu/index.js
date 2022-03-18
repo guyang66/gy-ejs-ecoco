@@ -354,15 +354,15 @@ const menus = [
                   data: [
                     {
                       name: 'AI语音',
-                      href: ''
-                    },
-                    {
-                      name: 'AI识别',
-                      href: ''
+                      href: '/product/ai/speech.html',
                     },
                     {
                       name: 'AI算法',
-                      href: ''
+                      href: '/product/ai/algorithm.html',
+                    },
+                    {
+                      name: 'AI识别',
+                      href: '/product/ai/discriminate.html',
                     }
                   ]
                 },
@@ -371,11 +371,11 @@ const menus = [
                   data: [
                     {
                       name: '数字云',
-                      href: ''
+                      href: '/product/ai/digital.html',
                     },
                     {
                       name: '企业云',
-                      href: ''
+                      href: '/product/ai/enterprise.html',
                     }
                   ]
                 },
@@ -384,7 +384,7 @@ const menus = [
                   data: [
                     {
                       name: 'alpha-数影',
-                      href: '',
+                      href: '/product/ai/shuying.html',
                       tags: [
                         {
                           text: 'NEW',
@@ -404,11 +404,11 @@ const menus = [
                   data: [
                     {
                       name: '智能预判系统——清水',
-                      href: ''
+                      href: '/product/ai/qingshui.html',
                     },
                     {
                       name: '智能管理系统——菩提',
-                      href: ''
+                      href: '/product/ai/puti.html',
                     }
                   ]
                 },
@@ -417,11 +417,11 @@ const menus = [
                   data: [
                     {
                       name: '蹄蹄智能办公',
-                      href: ''
+                      href: '/product/ai/titi.html',
                     },
                     {
                       name: '天眼杀',
-                      href: ''
+                      href: '/product/ai/tianyan.html',
                     },
                   ]
                 }
@@ -434,8 +434,8 @@ const menus = [
                   title: '风控系统',
                   data: [
                     {
-                      name: '初号机1.0风控系统',
-                      href: '',
+                      name: '细雨风控系统1.0',
+                      href: '/product/ai/xiyu.html',
                       tags: [
                         {
                           text: 'HOT',
@@ -444,8 +444,8 @@ const menus = [
                       ]
                     },
                     {
-                      name: '智能干预系统',
-                      href: ''
+                      name: '智能干预系统——colgi',
+                      href: '/product/ai/colgi.html',
                     },
                   ]
                 }
@@ -459,7 +459,7 @@ const menus = [
                   data: [
                     {
                       name: '智能工作无人机',
-                      href: '',
+                      href: '/product/ai/uav.html',
                       tags: [
                         {
                           text: 'HOT',
