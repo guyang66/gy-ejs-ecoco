@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const entryFilters = require('./entryFilters.js');
 const settings = require('../../build/settings');
-const chalk = require('chalk')
 
 const entries = function () {
   let map = {};
@@ -35,7 +34,7 @@ let outPutFileName = path.resolve(__dirname, 'tmp_entrys.js');
 try {
   fs.unlinkSync(outPutFileName);
 } catch (err) {
-
+  console.log('fs.unlinkSync fail!' + err.toString())
 }
 
 let fd;
@@ -47,6 +46,7 @@ try {
   fs.appendFileSync(fd, ';\n','utf8')
   fs.appendFileSync(fd, 'module.exports = filters;', 'utf8')
 } catch (err) {
+  console.log( 'fs写入失败：' + err.toString())
 } finally {
   if (fd !== undefined) {
     fs.closeSync(fd);

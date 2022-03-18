@@ -123,5 +123,83 @@ module.exports = [
     name: 'product/fruits/persimmon',
     path: 'page/product/fruits/page-persimmon',
     title: '柿子'
+  },
+
+  // 产品
+  // 产品-水果
+  {
+    name: 'product/vegetables/radish',
+    path: 'page/product/vegetables/page-radish',
+    title: '红萝卜'
+  },
+  {
+    name: 'product/vegetables/onion',
+    path: 'page/product/vegetables/page-onion',
+    title: '大葱'
+  },
+  {
+    name: 'product/vegetables/cucumber',
+    path: 'page/product/vegetables/page-cucumber',
+    title: '黄瓜'
+  },
+  {
+    name: 'product/vegetables/bolt',
+    path: 'page/product/vegetables/page-bolt',
+    title: '菜苔'
+  },
+  {
+    name: 'product/vegetables/amaranthus',
+    path: 'page/product/vegetables/page-amaranthus',
+    title: '菜苔'
+  },
+  {
+    name: 'product/vegetables/lotus',
+    path: 'page/product/vegetables/page-lotus',
+    title: '菜苔'
+  },
+  {
+    name: 'product/vegetables/mushroom',
+    path: 'page/product/vegetables/page-mushroom',
+    title: '菜苔'
+  },
+  {
+    name: 'product/vegetables/cabbage',
+    path: 'page/product/vegetables/page-cabbage',
+    title: '白菜'
+  },
+  {
+    name: 'product/vegetables/peas',
+    path: 'page/product/vegetables/page-peas',
+    title: '豌豆'
+  },
+  {
+    name: 'product/vegetables/bilter',
+    path: 'page/product/vegetables/page-bilter',
+    title: '苦瓜'
+  },
+  {
+    name: 'product/vegetables/celery',
+    path: 'page/product/vegetables/page-celery',
+    title: '芹菜'
+  },
+  {
+    name: 'product/vegetables/ginger',
+    path: 'page/product/vegetables/page-ginger',
+    title: '芹菜'
+  },
+  {
+    name: 'product/vegetables/eggplant',
+    path: 'page/product/vegetables/page-eggplant',
+    title: '芹菜'
+  },
+  {
+    name: 'product/vegetables/chili',
+    path: 'page/product/vegetables/page-chili',
+    title: '芹菜'
+  },
+  {
+    name: 'product/vegetables/pumpkin',
+    path: 'page/product/vegetables/page-pumpkin',
+    title: '芹菜'
   }
 ];

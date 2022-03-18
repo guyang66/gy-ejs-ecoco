@@ -1,2 +1,2 @@
-var entryFilters = ['fruits/banana','index',''];
+var entryFilters = ['vegetables','index',''];
 module.exports = entryFilters;

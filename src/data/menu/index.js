@@ -206,8 +206,8 @@ const menus = [
                   title: '有机蔬菜',
                   data: [
                     {
-                      name: '杭白菜',
-                      href: '',
+                      name: '红萝卜',
+                      href: '/product/vegetables/radish.html',
                       tags: [
                         {
                           text: 'HOT',
@@ -216,8 +216,8 @@ const menus = [
                       ]
                     },
                     {
-                      name: '毛毛菜',
-                      href: '',
+                      name: '黄瓜',
+                      href: '/product/vegetables/cucumber.html',
                       tags: [
                         {
                           text: 'HOT',
@@ -226,12 +226,12 @@ const menus = [
                       ]
                     },
                     {
-                      name: '高山娃娃菜',
-                      href: ''
+                      name: '大葱',
+                      href: '/product/vegetables/onion.html',
                     },
                     {
-                      name: '高山甜玉米',
-                      href: '',
+                      name: '菜苔',
+                      href: '/product/vegetables/bolt.html',
                       tags: [
                         {
                           text: 'NEW',
@@ -240,8 +240,8 @@ const menus = [
                       ]
                     },
                     {
-                      name: '早春雪地青',
-                      href: ''
+                      name: '苋菜',
+                      href: '/product/vegetables/amaranthus.html'
                     },
                   ]
                 },
@@ -249,8 +249,8 @@ const menus = [
                   title: '日日鲜蔬菜',
                   data: [
                     {
-                      name: '卷心菜',
-                      href: '',
+                      name: '藕',
+                      href: '/product/vegetables/lotus.html',
                       tags: [
                         {
                           text: 'HOT',
@@ -259,20 +259,20 @@ const menus = [
                       ]
                     },
                     {
-                      name: '小香芹',
-                      href: ''
+                      name: '白菜',
+                      href: '/product/vegetables/cabbage.html'
                     },
                     {
-                      name: '福建小香菇',
-                      href: ''
+                      name: '豌豆',
+                      href: '/product/vegetables/peas.html'
                     },
                     {
-                      name: '鸡毛菜',
-                      href: ''
+                      name: '苦瓜',
+                      href: '/product/vegetables/bilter.html'
                     },
                     {
-                      name: '花椰菜',
-                      href: ''
+                      name: '芹菜',
+                      href: '/product/vegetables/celery.html'
                     },
                   ]
                 }
@@ -285,20 +285,20 @@ const menus = [
                   title: '菌菇类',
                   data: [
                     {
-                      name: '平菇300g',
-                      href: ''
+                      name: '香菇',
+                      href: '/product/vegetables/mushroom.html'
                     },
                     {
-                      name: '杏鲍菇',
-                      href: ''
+                      name: '生姜',
+                      href: '/product/vegetables/ginger.html'
                     },
                     {
-                      name: '金针菇',
-                      href: ''
+                      name: '茄子',
+                      href: '/product/vegetables/eggplant.html'
                     },
                     {
-                      name: '有机花菇',
-                      href: ''
+                      name: '生姜',
+                      href: '/product/vegetables/ginger.html'
                     },
                   ]
                 }
@@ -311,22 +311,8 @@ const menus = [
                   title: '豆制品/净菜',
                   data: [
                     {
-                      name: '祖明兰花香干',
-                      href: ''
-                    },
-                    {
-                      name: '油豆腐',
-                      href: ''
-                    },
-                    {
-                      name: '清水老豆腐',
-                      href: '',
-                      tags: [
-                        {
-                          text: 'HOT',
-                          type: 'hot'
-                        }
-                      ]
+                      name: '南瓜',
+                      href: '/product/vegetables/pumpkin.html'
                     }
                   ]
                 }
@@ -339,39 +325,15 @@ const menus = [
                   title: '根茎类/茄瓜类',
                   data: [
                     {
-                      name: '高山透心胡萝卜',
-                      href: '',
+                      name: '辣椒',
+                      href: '/product/vegetables/chili.html',
                       tags: [
                         {
                           text: 'NEW',
                           type: 'new'
                         }
                       ]
-                    },
-                    {
-                      name: '去皮红洋葱',
-                      href: ''
-                    },
-                    {
-                      name: '长白萝卜',
-                      href: ''
-                    },
-                    {
-                      name: '黄心土豆',
-                      href: ''
-                    },
-                    {
-                      name: '紫薯',
-                      href: ''
-                    },
-                    {
-                      name: '大红番茄',
-                      href: ''
-                    },
-                    {
-                      name: '千岛湖长茄子',
-                      href: ''
-                    },
+                    }
                   ]
                 }
               ]
