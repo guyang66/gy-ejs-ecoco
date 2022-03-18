@@ -575,11 +575,11 @@ const menus = [
                   data: [
                     {
                       name: '离线算法',
-                      href: ''
+                      href:  '/product/dataserver/offlinealgorithm.html',
                     },
                     {
                       name: '智能推荐系统',
-                      href: '',
+                      href: '/product/dataserver/recommend.html',
                       tags: [
                         {
                           text: 'HOT',
@@ -589,11 +589,11 @@ const menus = [
                     },
                     {
                       name: '聚类算法',
-                      href: ''
+                      href: '/product/dataserver/cluster.html',
                     },
                     {
                       name: '神经网络',
-                      href: ''
+                      href: '/product/dataserver/neuralnetwork.html',
                     }
                   ]
                 },
@@ -607,11 +607,11 @@ const menus = [
                   data: [
                     {
                       name: '离线开发',
-                      href: ''
+                      href: '/product/dataserver/offlinedevelop.html',
                     },
                     {
                       name: '实时开发',
-                      href: ''
+                      href: '/product/dataserver/onlinedevelop.html',
                     },
                   ]
                 }

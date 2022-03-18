@@ -1,2 +1,2 @@
-var entryFilters = ['ai','index',''];
+var entryFilters = ['dataserver','index',''];
 module.exports = entryFilters;

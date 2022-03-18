@@ -269,5 +269,38 @@ module.exports = [
     name: 'product/ai/uav',
     path: 'page/product/ai/page-uav',
     title: '智能无人机'
-  }
+  },
+
+  // 产品
+  // 产品-数据与服务
+  {
+    name: 'product/dataserver/cluster',
+    path: 'page/product/dataserver/page-cluster',
+    title: '聚类算法'
+  },
+  {
+    name: 'product/dataserver/offlinealgorithm',
+    path: 'page/product/dataserver/page-offline-algorithm',
+    title: '离线算法'
+  },
+  {
+    name: 'product/dataserver/onlinedevelop',
+    path: 'page/product/dataserver/page-online-develop',
+    title: '智能无人机'
+  },
+  {
+    name: 'product/dataserver/offlinedevelop',
+    path: 'page/product/dataserver/page-offline-develop',
+    title: '智能无人机'
+  },
+  {
+    name: 'product/dataserver/neuralnetwork',
+    path: 'page/product/dataserver/page-neural-network',
+    title: '智能无人机'
+  },
+  {
+    name: 'product/dataserver/recommend',
+    path: 'page/product/dataserver/page-recommend',
+    title: '智能无人机'
+  },
 ];
