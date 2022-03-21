@@ -1,74 +1,66 @@
-import a1 from '@/assets/images/product/fruits/banana/apply/a1.jpg'
-import a2 from '@/assets/images/product/fruits/banana/apply/a2.jpg'
+import a1 from '@/assets/images/product/ai/colgi/apply/a1.jpg'
+import a2 from '@/assets/images/product/ai/colgi/apply/a2.jpg'
 
-import p1 from '@/assets/images/product/logo/caomei-blue.svg'
-import p2 from '@/assets/images/product/logo/putao-blue.svg'
-import p3 from '@/assets/images/product/logo/niuyouguo-blue.svg'
-import p4 from '@/assets/images/product/logo/xigua-blue.svg'
+import p1 from '@/assets/images/product/logo/ai/shuziyun.svg'
+import p2 from '@/assets/images/product/logo/ai/suanfa.svg'
+import p3 from '@/assets/images/product/logo/ai/titi.svg'
 
 const data = {
   content: [
     {
       "image": a1,
-      "alt": "高州矮香蕉",
+      "alt": "双子系统",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "高州矮香蕉",
-      "desc": "高州矮香蕉属矮干型香牙蕉，是高州市地方品种之一。植株假茎矮而粗壮，假茎高150～170厘米；叶宽大、叶柄短、叶鞘距密；果槽短，果梳距密、果指数多、果型稍小、果指长16～20厘米，果实品质较优良。",
+      "title": "双子系统",
+      "desc": "双子系统行员库奇最爱两件事物：一是飞行，二是自己英俊的小胡子，排名不分先后。离开班德尔城以后，他在皮尔特沃夫安家，从此爱上了这里奇异壮观的各式机器。他决定投身于飞行装置的开发事业，带领一群老练飞行员组成了一只空中防御力量。",
       "buttonText": "联系我们",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "调整种植密度，增强蕉园的通风透光性。",
-        "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
-        "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
+        "炸弹越大越好，引线越短越好，带着这种喜好的约德尔人吉格斯就是天生的爆炸狂人",
+        "他曾是皮尔特沃夫一位发明家的助手，不过因为自己千篇一律的生活而感到无聊，后来和一个名为金克丝的蓝头发小疯子交上了朋友",
+        "恐吓一直伴随着炼金男爵和普通市民之流"
       ],
       "products": [
         {
-          "name": "草莓",
+          "name": "数字云",
           "icon": p1,
-          "key": "",
-          "alt": "草莓",
-          "href": "/banana.html"
-        }
+          "key": "digital",
+          "alt": "digital",
+          "href": "/product/ai/digital.html"
+        },
+        {
+          "name": "AI算法",
+          "icon": p2,
+          "key": "algorithm",
+          "alt": "algorithm",
+          "href": "/product/ai/algorithm.html"
+        },
       ]
     },
     {
       "image": a2,
-      "alt": "河口高把香蕉",
+      "alt": "能量守恒系统",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "河口高把香蕉",
-      "desc": "植株高大、假茎高260～300厘米，梳形整齐、果指数较多，通常每果穗有果10梳，果指200多个，果指长15～21厘米；果实品质柔滑香甜。品质好；在一般栽培条件下单株产量为20～40千克，个别高产单株达50千克。该品种产量高，品质好十分适宜高温多湿及肥水充足的地区栽种。",
+      "title": "能量守恒系统",
+      "desc": "就是她云游符文之地的伙伴。璐璐可以突发奇想地重塑现实，改变世界的本质结构，改造这个平凡的物质领域中任何让她感觉是限制的东西。虽然其他人对她的魔法颇有微词，往好听了说是一种异象，往难听了说是一种危害。",
       "buttonText": "申请试用",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "改良土壤，增施有机肥（如沤熟的人畜粪便，腐殖酸和氨基酸等）。",
-        "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
-        "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
+        "均衡教派中，有一位资历最老的成员——约德尔人凯南",
+        "于魔法的约德尔巫师。几乎没有哪个凡人敢碰的恐",
+        "至今数授是一个才华横溢但古怪反常的约德尔科学家"
       ],
       "products": [
         {
-          "name": "葡萄",
-          "icon": p2,
-          "key": "",
-          "alt": "葡萄",
-          "href": "/banana.html"
-        },
-        {
-          "name": "牛油果",
+          "name": "titi",
           "icon": p3,
-          "key": "",
-          "alt": "牛油果",
-          "href": "/banana.html"
-        },
-        {
-          "name": "西瓜",
-          "icon": p4,
-          "key": "",
-          "alt": "西瓜",
-          "href": "/banana.html"
+          "key": "titi",
+          "alt": "titi",
+          "href": "/product/ai/titi.html"
         }
       ]
     }

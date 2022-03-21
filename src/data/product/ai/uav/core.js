@@ -1,42 +1,35 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/ai/uav/core/c1.svg'
+import a2 from '@/assets/images/product/ai/uav/core/c2.svg'
+import a3 from '@/assets/images/product/ai/uav/core/c3.svg'
+import a4 from '@/assets/images/product/ai/uav/core/c4.svg'
 
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
   content: [
     {
-      "title": "文档可靠",
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "title": "柳傲天",
+      "text": "为倡导男女平等，圣上推出女子入学政策，却遭到保守势力的暗中反对",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "柳傲天"
     },
     {
-      "title": "即开即用",
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "title": "路云霏",
+      "text": "柳傲天意外发现了弘文学院里竟然深藏着一只保守势力的黑手，为了揪出这只神秘黑手，柳傲天不顾安危，挺身迎战",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "路云霏"
     },
     {
-      "title": "装备精良",
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "title": "孙大山",
+      "text": "随着地球的自转，除了在转轴上的两个箭头，每个从地心往外指的箭头都在旋转。考虑地球在自转一小时后的变换",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "孙大山"
     },
     {
-      "title": "操作简单",
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "title": "乃元芳",
+      "text": "路云霏一路追来弘文学院，也成为了一名女老师。这对欢喜冤家在吵吵闹闹的同时，还解决了学生的烦恼",
       "icon": a4,
-      "alt": "香蕉"
-    },
-    {
-      "title": "简单灵活",
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
-      "icon": a5,
-      "alt": "香蕉"
+      "alt": "乃元芳"
     }
   ],
 }

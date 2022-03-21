@@ -1,40 +1,40 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/ai/enterprise/core/c1.svg'
+import a2 from '@/assets/images/product/ai/enterprise/core/c2.svg'
+import a3 from '@/assets/images/product/ai/enterprise/core/c3.svg'
+import a4 from '@/assets/images/product/ai/enterprise/core/c4.svg'
+import a5 from '@/assets/images/product/ai/enterprise/core/c5.svg'
 
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
   content: [
     {
-      "title": "文档可靠",
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "title": "信息资源管理",
+      "text": "ERP 的提出与计算机技术的高度发展是分不开的，用户对系统有更大的主动性，作为计算机辅助管理所涉及的功能已远远超过 MRP II 的范围",
       "icon": a1,
       "alt": "香蕉"
     },
     {
-      "title": "即开即用",
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "title": "物资资源",
+      "text": "ERP 是一种主要面向制造行业进行物质资源、资金资源和信息资源集成一体化管理的企业信息管理系统。ERP 是一个以管理会计 为核心可以提供跨",
       "icon": a2,
       "alt": "香蕉"
     },
     {
-      "title": "装备精良",
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "title": "财务资源管理",
+      "text": "重新构建企业的业务和信息流程及组织结构，使企业在市场竞争中有更大的能动性",
       "icon": a3,
       "alt": "香蕉"
     },
     {
-      "title": "操作简单",
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "title": "运输管理",
+      "text": "人们不仅可以把一个汉字的笔划或偏旁等单元组成一个组块，而且能把经常在一起出现的字或词组成组块单位来加以识别",
       "icon": a4,
       "alt": "香蕉"
     },
     {
-      "title": "简单灵活",
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
+      "title": "过程控制接口",
+      "text": "SQL结构化查询语言、图形用户界面、4GL/CASE、窗口技术、人工智能、仿真技术等等",
       "icon": a5,
       "alt": "香蕉"
     }

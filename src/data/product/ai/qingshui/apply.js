@@ -1,74 +1,61 @@
-import a1 from '@/assets/images/product/fruits/banana/apply/a1.jpg'
-import a2 from '@/assets/images/product/fruits/banana/apply/a2.jpg'
+import a1 from '@/assets/images/product/ai/qingshui/apply/a1.jpg'
+import a2 from '@/assets/images/product/ai/qingshui/apply/a2.jpg'
 
-import p1 from '@/assets/images/product/logo/caomei-blue.svg'
-import p2 from '@/assets/images/product/logo/putao-blue.svg'
-import p3 from '@/assets/images/product/logo/niuyouguo-blue.svg'
-import p4 from '@/assets/images/product/logo/xigua-blue.svg'
+import p1 from '@/assets/images/product/logo/ai/colgi.svg'
+import p2 from '@/assets/images/product/logo/ai/shuziyun.svg'
 
 const data = {
   content: [
     {
       "image": a1,
-      "alt": "高州矮香蕉",
+      "alt": "轨迹研判系统",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "高州矮香蕉",
-      "desc": "高州矮香蕉属矮干型香牙蕉，是高州市地方品种之一。植株假茎矮而粗壮，假茎高150～170厘米；叶宽大、叶柄短、叶鞘距密；果槽短，果梳距密、果指数多、果型稍小、果指长16～20厘米，果实品质较优良。",
+      "title": "轨迹研判系统",
+      "desc": "透过各种情报分析案件信息，分析不同地域、人群犯罪规律及特点（例如案件类型、手段特点、案发现场、侵害对象等)；针对情报分析信息提供数据导入及呈现工具，将数据以图形化的方式展现出来。",
       "buttonText": "联系我们",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "调整种植密度，增强蕉园的通风透光性。",
-        "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
-        "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
+        "在数字信号处理的理论中，人们把能加工、变换数字信号的实体称作系统",
+        "统计模式识别、结构模式识别、模糊模式识别",
+        "也可以用基于时间的语言、表格、公式、波形四种方法来描述",
+        "描述系统的方法还有符号、单位脉冲响应、差分方程和图形",
+        "系统是一个动态和复杂的整体，相互作用结构和功能的单位"
       ],
       "products": [
         {
-          "name": "草莓",
+          "name": "colgi",
           "icon": p1,
-          "key": "",
-          "alt": "草莓",
-          "href": "/banana.html"
+          "key": "colgi",
+          "alt": "colgi",
+          "href": "/product/ai/colgi.html"
         }
       ]
     },
     {
       "image": a2,
-      "alt": "河口高把香蕉",
+      "alt": "智能雨季循环系统",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "河口高把香蕉",
-      "desc": "植株高大、假茎高260～300厘米，梳形整齐、果指数较多，通常每果穗有果10梳，果指200多个，果指长15～21厘米；果实品质柔滑香甜。品质好；在一般栽培条件下单株产量为20～40千克，个别高产单株达50千克。该品种产量高，品质好十分适宜高温多湿及肥水充足的地区栽种。",
+      "title": "智能雨季循环系统",
+      "desc": "地球系统科学跨越一系列自然科学与社会科学，把地球看成一个由相互作用的地核、地幔、岩石圈、水圈、大气圈、生物圈和行星系统等组成部分构成的统一系统，重点研究各组成部分之间的相互作用，以解释地球的动力、演化和全球变化。地球系统科学是20世纪末和21世纪最受人们重视的新兴学科之一。\n" +
+        "地球系统科学最早由美国国家航空与宇航管理局（NASA）1983年提出。20世纪80年代中期以来，地球科学发展迅猛，科学家明确提出物理过程与生物过程相互作用的观点，进而形成了“地球系统”思想。",
       "buttonText": "申请试用",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "改良土壤，增施有机肥（如沤熟的人畜粪便，腐殖酸和氨基酸等）。",
-        "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
-        "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
+        "地球系统科学在现代技术，尤其是空间技术和大型计算机发展后出现",
+        "我国自然科学基金委地学部也于2002年3月提出了21世纪初的地球科学战略重点",
+        "系统仿真的基本方法是建立系统的结构模型和量化分析模型"
       ],
       "products": [
         {
-          "name": "葡萄",
+          "name": "数字云",
           "icon": p2,
-          "key": "",
-          "alt": "葡萄",
-          "href": "/banana.html"
-        },
-        {
-          "name": "牛油果",
-          "icon": p3,
-          "key": "",
-          "alt": "牛油果",
-          "href": "/banana.html"
-        },
-        {
-          "name": "西瓜",
-          "icon": p4,
-          "key": "",
-          "alt": "西瓜",
-          "href": "/banana.html"
+          "key": "digital",
+          "alt": "digital",
+          "href": "/product/ai/digital.html"
         }
       ]
     }

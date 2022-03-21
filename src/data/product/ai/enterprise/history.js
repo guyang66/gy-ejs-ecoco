@@ -5,26 +5,26 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2020-12-01",
-          "content": "苹果和芒果等5种主要水果总产量10600万吨中",
-          "href": "/banana.html"
-        },
-        {
-          "mode": "bottom",
-          "year": "2021-01-22",
-          "content": "超级的香大蕉的产量占14.2%（1500万吨）",
-          "href": "/banana.html"
-        },
-        {
-          "mode": "top",
-          "year": "2021-03-23",
-          "content": "1980年在总产的23100万吨",
+          "year": "2017-12-09",
+          "content": " MIS 系统阶段",
           "href": null
         },
         {
           "mode": "bottom",
-          "year": "2021-05-12",
-          "content": "990年香蕉的总产为7100万吨",
+          "year": "2019-09-30",
+          "content": "MRP阶段 (Material Require Planning)",
+          "href": "/"
+        },
+        {
+          "mode": "top",
+          "year": "2020-03-23",
+          "content": "MRP II 阶段 (Manufacture Resource Planning)",
+          "href": "/"
+        },
+        {
+          "mode": "bottom",
+          "year": "2020-05-12",
+          "content": "ERP 阶段 (Enterprise Resource Planning)",
           "href": null
         },
       ]
@@ -35,26 +35,26 @@ const history = {
         {
           "mode": "top",
           "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
-          "href": null
+          "content": "入了产品数据管理 PDM 的功能",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-12-12",
-          "content": "30多年来香蕉的总产量增长了4倍多",
-          "href": null
+          "content": "采用了最新的计算机技术",
+          "href": "/"
         },
         {
           "mode": "top",
-          "year": "2021-12-31",
-          "content": "经济效益显著的水果产品之一",
-          "href": null
+          "year": "2021-03-04",
+          "content": "电子商务时代的 ERP",
+          "href": "/"
         },
         {
           "mode": "bottom",
-          "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
-          "href": null
+          "year": "2022-05-12",
+          "content": "ERP 系统包括以下主要功能",
+          "href": "/"
         }
       ]
     }

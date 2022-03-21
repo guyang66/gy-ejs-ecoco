@@ -1,55 +1,40 @@
-import a1 from '@/assets/images/product/fruits/banana/advantage/a1.svg'
-import a2 from '@/assets/images/product/fruits/banana/advantage/a2.svg'
-import a3 from '@/assets/images/product/fruits/banana/advantage/a3.svg'
-import a4 from '@/assets/images/product/fruits/banana/advantage/a4.svg'
-import a5 from '@/assets/images/product/fruits/banana/advantage/a5.svg'
-import a6 from '@/assets/images/product/fruits/banana/advantage/a6.svg'
+import a1 from '@/assets/images/product/ai/shuying/advantage/a1.svg'
+import a2 from '@/assets/images/product/ai/shuying/advantage/a2.svg'
+import a3 from '@/assets/images/product/ai/shuying/advantage/a3.svg'
+import a4 from '@/assets/images/product/ai/shuying/advantage/a4.svg'
+import cover from '@/assets/images/product/ai/shuying/advantage/main.jpg'
 
 const ad = {
   title: '产品优势',
-  desc: '稳定可靠，好吃又便宜，三倍体培育产量高',
+  cover: cover,
   content: [
     {
-      "title": "功能主治",
+      "title": "研究范畴",
       "desc": null,
-      "text": "清热生津；健脾开胃；解毒消肿。主咽喉肿痛；燥咳声嘶；乳汁稀少；肠热便秘；食欲不振；消化不良，泄泻痢疾；痈肿；癣疾",
+      "text": "对于人的思维模拟可以从两条道路进行，一是结构模拟，仿照人脑的结构机制，制造出“类人脑”的机器",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "技术顶尖"
     },
     {
-      "title": "经济",
+      "title": "学科范畴",
       "desc": null,
-      "text": "无花果是世界上最古老的栽培果树之一，经济价值较高。果实可以加工制作果酱、果脯、罐头、果汁、果粉、蜜饯、糖浆及系列饮料等，是无公害的绿色食品",
+      "text": "自然语言处理，知识表现，智能搜索，推理，规划，机器学习，知识获取，组合调度问题，感知问题，模式识别",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "直流信号"
     },
     {
-      "title": "营养丰富",
+      "title": "涉及学科",
       "desc": null,
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "text": "人工智能是一门边缘学科，属于自然科学和社会科学的交叉",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "心跳监测"
     },
     {
-      "title": "冬季防寒",
+      "title": "实际应用",
       "desc": null,
-      "text": "树干涂抹涂白剂。秋季落叶后用涂白剂涂抹树干，具有防冻、消灭害虫和防止动物啃伤等作用",
+      "text": "机器视觉，指纹识别，人脸识别，视网膜识别，虹膜识别，掌纹识别，专家系统，自动规划，智能搜索，定理证明",
       "icon": a4,
-      "alt": "香蕉"
-    },
-    {
-      "title": "可治便秘",
-      "desc": null,
-      "text": "无花果比其他果树病虫害相对要少，除桑天牛和疫病对其为害较重外，主要还有锈病、胴枯病、炭疽病和线虫为害。一般是在大面积种植无花果后",
-      "icon": a5,
-      "alt": "香蕉"
-    },
-    {
-      "title": "常见水果",
-      "desc": null,
-      "text": "剑头芽（即慈姑芽或竹笋芽）假茎高约50厘米，基部粗壮，肉红色，上部细小，呈带灰绿的紫红色，黑斑大而显著，叶片狭长上举，叶背被有厚层的白粉",
-      "icon": a6,
-      "alt": "香蕉"
+      "alt": "实际应用"
     }
   ],
 }

@@ -1,18 +1,18 @@
 import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
-import advantage from '@/component/advantages/n-3-a'
+import advantage from '@/component/advantages/layout-between'
 import core from '@/component/core/1-4-black-white'
 import apply from '@/component/apply/layout_tabs'
 import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-6'
+import cases from '@/component/case/layout-3'
 
 import bannerData from "@/data/product/ai/enterprise/banner";
 import advantageData from "@/data/product/ai/enterprise/advantage";
-import coreData from "@/data/product/vegetables/radish/core";
-import applyData from "@/data/product/vegetables/radish/apply";
-import historyData from "@/data/product/vegetables/radish/history";
-import caseData from "@/data/product/vegetables/radish/case";
+import coreData from "@/data/product/ai/enterprise/core";
+import applyData from "@/data/product/ai/enterprise/apply";
+import historyData from "@/data/product/ai/enterprise/history";
+import caseData from "@/data/product/ai/enterprise/case";
 
 const tabsData = [{
   name: '产品优势',
@@ -39,7 +39,7 @@ const historyView = history({historyData})
 const caseView = cases({caseData})
 const container = template({formView, advantageView, coreView, applyView, historyView, caseView});
 export default htmlRender({
-  key: 'banana',
+  key: 'enterprise',
   navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
