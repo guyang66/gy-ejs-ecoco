@@ -5,27 +5,27 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2020-12-01",
-          "content": "苹果和芒果等5种主要水果总产量10600万吨中",
-          "href": "/banana.html"
+          "year": "2018-12-01",
+          "content": "以电力为基础的电动制表机，用以储存计算资料",
+          "href": "https://www.baidu.com"
         },
         {
           "mode": "bottom",
-          "year": "2021-01-22",
-          "content": "超级的香大蕉的产量占14.2%（1500万吨）",
-          "href": "/banana.html"
+          "year": "2019-02-25",
+          "content": "造出世界上首台模拟电子计算机",
+          "href": "/"
         },
         {
           "mode": "top",
-          "year": "2021-03-23",
-          "content": "1980年在总产的23100万吨",
-          "href": null
+          "year": "2019-03-10",
+          "content": "第一台电子计算机“电子数字积分计算机”",
+          "href": "/"
         },
         {
           "mode": "bottom",
-          "year": "2021-05-12",
-          "content": "990年香蕉的总产为7100万吨",
-          "href": null
+          "year": "2019-05-30",
+          "content": "第2代：晶体管数字机，件方面的操作系统",
+          "href": "/"
         },
       ]
     },
@@ -34,27 +34,56 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
-          "href": null
+          "year": "2019-08-14",
+          "content": "集成电路数字机",
+          "href": "/"
         },
         {
           "mode": "bottom",
-          "year": "2021-12-12",
-          "content": "30多年来香蕉的总产量增长了4倍多",
-          "href": null
+          "year": "2020-03-09",
+          "content": "第4代：小规模集成电路计算机",
+          "href": "/"
         },
+        {
+          "mode": "bottom",
+          "year": "2020-03-09",
+          "content": "第5代：中规模集成电路计算机（卡叫我）",
+          "href": "/"
+        },
+        {
+          "mode": "bottom",
+          "year": "2020-03-09",
+          "content": "第6代：大规模集成电路计算机（1970年至1978）",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      key: 3,
+      data: [
         {
           "mode": "top",
-          "year": "2021-12-31",
-          "content": "经济效益显著的水果产品之一",
-          "href": null
+          "year": "2020-10-30",
+          "content": "第一台使用图形用户界面的电脑",
+          "href": "/"
         },
         {
           "mode": "bottom",
-          "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
-          "href": null
+          "year": "2020-12-12",
+          "content": "操作系统是Microsoft提供的MS-DOS",
+          "href": "/"
+        },
+        {
+          "mode": "bottom",
+          "year": "2021-11-11",
+          "content": "将PentiumIII CPU作为电脑的一个卖点",
+          "href": "/"
+        },
+        {
+          "mode": "bottom",
+          "year": "2022-02-27",
+          "content": "处理器占领了大部分品牌或兼容机的市场",
+          "href": "/"
         }
       ]
     }

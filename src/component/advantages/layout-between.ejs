@@ -20,7 +20,7 @@
                 <div class="left-d"></div>
             </div>
             <% advantageData.content.forEach(function(item, index){ %>
-                <div class="info-wrap info-wrap-<%=index%>">
+                <div class="info-wrap info-wrap-<%=index%>" <% if(item.cellHeight){ %>style="height: <%=item.cellHeight%>px"<% } %>>
                     <img class="fn-left" src="<%=item.icon%>"/>
                     <div class="tit main-content-title"><%=item.title%></div>
                     <div class="txt main-content-text"><%=item.text%></div>

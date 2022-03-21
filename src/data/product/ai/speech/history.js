@@ -6,26 +6,26 @@ const history = {
         {
           "mode": "top",
           "year": "2020-12-01",
-          "content": "苹果和芒果等5种主要水果总产量10600万吨中",
-          "href": "/banana.html"
+          "content": "2点： -2.6195E-14 - 1.4162E-13i",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-01-22",
-          "content": "超级的香大蕉的产量占14.2%（1500万吨）",
-          "href": "/banana.html"
+          "content": "3点： -2.8586E-14 - 1.1898E-13i",
+          "href": "/"
         },
         {
           "mode": "top",
           "year": "2021-03-23",
-          "content": "1980年在总产的23100万吨",
-          "href": null
+          "content": "50点：-6.2076E-13 - 2.1713E-12i",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-05-12",
-          "content": "990年香蕉的总产为7100万吨",
-          "href": null
+          "content": "52点：-1.6707E-12 - 1.5241E-12i",
+          "href": "/"
         },
       ]
     },
@@ -35,26 +35,26 @@ const history = {
         {
           "mode": "top",
           "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
-          "href": null
+          "content": "75点：-2.2199E-13 -1.0076E-12i",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-12-12",
-          "content": "30多年来香蕉的总产量增长了4倍多",
-          "href": null
+          "content": "76点：3.4315E-12 + 192i",
+          "href": "/"
         },
         {
           "mode": "top",
           "year": "2021-12-31",
-          "content": "经济效益显著的水果产品之一",
-          "href": null
+          "content": "77点：-3.0263E-14 +7.5609E-13i",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
-          "href": null
+          "content": "99点：384/(N/2)=384/(256/2)=3",
+          "href": "/"
         }
       ]
     }

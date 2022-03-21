@@ -16,6 +16,139 @@ const menus = [
     hasHref: false,
     children: [
       {
+        name: '智能引擎',
+        iconH: '/assets/images/menu/ai-white.svg',
+        iconN: '/assets/images/menu/ai-black.svg',
+        layout: 'column-wrap',
+        content: [
+          {
+            key: 1,
+            column: [
+              {
+                title: 'AI智能',
+                data: [
+                  {
+                    name: 'AI语音',
+                    href: '/product/ai/speech.html',
+                  },
+                  {
+                    name: 'AI算法',
+                    href: '/product/ai/algorithm.html',
+                  },
+                  {
+                    name: 'AI识别',
+                    href: '/product/ai/discriminate.html',
+                  }
+                ]
+              },
+              {
+                title: '云办公',
+                data: [
+                  {
+                    name: '数字云',
+                    href: '/product/ai/digital.html',
+                  },
+                  {
+                    name: '企业云',
+                    href: '/product/ai/enterprise.html',
+                  }
+                ]
+              },
+              {
+                title: '智能一体机',
+                data: [
+                  {
+                    name: 'alpha-数影',
+                    href: '/product/ai/shuying.html',
+                    tags: [
+                      {
+                        text: 'NEW',
+                        type: 'new'
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: 2,
+            column: [
+              {
+                title: '智能大应用',
+                data: [
+                  {
+                    name: '智能预判系统——清水',
+                    href: '/product/ai/qingshui.html',
+                  },
+                  {
+                    name: '智能管理系统——菩提',
+                    href: '/product/ai/puti.html',
+                  }
+                ]
+              },
+              {
+                title: '智能业务',
+                data: [
+                  {
+                    name: '蹄蹄智能办公',
+                    href: '/product/ai/titi.html',
+                  },
+                  {
+                    name: '天眼杀',
+                    href: '/product/ai/tianyan.html',
+                  },
+                ]
+              }
+            ]
+          },
+          {
+            key: 3,
+            column: [
+              {
+                title: '风控系统',
+                data: [
+                  {
+                    name: '细雨风控系统1.0',
+                    href: '/product/ai/xiyu.html',
+                    tags: [
+                      {
+                        text: 'HOT',
+                        type: 'hot'
+                      }
+                    ]
+                  },
+                  {
+                    name: '智能干预系统——colgi',
+                    href: '/product/ai/colgi.html',
+                  },
+                ]
+              }
+            ]
+          },
+          {
+            key: 4,
+            column: [
+              {
+                title: '智能机器人',
+                data: [
+                  {
+                    name: '智能工作无人机',
+                    href: '/product/ai/uav.html',
+                    tags: [
+                      {
+                        text: 'HOT',
+                        type: 'hot'
+                      }
+                    ]
+                  },
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         name: '水果',
         iconH: '/assets/images/menu/shuiguo-white.svg',
         iconN: '/assets/images/menu/shuiguo-black.svg',
@@ -334,139 +467,6 @@ const menus = [
                         }
                       ]
                     }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          name: '智能引擎',
-          iconH: '/assets/images/menu/ai-white.svg',
-          iconN: '/assets/images/menu/ai-black.svg',
-          layout: 'column-wrap',
-          content: [
-            {
-              key: 1,
-              column: [
-                {
-                  title: 'AI智能',
-                  data: [
-                    {
-                      name: 'AI语音',
-                      href: '/product/ai/speech.html',
-                    },
-                    {
-                      name: 'AI算法',
-                      href: '/product/ai/algorithm.html',
-                    },
-                    {
-                      name: 'AI识别',
-                      href: '/product/ai/discriminate.html',
-                    }
-                  ]
-                },
-                {
-                  title: '云办公',
-                  data: [
-                    {
-                      name: '数字云',
-                      href: '/product/ai/digital.html',
-                    },
-                    {
-                      name: '企业云',
-                      href: '/product/ai/enterprise.html',
-                    }
-                  ]
-                },
-                {
-                  title: '智能一体机',
-                  data: [
-                    {
-                      name: 'alpha-数影',
-                      href: '/product/ai/shuying.html',
-                      tags: [
-                        {
-                          text: 'NEW',
-                          type: 'new'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              key: 2,
-              column: [
-                {
-                  title: '智能大应用',
-                  data: [
-                    {
-                      name: '智能预判系统——清水',
-                      href: '/product/ai/qingshui.html',
-                    },
-                    {
-                      name: '智能管理系统——菩提',
-                      href: '/product/ai/puti.html',
-                    }
-                  ]
-                },
-                {
-                  title: '智能业务',
-                  data: [
-                    {
-                      name: '蹄蹄智能办公',
-                      href: '/product/ai/titi.html',
-                    },
-                    {
-                      name: '天眼杀',
-                      href: '/product/ai/tianyan.html',
-                    },
-                  ]
-                }
-              ]
-            },
-            {
-              key: 3,
-              column: [
-                {
-                  title: '风控系统',
-                  data: [
-                    {
-                      name: '细雨风控系统1.0',
-                      href: '/product/ai/xiyu.html',
-                      tags: [
-                        {
-                          text: 'HOT',
-                          type: 'hot'
-                        }
-                      ]
-                    },
-                    {
-                      name: '智能干预系统——colgi',
-                      href: '/product/ai/colgi.html',
-                    },
-                  ]
-                }
-              ]
-            },
-            {
-              key: 4,
-              column: [
-                {
-                  title: '智能机器人',
-                  data: [
-                    {
-                      name: '智能工作无人机',
-                      href: '/product/ai/uav.html',
-                      tags: [
-                        {
-                          text: 'HOT',
-                          type: 'hot'
-                        }
-                      ]
-                    },
                   ]
                 }
               ]

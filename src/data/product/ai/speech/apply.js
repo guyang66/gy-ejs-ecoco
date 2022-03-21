@@ -1,74 +1,75 @@
-import a1 from '@/assets/images/product/fruits/banana/apply/a1.jpg'
-import a2 from '@/assets/images/product/fruits/banana/apply/a2.jpg'
+import a1 from '@/assets/images/product/ai/speech/apply/a1.jpg'
+import a2 from '@/assets/images/product/ai/speech/apply/a2.jpg'
 
-import p1 from '@/assets/images/product/logo/caomei-blue.svg'
-import p2 from '@/assets/images/product/logo/putao-blue.svg'
-import p3 from '@/assets/images/product/logo/niuyouguo-blue.svg'
-import p4 from '@/assets/images/product/logo/xigua-blue.svg'
+import p1 from '@/assets/images/product/logo/ai/qingshui.svg'
+import p2 from '@/assets/images/product/logo/ai/shibie.svg'
+import p3 from '@/assets/images/product/logo/ai/suanfa.svg'
+import p4 from '@/assets/images/product/logo/ai/tianyan.svg'
+
 
 const data = {
   content: [
     {
       "image": a1,
-      "alt": "高州矮香蕉",
+      "alt": "QJ语音",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "高州矮香蕉",
-      "desc": "高州矮香蕉属矮干型香牙蕉，是高州市地方品种之一。植株假茎矮而粗壮，假茎高150～170厘米；叶宽大、叶柄短、叶鞘距密；果槽短，果梳距密、果指数多、果型稍小、果指长16～20厘米，果实品质较优良。",
+      "title": "QJ语音",
+      "desc": "因FFT是为时序电路而设计的，因此，控制信号要包括时序的控制信号及存储器的读写地址，并产生各种辅助的指示信号。同时在计算模块的内部，为保证高速，所有的乘法器都须始终保持较高的利用率。这意味着在每一个时钟来临时都要向这些单元输入新的操作数，而这一切都需要控制信号的紧密配合。",
       "buttonText": "联系我们",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "调整种植密度，增强蕉园的通风透光性。",
-        "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
-        "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
+        "为了实现FFT的流形运算，在运算的同时，存储器也要接收数据",
+        "这可以采用乒乓RAM的方法来完成。这种方式决定了实现FFT运算的最大时间",
+        "其接收时间为4096个数据周期,这样FFT的最大运算时间就是4096个数据周期"
       ],
       "products": [
         {
-          "name": "草莓",
+          "name": "AI算法",
+          "icon": p3,
+          "key": "algorithm",
+          "alt": "AI算法",
+          "href": "/product/ai/algorithm.html"
+        },
+        {
+          "name": "AI识别",
+          "icon": p2,
+          "key": "discriminate",
+          "alt": "AI识别",
+          "href": "/product/ai/discriminate.html"
+        },
+        {
+          "name": "清水",
           "icon": p1,
-          "key": "",
-          "alt": "草莓",
-          "href": "/banana.html"
+          "key": "qingshui",
+          "alt": "清水",
+          "href": "/product/ai/qingshui.html"
         }
       ]
     },
     {
       "image": a2,
-      "alt": "河口高把香蕉",
+      "alt": "极速语音",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "河口高把香蕉",
-      "desc": "植株高大、假茎高260～300厘米，梳形整齐、果指数较多，通常每果穗有果10梳，果指200多个，果指长15～21厘米；果实品质柔滑香甜。品质好；在一般栽培条件下单株产量为20～40千克，个别高产单株达50千克。该品种产量高，品质好十分适宜高温多湿及肥水充足的地区栽种。",
+      "title": "极速语音",
+      "desc": "傅立叶变换是一种分析信号的方法，它可分析信号的成分，也可用这些成分合成信号。许多波形可作为信号的成分，比如正弦波、方波、锯齿波等，傅立叶变换用正弦波作为信号的成分。",
       "buttonText": "申请试用",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "改良土壤，增施有机肥（如沤熟的人畜粪便，腐殖酸和氨基酸等）。",
-        "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
-        "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
+        "复数乘法器就可完成这三个复数乘法，大大节省了硬件资源",
+        "根据旋转因子的对称性和周期性，在利用ROM存储旋转因子时",
+        "实际上只需做三个复数乘法运算，即只须计算BWk1、CWk2和DWk3的值即可"
       ],
       "products": [
         {
-          "name": "葡萄",
-          "icon": p2,
-          "key": "",
-          "alt": "葡萄",
-          "href": "/banana.html"
-        },
-        {
-          "name": "牛油果",
-          "icon": p3,
-          "key": "",
-          "alt": "牛油果",
-          "href": "/banana.html"
-        },
-        {
-          "name": "西瓜",
+          "name": "天眼杀",
           "icon": p4,
-          "key": "",
-          "alt": "西瓜",
-          "href": "/banana.html"
+          "key": "tianyan",
+          "alt": "天眼杀",
+          "href": "/product/ai/tianyan.html"
         }
       ]
     }
