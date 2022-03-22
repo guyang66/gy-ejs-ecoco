@@ -1,74 +1,66 @@
-import a1 from '@/assets/images/product/fruits/banana/apply/a1.jpg'
-import a2 from '@/assets/images/product/fruits/banana/apply/a2.jpg'
+import a1 from '@/assets/images/product/dataserver/recommend/apply/a1.jpg'
+import a2 from '@/assets/images/product/dataserver/recommend/apply/a2.png'
 
-import p1 from '@/assets/images/product/logo/caomei-blue.svg'
-import p2 from '@/assets/images/product/logo/putao-blue.svg'
-import p3 from '@/assets/images/product/logo/niuyouguo-blue.svg'
-import p4 from '@/assets/images/product/logo/xigua-blue.svg'
+import p1 from '@/assets/images/product/logo/dataserver/lixiankaifa.svg'
+import p2 from '@/assets/images/product/logo/dataserver/shishikaifa.svg'
+import p3 from '@/assets/images/product/logo/dataserver/shenjingwangluo.svg'
 
 const data = {
   content: [
     {
       "image": a1,
-      "alt": "高州矮香蕉",
+      "alt": "智能推荐马桶",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "高州矮香蕉",
-      "desc": "高州矮香蕉属矮干型香牙蕉，是高州市地方品种之一。植株假茎矮而粗壮，假茎高150～170厘米；叶宽大、叶柄短、叶鞘距密；果槽短，果梳距密、果指数多、果型稍小、果指长16～20厘米，果实品质较优良。",
+      "title": "智能推荐马桶",
+      "desc": "2004年，博尔特成为职业运动员。同年在加勒比共同体运动会的200米比赛中，跑出了19秒93的成绩，成为了有史以来第一个跑入20秒的青年运动员。 [2]  2008年5月31日，在纽约锐步田径大奖赛上，以9.72秒的成绩打破世界纪录， 创造了属于他的第一个世界纪录。",
       "buttonText": "联系我们",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "调整种植密度，增强蕉园的通风透光性。",
-        "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
-        "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
+        "2001年，年仅15岁的博尔特在加勒比共同体运动会上夺得了200米",
+        "2002年，世界青年锦标赛，主场作战的博尔特以20秒61夺得了200米金牌",
+        "2004年，博尔特成为职业运动员。这一年，在百慕大举行的加勒比共同田"
       ],
       "products": [
         {
-          "name": "草莓",
-          "icon": p1,
-          "key": "",
-          "alt": "草莓",
-          "href": "/banana.html"
+          "name": "神经网络",
+          "icon": p3,
+          "key": "sjwl",
+          "alt": "神经网络",
+          "href": "/product/dataserver/neuralnetwork.html"
         }
       ]
     },
     {
       "image": a2,
-      "alt": "河口高把香蕉",
+      "alt": "千人千面系统",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "河口高把香蕉",
-      "desc": "植株高大、假茎高260～300厘米，梳形整齐、果指数较多，通常每果穗有果10梳，果指200多个，果指长15～21厘米；果实品质柔滑香甜。品质好；在一般栽培条件下单株产量为20～40千克，个别高产单株达50千克。该品种产量高，品质好十分适宜高温多湿及肥水充足的地区栽种。",
+      "title": "千人千面系统",
+      "desc": "13年6月7日，在国际田联钻石联赛罗马站男子100米比赛中，前世锦赛奥运会双料冠军贾斯廷·加特林以9秒94获得冠军，博尔特以9秒95屈居亚军。6月14日，在国际田联钻石联赛挪威奥斯陆站男子200米比赛中，博尔特以19秒79获得冠军。",
       "buttonText": "申请试用",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "改良土壤，增施有机肥（如沤熟的人畜粪便，腐殖酸和氨基酸等）。",
-        "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
-        "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
+        "这也是他在今2014年首次参加100米比赛。 [32]  8月24日，波兰华沙室内田径赛，博尔特男子100米比赛中以9秒98的成绩夺冠",
+        "自然界存在的糖以及核酸、淀粉、纤维素中的糖单元，都为D-构型",
+        "2也实现了他们在世锦赛上的接力3连冠"
       ],
       "products": [
         {
-          "name": "葡萄",
+          "name": "实时开发",
           "icon": p2,
-          "key": "",
-          "alt": "葡萄",
-          "href": "/banana.html"
+          "key": "sskf",
+          "alt": "实时开发",
+          "href": "/product/dataserver/onlinedevelop.html"
         },
         {
-          "name": "牛油果",
-          "icon": p3,
-          "key": "",
-          "alt": "牛油果",
-          "href": "/banana.html"
-        },
-        {
-          "name": "西瓜",
-          "icon": p4,
-          "key": "",
-          "alt": "西瓜",
-          "href": "/banana.html"
+          "name": "离线开发",
+          "icon": p1,
+          "key": "lxkf",
+          "alt": "离线开发",
+          "href": "/product/dataserver/offlinedevelop.html"
         }
       ]
     }

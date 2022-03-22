@@ -1,42 +1,35 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/dataserver/recommend/core/c1.svg'
+import a2 from '@/assets/images/product/dataserver/recommend/core/c2.svg'
+import a3 from '@/assets/images/product/dataserver/recommend/core/c3.svg'
+import a4 from '@/assets/images/product/dataserver/recommend/core/c4.svg'
 
 const core = {
   title: '核心功能',
-  bg: '#F4F4F4',
+  bg: '#333333',
   content: [
     {
-      "title": "文档可靠",
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "title": "暗影冲刺",
+      "text": "裂魂人盯紧一个敌方单位，开始无视一切物体的冲刺。途中经过的所有敌方单位和目标单位都将受到巨力",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "暗影冲刺"
     },
     {
-      "title": "即开即用",
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "title": "威吓",
+      "text": "裂魂人获得移动速度和状态抗性加成，在敌人之间横冲直撞。可以在冲刺期间使用",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "威吓"
     },
     {
-      "title": "装备精良",
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "title": "巨力重击",
+      "text": "击时有一定概率眩晕并击退敌方单位。重击的伤害值为移动速度的一定百分比",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "巨力重击"
     },
     {
-      "title": "操作简单",
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "title": "幽冥一击",
+      "text": "裂魂人遁入幽冥领域，从不幸的目标身旁再次出现，发动当前等级的巨力重击并造成额外伤害",
       "icon": a4,
-      "alt": "香蕉"
-    },
-    {
-      "title": "简单灵活",
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
-      "icon": a5,
-      "alt": "香蕉"
+      "alt": "幽冥一击"
     }
   ],
 }

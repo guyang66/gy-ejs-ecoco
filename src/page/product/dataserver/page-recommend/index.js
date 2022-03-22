@@ -1,18 +1,18 @@
 import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
-import advantage from '@/component/advantages/n-3-a'
-import core from '@/component/core/1-4-black-white'
+import advantage from '@/component/advantages/layout-n-4'
+import core from '@/component/core/layout-fade'
 import apply from '@/component/apply/layout_tabs'
 import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-6'
+import cases from '@/component/case/layout-one'
 
 import bannerData from "@/data/product/dataserver/recommend/banner";
 import advantageData from "@/data/product/dataserver/recommend/advantage";
-import coreData from "@/data/product/fruits/banana/core";
-import applyData from "@/data/product/fruits/banana/apply";
-import historyData from "@/data/product/fruits/banana/history";
-import caseData from "@/data/product/fruits/banana/case";
+import coreData from "@/data/product/dataserver/recommend/core";
+import applyData from "@/data/product/dataserver/recommend/apply";
+import historyData from "@/data/product/dataserver/recommend/history";
+import caseData from "@/data/product/dataserver/recommend/case";
 
 const tabsData = [{
   name: '产品优势',

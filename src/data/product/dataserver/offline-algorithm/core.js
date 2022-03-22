@@ -1,42 +1,35 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/dataserver/offline-algorithm/core/c1.svg'
+import a2 from '@/assets/images/product/dataserver/offline-algorithm/core/c2.svg'
+import a3 from '@/assets/images/product/dataserver/offline-algorithm/core/c3.svg'
+import a4 from '@/assets/images/product/dataserver/offline-algorithm/core/c4.svg'
 
 const core = {
   title: '核心功能',
-  bg: '#F4F4F4',
+  bg: '#333333',
   content: [
     {
-      "title": "文档可靠",
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "title": "类金属",
+      "text": "利用稀有气体极不活泼的化学性质，有的生产部门常用它们来作保护气",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "类金属"
     },
     {
-      "title": "即开即用",
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "title": "电离",
+      "text": "稀有气体通电时会发光。世界上第一盏霓虹灯是填充氖气制成的",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "电离"
     },
     {
-      "title": "装备精良",
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "title": "天然放射性",
+      "text": "利用液态氦可获得接近绝对零度（-273.15℃）的超低温",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "天然放射性"
     },
     {
-      "title": "操作简单",
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "title": "衰变",
+      "text": "人们就可根据信号的大小来判定空间宇宙辐射带的位置和 强度",
       "icon": a4,
-      "alt": "香蕉"
-    },
-    {
-      "title": "简单灵活",
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
-      "icon": a5,
-      "alt": "香蕉"
+      "alt": "衰变"
     }
   ],
 }

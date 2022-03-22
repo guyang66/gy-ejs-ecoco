@@ -1,74 +1,65 @@
-import a1 from '@/assets/images/product/fruits/banana/apply/a1.jpg'
-import a2 from '@/assets/images/product/fruits/banana/apply/a2.jpg'
+import a1 from '@/assets/images/product/dataserver/cluster/apply/a1.png'
+import a2 from '@/assets/images/product/dataserver/cluster/apply/a2.jpg'
 
-import p1 from '@/assets/images/product/logo/caomei-blue.svg'
-import p2 from '@/assets/images/product/logo/putao-blue.svg'
-import p3 from '@/assets/images/product/logo/niuyouguo-blue.svg'
-import p4 from '@/assets/images/product/logo/xigua-blue.svg'
+import p3 from '@/assets/images/product/logo/dataserver/tuijiansuanfa.svg'
+import p2 from '@/assets/images/product/logo/dataserver/lixiankaifa.svg'
+import p1 from '@/assets/images/product/logo/dataserver/shishikaifa.svg'
 
 const data = {
   content: [
     {
       "image": a1,
-      "alt": "高州矮香蕉",
+      "alt": "matlab聚类分析",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "高州矮香蕉",
-      "desc": "高州矮香蕉属矮干型香牙蕉，是高州市地方品种之一。植株假茎矮而粗壮，假茎高150～170厘米；叶宽大、叶柄短、叶鞘距密；果槽短，果梳距密、果指数多、果型稍小、果指长16～20厘米，果实品质较优良。",
+      "title": "matlab聚类分析",
+      "desc": "生有时，死有序，历经八十年的释迦牟尼，自知将脱离肉身枷锁，前往西天极乐，修成正果。圆寂在即，佛陀的影子竟自问其身：[地狱未空，焉能成佛？怎可舍身而去？]佛陀苦思难辩，不得解脱，天上愁云惨雾，骤现一线曙光，九天大神大梵天，亲身下凡[迎佛西天]。佛陀心结未解，不愿前往，大梵天掷出一法轮，把佛陀的影子钉在地上。",
       "buttonText": "联系我们",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "调整种植密度，增强蕉园的通风透光性。",
-        "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
-        "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
+        "遗下的影子融于法轮融上，形成双手朝天，两足并合立地之状，拱卫天地！涅盘经轮包含佛陀慈悲为怀、普渡众生的本性，成为[悲天悯人]的护法神兵",
+        "为如来神掌第五式[迎佛西天]之护法神兵"
       ],
       "products": [
         {
-          "name": "草莓",
-          "icon": p1,
-          "key": "",
-          "alt": "草莓",
-          "href": "/banana.html"
+          "name": "智能推荐系统",
+          "icon": p3,
+          "key": "recommend",
+          "alt": "智能推荐系统",
+          "href": "/product/dataserver/recommend.html"
         }
       ]
     },
     {
       "image": a2,
-      "alt": "河口高把香蕉",
+      "alt": "超引擎聚类",
       "height": 728,
       "imageWidth": 712,
       "imageHeight": 712,
-      "title": "河口高把香蕉",
-      "desc": "植株高大、假茎高260～300厘米，梳形整齐、果指数较多，通常每果穗有果10梳，果指200多个，果指长15～21厘米；果实品质柔滑香甜。品质好；在一般栽培条件下单株产量为20～40千克，个别高产单株达50千克。该品种产量高，品质好十分适宜高温多湿及肥水充足的地区栽种。",
+      "title": "超引擎聚类",
+      "desc": "佛陀涅槃后，阿鼻地狱内的妖魔再无所惧，空群而出，为祸人间。众妖魔中，以恶神阿修罗最为邪恶，对佛陀仇视憎恨，誓要灭绝佛道中人。阿修罗率领群魔到佛陀涅槃之地，以地狱之火焚寺焦土，佛陀众徒宁死不愿舍弃尊师遗骸，大无畏面对烈炎吞噬之苦。恶魔横行肆虐，佛陀遗骸突然虹化，散射出七色舍利子。",
       "buttonText": "申请试用",
-      "href": "/banana.html",
+      "href": "/form.html",
       "solutions": [
-        "改良土壤，增施有机肥（如沤熟的人畜粪便，腐殖酸和氨基酸等）。",
-        "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
-        "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
+        "正邪之间，盛衰有期，道消魔长亦有定时出现的一日。欲界三十三天之主帝释天，与光明同在，面对黑暗当道",
+        "围攻天之国善见城。光明隐灭，神力变得微不足道，众神",
+        "佛法无边也不能干扰乾坤法则。眼见帝释天绝望沮丧，佛祖本着好生之德毅然取出佛心植入帝释天体内"
       ],
       "products": [
         {
-          "name": "葡萄",
+          "name": "实时开发",
+          "icon": p1,
+          "key": "sskf",
+          "alt": "实时开发",
+          "href": "/product/dataserver/onlinedevelop.html"
+        },
+        {
+          "name": "离线开发",
           "icon": p2,
-          "key": "",
-          "alt": "葡萄",
-          "href": "/banana.html"
-        },
-        {
-          "name": "牛油果",
-          "icon": p3,
-          "key": "",
-          "alt": "牛油果",
-          "href": "/banana.html"
-        },
-        {
-          "name": "西瓜",
-          "icon": p4,
-          "key": "",
-          "alt": "西瓜",
-          "href": "/banana.html"
+          "key": "lxkf",
+          "alt": "离线开发",
+          "href": "/product/dataserver/offlinedevelop.html"
         }
       ]
     }

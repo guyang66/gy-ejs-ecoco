@@ -5,27 +5,27 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2020-12-01",
-          "content": "苹果和芒果等5种主要水果总产量10600万吨中",
-          "href": "/banana.html"
+          "year": "1966-01-05",
+          "content": "直隶总督兼任北洋大臣，总督夏在天津",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-01-22",
-          "content": "超级的香大蕉的产量占14.2%（1500万吨）",
-          "href": "/banana.html"
+          "content": "改直隶省为河北省（河北省名出现",
+          "href": "/"
         },
         {
           "mode": "top",
           "year": "2021-03-23",
-          "content": "1980年在总产的23100万吨",
-          "href": null
+          "content": "华北地区大部解放，华北人民政府决定",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-05-12",
-          "content": "990年香蕉的总产为7100万吨",
-          "href": null
+          "content": "北京军区在北京召开河北省革命委员会筹备会议",
+          "href": "/"
         },
       ]
     },
@@ -35,26 +35,26 @@ const history = {
         {
           "mode": "top",
           "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
-          "href": null
+          "content": "河北省生产总值实现40391.3亿元",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-12-12",
-          "content": "30多年来香蕉的总产量增长了4倍多",
-          "href": null
+          "content": "河北省粮食播种面积642.9万公顷",
+          "href": "/"
         },
         {
           "mode": "top",
           "year": "2021-12-31",
-          "content": "经济效益显著的水果产品之一",
-          "href": null
+          "content": "河北省全部工业增加值14097.7亿元，比上年增长4.6%",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
-          "href": null
+          "content": "农副食品加工业增加值增长9.2%",
+          "href": "/"
         }
       ]
     }

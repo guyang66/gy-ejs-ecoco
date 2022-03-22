@@ -1,42 +1,35 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/dataserver/online-develop/core/c1.svg'
+import a2 from '@/assets/images/product/dataserver/online-develop/core/c2.svg'
+import a3 from '@/assets/images/product/dataserver/online-develop/core/c3.svg'
+import a4 from '@/assets/images/product/dataserver/online-develop/core/c4.svg'
 
 const core = {
   title: '核心功能',
-  bg: '#F4F4F4',
+  bg: '#333333',
   content: [
     {
-      "title": "文档可靠",
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "title": "毁灭阴影",
+      "text": "影魔对其正前方区域释放毁灭能量，对该区域中的敌人造成伤害。在目标身上施加一个可以叠加的连中效果",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "毁灭阴影"
     },
     {
-      "title": "即开即用",
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "title": "支配死灵",
+      "text": "每杀死一个单位都会窃取其灵魂，获得额外的攻击力。影魔死亡时40%的灵魂将逃离他的束缚",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "支配死灵"
     },
     {
-      "title": "装备精良",
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "title": "魔王降临",
+      "text": "影魔的出现使得周围的敌人护甲降低。与其他降低护甲的技能和光环完全叠加。",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "魔王降临"
     },
     {
-      "title": "操作简单",
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "title": "魂之挽歌",
+      "text": "影魔聚集捕获的灵魂，以多道魔能的形式释放。若距离影魔过近将受到数道魔能的伤害",
       "icon": a4,
-      "alt": "香蕉"
-    },
-    {
-      "title": "简单灵活",
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
-      "icon": a5,
-      "alt": "香蕉"
+      "alt": "魂之挽歌"
     }
   ],
 }

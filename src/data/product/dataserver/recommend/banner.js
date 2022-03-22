@@ -1,4 +1,4 @@
-import a1 from '@/assets/images/banner/product/ai/a13.png'
+import a1 from '@/assets/images/banner/product/dataserver/a6.png'
 
 const bannerData = {
   title: '智能推荐系统',
