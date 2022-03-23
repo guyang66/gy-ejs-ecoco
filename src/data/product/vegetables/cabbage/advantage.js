@@ -1,55 +1,55 @@
-import a1 from '@/assets/images/product/fruits/banana/advantage/a1.svg'
-import a2 from '@/assets/images/product/fruits/banana/advantage/a2.svg'
-import a3 from '@/assets/images/product/fruits/banana/advantage/a3.svg'
-import a4 from '@/assets/images/product/fruits/banana/advantage/a4.svg'
-import a5 from '@/assets/images/product/fruits/banana/advantage/a5.svg'
-import a6 from '@/assets/images/product/fruits/banana/advantage/a6.svg'
+import a1 from '@/assets/images/product/vegetables/cabbage/advantage/a1.svg'
+import a2 from '@/assets/images/product/vegetables/cabbage/advantage/a2.svg'
+import a3 from '@/assets/images/product/vegetables/cabbage/advantage/a3.svg'
+import a4 from '@/assets/images/product/vegetables/cabbage/advantage/a4.svg'
+import a5 from '@/assets/images/product/vegetables/cabbage/advantage/a5.svg'
+import a6 from '@/assets/images/product/vegetables/cabbage/advantage/a6.svg'
 
 const ad = {
   title: '产品优势',
-  desc: '稳定可靠，好吃又便宜，三倍体培育产量高',
+  desc: '',
   content: [
     {
-      "title": "好吃",
+      "title": "富含肌氨酸",
       "desc": null,
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "text": "牛肉中的肌氨酸含量比任何其它食品都高，它对增长肌肉、增强力量特别有效。在进行训练的头几秒钟里，肌氨酸是肌肉燃料之源",
       "icon": a1,
-      "alt": "香蕉"
+      "alt": "富含肌氨酸"
     },
     {
-      "title": "黄色",
+      "title": "含维生素B6",
       "desc": null,
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "text": "蛋白质需求量越大，饮食中增加的维生素B6就越多。牛肉含有足够的维生素B6，可帮你增强免疫力，促进蛋白质的新陈代谢和合成",
       "icon": a2,
-      "alt": "香蕉"
+      "alt": "含维生素B6"
     },
     {
-      "title": "营养丰富",
+      "title": "肉毒碱",
       "desc": null,
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "text": "鸡肉、鱼肉中肉毒碱和肌氨酸的含量很低，牛肉却很高。肉毒碱主要用于支持脂肪的新陈代谢，产生支链氨基酸",
       "icon": a3,
-      "alt": "香蕉"
+      "alt": "肉毒碱"
     },
     {
-      "title": "可做奶昔",
+      "title": "丙胺酸",
       "desc": null,
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "text": "从饮食的蛋白质中产生糖分。你对碳水化合物的摄取量不足，丙胺酸,能够供给肌肉所需的能量以缓解不足，使你能够继续进行训练",
       "icon": a4,
-      "alt": "香蕉"
+      "alt": "丙胺酸"
     },
     {
-      "title": "可治便秘",
+      "title": "钾和蛋白质",
       "desc": null,
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个，果身弯曲，略为浅弓形，幼果向上，直立，成熟后逐渐趋于平伸，长12～30厘米，直径3.4～3.8厘米，果棱明显",
+      "text": "使是运动员饮食中比较缺少的矿物质。钾的水平低会抑制蛋白质的合成以及生长激素的产生，影响肌肉生",
       "icon": a5,
-      "alt": "香蕉"
+      "alt": "钾和蛋白质"
     },
     {
-      "title": "常见水果",
+      "title": "低脂肪来源",
       "desc": null,
-      "text": "剑头芽（即慈姑芽或竹笋芽）假茎高约50厘米，基部粗壮，肉红色，上部细小，呈带灰绿的紫红色，黑斑大而显著，叶片狭长上举，叶背被有厚层的白粉",
+      "text": "牛肉中脂肪含量很低，却富含结合亚油酸，潜在的抗氧化剂可以有效对抗举重等运动中造成的组织损伤。另外，亚油酸还可",
       "icon": a6,
-      "alt": "香蕉"
+      "alt": "低脂肪来源"
     }
   ],
 }

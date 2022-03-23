@@ -150,17 +150,17 @@ module.exports = [
   {
     name: 'product/vegetables/amaranthus',
     path: 'page/product/vegetables/page-amaranthus',
-    title: '菜苔'
+    title: '苋菜'
   },
   {
     name: 'product/vegetables/lotus',
     path: 'page/product/vegetables/page-lotus',
-    title: '菜苔'
+    title: '藕'
   },
   {
     name: 'product/vegetables/mushroom',
     path: 'page/product/vegetables/page-mushroom',
-    title: '菜苔'
+    title: '香菇'
   },
   {
     name: 'product/vegetables/cabbage',
@@ -185,22 +185,22 @@ module.exports = [
   {
     name: 'product/vegetables/ginger',
     path: 'page/product/vegetables/page-ginger',
-    title: '芹菜'
+    title: '生姜'
   },
   {
     name: 'product/vegetables/eggplant',
     path: 'page/product/vegetables/page-eggplant',
-    title: '芹菜'
+    title: '茄子'
   },
   {
     name: 'product/vegetables/chili',
     path: 'page/product/vegetables/page-chili',
-    title: '芹菜'
+    title: '辣椒'
   },
   {
     name: 'product/vegetables/pumpkin',
     path: 'page/product/vegetables/page-pumpkin',
-    title: '芹菜'
+    title: '南瓜'
   },
 
   // 产品

@@ -1,12 +1,14 @@
-import a1 from '@/assets/images/product/fruits/banana/core/c1.svg'
-import a2 from '@/assets/images/product/fruits/banana/core/c2.svg'
-import a3 from '@/assets/images/product/fruits/banana/core/c3.svg'
-import a4 from '@/assets/images/product/fruits/banana/core/c4.svg'
-import a5 from '@/assets/images/product/fruits/banana/core/c5.svg'
+import a1 from '@/assets/images/product/vegetables/lotus/core/c1.svg'
+import a2 from '@/assets/images/product/vegetables/lotus/core/c2.svg'
+import a3 from '@/assets/images/product/vegetables/lotus/core/c3.svg'
+import a4 from '@/assets/images/product/vegetables/lotus/core/c4.svg'
+import a5 from '@/assets/images/product/vegetables/lotus/core/c5.svg'
+import a6 from '@/assets/images/product/vegetables/lotus/core/c6.svg'
 
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
+  scale: '80%',
   content: [
     {
       "title": "文档可靠",
@@ -36,6 +38,12 @@ const core = {
       "title": "简单灵活",
       "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
       "icon": a5,
+      "alt": "香蕉"
+    },
+    {
+      "title": "简单灵活",
+      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个",
+      "icon": a6,
       "alt": "香蕉"
     }
   ],

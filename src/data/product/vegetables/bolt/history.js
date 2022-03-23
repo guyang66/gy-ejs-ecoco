@@ -6,26 +6,26 @@ const history = {
         {
           "mode": "top",
           "year": "2020-12-01",
-          "content": "苹果和芒果等5种主要水果总产量10600万吨中",
-          "href": "/banana.html"
+          "content": "新世纪福音战士（伊吹玛雅）",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-01-22",
-          "content": "超级的香大蕉的产量占14.2%（1500万吨）",
-          "href": "/banana.html"
+          "content": "机动新世纪高达X（帕拉・西斯）",
+          "href": "/"
         },
         {
           "mode": "top",
           "year": "2021-03-23",
-          "content": "1980年在总产的23100万吨",
-          "href": null
+          "content": "勇者指令（户部真理亚、ガンキッド）",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-05-12",
-          "content": "990年香蕉的总产为7100万吨",
-          "href": null
+          "content": "快杰蒸汽侦探团（兰兰）",
+          "href": "/"
         },
       ]
     },
@@ -35,25 +35,25 @@ const history = {
         {
           "mode": "top",
           "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
-          "href": null
+          "content": "女棒甲子园（早川凉）",
+          "href": "/"
         },
         {
           "mode": "bottom",
           "year": "2021-12-12",
-          "content": "30多年来香蕉的总产量增长了4倍多",
+          "content": "六翼天使之声（村雨紫苑）",
           "href": null
         },
         {
           "mode": "top",
           "year": "2021-12-31",
-          "content": "经济效益显著的水果产品之一",
+          "content": "纯情房东俏房客（青山鹤子）",
           "href": null
         },
         {
           "mode": "bottom",
           "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
+          "content": "名侦探柯南（冲野洋子〈第二代〉）",
           "href": null
         }
       ]
