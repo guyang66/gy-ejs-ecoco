@@ -1,2 +1,2 @@
-var entryFilters = ['index','vegetables',''];
+var entryFilters = ['ALL_FILE',''];
 module.exports = entryFilters;

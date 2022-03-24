@@ -22,7 +22,7 @@ module.exports = [
   {
     name: 'product/fruits/peach',
     path: 'page/product/fruits/page-peach',
-    title: '香蕉'
+    title: '水蜜桃'
   },
   {
     name: 'product/fruits/pomegranate',
@@ -42,27 +42,27 @@ module.exports = [
   {
     name: 'product/fruits/mongo',
     path: 'page/product/fruits/page-mongo',
-    title: '牛油果'
+    title: '芒果'
   },
   {
     name: 'product/fruits/mangosteen',
     path: 'page/product/fruits/page-mangosteen',
-    title: '牛油果'
+    title: '山竹'
   },
   {
     name: 'product/fruits/grape',
     path: 'page/product/fruits/page-grape',
-    title: '牛油果'
+    title: '葡萄'
   },
   {
     name: 'product/fruits/lemon',
     path: 'page/product/fruits/page-lemon',
-    title: '牛油果'
+    title: '柠檬'
   },
   {
     name: 'product/fruits/litchi',
     path: 'page/product/fruits/page-litchi',
-    title: '牛油果'
+    title: '荔枝'
   },
   {
     name: 'product/fruits/piyata',

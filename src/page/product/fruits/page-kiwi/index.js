@@ -1,11 +1,11 @@
 import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
-import advantage from '@/component/advantages/layout-between'
-import core from '@/component/core/layout-fade'
+import advantage from '@/component/advantages/n-3-a'
+import core from '@/component/core/n-3'
 import apply from '@/component/apply/layout_tabs'
 import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-3'
+import cases from '@/component/case/layout-6'
 
 import bannerData from "@/data/product/fruits/kiwi/banner";
 import advantageData from "@/data/product/fruits/kiwi/advantage";

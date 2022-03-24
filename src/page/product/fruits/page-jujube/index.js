@@ -2,17 +2,17 @@ import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
 import advantage from '@/component/advantages/n-3-a'
-import core from '@/component/core/1-4-black-white'
+import core from '@/component/core/n-3'
 import apply from '@/component/apply/layout_tabs'
 import history from '@/component/history/layout-slide'
 import cases from '@/component/case/layout-6'
 
 import bannerData from "@/data/product/fruits/jujube/banner";
 import advantageData from "@/data/product/fruits/jujube/advantage";
-import coreData from "@/data/product/fruits/banana/core";
-import applyData from "@/data/product/fruits/banana/apply";
-import historyData from "@/data/product/fruits/banana/history";
-import caseData from "@/data/product/fruits/banana/case";
+import coreData from "@/data/product/fruits/jujube/core";
+import applyData from "@/data/product/fruits/jujube/apply";
+import historyData from "@/data/product/fruits/jujube/history";
+import caseData from "@/data/product/fruits/jujube/case";
 
 const tabsData = [{
   name: '产品优势',

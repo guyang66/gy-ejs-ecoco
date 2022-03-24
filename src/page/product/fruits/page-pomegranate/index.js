@@ -1,16 +1,16 @@
 import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
-import advantage from '@/component/advantages/layout-n-4'
-import core from '@/component/core/layout-fade'
-import apply from '@/component/apply/layout-float'
+import advantage from '@/component/advantages/n-3-a'
+import core from '@/component/core/n-3'
+import apply from '@/component/apply/layout_tabs'
 import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-n-2'
+import cases from '@/component/case/layout-6'
 
 import bannerData from "@/data/product/fruits/pomegranate/banner";
 import advantageData from "@/data/product/fruits/pomegranate/advantage";
 import coreData from "@/data/product/fruits/pomegranate/core";
-import applyData from "@/data/product/fruits/pomegranate/value";
+import applyData from "@/data/product/fruits/pomegranate/apply";
 import historyData from "@/data/product/fruits/pomegranate/history";
 import caseData from "@/data/product/fruits/pomegranate/case";
 

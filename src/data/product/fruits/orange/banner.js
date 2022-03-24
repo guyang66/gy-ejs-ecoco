@@ -8,7 +8,7 @@ const bannerData = {
 
   //是否使用插图
   hasFigure: true,
-  style: 'background: linear-gradient(to bottom right, #f3d64e, #c86f67)',
+  style: 'background: linear-gradient(to bottom right, #f3d64e, #d9b8f1)',
   figure: a1,
   figureWidth: 420,
   figureHeight: 420

@@ -5,26 +5,26 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2019-02-04",
-          "content": "原产于热带美洲嘉南地区",
+          "year": "2018-08-12",
+          "content": "中国人民培育的桃树沿“丝绸之路”从甘肃",
           "href": "/banana.html"
         },
         {
           "mode": "bottom",
-          "year": "2021-01-22",
-          "content": "鳄梨原产地平均降水量一般",
+          "year": "2018-09-22",
+          "content": "大部分印度的桃树也是从中国引种的",
           "href": "/banana.html"
         },
         {
           "mode": "top",
-          "year": "2021-03-23",
-          "content": "但一般年降水量在1000毫米以上",
+          "year": "2018-12-23",
+          "content": "尔后渐次传入法国、德国、西班牙、葡萄牙",
           "href": null
         },
         {
           "mode": "bottom",
-          "year": "2021-05-12",
-          "content": "果实在花后6-8个月成熟",
+          "year": "2019-05-01",
+          "content": "哥伦布发现新大陆后，桃树随欧洲移民进入美洲",
           "href": null
         },
       ]
@@ -34,26 +34,26 @@ const history = {
       data: [
         {
           "mode": "top",
-          "year": "2021-08-04",
-          "content": "世界主要水果总产量中保持着第二至第三位",
+          "year": "2019-08-11",
+          "content": "中国引进450多个优良桃树品种",
           "href": null
         },
         {
           "mode": "bottom",
-          "year": "2021-12-12",
-          "content": "无茴香味，新枝和幼叶赤褐色",
+          "year": "2020-05-12",
+          "content": "中国的结论，已为世界学者一致公认",
           "href": null
         },
         {
           "mode": "top",
-          "year": "2021-12-31",
-          "content": "危地马拉系和墨西哥系的杂交种为主",
+          "year": "2020-11-30",
+          "content": "著名植物学家第康道尔经过认真考证",
           "href": null
         },
         {
           "mode": "bottom",
           "year": "2022-02-01",
-          "content": "21世纪的市场经济中发挥更重要的作用",
+          "content": "起源于中国的桃树品种可达上千个",
           "href": null
         }
       ]

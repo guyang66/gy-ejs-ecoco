@@ -1,3 +1,10 @@
+import c1 from '@/assets/images/product/fruits/piyata/case/c1.svg'
+import c2 from  '@/assets/images/product/fruits/piyata/case/c2.svg'
+import c3 from '@/assets/images/product/fruits/piyata/case/c3.svg'
+import c4 from  '@/assets/images/product/fruits/piyata/case/c4.svg'
+import c5 from '@/assets/images/product/fruits/piyata/case/c5.svg'
+import c6 from '@/assets/images/product/fruits/piyata/case/c6.svg'
+
 const data = {
   bg: '#f4f4f4',
   pointTitle: '痛点描述',
@@ -7,31 +14,31 @@ const data = {
       key: 1,
       data:  [
         {
-          "name": "体质偏虚寒者",
-          "cover": "/assets/images/product/fruits/banana/case/p1.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p1.svg",
-          "alt": "体质偏虚寒者",
+          "name": "哈分卡卡",
+          "cover": c1,
+          "logo": c1,
+          "alt": "哈分卡卡",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "体质偏虚寒者",
-            "name": "体质偏虚寒者",
-            "painPoint": "香蕉性寒体质偏虚寒者最好避之则吉，像胃寒、虚寒、肾炎也不要吃香蕉，以上几种病人如果吃香蕉也不利于身体的健康。还有怀孕期脚肿的患者，也最好不要吃香蕉。",
-            "solution": "香蕉延年益寿，老少皆宜，是减肥者的首选。其适宜发热、口干烦渴、喉癌、大便干燥难解、痔疮、肛裂、大便带血、癌症病人及放疗、化疗后食用；适宜上消化道溃疡、肺结核、顽固性干咳者食用。"
+            "alt": "哈分卡卡",
+            "name": "哈分卡卡",
+            "painPoint": "说到用户思维，很多人都在谈如何抓住用户的痛点。一旦抓住痛点，便有了和用户进行互动的切入点，有了搞好用户关系的通行证，痒点则是理性背后的感性，严谨逻辑之外的趣味，以及带给用户的愉悦。",
+            "solution": "梦魔，又称夜魔。他的名字就是墨菲斯。这是他在希腊神话里的名字，实际上，他也是苏美尔神话中的Lilu（女性版本为Lilith），中世纪的Incubus（女性版本为Succubus），在智利是Trauco，匈牙利是Lidérc,而在巴西和亚马孙流域，梦魔的故事则结合了吸血鬼和人鱼的传说，Boto是一位年轻英俊的男性，白天在水下栖息，夜晚走上陆地，引诱年轻女子并把她们带入水中淹死。"
           }
         },
         {
-          "name": "毁灭阴影",
-          "cover": "/assets/images/product/fruits/banana/case/p2.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p2.svg",
-          "alt": "毁灭阴影",
+          "name": "血色军团",
+          "cover": c2,
+          "logo": c2,
+          "alt": "血色军团",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "毁灭阴影",
-            "name": "毁灭阴影",
-            "painPoint": "炎患者是不可以吃香蕉的，因为香蕉中含有大量的钾、镁元素，肾炎患者的派滤功能比较差，香蕉会使血液中的钙、钾、镁比例失调，进而促进肾病的加重，所以肾病患者最好不要吃香蕉。",
-            "solution": "香蕉是可以促进胃肠道蠕动的，如果空腹吃就会造成肠胃的提前工作，长期空腹吃香蕉不利于身体健康。为什么不能空腹吃香蕉呢？因为空腹时肠胃中几乎没有可提供消化的食物，在空腹时吃香蕉就会加快肠胃的运动，促进血液的循环，增强心脏的负荷，容易导致心肌梗塞。"
+            "alt": "血色军团",
+            "name": "血色军团",
+            "painPoint": "炎叶片和叶柄紫红色， 食用时口感较绿苋软糯，耐热性中等，适于春季栽培。 主要品种有杭州红圆叶，广州红苋，湖北圆叶红苋菜、猪耳朵红苋菜，四川大红袍等。",
+            "solution": "苋菜品种很多，依叶形可分为圆叶种和尖叶种。 圆叶种叶圆形或卵圆形，叶面常皱缩，生长较慢，较迟熟，产量较高，品质较好，抽薹开花较迟。 尖叶种叶披针形或长卵形，先端尖，生长较快，较早熟，产量较低，品质较差，较易抽薹开花。"
           }
         }
       ],
@@ -40,29 +47,29 @@ const data = {
       key: 2,
       data: [
         {
-          "name": "yyyang娱乐",
-          "cover": "/assets/images/product/fruits/banana/case/p3.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p3.svg",
-          "alt": "yyyang娱乐",
+          "name": "翡翠嫦",
+          "cover": c3,
+          "logo": c3,
+          "alt": "翡翠嫦",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "yyyang娱乐",
-            "name": "yyyang娱乐",
-            "painPoint": "1990年香蕉的总产为7100万吨，1995年香蕉的产量仅次于柑橘居第二位，总产达7600万吨。可见世界香蕉的产量从1960年至1995年均呈直线上升，在世界主要水果总产量中保持着第二至第三位，30多年来香蕉的总产量增长了4倍多。",
-            "solution": "香蕉是国内外市场上经济效益显著的水果产品之一。香蕉为草本果树，速生快长、投产年限短、产量高，可周年供应，经济效益特好，深受各香蕉生产国及蕉农的重视。我国华南地区栽培香蕉的面积正不断增加，产量正逐步提高，已成为我国华南地区各省大宗的栽培果树。在良好的栽培条件下高产的香蕉每666.7平方米可达4500千克，香蕉单株最高产量为78千克。在正常的管理下每666.7平方米蕉园可达2000～3000千克，可获纯利2000元左右，是蕉农的重要经济来源。"
+            "alt": "翡翠嫦",
+            "name": "翡翠嫦",
+            "painPoint": "是美国DC漫画旗下的超级反派（DC反派），首次出现于1992年的《蝙蝠侠》动画系列，因人气极高，被引入到漫画中，并初次登场于《蝙蝠侠冒险》（The Batman Adventures）第12期（1993年9月）中。本名哈琳·奎泽尔（Harleen Quinzel），原本是被指定来治疗小丑（The Joker）的心理医生，却被小丑疯狂的人格魅力所吸引多。",
+            "solution": "由于卡通的剧情并非正统剧情，于是在1999年8月推出了她的个人漫画特刊——《蝙蝠侠：哈莉·奎茵》（Batman:Harley Quinn），正式介绍她，并让她开始出现于DC主宇宙的漫画里，这是哈莉·奎茵在主宇宙的漫画中首度登场。"
           }
         },
         {
-          "name": "欧姆制造",
-          "cover": "/assets/images/product/fruits/banana/case/p4.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p4.svg",
-          "alt": "欧姆制造",
+          "name": "米儿米网络科技",
+          "cover": c6,
+          "logo": c6,
+          "alt": "米儿米网络科技",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "欧姆制造",
-            "name": "欧姆制造",
+            "alt": "米儿米网络科技",
+            "name": "米儿米网络科技",
             "painPoint": "詹姆斯·麦克斯韦诠释欧姆定律为，处于某状态的导电体，其电动势与产生的电流成正比。因此，电动势与电流的比例，即电阻，不会随着电流而改变。在这里，电动势就是导电体两端的电压。",
             "solution": "欧姆第一阶段的实验是探讨电流产生的电磁力的衰减与导线长度的关系，其结果于1825年5月在他的第一篇科学论文中发表。在这个实验中，他碰到了测量电流强度的困难。在德国科学家施威格发明的检流计启发下，他把奥斯特关于电流磁效应的发现和库仑扭秤方法结合起来，设计了一个电流扭力秤，用它测量电流强度。"
           }
@@ -73,29 +80,29 @@ const data = {
       key: 3,
       data: [
         {
-          "name": "才华有限公司",
-          "cover": "/assets/images/product/fruits/banana/case/p5.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p5.svg",
-          "alt": "才华有限公司",
+          "name": "钱德勒教堂",
+          "cover": c4,
+          "logo": c4,
+          "alt": "钱德勒教堂",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "才华有限公司",
-            "name": "才华有限公司",
+            "alt": "钱德勒教堂",
+            "name": "钱德勒教堂",
             "painPoint": "在欧姆之前，虽然还没有电阻的概念，但是已经有人对金属的电导率（传导率）进行研究。1825年7月，欧姆也用上述初步实验中所用的装置，研究了金属的相对电导率。他把各种金属制成直径相同的导线进行测量，确定了金、银、锌、黄铜、铁等金属的相对电导率。",
             "solution": "1826年4月欧姆发表论文，把欧姆定律改写为：X=KSA/L，s为导线的横截面积，K表示电导率，A为导线两端的电势差，L为导线的长度，X表示通过L的电流强度。如果用电阻l'=L/KS代入上式，就得到X=A/I'这就是欧姆定律的定量表达式，即电路中的电流强度和电势差成正比而与电阻成反比。"
           }
         },
         {
-          "name": "肯打鸡品宣集团",
-          "cover": "/assets/images/product/fruits/banana/case/p6.svg",
-          "logo": "/assets/images/product/fruits/banana/case/p6.svg",
-          "alt": "肯打鸡品宣集团",
+          "name": "杭州东湖兔头",
+          "cover": c5,
+          "logo": c5,
+          "alt": "杭州东湖兔头",
           "width": 0,
           "height": 0,
           "content": {
-            "alt": "肯打鸡品宣集团",
-            "name": "肯打鸡品宣集团",
+            "alt": "杭州东湖兔头",
+            "name": "杭州东湖兔头",
             "painPoint": "欧姆第一阶段的实验是探讨电流产生的电磁力的衰减与导线长度的关系，其结果于1825年5月在他的第一篇科学论文中发表。在这个实验中，他碰到了测量电流强度的困难。在德国科学家施威格发明的检流计启发下，他把奥斯特关于电流磁效应的发现和库仑扭秤方法巧妙地结合起来，设计了一个电流扭力秤，用它测量电流强度。欧姆从初步的实验中发出，电流的电磁力与导体的长度有关。其关系式与今天的欧姆定律表示式之间看不出有什么直接联系。",
             "solution": "在以前的实验中，欧姆使用的电池组是伏打电堆，这种电堆的电动势不稳定，使他大为头痛。后来经人建议，改用铋铜温差电偶作电源，从而保证了电源电动势的稳定。"
           }

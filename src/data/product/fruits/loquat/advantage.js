@@ -1,53 +1,52 @@
-import a1 from '@/assets/images/product/fruits/banana/advantage/a1.svg'
-import a2 from '@/assets/images/product/fruits/banana/advantage/a2.svg'
-import a3 from '@/assets/images/product/fruits/banana/advantage/a3.svg'
-import a4 from '@/assets/images/product/fruits/banana/advantage/a4.svg'
-import a5 from '@/assets/images/product/fruits/banana/advantage/a5.svg'
-import a6 from '@/assets/images/product/fruits/banana/advantage/a6.svg'
+import a1 from '@/assets/images/product/fruits/litchi/advantage/a1.svg'
+import a2 from '@/assets/images/product/fruits/litchi/advantage/a2.svg'
+import a3 from '@/assets/images/product/fruits/litchi/advantage/a3.svg'
+import a4 from '@/assets/images/product/fruits/litchi/advantage/a4.svg'
+import a5 from '@/assets/images/product/fruits/litchi/advantage/a5.svg'
+import a6 from '@/assets/images/product/fruits/litchi/advantage/a6.svg'
 
 const ad = {
-  title: '产品优势',
-  desc: '稳定可靠，好吃又便宜，三倍体培育产量高',
+  title: '产品特性',
   content: [
     {
-      "title": "好吃",
+      "title": "鲜嫩可口",
       "desc": null,
-      "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
+      "text": "成熟的水蜜桃略呈球形，表面裹着一层细小的绒毛（这说明了毛桃和水蜜桃是一种的），青里泛白，白里透红。一个桃子一般重一百克到二百克，大的重三百多克",
       "icon": a1,
       "alt": "香蕉"
     },
     {
-      "title": "黄色",
+      "title": "汁多甘甜",
       "desc": null,
-      "text": "叶片长圆形，长2～2.2米，宽60～70厘米，先端钝圆，基部近圆形，两侧对称，叶面深绿色，无白粉，叶背浅绿色，被白粉",
+      "text": "水蜜桃树属于落叶小乔木，树姿较开张，以中、长果枝结果为主，多复芽。 [1]  树皮中含有一种胶液，叫桃胶",
       "icon": a2,
       "alt": "香蕉"
     },
     {
-      "title": "营养丰富",
+      "title": "果肉鲜美",
       "desc": null,
-      "text": "叶柄短粗，通常长在30厘米以下，叶翼显著，张开，边缘褐红色或鲜红色，穗状花序下垂，花序轴密被褐色绒毛，苞片外面紫红色",
+      "text": "桃树是浅根系果树，主要根群多分布在60厘米的土层内。桃根在一年中只要土温、湿度、通气、营养等条件适宜，全年都可以生长",
       "icon": a3,
       "alt": "香蕉"
     },
     {
-      "title": "可做奶昔",
+      "title": "清热解渴",
       "desc": null,
-      "text": "花乳白色或略带浅紫色，离生花被片近圆形，全缘，先端有锥状急尖，合生花被片的中间二侧生小裂片长，长约为中央裂片的1/2",
+      "text": "一年内有两个生长高峰，分别在5－6月间和9－10月间。桃根需要的氧比其他果树多。有一个值得注意的现象，即在老根死亡腐烂分解过程中产生一种叫扁桃甙的物质，对新根生长有抑制作用",
       "icon": a4,
       "alt": "香蕉"
     },
     {
-      "title": "可治便秘",
+      "title": "止咳去痰",
       "desc": null,
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个，果身弯曲，略为浅弓形，幼果向上，直立，成熟后逐渐趋于平伸，长12～30厘米，直径3.4～3.8厘米，果棱明显",
+      "text": "根据土壤、气候、管理水平及当地市场行情，选择丰产性好、产销对路的优良品种，并做好早、中、晚熟品种的搭配",
       "icon": a5,
       "alt": "香蕉"
     },
     {
-      "title": "常见水果",
+      "title": "化腐为神奇",
       "desc": null,
-      "text": "剑头芽（即慈姑芽或竹笋芽）假茎高约50厘米，基部粗壮，肉红色，上部细小，呈带灰绿的紫红色，黑斑大而显著，叶片狭长上举，叶背被有厚层的白粉",
+      "text": "选择排水良好、土层深厚、PH值5.5～6.5微酸性砂壤或砂砾壤土，进行挖大穴定植；低丘坡地应修筑梯地，每亩定植密度平地40～50株，山地50～60株",
       "icon": a6,
       "alt": "香蕉"
     }

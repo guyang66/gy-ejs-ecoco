@@ -1,52 +1,52 @@
-import a1 from '@/assets/images/product/fruits/banana/advantage/a1.svg'
-import a2 from '@/assets/images/product/fruits/banana/advantage/a2.svg'
-import a3 from '@/assets/images/product/fruits/banana/advantage/a3.svg'
-import a4 from '@/assets/images/product/fruits/banana/advantage/a4.svg'
-import a5 from '@/assets/images/product/fruits/banana/advantage/a5.svg'
-import a6 from '@/assets/images/product/fruits/banana/advantage/a6.svg'
+import a1 from '@/assets/images/product/fruits/hami/advantage/a1.svg'
+import a2 from '@/assets/images/product/fruits/hami/advantage/a2.svg'
+import a3 from '@/assets/images/product/fruits/hami/advantage/a3.svg'
+import a4 from '@/assets/images/product/fruits/hami/advantage/a4.svg'
+import a5 from '@/assets/images/product/fruits/hami/advantage/a5.svg'
+import a6 from '@/assets/images/product/fruits/hami/advantage/a6.svg'
 
 const ad = {
-  title: '产品优势',
+  title: '产品特性',
   content: [
     {
-      "title": "疗饥",
+      "title": "鲜嫩可口",
       "desc": null,
-      "text": "中医认为，甜瓜类的果品性质偏寒，还具有疗饥、利便、益气、清肺热止咳的功效，适宜于肾病、胃病、咳嗽痰喘、贫血和便秘患者",
+      "text": "成熟的水蜜桃略呈球形，表面裹着一层细小的绒毛（这说明了毛桃和水蜜桃是一种的），青里泛白，白里透红。一个桃子一般重一百克到二百克，大的重三百多克",
       "icon": a1,
       "alt": "香蕉"
     },
     {
-      "title": "预防",
+      "title": "汁多甘甜",
       "desc": null,
-      "text": "哈密瓜可以很好的预防一些疾病，哈密瓜中钾的含量是最高的。钾对身体是非常有益的，钾可以给身体提供保护，还能够保持正常的心率和血压，可以有效的预防冠心病",
+      "text": "水蜜桃树属于落叶小乔木，树姿较开张，以中、长果枝结果为主，多复芽。 [1]  树皮中含有一种胶液，叫桃胶",
       "icon": a2,
       "alt": "香蕉"
     },
     {
-      "title": "含糖较多",
+      "title": "果肉鲜美",
       "desc": null,
-      "text": "它的颜色为果绿色带网纹的， 金黄色的，花青色的等等。 用鼻子去闻瓜，一般有香味的，成熟度适中。没有香味或香味淡泊的，是成熟度较差的，可以放些时候再吃",
+      "text": "桃树是浅根系果树，主要根群多分布在60厘米的土层内。桃根在一年中只要土温、湿度、通气、营养等条件适宜，全年都可以生长",
       "icon": a3,
       "alt": "香蕉"
     },
     {
-      "title": "哈密瓜性凉",
+      "title": "清热解渴",
       "desc": null,
-      "text": "患有脚气病、黄疸、腹胀、便溏、寒性咳喘以及产后、病后的人不宜多食；所以孕妇可以在怀孕的时候适当的吃点哈密瓜，在产后就不宜使用。因为哈密瓜是偏凉的",
+      "text": "一年内有两个生长高峰，分别在5－6月间和9－10月间。桃根需要的氧比其他果树多。有一个值得注意的现象，即在老根死亡腐烂分解过程中产生一种叫扁桃甙的物质，对新根生长有抑制作用",
       "icon": a4,
       "alt": "香蕉"
     },
     {
-      "title": "可治便秘",
+      "title": "止咳去痰",
       "desc": null,
-      "text": "最大的果丛有果360个之多，重可达32千克，一般的果丛有果8～10段，约有果150～200个，果身弯曲，略为浅弓形，幼果向上，直立，成熟后逐渐趋于平伸，长12～30厘米，直径3.4～3.8厘米，果棱明显",
+      "text": "根据土壤、气候、管理水平及当地市场行情，选择丰产性好、产销对路的优良品种，并做好早、中、晚熟品种的搭配",
       "icon": a5,
       "alt": "香蕉"
     },
     {
-      "title": "冬季严寒",
+      "title": "化腐为神奇",
       "desc": null,
-      "text": "位于新疆东部的吐哈盆地，在吐鲁番、哈密地区境内，呈东西向展布，南北分别与塔里木盆地、准噶尔盆地隔山相望，盆地四周环山",
+      "text": "选择排水良好、土层深厚、PH值5.5～6.5微酸性砂壤或砂砾壤土，进行挖大穴定植；低丘坡地应修筑梯地，每亩定植密度平地40～50株，山地50～60株",
       "icon": a6,
       "alt": "香蕉"
     }

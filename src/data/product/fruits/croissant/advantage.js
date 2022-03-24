@@ -1,52 +1,52 @@
-import a1 from '@/assets/images/product/fruits/lemon/advantage/a1.svg'
-import a2 from '@/assets/images/product/fruits/lemon/advantage/a2.svg'
-import a3 from '@/assets/images/product/fruits/lemon/advantage/a3.svg'
-import a4 from '@/assets/images/product/fruits/lemon/advantage/a4.svg'
-import a5 from '@/assets/images/product/fruits/lemon/advantage/a5.svg'
-import a6 from '@/assets/images/product/fruits/lemon/advantage/a6.svg'
+import a1 from '@/assets/images/product/fruits/croissant/advantage/a1.svg'
+import a2 from '@/assets/images/product/fruits/croissant/advantage/a2.svg'
+import a3 from '@/assets/images/product/fruits/croissant/advantage/a3.svg'
+import a4 from '@/assets/images/product/fruits/croissant/advantage/a4.svg'
+import a5 from '@/assets/images/product/fruits/croissant/advantage/a5.svg'
+import a6 from '@/assets/images/product/fruits/croissant/advantage/a6.svg'
 
 const ad = {
-  title: '产品优势',
+  title: '产品特性',
   content: [
     {
-      "title": "金纯羊角",
+      "title": "鲜嫩可口",
       "desc": null,
-      "text": "保护地与露地均可栽培，选择排水良好的地块。子孙蔓均可留瓜。立架单蔓整枝，高垄双行，行距40-55厘米，每亩种植1800株左右",
+      "text": "成熟的水蜜桃略呈球形，表面裹着一层细小的绒毛（这说明了毛桃和水蜜桃是一种的），青里泛白，白里透红。一个桃子一般重一百克到二百克，大的重三百多克",
       "icon": a1,
       "alt": "香蕉"
     },
     {
-      "title": "营养很高",
+      "title": "汁多甘甜",
       "desc": null,
-      "text": "补益气血、通利小便的功效。葡萄皮中的白藜芦醇、葡萄籽中的原花青素含量都高于葡萄的其他部位",
+      "text": "水蜜桃树属于落叶小乔木，树姿较开张，以中、长果枝结果为主，多复芽。 [1]  树皮中含有一种胶液，叫桃胶",
       "icon": a2,
       "alt": "香蕉"
     },
     {
-      "title": "肥水管理",
+      "title": "果肉鲜美",
       "desc": null,
-      "text": "定植后根据墒情可浇1次缓苗水，以后不干不浇。当瓜胎长12cm时，选择晴天上午结合浇小水，每亩冲施硝酸钾型复合肥（N∶P∶K为16∶6∶22，下同）5kg，以后视情况7～10天浇1次水",
+      "text": "桃树是浅根系果树，主要根群多分布在60厘米的土层内。桃根在一年中只要土温、湿度、通气、营养等条件适宜，全年都可以生长",
       "icon": a3,
       "alt": "香蕉"
     },
     {
-      "title": "裙膜",
+      "title": "清热解渴",
       "desc": null,
-      "text": "采用单蔓整枝法，主蔓长30厘米时进行吊蔓，22片叶左右时摘心，在第16～19片叶开始选留子蔓为坐果蔓，坐果后留1片叶摘心，每株留3个瓜",
+      "text": "一年内有两个生长高峰，分别在5－6月间和9－10月间。桃根需要的氧比其他果树多。有一个值得注意的现象，即在老根死亡腐烂分解过程中产生一种叫扁桃甙的物质，对新根生长有抑制作用",
       "icon": a4,
       "alt": "香蕉"
     },
     {
-      "title": "转化酶",
+      "title": "止咳去痰",
       "desc": null,
-      "text": "羊角蜜甜瓜的营养很高，含有蛋白质、碳水化合物、胡萝卜素、维生素B1、维生素B2、烟酸、钙、磷、铁等多种营养成分",
+      "text": "根据土壤、气候、管理水平及当地市场行情，选择丰产性好、产销对路的优良品种，并做好早、中、晚熟品种的搭配",
       "icon": a5,
       "alt": "香蕉"
     },
     {
-      "title": "生津解暑",
+      "title": "化腐为神奇",
       "desc": null,
-      "text": "别看柠檬食之味酸、微苦，不能像其它水果一样生吃鲜食，但柠檬果皮富含芳香挥发成分，可以生津解暑，开胃醒脾。夏季暑湿较重",
+      "text": "选择排水良好、土层深厚、PH值5.5～6.5微酸性砂壤或砂砾壤土，进行挖大穴定植；低丘坡地应修筑梯地，每亩定植密度平地40～50株，山地50～60株",
       "icon": a6,
       "alt": "香蕉"
     }
