@@ -653,14 +653,14 @@ const menus = [
       },
       {
         name: '大数据行业',
-        href: '/solution/tourism.html',
+        href: '/solution/bigdata.html',
         iconH: '/assets/images/menu/solution-dashuju-h.svg',
         iconN: '/assets/images/menu/solution-dashuju-n.svg',
         desc: '让数据引领我们进入全新的新时代'
       },
       {
         name: '私有化行业',
-        href: '/solution/game.html',
+        href: '/solution/personal.html',
         iconH: '/assets/images/menu/solution-siyouhua-h.svg',
         iconN: '/assets/images/menu/solution-siyouhua-n.svg',
         desc: '私有化企业所有资源，标杆引领行业'
@@ -674,25 +674,26 @@ const menus = [
       },
       {
         name: '餐饮行业',
-        href: '/solution/catering.html',
+        href: '/solution/food.html',
         iconH: '/assets/images/menu/solution-canyin-h.svg',
         iconN: '/assets/images/menu/solution-canyin-n.svg',
         desc: '打造数字化贯通增量提升'
       },
       {
         name: '交通行业',
-        href: '/solution/motor.html',
+        href: '/solution/traffic.html',
         iconH: '/assets/images/menu/solution-jiaotong-h.svg',
         iconN: '/assets/images/menu/solution-jiaotong-n.svg',
         desc: '让出行生活更加美好'
       },
       {
         name: '传统制造行业',
-        href: '/solution/tourism.html',
+        href: '/solution/manufacture.html',
         iconH: '/assets/images/menu/solution-zhizao-h.svg',
         iconN: '/assets/images/menu/solution-zhizao-n.svg',
         desc: '魅力提升传统制造新体验'
       },
+
     ]
   },
   {

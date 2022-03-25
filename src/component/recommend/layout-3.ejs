@@ -1,0 +1,28 @@
+<div class="recommend-layout-3-wrap" <% if(recommendData.bg){ %>style="background: <%=recommendData.bg%>"<% } %>>
+  <div class="recommend-content">
+    <!--标题-->
+    <% if(recommendData.title) { %>
+      <div class="c-module-title <% if(!recommendData.desc){ %>c-module-b-60<% } %> <% if(recommendData.style === 'black'){ %>color-white<% } %>" ><%=recommendData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!recommendData.desc){ %>c-module-b-60<% } %> <% if(recommendData.style === 'black'){ %>color-white<% } %>">相关推荐</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(recommendData.desc) { %>
+      <div class="c-module-desc"><%=recommendData.desc%></div>
+    <% } %>
+
+    <div class="recommend-view">
+      <% recommendData.content.forEach(function(item, index){ %>
+        <div class="recommend-cell fn-left <% if(index < recommendData.content.length - 1){ %>mar-r40<% } %>">
+          <div class="top-view">
+            <img class="img-wrap fn-left" src="<%=item.icon%>" alt="<%=item.alt%>" />
+            <div class="title-wrap fn-right"><%=item.title%></div>
+          </div>
+          <div class="desc-wrap mar-t20"><%=item.desc%></div>
+          <a class="btn-wrap" href="<%=item.href%>">了解更多 ></a>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

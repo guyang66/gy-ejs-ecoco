@@ -286,22 +286,22 @@ module.exports = [
   {
     name: 'product/dataserver/onlinedevelop',
     path: 'page/product/dataserver/page-online-develop',
-    title: '智能无人机'
+    title: '实时开发'
   },
   {
     name: 'product/dataserver/offlinedevelop',
     path: 'page/product/dataserver/page-offline-develop',
-    title: '智能无人机'
+    title: '离线开发'
   },
   {
     name: 'product/dataserver/neuralnetwork',
     path: 'page/product/dataserver/page-neural-network',
-    title: '智能无人机'
+    title: '神经网络'
   },
   {
     name: 'product/dataserver/recommend',
     path: 'page/product/dataserver/page-recommend',
-    title: '智能无人机'
+    title: '智能推荐系统'
   },
 
   // 解决方案
@@ -309,5 +309,45 @@ module.exports = [
     name: 'solution/education',
     path: 'page/solution/page-education',
     title: '教育行业'
+  },
+  {
+    name: 'solution/bigdata',
+    path: 'page/solution/page-bigdata',
+    title: '大数据行业'
+  },
+  {
+    name: 'solution/finance',
+    path: 'page/solution/page-finance',
+    title: '金融行业'
+  },
+  {
+    name: 'solution/food',
+    path: 'page/solution/page-food',
+    title: '餐饮行业'
+  },
+  {
+    name: 'solution/game',
+    path: 'page/solution/page-game',
+    title: '游戏行业'
+  },
+  {
+    name: 'solution/manufacture',
+    path: 'page/solution/page-manufacture',
+    title: '传统制造行业'
+  },
+  {
+    name: 'solution/online',
+    path: 'page/solution/page-online',
+    title: '电商行业'
+  },
+  {
+    name: 'solution/personal',
+    path: 'page/solution/page-personal',
+    title: '私有化行业'
+  },
+  {
+    name: 'solution/traffic',
+    path: 'page/solution/page-traffic',
+    title: '交通行业'
   },
 ];
