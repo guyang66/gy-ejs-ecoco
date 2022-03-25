@@ -149,6 +149,64 @@ const menus = [
         ]
       },
       {
+        name: '数据与服务',
+        iconH: '/assets/images/menu/dashuju-white.svg',
+        iconN: '/assets/images/menu/dashuju-black.svg',
+        layout: 'column-wrap',
+        content: [
+          {
+            key: 1,
+            column: [
+              {
+                title: '算法开发',
+                data: [
+                  {
+                    name: '离线算法',
+                    href:  '/product/dataserver/offlinealgorithm.html',
+                  },
+                  {
+                    name: '智能推荐系统',
+                    href: '/product/dataserver/recommend.html',
+                    tags: [
+                      {
+                        text: 'HOT',
+                        type: 'hot'
+                      }
+                    ]
+                  },
+                  {
+                    name: '聚类算法',
+                    href: '/product/dataserver/cluster.html',
+                  },
+                  {
+                    name: '神经网络',
+                    href: '/product/dataserver/neuralnetwork.html',
+                  }
+                ]
+              },
+            ]
+          },
+          {
+            key: 2,
+            column: [
+              {
+                title: '数据开发',
+                data: [
+                  {
+                    name: '离线开发',
+                    href: '/product/dataserver/offlinedevelop.html',
+                  },
+                  {
+                    name: '实时开发',
+                    href: '/product/dataserver/onlinedevelop.html',
+                  },
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         name: '水果',
         iconH: '/assets/images/menu/shuiguo-white.svg',
         iconN: '/assets/images/menu/shuiguo-black.svg',
@@ -560,64 +618,6 @@ const menus = [
               href: ''
             }
           ]
-        },
-        {
-          name: '数据与服务',
-          iconH: '/assets/images/menu/dashuju-white.svg',
-          iconN: '/assets/images/menu/dashuju-black.svg',
-          layout: 'column-wrap',
-          content: [
-            {
-              key: 1,
-              column: [
-                {
-                  title: '算法开发',
-                  data: [
-                    {
-                      name: '离线算法',
-                      href:  '/product/dataserver/offlinealgorithm.html',
-                    },
-                    {
-                      name: '智能推荐系统',
-                      href: '/product/dataserver/recommend.html',
-                      tags: [
-                        {
-                          text: 'HOT',
-                          type: 'hot'
-                        }
-                      ]
-                    },
-                    {
-                      name: '聚类算法',
-                      href: '/product/dataserver/cluster.html',
-                    },
-                    {
-                      name: '神经网络',
-                      href: '/product/dataserver/neuralnetwork.html',
-                    }
-                  ]
-                },
-              ]
-            },
-            {
-              key: 2,
-              column: [
-                {
-                  title: '数据开发',
-                  data: [
-                    {
-                      name: '离线开发',
-                      href: '/product/dataserver/offlinedevelop.html',
-                    },
-                    {
-                      name: '实时开发',
-                      href: '/product/dataserver/onlinedevelop.html',
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
         }
     ]
   },
@@ -626,23 +626,16 @@ const menus = [
     path: 'page/solution',
     hasHref: false,
     viewWidth: 800,
-    viewHeight: 360,
+    viewHeight: 520,
     title: '解决方案',
     viewStyle: 'n-4',
     children: [
       {
-        name: '游戏行业',
-        href: '/solution/game.html',
-        iconH: '/assets/images/menu/solution-youxi-h.svg',
-        iconN: '/assets/images/menu/solution-youxi-n.svg',
-        desc: '打造全新的精英游戏领域行业'
-      },
-      {
-        name: '电商行业',
-        href: '/solution/online.html',
-        iconH: '/assets/images/menu/solution-dianshang-h.svg',
-        iconN: '/assets/images/menu/solution-dianshang-n.svg',
-        desc: '电商行业全新升级'
+        name: '教育行业',
+        href: '/solution/education.html',
+        iconH: '/assets/images/menu/solution-jiaoyu-h.svg',
+        iconN: '/assets/images/menu/solution-jiaoyu-n.svg',
+        desc: '商业化，标准化，全新化，服务化领域深耕',
       },
       {
         name: '金融行业',
@@ -652,11 +645,32 @@ const menus = [
         desc: '走向金融更大更高领域'
       },
       {
-        name: '汽车行业',
-        href: '/solution/motor.html',
-        iconH: '/assets/images/menu/solution-qiche-h.svg',
-        iconN: '/assets/images/menu/solution-qiche-n.svg',
-        desc: '让生活更美好'
+        name: '电商行业',
+        href: '/solution/online.html',
+        iconH: '/assets/images/menu/solution-dianshang-h.svg',
+        iconN: '/assets/images/menu/solution-dianshang-n.svg',
+        desc: '电商行业全新升级'
+      },
+      {
+        name: '大数据行业',
+        href: '/solution/tourism.html',
+        iconH: '/assets/images/menu/solution-dashuju-h.svg',
+        iconN: '/assets/images/menu/solution-dashuju-n.svg',
+        desc: '让数据引领我们进入全新的新时代'
+      },
+      {
+        name: '私有化行业',
+        href: '/solution/game.html',
+        iconH: '/assets/images/menu/solution-siyouhua-h.svg',
+        iconN: '/assets/images/menu/solution-siyouhua-n.svg',
+        desc: '私有化企业所有资源，标杆引领行业'
+      },
+      {
+        name: '游戏行业',
+        href: '/solution/game.html',
+        iconH: '/assets/images/menu/solution-youxi-h.svg',
+        iconN: '/assets/images/menu/solution-youxi-n.svg',
+        desc: '打造全新的精英游戏领域行业'
       },
       {
         name: '餐饮行业',
@@ -666,18 +680,18 @@ const menus = [
         desc: '打造数字化贯通增量提升'
       },
       {
-        name: '旅游行业',
-        href: '/solution/tourism.html',
-        iconH: '/assets/images/menu/solution-lvyou-h.svg',
-        iconN: '/assets/images/menu/solution-lvyou-n.svg',
-        desc: '魅力提升人文旅游体验'
+        name: '交通行业',
+        href: '/solution/motor.html',
+        iconH: '/assets/images/menu/solution-jiaotong-h.svg',
+        iconN: '/assets/images/menu/solution-jiaotong-n.svg',
+        desc: '让出行生活更加美好'
       },
       {
-        name: '大数据行业',
+        name: '传统制造行业',
         href: '/solution/tourism.html',
-        iconH: '/assets/images/menu/solution-dashuju-h.svg',
-        iconN: '/assets/images/menu/solution-dashuju-n.svg',
-        desc: '让数据代领我们进入新时代'
+        iconH: '/assets/images/menu/solution-zhizao-h.svg',
+        iconN: '/assets/images/menu/solution-zhizao-n.svg',
+        desc: '魅力提升传统制造新体验'
       },
     ]
   },

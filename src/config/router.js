@@ -303,4 +303,11 @@ module.exports = [
     path: 'page/product/dataserver/page-recommend',
     title: '智能无人机'
   },
+
+  // 解决方案
+  {
+    name: 'solution/education',
+    path: 'page/solution/page-education',
+    title: '教育行业'
+  },
 ];

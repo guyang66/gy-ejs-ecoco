@@ -20,5 +20,5 @@ fi
 #
 sh ./initFilter.sh ${ENTRY_FILTER}
 node ./prepare.js
-npm run start
+npm run run
 

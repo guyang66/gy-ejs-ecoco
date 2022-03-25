@@ -77,12 +77,12 @@
             <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px;left:-40px">
               <div class="m-view-wrap pad20">
                 <% nav.children.forEach(function(childNav){ %>
-                  <div class="m-n-4-cell-wrap fn-left">
+                  <a class="m-n-4-cell-wrap fn-left" href="<%=childNav.href%>">
                       <img class="icon icon-active" src="<%=childNav.iconH%>" style="display: none"/>
                       <img class="icon icon-normal" src="<%=childNav.iconN%>" style="display: block"/>
                       <div class="title"><%=childNav.name%></div>
                       <div class="desc"><%=childNav.desc%></div>
-                  </div>
+                  </a>
                 <% }); %>
               </div>
             </div>
