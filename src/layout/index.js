@@ -35,7 +35,7 @@ const htmlRender = ({
     tabsData,
     ...configs,
     title: `默认标题`, // 页面标题
-    header: header({ key, logo, menus, telicon}),
+    header: header({ key, logo, menus, telicon, hasBanner}),
     banner: hasBanner ? banner({bannerData}) : '',
     tabs: tabs({tabsData}),
     container: container || '',

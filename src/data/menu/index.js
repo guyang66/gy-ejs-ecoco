@@ -700,7 +700,7 @@ const menus = [
     name: 'cases',
     path: 'page/cases',
     title: '客户案例',
-    href: '/cases.html',
+    href: '/case.html',
     hasHref: true
   },
   {

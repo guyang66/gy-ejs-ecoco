@@ -1,0 +1,61 @@
+<section>
+    <div class="case-detail-wrap">
+        <div class="case-detail-content">
+            <div class="fake-header"></div>
+
+            <div class="crumbs mar-t20">
+                <span style="margin-right: 10px;"><a href="/case.html">客户案例</a></span>>
+                <span style="margin-left: 5px;"><%=detailData.title%></span>
+            </div>
+
+            <div class="main-view">
+                <div class="info-view fn-left">
+                    <img class="main-icon fn-left" src="<%=detailData.icon%>" alt="案例"/>
+                    <div class="main-title"><%=detailData.title%></div>
+                    <div class="desc-bar mar-t20"></div>
+                    <div class="main-desc"><%=detailData.desc%></div>
+                    <div class="desc-bar"></div>
+
+                    <div class="slice-line mar-t40 mar-b20"></div>
+
+                    <% detailData.content.forEach(function(item, index){ %>
+                        <div class="info-item">
+                            <% if(item.key === 'img') { %>
+                            <div class="img-item mar-t10 mar-b10">
+                                <img src="<%=item.data%>" alt="<%=detailData.title%>"/>
+                            </div>
+
+                            <!--可以多定义一些自定义样式-->
+                            <% } else if(item.key === 'title-normal'){ %>
+                            <span class="title-normal-item mar-t10">
+                                      <%=item.data%>
+                                  </span>
+                            <% } else if(item.key === 'text'){ %>
+                            <div class="text-item mar-t20 mar-b20">
+                                <%=item.data%>
+                            </div>
+                            <% } %>
+                        </div>
+                    <% }); %>
+                </div>
+
+                <% recommendData.content.forEach(function(rec, index){ %>
+                    <div class="fn-right side-view <% if(index > 0){ %>mar-t40<% } %>">
+                        <div class="title mar-b10"><%=rec.title%></div>
+                        <% rec.data.forEach(function(item){ %>
+                        <a class="product-item mar-t10 mar-b10" href="<%=item.href%>">
+                            <% if(item.icon) { %>
+                                <img class="icon-img fn-left" src="<%=item.icon%>" alt="<%=item.alt%>"/>
+                            <% } %>
+                            <div class="title <% if(item.icon){ %>mar-l48<% } %>"><%=item.name%></div>
+                            <img class="arrow-img" src="/assets/images/common/xiangyou-white.svg"/>
+                        </a>
+                        <% }); %>
+                    </div>
+                <% }); %>
+            </div>
+
+        </div>
+    </div>
+    <%=formView%>
+</section>

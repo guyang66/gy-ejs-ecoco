@@ -1,6 +1,6 @@
-import a1 from '@/assets/images/solution/education/apply/a1.jpg'
-import a2 from '@/assets/images/solution/education/apply/a2.jpg'
-import a3 from '@/assets/images/solution/education/apply/a3.jpg'
+import a1 from '@/assets/images/solution/education/apply/a1.png'
+import a2 from '@/assets/images/solution/education/apply/a2.png'
+import a3 from '@/assets/images/solution/education/apply/a3.png'
 
 const data = {
   title: '使用场景',

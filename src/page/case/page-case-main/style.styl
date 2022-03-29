@@ -1,0 +1,147 @@
+@import "@/styles/layout.styl";
+@import 'swiper/dist/css/swiper.css';
+.case-main-wrap
+  width 100%
+  overflow hidden
+  background #FFFFFF
+  .case-main-content
+    width 1280px
+    overflow hidden
+    margin 0 auto
+    position relative
+    .main-title
+      width auto
+    .search-wrap
+      width 50%
+      min-width 400px
+      max-width 800px
+      height 134px
+      padding 20px
+      margin-bottom 25px
+      margin-left 50%
+      transform translateX(-50%)
+      .search
+        position relative
+        width 100%
+        height 46px
+        margin 0 auto
+        margin-top 15px
+        .input
+          display block
+          width 100%
+          height 100%
+          padding 0 10px
+          font-size 14px
+          border 1px solid #DEE4F4
+          font-weight 500
+          background none
+          outline none
+        .icon
+          position absolute
+          top 0
+          right 0
+          width 66px
+          height 46px
+          background-image linear-gradient(90deg, rgb(83, 96, 251) 0%, rgb(1, 187, 221) 96%)
+          cursor pointer
+          img
+            display block
+            width 24px
+            height 24px
+            margin 11px 21px
+    .hot-tag
+      font-size 16px
+      color #666666
+      font-family "PingFang SC"
+      .tag-link
+        cursor pointer
+      .tag-link:hover
+        color #4169E1
+    .case-view
+      position relative
+      overflow hidden
+      padding 12px
+      width 100%
+      .case-cell
+        width 392px
+        height 200px
+        transition all 0.3s ease-in-out
+        padding 24px
+        border 1px solid #ededed
+        position relative
+        .case-icon
+          width 48px
+          height 48px
+        .case-title
+          font-size 16px
+          color #181818
+          font-family "PingFang SC"
+          font-weight 600
+          margin-left 72px
+          height 48px
+          line-height 48px
+        .case-desc
+          font-size 14px
+          color #444444
+          text-align justify
+          margin-top 10px
+          line-height 26px
+        .case-btn
+          color #4169E1
+          position absolute
+          cursor pointer
+          right 24px
+          bottom 24px
+          height 36px
+          line-height 36px
+          text-align center
+          font-size 14px
+          border-radius 2px
+          min-width 96px
+        .case-btn:hover
+          color white
+          background-image linear-gradient(90deg, rgb(83, 96, 251) 0%, rgb(1, 187, 221) 96%)
+      .case-cell:hover
+        box-shadow 0 0 15px 0 rgba(0,0,0,0.15)
+        transition all 0.3s ease-in-out
+    .case-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+    .expand-img-wrap
+      width 100%
+      position relative
+      margin-bottom 40px
+      .expand-btn
+        width 32px
+        display block
+        cursor pointer
+        height 32px
+        margin 0 auto
+        animation slide-down 1s ease-in-out infinite
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-40%)
+    opacity: 0.5
+  }
+  25% {
+    transform: translateY(-20%)
+    opacity: 0.75
+  }
+  50% {
+    transform: translateY(0)
+    opacity: 1
+  }
+  75% {
+    transform: translateY(20%)
+    opacity: 0.75
+  }
+  100% {
+    transform: translateY(40%)
+    opacity: 0.5
+  }
+}

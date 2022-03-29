@@ -1,13 +1,13 @@
-import a1 from '@/assets/images/solution/bigdata/apply/a1.jpg'
-import a2 from '@/assets/images/solution/bigdata/apply/a2.jpg'
-import a3 from '@/assets/images/solution/bigdata/apply/a3.jpg'
+import a1 from '@/assets/images/solution/bigdata/apply/a1.png'
+import a2 from '@/assets/images/solution/bigdata/apply/a2.png'
+import a3 from '@/assets/images/solution/bigdata/apply/a3.png'
 
 const data = {
   title: '使用场景',
   content: [
     {
       "cover": a1,
-      "title": "逆向工程",
+      "title": "基因重组",
       "data": [
         "导鸣人修行时曾形容他和父亲水门极为相像——金色短发，蔚蓝双瞳；而他的脸型和眼睛的形状遗传自他的母亲。",
         "花两性，依子房发达与否，有钟状花和筒状花之别，前者子房发达善于受精结果，后者常凋落不实；一般1朵至数朵着生在当年新梢顶端及项端以下的叶腋间。",
@@ -16,7 +16,7 @@ const data = {
     },
     {
       "cover": a2,
-      "title": "老鼠发电",
+      "title": "数据库序列化",
       "data": [
         "同时市面上还出现了一种千峰草鸡蛋，这种鸡蛋所使用的饲料千峰草，均来自海拔500至1500峰草更加珍贵。",
         "能够适应多变的野外环境；动作敏捷视力好，骨骼健壮、羽毛丰盈；最重要的是它们所产的鸡蛋也保留了千峰草的精华成分，在营养价值高的同时也具有显著的药用功效",
@@ -25,7 +25,7 @@ const data = {
     },
     {
       "cover": a3,
-      "title": "骷髅海战术",
+      "title": "沙漠种植",
       "data": [
         " 看蛋壳的亮洁度，如果蛋壳表面很亮很光，说明储存的时间比较久，新鲜鸡蛋蛋壳表面的立体感较强； 拿起鸡蛋放在耳边摇一摇。",
         "笨鸡蛋与等重的普通鸡蛋相比营养含量高得多，而且富含免疫因子，营养价值更高，如其所含的卵磷脂成分就比普通鸡蛋高好多，这种成分是可以抵消掉鸡蛋里所含的胆固醇的。",

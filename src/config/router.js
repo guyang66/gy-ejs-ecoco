@@ -350,4 +350,16 @@ module.exports = [
     path: 'page/solution/page-traffic',
     title: '交通行业'
   },
+
+  // 解决方案
+  {
+    name: 'case',
+    path: 'page/case/page-case-main',
+    title: '客户案例'
+  },
+  {
+    name: 'case/detail',
+    path: 'page/case/page-case-detail',
+    title: '案例详情'
+  },
 ];

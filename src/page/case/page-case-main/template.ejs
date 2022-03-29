@@ -1,0 +1,36 @@
+<section>
+    <div class="case-main-wrap">
+        <div class="case-main-content">
+            <div class="main-title c-module-title">客户案例</div>
+            <div class="search-wrap">
+                <div class="search">
+                    <input class="input" type="text" />
+                    <p class="icon"><img src="/assets/images/common/search-white.svg" alt="yy科技"/></p>
+                </div>
+                <div class="hot-tag mar-t10">热门搜索：
+                    <% tagData.forEach(function(item){ %>
+                        <a class="mar-r10 tag-link"><%=item.name%></a>
+                    <% }); %>
+                </div>
+            </div>
+
+            <div class="case-view" count="<%=Math.min(9, casesData.length)%>">
+                <% casesData.slice(0,9).forEach(function(item, index){ %>
+                    <div class="case-cell fn-left mar-b40 <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+                        <img class="case-icon fn-left" src="<%=item.icon%>" alt="案例"/>
+                        <div class="case-title"><%=item.title%></div>
+                        <div class="case-desc"><%=item.desc%></div>
+                        <a class="case-btn" href="<%=item.href%>">了解详情 ></a>
+                    </div>
+                <% }); %>
+            </div>
+
+            <% if(casesData.length > 9) { %>
+                <div class="expand-img-wrap">
+                    <img class="expand-btn" src="/assets/images/common/zhankai.svg" alt="yy科技"/>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <%=formView%>
+</section>
