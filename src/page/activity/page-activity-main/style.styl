@@ -1,0 +1,343 @@
+@import "@/styles/layout.styl";
+@import 'swiper/dist/css/swiper.css';
+.activity-main-wrap
+  width 100%
+  position relative
+  .activity-favorite-wrap
+    width 100%
+    background #FFFFFF
+    overflow hidden
+    position relative
+    .activity-favorite-content
+      width 1280px
+      margin 0 auto
+      position relative
+    .favorite-view
+      width 100%
+      .main-cell
+        width 400px
+        height 500px
+        margin-bottom 40px
+        border-radius 2px
+        transition all 0.3s ease-in-out
+        overflow hidden
+        box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+        .top-wrap
+          width 100%
+          height 140px
+          background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+          padding 32px
+          .title
+            color #FFFFFF
+            font-size 20px
+            font-family "PingFang SC"
+            letter-spacing 0.8px
+            line-height 28px
+            margin-bottom 10px
+          .desc
+            font-size 14px
+            line-height 20px
+            color #FFFFFF
+            text-align justify
+        .middle-wrap
+          width 100%
+          height 274px
+          padding 32px
+          position relative
+          background-color #f4f4f4
+          .bg-wrap
+            position absolute
+            left 0
+            right 0
+            z-index 0
+            bottom 0
+            top 0
+            .bg-img
+              position absolute
+              right -120px
+              bottom -30px
+              width 100%
+              height 100%
+          .advantage-wrap
+            z-index 10
+            width auto
+            height 32px
+            .arrow
+              width 20px
+              height 20px
+              margin-top 6px
+            .ad-text
+              font-size 14px
+              color #3d3d3d
+              line-height 32px
+              height 32px
+              margin-left 32px
+              letter-spacing 0
+          .btn
+            z-index 10
+            width 100px
+            height 36px
+            margin-top 32px
+            background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+            color #FFFFFF
+            line-height 36px
+            text-align center
+            border-radius 2px
+            cursor pointer
+            font-size 14px
+        .bottom-wrap
+          width 100%
+          height 86px
+          padding 32px
+      .normal-cell
+        margin-bottom 40px
+        width 400px
+        height 230px
+        position relative
+        border-radius 2px
+        transition all 0.3s ease-in-out
+        overflow hidden
+        box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+        padding 32px
+        .bg
+          transition all 0.3s ease-in-out
+          position absolute
+          left 120px
+          top -80px
+          opacity 0.3
+          width 400px
+          height auto
+        .title
+          color #181818
+          font-size 16px
+          font-weight bold
+          line-height 28px
+          font-family "PingFang SC"
+          margin-bottom 5px
+        .desc
+          color #666666
+          font-size 14px
+          line-height 26px
+          font-family "PingFang SC"
+          height 78px
+        .btn
+          position absolute
+          cursor pointer
+          display block
+          bottom 0
+          left 0
+          width 100%
+          height 36px
+          background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+          color #FFFFFF
+          font-size 14px
+          text-align center
+          line-height 36px
+      .normal-cell:hover
+        transition all 0.3s ease-in-out
+        box-shadow 0 0 15px 0 rgba(0,0,0,0.15)
+        .bg
+          transition all 0.3s ease-in-out
+          transform scale(1.2)
+      .tag-wrap
+          width 100%
+          height 48px
+          overflow hidden
+          position relative
+          .tag
+            height 20px
+            padding-left 16px
+            padding-right 16px
+            text-align center
+            line-height 20px
+            border-radius 4px
+            margin-bottom 4px
+          .s-fill
+            background-color #4169E1
+            color #ffffff
+          .s-outline
+            border 1px solid #4169E1
+            color #4169E1
+    .favorite-view:after
+      visibility hidden
+      display block
+      font-size 0
+      content ""
+      clear both
+      height 0
+  .activity-brand-wrap
+    width 100%
+    overflow hidden
+    background #FFFFFF
+    position relative
+    .activity-brand-content
+      width 1280px
+      margin 0 auto
+      position relative
+      .brand-view
+        width 100%
+        .brand-cell
+          border 1px solid #eeeeee
+          transition all 0.3s ease-in-out
+          width 622px
+          height 182px
+          .info-wrap
+            width 320px
+            height 100%
+            padding 24px
+            .title
+              font-size 16px
+              font-weight 600
+              font-family "PingFang SC"
+              color #181818
+              height 28px
+              line-height 28px
+              text-overflow ellipsis
+              overflow hidden
+              white-space nowrap
+              margin-bottom 8px
+            .desc
+              overflow hidden
+              font-family "PingFang SC"
+              font-size 14px
+              text-overflow ellipsis
+              -webkit-box-orient vertical
+              display -webkit-box
+              -webkit-line-clamp 2
+              height 48px
+              line-height 24px
+              color #3d3d3d
+              text-align justify
+            .btn
+              cursor pointer
+              margin-top 12px
+              display block
+              width 88px
+              border-radius 2px
+              height 36px
+              background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+              color #FFFFFF
+              font-size 14px
+              text-align center
+              line-height 36px
+          .cover-wrap
+            width 300px
+            height 100%
+            overflow hidden
+            img
+              width 100%
+              height 100%
+              transition all 0.3s ease-in-out
+        .brand-cell:hover
+          box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+          transition all 0.3s ease-in-out
+          .cover-wrap
+            img
+              transition all 0.3s ease-in-out
+              transform scale(1.1)
+      .brand-view:after
+        visibility hidden
+        display block
+        font-size 0
+        content ""
+        clear both
+        height 0
+  .activity-hot-wrap
+    width 100%
+    overflow hidden
+    background #FFFFFF
+    position relative
+    .activity-hot-content
+      width 1280px
+      margin 0 auto
+      position relative
+      .hot-view
+        width 100%
+        .hot-cell
+          width 400px
+          box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+          transition all 0.3s ease-in-out
+          position relative
+          .tag-wrap
+            position absolute
+            right 0
+            top 0
+            width 80px
+            height 80px
+            .mask
+              width 0
+              height 0
+              border-bottom 60px solid transparent
+            .mask-red
+              border-right 80px solid #f56c6c
+            .mask-black
+              border-right 80px solid #222222
+            .reg-wrap
+              position absolute
+              left 0
+              right 0
+              top 0
+              bottom 0
+              padding 6px
+              .text
+                width 100%
+                height 24px
+                line-height 24px
+                color #FFFFFF
+                text-align right
+                font-size 14px
+                font-family PingFangSC-light
+                font-weight bold
+          .cover-wrap
+            width 100%
+            height 222.2px
+            img
+              width 100%
+              height 100%
+          .info-wrap
+            width 100%
+            height calc(100% - 222.2px)
+            padding 32px
+            .title
+              font-weight bold
+              margin-bottom 8px
+              color #181818
+              font-size 16px
+              line-height 28px
+              text-overflow ellipsis
+              height 28px
+              white-space nowrap
+            .desc
+              font-size 14px
+              color #888888
+              margin-top 8px
+              line-height 24px
+              -webkit-box-orient vertical
+              display -webkit-box
+              -webkit-line-clamp 2
+              text-overflow ellipsis
+              height 48px
+              overflow hidden
+            .date,.location
+              font-size 14px
+              color #444444
+              line-height 24px
+            .btn
+              font-size 14px
+              height 36px
+              cursor pointer
+              margin-top 16px
+              width 100px
+              border-radius 2px
+              transition all 0.3s ease-in-out
+              line-height 36px
+              background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+              color #ffffff
+              text-align center
+      .hot-view:after
+        visibility hidden
+        display block
+        font-size 0
+        content ""
+        clear both
+        height 0

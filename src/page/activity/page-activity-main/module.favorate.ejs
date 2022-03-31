@@ -1,0 +1,58 @@
+<div class="activity-favorite-wrap">
+  <div class="activity-favorite-content">
+    <% if(favoriteData.title) { %>
+      <div class="c-module-title <% if(!favoriteData.desc){ %>c-module-b-60<% } %>"><%=favoriteData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!favoriteData.desc){ %>c-module-b-60<% } %>">产品活动</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(favoriteData.desc) { %>
+      <div class="c-module-desc"><%=favoriteData.desc%></div>
+    <% } %>
+
+    <div class="favorite-view">
+      <% favoriteData.content.forEach(function(item, index){ %>
+        <% if(item.key === 'main') { %>
+          <div class="main-cell fn-left">
+            <div class="top-wrap">
+              <div class="title"><%=item.name%></div>
+              <div class="desc"><%=item.desc%></div>
+            </div>
+            <div class="middle-wrap">
+              <div class="bg-wrap">
+                <img class="bg-img" src="<%=item.bg%>" alt="活动"/>
+              </div>
+              <% item.advantage.forEach(function(ad){ %>
+                <div class="advantage-wrap mar-t10">
+                  <img class="arrow fn-left" src="/assets/images/common/gou-blue.svg" alt="活动"/>
+                  <div class="ad-text"><%=ad%></div>
+                </div>
+              <% }); %>
+              <div class="btn"><%=item.btnText%></div>
+            </div>
+            <div class="bottom-wrap">
+              <div class="tag-wrap">
+                <% item.tag.forEach(function(tag){ %>
+                  <span class="tag fn-left mar-r10 <% if(tag.key === 'fill'){ %>s-fill<% } %> <% if(tag.key === 'outline'){ %>s-outline<% } %>"><%=tag.text%></span>
+                <% }); %>
+              </div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="normal-cell fn-left <% if(index < 5 || (index - 4) % 3 !== 1){ %>mar-l40<% } %>">
+            <img class="bg" src="<%=item.bg%>" alt="活动"/>
+            <div class="title"><%=item.name%></div>
+            <div class="desc"><%=item.desc%></div>
+            <div class="tag-wrap">
+              <% item.tag.forEach(function(tag){ %>
+                <span class="tag fn-left mar-r10 <% if(tag.key === 'fill'){ %>s-fill<% } %> <% if(tag.key === 'outline'){ %>s-outline<% } %>"><%=tag.text%></span>
+              <% }); %>
+            </div>
+            <a class="btn"><%=item.btnText%></a>
+          </div>
+        <% } %>
+      <% }); %>
+    </div>
+  </div>
+</div>

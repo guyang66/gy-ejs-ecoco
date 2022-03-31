@@ -351,7 +351,7 @@ module.exports = [
     title: '交通行业'
   },
 
-  // 解决方案
+  // 客户案例
   {
     name: 'case',
     path: 'page/case/page-case-main',
@@ -361,5 +361,17 @@ module.exports = [
     name: 'case/detail',
     path: 'page/case/page-case-detail',
     title: '案例详情'
+  },
+
+  // 活动
+  {
+    name: 'activity',
+    path: 'page/activity/page-activity-main',
+    title: '活动列表'
+  },
+  {
+    name: 'activity/detail',
+    path: 'page/activity/page-activity-detail',
+    title: '活动详情'
   },
 ];
