@@ -22,7 +22,7 @@ const data = {
           "icon": p7,
           "key": "shibie",
           "alt": "AI识别",
-          "href": "/product/ai/discrinimate.html"
+          "href": "/product/ai/discriminate.html"
         },
         {
           "name": "智能在线助手——清水",

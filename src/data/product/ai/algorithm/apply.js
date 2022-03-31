@@ -44,7 +44,7 @@ const data = {
           "icon": p4,
           "key": "shibie",
           "alt": "AI识别",
-          "href": "/product/ai/discrinimate.html"
+          "href": "/product/ai/discriminate.html"
         },
         {
           "name": "细雨",

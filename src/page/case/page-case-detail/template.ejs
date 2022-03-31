@@ -3,12 +3,12 @@
         <div class="case-detail-content">
             <div class="fake-header"></div>
 
-            <div class="crumbs mar-t20">
+            <div class="module-article-crumbs mar-t20">
                 <span style="margin-right: 10px;"><a href="/case.html">客户案例</a></span>>
                 <span style="margin-left: 5px;"><%=detailData.title%></span>
             </div>
 
-            <div class="main-view">
+            <div class="module-article-main-view">
                 <div class="info-view fn-left">
                     <img class="main-icon fn-left" src="<%=detailData.icon%>" alt="案例"/>
                     <div class="main-title"><%=detailData.title%></div>
@@ -27,20 +27,18 @@
 
                             <!--可以多定义一些自定义样式-->
                             <% } else if(item.key === 'title-normal'){ %>
-                            <span class="title-normal-item mar-t10">
-                                      <%=item.data%>
-                                  </span>
+                                <span class="title-normal-item mar-t10"><%=item.data%></span>
                             <% } else if(item.key === 'text'){ %>
-                            <div class="text-item mar-t20 mar-b20">
-                                <%=item.data%>
-                            </div>
+                                <div class="text-item mar-t20 mar-b20">
+                                    <%=item.data%>
+                                </div>
                             <% } %>
                         </div>
                     <% }); %>
                 </div>
 
                 <% recommendData.content.forEach(function(rec, index){ %>
-                    <div class="fn-right side-view <% if(index > 0){ %>mar-t40<% } %>">
+                    <div class="fn-right side-view box-shadow-1 pad20 <% if(index > 0){ %>mar-t40<% } %>">
                         <div class="title mar-b10"><%=rec.title%></div>
                         <% rec.data.forEach(function(item){ %>
                         <a class="product-item mar-t10 mar-b10" href="<%=item.href%>">

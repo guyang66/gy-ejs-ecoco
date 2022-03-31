@@ -1,4 +1,92 @@
 <section>
+  <div class="activity-detail-wrap">
+    <div class="activity-detail-content">
+      <div class="fake-header"></div>
 
+      <div class="module-article-crumbs mar-t20">
+        <span style="margin-right: 10px;"><a href="/activity.html">活动专场</a></span>>
+        <span style="margin-left: 5px;"><%=detailData.title%></span>
+      </div>
+
+      <div class="module-article-main-view">
+        <div class="info-view fn-left">
+          <div class="main-title"><%=detailData.title%></div>
+          <div class="main-img-wrap">
+            <img src="<%=detailData.main%>" alt="<%=detailData.title%>"/>
+          </div>
+          <div class="desc-bar mar-t20"></div>
+          <div class="main-desc"><%=detailData.desc%></div>
+          <div class="desc-bar"></div>
+
+          <div class="slice-line mar-t40 mar-b20"></div>
+
+          <% detailData.content.forEach(function(item, index){ %>
+            <div class="info-item mar-b10 mar-t10">
+              <% if(item.key === 'img') { %>
+              <div class="img-item">
+                <img src="<%=item.data%>" alt="<%=detailData.title%>"/>
+              </div>
+
+              <!--可以多定义一些自定义样式-->
+              <% } else if(item.key === 'title-normal'){ %>
+                <span class="title-normal-item"><%=item.data%></span>
+              <% } else if(item.key === 'list'){ %>
+                <% item.data.forEach(function(listItem, idx){ %>
+                  <div class="list-item"><%=idx + 1%> ) <%=listItem%></div>
+                <% }); %>
+              <% } else if(item.key === 'text'){ %>
+                <div class="text-item">
+                  <%=item.data%>
+                </div>
+              <% } %>
+            </div>
+          <% }); %>
+        </div>
+
+        <div class="fn-right side-view mar-t60">
+          <% if(detailData.activity.date && detailData.activity.date !== '') { %>
+            <div class="desc mar-b10">活动时间：
+              <span class="text"><%=detailData.activity.date%></span>
+            </div>
+          <% } %>
+
+          <% if(detailData.activity.location && detailData.activity.location !== '') { %>
+            <div class="desc mar-b10">活动地点：
+              <span class="text"><%=detailData.activity.location%></span>
+            </div>
+          <% } %>
+
+          <% if(detailData.activity.join && detailData.activity.join !== '') { %>
+            <div class="desc mar-b10">报名人数：
+              <span class="text"><%=detailData.activity.join%></span>
+            </div>
+          <% } %>
+
+          <% if(detailData.activity.deadline && detailData.activity.deadline !== '') { %>
+            <div class="desc mar-b10">截止时间：
+              <span class="text"><%=detailData.activity.deadline%></span>
+            </div>
+          <% } %>
+
+          <% if(detailData.activity.fee && detailData.activity.fee !== '') { %>
+            <div class="desc mar-b10">报名费用：
+              <span class="text"><%=detailData.activity.fee%></span>
+            </div>
+          <% } %>
+
+          <% if(detailData.activity.status && detailData.activity.status !== '') { %>
+            <a class="status <% if(detailData.activity.status === 'finish'){ %>status-finish<% } %>
+                               <% if(detailData.activity.status === 'start'){ %>status-start<% } %>"
+               href="<%=detailData.activity.href%>"
+               <% if(detailData.activity.target === '_blank'){ %>target="_blank" <% } %>
+            >
+              <%=detailData.activity.statusText%>
+            </a>
+          <% } %>
+
+        </div>
+      </div>
+    </div>
+  </div>
     <%=formView%>
 </section>

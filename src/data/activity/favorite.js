@@ -1,11 +1,11 @@
-import b1 from '@/assets/images/activity/favorite/bg/b1.svg'
-import b2 from '@/assets/images/activity/favorite/bg/b2.svg'
-import b3 from '@/assets/images/activity/favorite/bg/b3.svg'
-import b4 from '@/assets/images/activity/favorite/bg/b4.svg'
-import b5 from '@/assets/images/activity/favorite/bg/b5.svg'
-import b6 from '@/assets/images/activity/favorite/bg/b6.svg'
-import b7 from '@/assets/images/activity/favorite/bg/b7.svg'
-import main from '@/assets/images/activity/favorite/bg/main.svg'
+import b1 from '@/assets/images/activity/favorite/b1.svg'
+import b2 from '@/assets/images/activity/favorite/b2.svg'
+import b3 from '@/assets/images/activity/favorite/b3.svg'
+import b4 from '@/assets/images/activity/favorite/b4.svg'
+import b5 from '@/assets/images/activity/favorite/b5.svg'
+import b6 from '@/assets/images/activity/favorite/b6.svg'
+import b7 from '@/assets/images/activity/favorite/b7.svg'
+import main from '@/assets/images/activity/favorite/main.svg'
 const data = {
   title: '猜你喜欢',
   desc: '大牌特价，猜你喜欢，各种优惠尽请期待',
@@ -17,6 +17,7 @@ const data = {
       bg: main,
       desc: '节日特价，8.8折再加会员折扣，折扣多多，惊喜连连，欢迎新老用户购买',
       btnText: '立即查看',
+      href: '/activity/detail.html',
       advantage: [
         '90%出水率，甜美可口',
         '新鲜不隔夜，无中间差价',

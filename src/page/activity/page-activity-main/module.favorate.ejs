@@ -23,13 +23,15 @@
               <div class="bg-wrap">
                 <img class="bg-img" src="<%=item.bg%>" alt="活动"/>
               </div>
-              <% item.advantage.forEach(function(ad){ %>
+              <div class="info-wrap p-absolute">
+                <% item.advantage.forEach(function(ad){ %>
                 <div class="advantage-wrap mar-t10">
                   <img class="arrow fn-left" src="/assets/images/common/gou-blue.svg" alt="活动"/>
                   <div class="ad-text"><%=ad%></div>
                 </div>
-              <% }); %>
-              <div class="btn"><%=item.btnText%></div>
+                <% }); %>
+                <a class="btn" href="<%=item.href%>"><%=item.btnText%></a>
+              </div>
             </div>
             <div class="bottom-wrap">
               <div class="tag-wrap">
