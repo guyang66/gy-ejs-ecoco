@@ -750,7 +750,7 @@ const menus = [
       },
       {
         name: '加入我们',
-        href: '/about/join.html'
+        href: '/about/joinus.html'
       }
     ]
   },

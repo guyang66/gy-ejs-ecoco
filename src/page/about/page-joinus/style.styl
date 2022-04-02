@@ -1,0 +1,61 @@
+@import "@/styles/layout.styl";
+@import 'swiper/dist/css/swiper.css';
+.join-main-wrap
+  width: 100%
+  position relative
+  .join-wrap
+    width 100%
+    background #F4F4F4
+    overflow hidden
+    position relative
+    .join-content
+      width 1280px
+      margin 0 auto
+      position relative
+      .join-view
+        width 100%
+        margin-top 80px
+        margin-bottom 60px
+        .col-cell
+          width 100%
+          height calc(82px + 54px + 12px)
+          .block-view
+            height 82px
+          .item-cell
+            width calc(1196px / 7)
+            margin-left 6px
+            margin-right 6px
+            background-color #f4f4f4
+            height 82px
+            position relative
+            .top
+              position absolute
+              top -54px
+              border-right calc(1196px / 14) solid transparent
+              border-bottom 54px solid #f4f4f4
+              border-left calc(1196px / 14) solid transparent
+              width 0
+              height 0
+            .bottom
+              position absolute
+              bottom -54px
+              border-right calc(1196px / 14) solid transparent
+              border-top 54px solid #f4f4f4
+              border-left calc(1196px / 14) solid transparent
+              width 0
+              height 0
+            .content-img-wrap
+              width calc(1196px / 7)
+              height 196px
+              position absolute
+              top -54px
+              overflow hidden
+              transform: rotate(-60deg) skewY(30deg) translateZ(22px);
+              .img-content
+                width 100%
+                height 100%
+                overflow hidden
+                transform: skewY(-30deg) rotate(60deg);
+                img
+                  width 100%
+                  height 100%

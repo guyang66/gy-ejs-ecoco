@@ -391,4 +391,21 @@ module.exports = [
     path: 'page/service/page-resource',
     title: '活动列表'
   },
+
+  // 了解我们
+  {
+    name: 'about/company',
+    path: 'page/about/page-company',
+    title: '了解我们'
+  },
+  {
+    name: 'about/news',
+    path: 'page/about/page-news-main',
+    title: '新闻简讯'
+  },
+  {
+    name: 'about/joinus',
+    path: 'page/about/page-joinus',
+    title: '加入我们'
+  },
 ];
