@@ -91,13 +91,13 @@
             <div class="menu-wrap" style="width: <%=nav.viewWidth%>px;height: <%=nav.viewHeight%>px">
               <div class="m-view-wrap pad20">
                 <% nav.children.forEach(function(childNav, index){ %>
-                  <div class="m-n-1-wrap">
+                  <a class="m-n-1-wrap" href="<%=childNav.href%>">
                     <div class="pointer fn-left"></div>
                     <div class="title"><%=childNav.name%></div>
                       <% if(index < nav.children.length - 1){%>
                         <div class="line"></div>
                       <% } %>
-                    </div>
+                    </a>
                 <% }); %>
               </div>
             </div>

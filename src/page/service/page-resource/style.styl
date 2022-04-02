@@ -1,0 +1,276 @@
+@import "@/styles/layout.styl";
+@import 'swiper/dist/css/swiper.css';
+.resource-main-wrap
+  position relative
+  width 100%
+  .resource-news-wrap
+    width 1280px
+    height 380px
+    position relative
+    margin 0 auto
+    .news-content
+      width 1280px
+      height 400px
+      position absolute
+      background-color #ffffff
+      border-radius 10px
+      left 0
+      top -100px
+      overflow hidden
+      .news-slide-container
+        width 100%
+        position relative
+        overflow hidden
+        height 100%
+        .slide-news-item
+          width 100%
+          height 100%
+          background-color #FFFFFF
+          padding 32px
+          .img-wrap
+            width 500px
+            height 100%
+            img
+              width 100%
+              height 100%
+          .info-wrap
+            width calc(100% - 500px)
+            height 100%
+            padding-left 32px
+            .tag-wrap
+              width 100%
+              height 32px
+              .tag
+                padding-left 8px
+                padding-right 8px
+                height 20px
+                display inline-block
+                text-align center
+                background-color #e8effe
+                border-radius 2px
+                color #4169E1
+                line-height 20px
+            .title
+              color #181818
+              font-size 20px
+              font-weight bold
+              line-height 30px
+            .desc
+              color #666666
+              font-size 16px
+              line-height 28px
+              display -webkit-box
+              -webkit-line-clamp 3
+              -webkit-box-orient vertical
+              text-overflow ellipsis
+              text-align justify
+              overflow hidden
+              height 84px
+            .btn
+              color #4169E1
+              font-size 14px
+              cursor pointer
+    .page-view
+      width 1280px
+      height 40px
+      position absolute
+      top 320px
+      left 0
+      .news-pagination
+        margin-left 50%
+        transform translateX(-50%)
+        .swiper-pagination-bullet
+          width 40px
+          border-radius 0
+          height 3px
+          margin-right 16px
+      .swiper-pagination-bullets
+        display inline-block
+        cursor pointer
+
+  .resource-download-wrap
+    width 100%
+    background #FFFFFF
+    overflow hidden
+    position relative
+    .resource-download-content
+      width 1280px
+      margin 0 auto
+      position relative
+      .resource-view
+        width 100%
+        position relative
+        .tabs-view
+          width 100%
+          height 32px
+          overflow hidden
+          .info
+            height 30px
+            width 100%
+            .tab-item
+              cursor pointer
+              margin-left 20px
+              margin-right 20px
+              font-size 17px
+              color #333333
+              font-family "PingFang SC"
+          .tab-line
+            width 34px
+            left 20px
+            position absolute
+            top 30px
+            background-color #4169E1
+            height 2px
+            transition all 0.3s ease-in-out
+        .search-view-wrap
+          height 36px
+          width 100%
+          .sort-view
+            width calc(100% - 300px)
+            height 36px
+            .tit
+              color #666666
+              font-size 16px
+              height 36px
+              line-height 36px
+            .sort-item
+              cursor pointer
+            .icon
+              width 20px
+              height 20px
+              margin-top 8px
+              margin-left 8px
+              transition all 0.3s ease-in-out
+          .search-view
+            width 300px
+            height 36px
+            border 1px solid #DEE4F4
+            position relative
+            .search-input-view
+              width calc(100% - 34px)
+              height 100%
+              float left
+              input
+                width calc(100% - 34px)
+                line-height 34px
+                font-size 14px
+                color #7E8BA6
+                margin-left 17px
+                border none
+                outline none
+                background none
+                &::placeholder
+                  color rgba(122,139,166, 0.45)
+            .search-icon
+              width 34px
+              height 34px
+              background-color #4169E1
+              float right
+              cursor pointer
+              img
+                width 20px
+                height 20px
+                margin-top 7px
+                margin-left 7px
+        .content-view
+          width 100%
+          margin-bottom 60px
+          .content-cell
+            width 100%
+            min-height 100px
+            border 1px solid #dee4f4
+            transition all 0.3s ease-in-out
+            padding 24px
+            position relative
+            .icon
+              width 24px
+              margin-top 4px
+              height 24px
+              margin-left 4px
+            .title
+              color #181818
+              font-size 18px
+              margin-left 48px
+              font-weight 500
+              font-family "PingFang SC"
+              line-height 32px
+              height 32px
+              .tag
+                padding-left 8px
+                padding-right 8px
+                height 20px
+                display inline-block
+                text-align center
+                background-color #e8effe
+                border-radius 2px
+                color #4169E1
+                font-size 12px
+                line-height 20px
+                margin-top 6px
+                margin-left 12px
+            .desc
+              font-size 14px
+              color #7d7d7d
+              max-width 800px
+              line-height 24px
+              display -webkit-box
+              -webkit-line-clamp 2
+              -webkit-box-orient vertical
+              text-overflow ellipsis
+              max-height 48px
+              margin-left 48px
+              overflow hidden
+              margin-top 4px
+            .extra-wrap
+              margin-top 6px
+              width 100%
+              height 24px
+              margin-left 48px
+              .text-wrap
+                margin-right 16px
+                img
+                  width 14px
+                  height 14px
+                  margin-top 5px
+                  margin-right 6px
+                span
+                  color #8a8a8a
+                  line-height 24px
+                  height 24px
+            .btn-wrap
+              cursor pointer
+              position absolute
+              top 50%
+              transform translateY(-50%)
+              right 24px
+              height 32px
+              img
+                width 2px
+                height 2px
+                opacity 0
+                margin-top 15px
+                margin-left 15px
+                transition all 0.3s ease-in-out
+              span
+                color #4169E1
+                font-size 14px
+                margin-right 8px
+                height 32px
+                line-height 32px
+                transition all 0.3s ease-in-out
+                opacity 0
+          .content-cell:hover
+            box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+            transition all 0.3s ease-in-out
+            .btn-wrap
+              img
+                width 32px
+                height 32px
+                transition all 0.3s ease-in-out
+                margin 0
+                opacity 1
+              span
+                opacity 1
+                transition all 0.3s ease-in-out
+              span:hover
+                text-decoration underline

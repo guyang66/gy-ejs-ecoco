@@ -374,4 +374,21 @@ module.exports = [
     path: 'page/activity/page-activity-detail',
     title: '活动详情'
   },
+
+  //服务与支持
+  {
+    name: 'service/contact',
+    path: 'page/service/page-contact',
+    title: '活动列表'
+  },
+  {
+    name: 'service/help',
+    path: 'page/service/page-help',
+    title: '活动详情'
+  },
+  {
+    name: 'service/resource',
+    path: 'page/service/page-resource',
+    title: '活动列表'
+  },
 ];

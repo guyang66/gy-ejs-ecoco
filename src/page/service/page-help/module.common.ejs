@@ -1,0 +1,29 @@
+<div class="help-common-wrap">
+  <div class="help-common-content">
+    <% if(commonData.title) { %>
+      <div class="c-module-title <% if(!commonData.desc){ %>c-module-b-60<% } %>"><%=commonData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!commonData.desc){ %>c-module-b-60<% } %>">常见问题</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(commonData.desc) { %>
+       <div class="c-module-desc"><%=commonData.desc%></div>
+    <% } %>
+
+    <div class="common-view box-shadow-2">
+      <div class="sec-title mar-b20"><%=commonData.secTitle%></div>
+      <% commonData.content.forEach(function(item, index){ %>
+        <div class="common-cell fn-left">
+          <div class="title mar-b20"><%=item.title%></div>
+          <% item.data.forEach(function(itm, index){ %>
+          <div class="item-wrap fn-left">
+            <img class="fn-left icon" src="/assets/images/common/wenti.svg" alt="问题"/>
+            <div class="text"><%=itm%></div>
+          </div>
+          <% }); %>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>

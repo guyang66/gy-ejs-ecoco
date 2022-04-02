@@ -1,0 +1,24 @@
+<div class="contact-wrap">
+  <div class="contact-content">
+    <% if(contactData.title) { %>
+      <div class="c-module-title <% if(!contactData.desc){ %>c-module-b-60<% } %>"><%=contactData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!contactData.desc){ %>c-module-b-60<% } %>">联系方式</div>
+    <% } %>
+
+      <!--描述-->
+    <% if(contactData.desc) { %>
+      <div class="c-module-desc"><%=contactData.desc%></div>
+    <% } %>
+
+    <div class="contact-view">
+      <% contactData.content.forEach(function(item, index){ %>
+        <div class="contact-cell fn-left box-shadow-1 <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+          <img class="icon fn-left" src="<%=item.icon%>" alt="<%=item.alt%>"/>
+          <div class="title"><%=item.title%></div>
+          <div class="desc"><%=item.text%></div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>
