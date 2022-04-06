@@ -1,0 +1,37 @@
+<div class="welfare-wrap">
+  <div class="welfare-content">
+    <% if(welfareData.title) { %>
+      <div class="c-module-title <% if(!welfareData.desc){ %>c-module-b-60<% } %>"><%=welfareData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!welfareData.desc){ %>c-module-b-60<% } %>">福利待遇</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(welfareData.desc) { %>
+    <div class="c-module-desc"><%=welfareData.desc%></div>
+    <% } %>
+
+    <div class="welfare-view">
+      <% welfareData.content.forEach(function(item,index){ %>
+        <div class="welfare-cell mar-b40">
+          <img class="img <% if(index % 2 === 0){ %>fn-right<% } else { %>fn-left<% } %>" src="<%=item.cover%>"/>
+          <div class="info-wrap <% if(index % 2 === 0){ %>fn-left<% } else { %>fn-right<% } %>">
+            <img class="icon-wrap <% if(index % 2 === 0){ %>fn-left<% } else { %>fn-right<% } %>" src="<%=item.icon%>"/>
+            <div class="text-wrap">
+              <div class="text-inner-wrap <% if(index % 2 === 0){ %>mar-l88<% } %>">
+                <div class="mask-view"></div>
+                <div class="info-view">
+                  <div class="title"><%=item.title%></div>
+                  <% item.desc.forEach(function(descItem,index){ %>
+                  <div class="desc"><%=descItem%></div>
+                  <% }); %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+
+  </div>
+</div>
