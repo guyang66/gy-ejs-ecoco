@@ -1,0 +1,28 @@
+<div class="value-wrap">
+  <div class="value-content">
+    <% if(valueData.title) { %>
+      <div class="c-module-title <% if(!valueData.desc){ %>c-module-b-60<% } %>"><%=valueData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!valueData.desc){ %>c-module-b-60<% } %>">公司文化</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(valueData.desc) { %>
+    <div class="c-module-desc"><%=valueData.desc%></div>
+    <% } %>
+
+    <div class="value-view">
+      <% valueData.content.forEach(function(item, index){ %>
+        <div class="value-cell fn-left <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+          <div class="title-wrap" style="<%=item.bg%>"><%=item.title%></div>
+          <% item.data.forEach(function(itm, index){ %>
+            <div class="text-wrap">
+              <img class="icon fn-left" src="/assets/images/common/shezhi.svg" alt="价值观" />
+              <div class="text"><%=itm%></div>
+            </div>
+          <% }); %>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>

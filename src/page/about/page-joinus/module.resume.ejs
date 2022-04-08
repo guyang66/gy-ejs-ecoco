@@ -20,116 +20,186 @@
         <% }); %>
       </div>
 
-      <div class="tag-view mar-b10">
+      <div class="tag-view category-tag mar-b10">
         <span class="tit mar-r20">岗位类别</span>
         <% resumeData.category.forEach(function(cate){ %>
-          <span class="itm"><%=cate.name%></span>
+          <span class="itm" key="<%=cate.key%>"><%=cate.name%></span>
         <% }); %>
       </div>
 
-      <div class="tag-view mar-b40">
+      <div class="tag-view place-tag mar-b40">
         <span class="tit mar-r20">岗位地点</span>
         <% resumeData.place.forEach(function(plc){ %>
-          <span class="itm"><%=plc.name%></span>
+          <span class="itm" key="<%=plc.key%>"><%=plc.name%></span>
         <% }); %>
       </div>
 
-      <div class="resume-slide-container" style="overflow: hidden">
-        <div class="swiper-wrapper">
-          <% resumeData.tabs.forEach(function(tabItem,index){ %>
-            <div class="content-view swiper-slide">
-              <% if(tabItem.content.length > 1) {%>
-                <% tabItem.content.forEach(function(item){ %>
-                  <div class="resume-cell mar-b20">
-                    <div class="title">
-                      <% if(item.tag && item.tag.length > 0) { %>
-                        <% item.tag.forEach(function(tag){ %>
-                          <span class="tag-span fn-left"><%=tag.text%></span>
-                        <% }); %>
-                      <% } %>
-                      <span class="text"><%=item.title%></span>
-                    </div>
-                    <% if(item.desc && item.desc !== '') { %>
-                      <div class="desc mar-t10">
-                        <%=item.desc%>
-                      </div>
-                    <% } %>
-                    <div class="date">发布日期：<%=item.date%></div>
-                    <div class="expand-btn">
-                      <img src="/assets/images/common/r_zhankai.svg" alt="展开"/>
-                    </div>
-                    <div class="expand-wrap mar-t20">
-                      <div class="line mar-b20"></div>
-                      <% if(item.department && item.department !== '') { %>
-                        <div class="department mar-b10"><%=item.department%>  <span class="seq">|</span>  <%=item.categoryString%></div>
-                      <% } %>
-                      <div class="info-wrap">
-                        <span><%=item.place%></span>
-                        <span class="seq">|</span>
-                        <span><%=item.experience%></span>
-                        <span class="seq">|</span>
-                        <span><%=item.education%></span>
-                      </div>
-
-                      <div class="tit mar-t10"><%=item.duty.title%>：</div>
-                      <% item.duty.data.forEach(function(itm,count){ %>
-                        <div class="item">
-                          <%=count + 1%>、<%=itm%>
-                      </div>
-                      <% }); %>
-
-                      <div class="tit mar-t10"><%=item.require.title%>：</div>
-                      <% item.require.data.forEach(function(itm,count){ %>
-                        <div class="item">
-                          <%=count + 1%>、<%=itm%>
-                        </div>
-                      <% }); %>
-
-                      <% if(item.pluses && item.pluses.data.length > 0) { %>
-                        <div class="tit mar-t10"><%=item.pluses.title%>：</div>
-                        <% item.pluses.data.forEach(function(itm,count){ %>
-                          <div class="item">
-                            <%=count + 1%>、<%=itm%>
-                          </div>
-                        <% }); %>
-                      <% } %>
-                      <div class="line mar-b20 mar-t20"></div>
-                      <div class="email mar-b10">（简历投递：xxx@hr.com）</div>
-                      <div class="btn">申请职位</div>
-                    </div>
-                  </div>
-                <% }); %>
-              <% } else { %>
-                <div class="empty-view">
-                  <img src="/assets/images/common/empty.svg" alt="空"/>
-                  <div class="empty-text">暂无数据</div>
+      <% resumeData.tabs.forEach(function(tabItem,index){ %>
+        <div class="content-view" <% if(index === 0){ %>style="display: block"<% } %>>
+          <% if(tabItem.content.length > 1) {%>
+            <% tabItem.content.forEach(function(item){ %>
+              <div class="resume-cell mar-b20 <% if(item.category){ %><%=item.category%><% } %> <% if(item.place){ %><%=item.place%><% } %>">
+                <div class="title">
+                  <% if(item.tag && item.tag.length > 0) { %>
+                    <% item.tag.forEach(function(tag){ %>
+                    <span class="tag-span fn-left"><%=tag.text%></span>
+                    <% }); %>
+                  <% } %>
+                  <span class="text"><%=item.title%></span>
                 </div>
-              <% }%>
-            </div>
-          <% }); %>
-        </div>
-      </div>
+                <% if(item.desc && item.desc !== '') { %>
+                  <div class="desc mar-t10">
+                    <%=item.desc%>
+                  </div>
+                <% } %>
+                <div class="date">发布日期：<%=item.date%></div>
+                <div class="expand-btn">
+                  <img src="/assets/images/common/r_zhankai.svg" alt="展开"/>
+                </div>
+                <div class="expand-wrap mar-t20">
+                  <div class="line mar-b20"></div>
+                  <% if(item.department && item.department !== '') { %>
+                    <div class="department mar-b10"><%=item.department%>  <span class="seq">|</span>  <%=item.categoryString%></div>
+                  <% } %>
+                  <div class="info-wrap">
+                    <span><%=item.placeString%></span>
+                    <span class="seq">|</span>
+                    <span><%=item.experience%></span>
+                    <span class="seq">|</span>
+                    <span><%=item.education%></span>
+                  </div>
 
+                  <div class="tit mar-t10"><%=item.duty.title%>：</div>
+                  <% item.duty.data.forEach(function(itm,count){ %>
+                    <div class="item">
+                      <%=count + 1%>、<%=itm%>
+                    </div>
+                  <% }); %>
+
+                  <div class="tit mar-t10"><%=item.require.title%>：</div>
+                  <% item.require.data.forEach(function(itm,count){ %>
+                    <div class="item">
+                      <%=count + 1%>、<%=itm%>
+                    </div>
+                  <% }); %>
+
+                  <% if(item.pluses && item.pluses.data.length > 0) { %>
+                  <div class="tit mar-t10"><%=item.pluses.title%>：</div>
+                    <% item.pluses.data.forEach(function(itm,count){ %>
+                      <div class="item">
+                        <%=count + 1%>、<%=itm%>
+                      </div>
+                    <% }); %>
+                  <% } %>
+                  <div class="line mar-b20 mar-t20"></div>
+                  <div class="email mar-b10">（简历投递：xxx@hr.com）</div>
+                  <a class="btn" href="<%=item.href%>" target="_blank">申请职位</a>
+                </div>
+              </div>
+            <% }); %>
+          <% } else { %>
+            <div class="empty-view">
+              <img src="/assets/images/common/empty.svg" alt="空"/>
+              <div class="empty-text">暂无数据</div>
+            </div>
+          <% }%>
+        </div>
+      <% }); %>
+
+      <a class="more-btn" href="<%=resumeData.href%>" target="_blank">
+        查看更多
+      </a>
     </div>
   </div>
 </div>
 
 <script>
   $(function() {
-    $(".resume-wrap .resume-view .tab-view .tab-cell").on('click',function (){
-      $(this).addClass('active')
-      $(this).siblings().removeClass('active')
-    })
 
-    $(".resume-wrap .resume-view .tag-view .itm").on('click',function (){
-      if( $(this).hasClass('active')){
-        $(this).removeClass('active')
+    // tab 点击
+    $('.resume-wrap .resume-view .tab-view .tab-cell').on('click',function (){
+      if($(this).hasClass('active')){
         return
       }
+
       $(this).addClass('active')
       $(this).siblings().removeClass('active')
+
+      let r = $(this).index()
+      $('.resume-wrap .resume-view .content-view').css({display: 'none'})
+      $('.resume-wrap .resume-view .content-view').eq(r).css({display: 'block'})
+      $('.resume-view .tag-view .itm').removeClass('active')
+
+      $('.resume-view .content-view .resume-cell').show()
     })
 
+
+    // category tag 点击
+    $(".resume-wrap .resume-view .tag-view.category-tag .itm").on('click',function (){
+      if( $(this).hasClass('active')){
+        // toggle 情况
+        $(this).removeClass('active')
+        let place = $('.resume-view .place-tag .itm.active').attr('key')
+        if(place){
+          $('.resume-view .content-view .resume-cell').show()
+          $('.resume-view .content-view .resume-cell').not('.' + place).hide()
+        } else {
+          $('.resume-view .content-view .resume-cell').show()
+        }
+        return
+      }
+
+      // 高亮
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      // 数据filter
+      let key = $(this).attr('key')
+      let place = $('.resume-view .place-tag .itm.active').attr('key')
+      if(place){
+        $('.resume-view .content-view .resume-cell').show()
+        $('.resume-view .content-view .resume-cell').not('.' + key + '.' + place).hide()
+      } else {
+        $('.resume-view .content-view .resume-cell').show()
+        $('.resume-view .content-view .resume-cell').not('.' + key).hide()
+      }
+
+    })
+
+    // place tag 点击
+    $(".resume-wrap .resume-view .tag-view.place-tag .itm").on('click',function (){
+      if( $(this).hasClass('active')){
+        // toggle 情况
+        $(this).removeClass('active')
+
+        let category = $('.resume-view .category-tag .itm.active').attr('key')
+        if(category){
+          $('.resume-view .content-view .resume-cell').show()
+          $('.resume-view .content-view .resume-cell').not('.' + category).hide()
+        } else {
+          $('.resume-view .content-view .resume-cell').show()
+        }
+
+        return
+      }
+
+      // 高亮
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      // 数据filter
+      let key = $(this).attr('key')
+      let category = $('.resume-view .category-tag .itm.active').attr('key')
+      if(category){
+        $('.resume-view .content-view .resume-cell').show()
+        $('.resume-view .content-view .resume-cell').not('.' + key + '.' + category).hide()
+      } else {
+        $('.resume-view .content-view .resume-cell').show()
+        $('.resume-view .content-view .resume-cell').not('.' + key).hide()
+      }
+    })
+
+    // 展开
     $(".resume-wrap .resume-cell .expand-btn").on('click',function (){
       if($(this).hasClass('active')){
         $(this).removeClass('active')

@@ -1,43 +1,50 @@
 import template from './template';
 import htmlRender from '@/layout/index';
 import form from '@/component/form'
-import advantage from '@/component/advantages/layout-between'
-import core from '@/component/core/1-4-black-white'
-import apply from '@/component/apply/layout_tabs'
-import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-3'
+import us from './module.us'
+import team from './module.team'
+import value from './module.value'
+import life from './module.life'
+import history from './module.history'
+import prize from './module.prize'
 
-import bannerData from "@/data/product/ai/puti/banner";
-import advantageData from "@/data/product/ai/puti/advantage";
-import coreData from "@/data/product/ai/puti/core";
-import applyData from "@/data/product/ai/puti/apply";
-import historyData from "@/data/product/ai/puti/history";
-import caseData from "@/data/product/ai/puti/case";
+import bannerData from "@/data/about/company/banner";
+import usData from "@/data/about/company/us";
+import teamData from "@/data/about/company/team";
+import valueData from "@/data/about/company/value";
+import lifeData from "@/data/about/company/life";
+import historyData from "@/data/about/company/history";
+import prizeData from "@/data/about/company/prize";
 
 const tabsData = [{
-  name: '产品优势',
-  anchor: 'advantage',
+  name: '关于我们',
+  anchor: 'us',
 },{
-  name: '核心功能',
-  anchor: 'core',
+  name: '创始团队',
+  anchor: 'team',
 },{
-  name: '应用场景',
-  anchor: 'apply',
+  name: '公司文化',
+  anchor: 'value',
 },{
-  name: '客户案例',
-  anchor: 'case',
+  name: '生活节奏',
+  anchor: 'life',
 },{
-  name: '产品动态',
+  name: '成长轨迹',
   anchor: 'history',
+},{
+  name: '荣誉资质',
+  anchor: 'prize',
 }];
 
 const formView = form()
-const advantageView = advantage({advantageData})
-const coreView = core({coreData})
-const applyView = apply({applyData})
+const usView = us({usData})
+const teamView = team({teamData})
+const valueView = value({valueData})
+const lifeView = life({lifeData})
 const historyView = history({historyData})
-const caseView = cases({caseData})
-const container = template({formView, advantageView, coreView, applyView, historyView, caseView});
+const prizeView = prize({prizeData})
+
+const container = template({formView, usView, teamView, valueView, lifeView, historyView, prizeView});
 export default htmlRender({
   key: 'banana',
   navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块

@@ -1,0 +1,37 @@
+<div class="prize-wrap">
+  <div class="prize-content">
+    <% if(prizeData.title) { %>
+      <div class="c-module-title <% if(!prizeData.desc){ %>c-module-b-60<% } %>"><%=prizeData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!prizeData.desc){ %>c-module-b-60<% } %>">荣誉资质</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(prizeData.desc) { %>
+      <div class="c-module-desc"><%=prizeData.desc%></div>
+    <% } %>
+
+    <div class="prize-view">
+      <div class="arrow fn-left">
+        <img class="arrow-img arrow-left" src="/assets/images/common/angle-left-blue.svg"/>
+      </div>
+      <div class="content-view fn-left prize-swiper-container">
+        <div class="swiper-wrapper">
+          <% prizeData.content.forEach(function(item){ %>
+            <div class="prize-cell swiper-slide">
+              <% item.data.forEach(function(itm){ %>
+                <div class="prize-item fn-left">
+                  <img src="<%=itm.icon%>" class="icon" alt="荣誉资质"/>
+                  <div class="text"><%=itm.text%></div>
+                </div>
+              <% }); %>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+      <div class="arrow fn-left">
+        <img class="arrow-img arrow-right" src="/assets/images/common/angle-right-blue.svg"/>
+      </div>
+    </div>
+  </div>
+</div>

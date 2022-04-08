@@ -1,0 +1,20 @@
+<div class="us-wrap">
+  <div class="us-content">
+    <% if(usData.title) { %>
+      <div class="c-module-title <% if(!usData.desc){ %>c-module-b-60<% } %>"><%=usData.title%></div>
+    <% } else { %>
+      <div class="c-module-title <% if(!usData.desc){ %>c-module-b-60<% } %>">关于我们</div>
+    <% } %>
+
+    <!--描述-->
+    <% if(usData.desc) { %>
+      <div class="c-module-desc"><%=usData.desc%></div>
+    <% } %>
+
+    <div class="us-view">
+      <div class="main-text mar-b30">马尔可夫链可通过转移矩阵和转移图定义，除马尔可夫性外，马尔可夫链可能具有不可约性、常返性、周期性和遍历性。一个不可约和正常返的马尔可夫链是严格平稳的马尔可夫链，拥有唯一的平稳分布。遍历马尔可夫链（ergodic MC）的极限分布收敛于其平稳分布。马尔科夫链的一个常见例子是简化的股票涨跌模型：若一天中某股票上涨，则明天该股票有概率p开始下跌，1-p继续上涨；若一天中该股票下跌，则明天该股票有概率q开始上涨，1-q继续下跌。该股票的涨跌情况是一个马尔可夫链，且定义中各个概念在例子中有如下对应。</div>
+      <div class="main-text mar-b30">马尔可夫链可被应用于蒙特卡罗方法中，形成马尔可夫链蒙特卡罗（Markov Chain Monte Carlo, MCMC） [2-3]  ，也被用于动力系统、化学反应、排队论、市场行为和信息检索的数学建模。此外作为结构最简单的马尔可夫模型（Markov model），一些机器学习算法，例如隐马尔可夫模型（Hidden Markov Model, HMM）、马尔可夫随机场（Markov Random Field, MRF）和马尔可夫决策过程（Markov decision process, MDP）以马尔可夫链为理论基础。</div>
+      <div class="main-text">马尔可夫链可通过转移矩阵和转移图定义，除马尔可夫性外，马尔可夫链可能具有不可约性、常返性、周期性和遍历性。一个不可约和正常返的马尔可夫链是严格平稳的马尔可夫链，拥有唯一的平稳分布。遍历马尔可夫链（ergodic MC）的极限分布收敛于其平稳分布。</div>
+    </div>
+  </div>
+</div>
