@@ -22,6 +22,7 @@ const routerMaps = arrayToObj(router, 'name');
  * @param {bannerData} 页面主banner图内容
  * @param {tabsData} 页面内tabs页锚点标题
  */
+
 const htmlRender = ({
   key,
   hasBanner = true,

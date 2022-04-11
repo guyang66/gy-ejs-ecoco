@@ -8,15 +8,36 @@ const settings = require('./settings');
 const plugins = [];
 
 settings.routers.forEach(page => {
-  plugins.push(
-    new HtmlWebpackPlugin({ // 多页面配置
-      filename: `${page.name}.html`,  // 页面名称
-      template: settings.pathTemplate(page.path),  // 页面模板
-      chunks: [page.name],  // js chunks
-      minify: false, // 不实用html压缩
-      inject: 'body', // 所有javascripts资源插入body元素的底部
-    })
-  );
+  // 对新闻详情页面单独处理
+  if (page.name === 'about/news/detail') {
+    settings.articleList.forEach(item => {
+      plugins.push(
+        new HtmlWebpackPlugin({ // 多页面配置
+          filename: `about/news/${item.id}.html`,  // 页面名称
+          template: settings.pathTemplate(page.path),  // 页面模板
+          chunks: [`about/news/${item.id}`],  // js chunks
+          minify: false,
+          hash: true,
+          inject: 'body',
+          tdk: {
+            title: item.title,
+            keywords: item.keywords,
+            description: item.description
+          }
+        })
+      );
+    });
+  } else {
+    plugins.push(
+      new HtmlWebpackPlugin({ // 多页面配置
+        filename: `${page.name}.html`,  // 页面名称
+        template: settings.pathTemplate(page.path),  // 页面模板
+        chunks: [page.name],  // js chunks
+        minify: false, // 不实用html压缩
+        inject: 'body', // 所有javascripts资源插入body元素的底部
+      })
+    );
+  }
 });
 plugins.push(
   new MiniCssExtractPlugin({

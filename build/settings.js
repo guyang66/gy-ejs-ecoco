@@ -1,5 +1,6 @@
 const path =  require('path');
 const routers = require('../src/config/router'); // 静态路由
+const articleList = require('../src/data/about/news/list')
 
 // 配置项
 const settings = {
@@ -15,7 +16,8 @@ const settings = {
     '@': path.join(__dirname, '../src'),
     '@mock': path.join(__dirname, '../mock')
   },
-  routers // 路由也挂到settings上
+  routers, // 路由也挂到settings上
+  articleList
 };
 
 module.exports = settings;

@@ -1,23 +1,109 @@
-<section>
-    <div class="tabs-content-wrap" data-anchor="advantage">
-        <%=advantageView%>
-    </div>
+<section class="news-main-wrap">
 
-    <div class="tabs-content-wrap" data-anchor="core">
-        <%=coreView%>
+  <div class="news-wrap">
+    <div class="news-content">
+      <div class="news-view">
+        <div class="left-wrap fn-left">
+          <div class="tabs-view">
+            <div class="text-wrap">
+              <% categoryData.forEach(function(cate, index){ %>
+                <div class="tab-cell fn-left <% if(index === 0){ %>active<% } %>">
+                  <%=cate.text%>
+                </div>
+              <% }); %>
+            </div>
+            <div class="tab-line"></div>
+          </div>
+          <div class="article-view">
+            <% articleList.forEach(function(news, index){ %>
+              <div class="article-item">
+                <div class="tit">
+                  <a href="<%=news.href%>"><%=news.title%></a>
+                  <% if(news.tag && news.tag.length > 0) { %>
+                    <% news.tag.forEach(function(tag, index){ %>
+                      <span class="tag"><%=tag.text%></span>
+                    <% }); %>
+                  <% } %>
+                </div>
+                <div class="wrap">
+                  <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻"/>
+                  <div class="fn-left author mar-l10"><%=news.author%></div>
+                  <div class="fn-left line"></div>
+                  <div class="fn-left date"><%=news.date%></div>
+                </div>
+                <% if(news.cover) { %>
+                  <div class="cover-wrap">
+                    <img alt="cover" src="<%=news.cover%>"/>
+                  </div>
+                <% } %>
+                <div class="desc <% if(news.cover){ %>w-small<% } %>"><%=news.summary%></div>
+                <a class="btn" href="<%=news.href%>">查看详情 > </a>
+                <div class="seq-line"></div>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+        <div class="right-wrap fn-right">
+          <div class="search-view">
+            <div class="tit">搜索</div>
+            <div class="search">
+              <input class="input" type="text" name="search" value="">
+              <p class="icon"><img src="/assets/images/common/search-white.svg" alt="搜索"></p>
+            </div>
+            <div class="search-text">
+              热门搜索：
+              <% searchHot.forEach(function(search, index){ %>
+                <span class="search-item"><%=search%></span>
+              <% }); %>
+            </div>
+          </div>
+          <div class="tag-view">
+            <div class="tit">热门标签</div>
+            <% tagList.forEach(function(tag, index){ %>
+              <div class="tag-item"><%=tag.text%></div>
+            <% }); %>
+          </div>
+          <div class="news-link-view">
+            <div class="tit">热门文章</div>
+            <% articleList.slice(0,5).forEach(function(news, index){ %>
+              <a class="news-item-wrap"  href="<%=news.href%>">
+                <div class="point fn-left"></div>
+                <div class="news-item fn-left"><%=news.title%></div>
+              </a>
+            <% }); %>
+          </div>
+          <div class="news-link-view">
+            <div class="tit">最新文章</div>
+            <% articleList.slice(0,5).forEach(function(news, index){ %>
+              <a class="news-item-wrap"  href="<%=news.href%>">
+                <div class="point fn-left"></div>
+                <div class="news-item fn-left"><%=news.title%></div>
+              </a>
+            <% }); %>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="tabs-content-wrap" data-anchor="apply">
-        <%=applyView%>
-    </div>
-
-    <div class="tabs-content-wrap" data-anchor="case">
-        <%=caseView%>
-    </div>
-
-    <div class="tabs-content-wrap" data-anchor="history">
-        <%=historyView%>
-    </div>
-
+  </div>
     <%=formView%>
 </section>
+<script>
+  $(function() {
+    $('.news-view .tabs-view .tab-cell').on('click',function (){
+      let index = $(this).index()
+      let viewLeftPadding = 12,cellLeftMargin = 12,cellRightMargin = 12
+      let firstNodeWidth = 28
+      let cellPadding = 6 + 6
+      if(index === 0){
+        $('.news-view .tab-line').css({left: (viewLeftPadding + cellLeftMargin) + 'px', width: (firstNodeWidth + cellPadding) + 'px'})
+      } else {
+        let target = viewLeftPadding + cellLeftMargin
+        for(let i = 0; i < index; i++){
+          target = target + $('.news-view .tabs-view .tab-cell').eq(i).width() + cellPadding + cellLeftMargin + cellRightMargin
+        }
+        $('.news-view .tab-line').css({left: target + 'px',width: $(this).width() + cellPadding + 'px'})
+      }
+    })
+
+  })
+</script>

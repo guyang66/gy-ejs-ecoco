@@ -404,6 +404,11 @@ module.exports = [
     title: '新闻简讯'
   },
   {
+    name: 'about/news/detail',
+    path: 'page/about/page-news-detail',
+    title: '新闻详情'
+  },
+  {
     name: 'about/joinus',
     path: 'page/about/page-joinus',
     title: '加入我们'

@@ -1,23 +1,53 @@
-<section>
-    <div class="tabs-content-wrap" data-anchor="advantage">
-        <%=advantageView%>
+<section class="news-detail-wrap">
+  <div class="news-wrap">
+    <div class="news-content">
+      <div class="fake-header"></div>
+      <div class="module-article-crumbs mar-t20">
+        <span style="margin-right: 10px;"><a href="/about/news.html">新闻中心</a></span>>
+        <span style="margin-left: 5px;">这是title</span>
+      </div>
+      <div class="news-box fn-left">
+      </div>
+      <div class="right-wrap fn-right">
+        <div class="search-view">
+          <div class="tit">搜索</div>
+          <div class="search">
+            <input class="input" type="text" name="search" value="">
+            <p class="icon"><img src="/assets/images/common/search-white.svg" alt="搜索"></p>
+          </div>
+          <div class="search-text">
+            热门搜索：
+            <% searchHot.forEach(function(search, index){ %>
+            <span class="search-item"><%=search%></span>
+            <% }); %>
+          </div>
+        </div>
+        <div class="tag-view">
+          <div class="tit">热门标签</div>
+          <% tagList.forEach(function(tag, index){ %>
+          <div class="tag-item"><%=tag.text%></div>
+          <% }); %>
+        </div>
+        <div class="news-link-view">
+          <div class="tit">热门文章</div>
+          <% articleList.slice(0,5).forEach(function(news, index){ %>
+          <a class="news-item-wrap"  href="<%=news.href%>">
+            <div class="point fn-left"></div>
+            <div class="news-item fn-left"><%=news.title%></div>
+          </a>
+          <% }); %>
+        </div>
+        <div class="news-link-view">
+          <div class="tit">最新文章</div>
+          <% articleList.slice(0,5).forEach(function(news, index){ %>
+          <a class="news-item-wrap"  href="<%=news.href%>">
+            <div class="point fn-left"></div>
+            <div class="news-item fn-left"><%=news.title%></div>
+          </a>
+          <% }); %>
+        </div>
+      </div>
     </div>
-
-    <div class="tabs-content-wrap" data-anchor="core">
-        <%=coreView%>
-    </div>
-
-    <div class="tabs-content-wrap" data-anchor="apply">
-        <%=applyView%>
-    </div>
-
-    <div class="tabs-content-wrap" data-anchor="case">
-        <%=caseView%>
-    </div>
-
-    <div class="tabs-content-wrap" data-anchor="history">
-        <%=historyView%>
-    </div>
-
+  </div>
     <%=formView%>
 </section>

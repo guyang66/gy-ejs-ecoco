@@ -110,12 +110,15 @@
   $(function() {
     $('.resource-view .tabs-view .tab-item').on('click',function (){
       let index = $(this).index()
+      let viewLeftPadding = 20
+      let firstNodeWidth = 34
       if(index === 0){
-        $('.resource-view .tab-line').css({left: 20 + 'px', width: 34 + 'px'})
+        $('.resource-view .tab-line').css({left: viewLeftPadding + 'px', width: firstNodeWidth + 'px'})
       } else {
-        let target = 20
+        let target = viewLeftPadding
+        let cellMargin = 20 + 20
         for(let i = 0; i < index; i++){
-          target = target + $('.resource-view .tabs-view .tab-item').eq(i).width() + 40
+          target = target + $('.resource-view .tabs-view .tab-item').eq(i).width() + cellMargin
         }
         $('.resource-view .tab-line').css({left: target + 'px',width:$(this).width()})
       }
