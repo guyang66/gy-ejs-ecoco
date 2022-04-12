@@ -36,7 +36,7 @@
         <div class="tabs-view mar-b20" key="all">
           <div class="info">
             <% downloadData.tabs.forEach(function(tab){ %>
-            <div class="tab-item fn-left"><%=tab.title%></div>
+              <div class="tab-item fn-left" key="<%=tab.key%>"><%=tab.title%></div>
             <% }); %>
           </div>
           <div class="tab-line"></div>
@@ -46,12 +46,12 @@
             <div class="tit fn-left mar-r10">排序：</div>
             <div class="sort-item download-sort">
               <div class="tit fn-left">下载量</div>
-              <img class="icon fn-left download-icon" src="/assets/images/common/xiangshang.svg"/>
+              <img class="icon fn-left download-icon" src="/assets/images/common/paixu-n.svg"/>
             </div>
           </div>
           <div class="search-view fn-right">
             <div class="search-input-view">
-              <input name="search">
+              <input class="input" name="search">
             </div>
             <div class="search-icon search-action">
               <img src="/assets/images/common/search-white.svg" alt="搜索">
@@ -59,46 +59,48 @@
           </div>
         </div>
         <div class="content-view">
-          <% downloadData.content.forEach(function(item, index){ %>
-            <div class="content-cell mar-b20">
-              <img class="icon fn-left" src="/assets/images/common/wenjian.svg" alt="文件"/>
-              <div class="title">
-                <%=item.title%>
-                <% if(item.tag && item.tag.length > 0) { %>
-                  <% item.tag.forEach(function(tag){ %>
+          <div id="resource-list">
+            <% downloadData.content.slice(0,10).forEach(function(item, index){ %>
+              <div class="content-cell">
+                <img class="icon fn-left" src="/assets/images/common/wenjian.svg" alt="文件"/>
+                <div class="title">
+                  <%=item.title%>
+                  <% if(item.tag && item.tag.length > 0) { %>
+                    <% item.tag.forEach(function(tag){ %>
                     <span class="tag"><%=tag%></span>
-                  <% }); %>
-                <% } %>
-              </div>
-              <% if(item.desc && item.desc !== '') { %>
+                    <% }); %>
+                  <% } %>
+                </div>
+                <% if(item.desc && item.desc !== '') { %>
                 <div class="desc"><%=item.desc%></div>
-              <% } %>
-              <div class="extra-wrap">
-                <div class="fn-left text-wrap">
-                  <img src="/assets/images/service/resource/other/shijian.svg" alt="时间"/>
-                  <span><%=item.date%></span>
+                <% } %>
+                <div class="extra-wrap">
+                  <div class="fn-left text-wrap">
+                    <img src="/assets/images/service/resource/other/shijian.svg" alt="时间"/>
+                    <span><%=item.date%></span>
+                  </div>
+                  <div class="fn-left text-wrap">
+                    <img src="/assets/images/service/resource/other/xiazai.svg" alt="下载"/>
+                    <span><%=item.download%>次下载</span>
+                  </div>
+                  <div class="fn-left text-wrap">
+                    <img src="/assets/images/service/resource/other/daxiao.svg" alt="文件大小"/>
+                    <span><%=item.size%></span>
+                  </div>
+                  <div class="fn-left text-wrap">
+                    <img src="/assets/images/service/resource/other/ziyuan.svg" alt="文件类型"/>
+                    <span><%=item.type%></span>
+                  </div>
                 </div>
-                <div class="fn-left text-wrap">
-                  <img src="/assets/images/service/resource/other/xiazai.svg" alt="下载"/>
-                  <span><%=item.download%>次下载</span>
-                </div>
-                <div class="fn-left text-wrap">
-                  <img src="/assets/images/service/resource/other/daxiao.svg" alt="文件大小"/>
-                  <span><%=item.size%></span>
-                </div>
-                <div class="fn-left text-wrap">
-                  <img src="/assets/images/service/resource/other/ziyuan.svg" alt="文件类型"/>
-                  <span><%=item.type%></span>
+
+                <div class="btn-wrap">
+                  <span>点击下载</span>
+                  <img src="/assets/images/common/xiangyou-fill.svg" alt="下载"/>
                 </div>
               </div>
-
-              <div class="btn-wrap">
-                <span>点击下载</span>
-                <img src="/assets/images/common/xiangyou-fill.svg" alt="下载"/>
-              </div>
-
-            </div>
-          <% }); %>
+            <% }); %>
+          </div>
+          <div id="pages"></div>
         </div>
       </div>
     </div>
@@ -106,32 +108,3 @@
 
   <%=formView%>
 </section>
-<script>
-  $(function() {
-    $('.resource-view .tabs-view .tab-item').on('click',function (){
-      let index = $(this).index()
-      let viewLeftPadding = 20
-      let firstNodeWidth = 34
-      if(index === 0){
-        $('.resource-view .tab-line').css({left: viewLeftPadding + 'px', width: firstNodeWidth + 'px'})
-      } else {
-        let target = viewLeftPadding
-        let cellMargin = 20 + 20
-        for(let i = 0; i < index; i++){
-          target = target + $('.resource-view .tabs-view .tab-item').eq(i).width() + cellMargin
-        }
-        $('.resource-view .tab-line').css({left: target + 'px',width:$(this).width()})
-      }
-    })
-
-    $('.download-sort').on('click',function (){
-      if($(this).attr('download') === 'desc'){
-        $(this).attr('download','asc')
-        $(this).children('.download-icon').css({transform: 'rotateZ(0deg)'})
-      } else {
-        $(this).attr('download','desc')
-        $(this).children('.download-icon').css({transform: 'rotateZ(180deg)'})
-      }
-    })
-  })
-</script>

@@ -43,7 +43,7 @@ const data = {
       key: 'normal',
       name: '看守无人机',
       desc: '超高续航，耐力十足，现在购买即送收纳盒',
-      btnText: '查看情绪',
+      btnText: '查看详情',
       bg: b1,
       tag: [
         {
