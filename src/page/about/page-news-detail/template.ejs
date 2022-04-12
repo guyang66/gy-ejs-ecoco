@@ -5,23 +5,10 @@
       <div class="news-box fn-left">
       </div>
       <div class="right-wrap fn-right">
-        <div class="search-view">
-          <div class="tit">搜索</div>
-          <div class="search">
-            <input class="input" type="text" name="search" value="">
-            <p class="icon"><img src="/assets/images/common/search-white.svg" alt="搜索"></p>
-          </div>
-          <div class="search-text">
-            热门搜索：
-            <% searchHot.forEach(function(search){ %>
-              <span class="search-item"><%=search%></span>
-            <% }); %>
-          </div>
-        </div>
         <div class="tag-view">
           <div class="tit">热门标签</div>
           <% tagList.forEach(function(tag){ %>
-          <div class="tag-item"><%=tag.text%></div>
+            <a class="tag-item" href="/about/tag.html?tag=<%=tag.key%>"><%=tag.text%></a>
           <% }); %>
         </div>
         <div class="news-link-view">

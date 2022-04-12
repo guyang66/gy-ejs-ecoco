@@ -3,7 +3,7 @@
     <a href="<%=news.href%>"><%=news.title%></a>
     <% if(news.tag && news.tag.length > 0) { %>
       <% news.tag.forEach(function(tag){ %>
-      <span class="tag"><%=tag.text%></span>
+      <span class="tag"><%=tag%></span>
       <% }); %>
     <% } %>
   </div>
@@ -14,9 +14,9 @@
     <div class="fn-left date"><%=news.date%></div>
   </div>
   <% if(news.cover) { %>
-  <div class="cover-wrap">
-    <img alt="cover" src="<%=news.cover%>"/>
-  </div>
+    <div class="cover-wrap">
+      <img alt="cover" src="<%=news.cover%>"/>
+    </div>
   <% } %>
   <div class="desc <% if(news.cover){ %>w-small<% } %>"><%=news.summary%></div>
   <a class="btn" href="<%=news.href%>">查看详情 > </a>

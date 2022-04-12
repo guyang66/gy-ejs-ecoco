@@ -6,7 +6,6 @@ import bannerData from "@/data/service/resource/banner";
 import newsData from "@/data/service/resource/news";
 import downloadData from "@/data/service/resource/download";
 
-
 const tabsData = [];
 const formView = form()
 

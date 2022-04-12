@@ -1,0 +1,124 @@
+@import "@/styles/layout.styl";
+@import 'swiper/dist/css/swiper.css';
+.tag-main-wrap
+  .tag-wrap
+    width 100%
+    background rgb(246,247,249)
+    overflow hidden
+    position relative
+    .tag-content
+      width 1280px
+      margin 0 auto
+      position relative
+      .title-view
+        width 100%
+        min-height 100px
+        background-color #ffffff
+        margin-top 40px
+        padding 24px
+        .title-wrap
+          .tit
+            color #181818
+            font-family "PingFang SC"
+            font-weight 500
+            font-size 24px
+            line-height 36px
+          .desc
+            color #333333
+            font-size 14px
+            line-height 28px
+            text-align justify
+            max-width 1200px
+      .content-view
+        width 100%
+        height auto
+        .left-view
+          width 880px
+          min-height 100px
+          margin-bottom 60px
+          .cell-view
+            background-color #ffffff
+            padding 24px
+            .tit
+              color #181818
+              font-family PingFangSC-light
+              font-weight bold
+              font-size 16px
+            .cell-item
+              width 100%
+              background-color orange
+              height 50px
+              line-height 50px
+              color #ffffff
+              font-size 14px
+              padding 0 24px
+        .right-view
+          width calc(100% - 880px - 40px)
+          min-height 20px
+          margin-bottom 60px
+          .side-view
+            width 100%
+            border-radius 2px
+            background-color #ffffff
+            .title
+              color #181818
+              font-family PingFangSC-light
+              font-weight bold
+              font-size 16px
+            .desc
+              color #999999
+              font-size 16px
+              line-height 24px
+              text-align justify
+            .text
+              color #333333
+              font-size 16px
+              line-height 24px
+              text-align justify
+            .product-item
+              width calc(100% - 24px)
+              border 1px solid #4169E1
+              padding 6px 12px
+              display inline-block
+              transition all 0.3s ease-in-out
+              border-radius 2px
+              position relative
+              cursor pointer
+              overflow hidden
+              .icon-img
+                width 30px
+                height 30px
+                transition all 0.3s ease-in-out
+                margin-top 3px
+              .title
+                margin-left 12px
+                height 36px
+                line-height 36px
+                font-family PingFangSC-light
+                transition all 0.3s ease-in-out
+                color #666666
+                font-size 14px
+              .mar-l48
+                margin-left 48px
+              .arrow-img
+                width 32px
+                height 32px
+                position absolute
+                transition all 0.3s ease-in-out
+                display none
+                right 12px
+                top 6px
+            .product-item:hover
+              background-image linear-gradient(90deg, rgb(83, 96, 251) 0%, rgb(1, 187, 221) 96%)
+              transition all 0.3s ease-in-out
+              border 1px solid transparent
+              .icon-img
+                display none
+                transition all 0.3s ease-in-out
+              .title
+                margin-left 12px
+                color white
+                transition all 0.3s ease-in-out
+              .arrow-img
+                display block
+

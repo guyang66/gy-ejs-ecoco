@@ -413,4 +413,9 @@ module.exports = [
     path: 'page/about/page-joinus',
     title: '加入我们'
   },
+  {
+    name: 'about/tag',
+    path: 'page/about/page-tag',
+    title: '热门标签'
+  },
 ];
