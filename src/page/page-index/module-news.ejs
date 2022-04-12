@@ -25,13 +25,13 @@
             <div class="tit"><%=news.title%></div>
             <div class="summary"><%=news.summary%></div>
             <div class="date"><%=news.date%></div>
-            <div class="btn">查看详情 ></div>
+            <a class="btn" href="<%=news.href%>" target="_blank">查看详情 ></a>
           </div>
         <% }); %>
       </div>
     </div>
 
-    <a class="more-btn  transition-hide-bottom">查看更多 > </a>
+    <a class="more-btn  transition-hide-bottom" href="/about/news.html" target="_blank">查看更多 > </a>
   </div>
 </div>
 <script>

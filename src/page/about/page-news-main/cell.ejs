@@ -1,0 +1,24 @@
+<div class="article-item">
+  <div class="tit">
+    <a href="<%=news.href%>"><%=news.title%></a>
+    <% if(news.tag && news.tag.length > 0) { %>
+      <% news.tag.forEach(function(tag){ %>
+      <span class="tag"><%=tag.text%></span>
+      <% }); %>
+    <% } %>
+  </div>
+  <div class="wrap">
+    <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻"/>
+    <div class="fn-left author mar-l10"><%=news.author%></div>
+    <div class="fn-left line"></div>
+    <div class="fn-left date"><%=news.date%></div>
+  </div>
+  <% if(news.cover) { %>
+  <div class="cover-wrap">
+    <img alt="cover" src="<%=news.cover%>"/>
+  </div>
+  <% } %>
+  <div class="desc <% if(news.cover){ %>w-small<% } %>"><%=news.summary%></div>
+  <a class="btn" href="<%=news.href%>">查看详情 > </a>
+  <div class="seq-line"></div>
+</div>

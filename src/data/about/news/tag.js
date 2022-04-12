@@ -28,16 +28,16 @@ const data = [
     key: 'ai',
   },
   {
-    text: '服务合作',
-    key: 'service',
-  },
-  {
     text: '解决方案',
     key: 'solution',
   },
   {
     text: '行业报告',
     key: 'report',
+  },
+  {
+    text: '产品服务',
+    key: 'product',
   }
 ]
 

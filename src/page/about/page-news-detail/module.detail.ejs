@@ -1,11 +1,33 @@
-<div class="article-render-box">
-  <h2 class="title">好哒是哒是哒哈斯基爱仕达</h2>
-  <div class="info-wrap">
-    <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻"/>
-    <div class="fn-left author mar-l10">123</div>
-    <div class="fn-left line"></div>
-    <div class="fn-left date">20212121022</div>
-  </div>
-  <div class="detail-view" id="article-detail">
+<div class="module-article-crumbs mar-t20">
+  <span style="margin-right: 10px;"><a href="/about/news.html">新闻中心</a></span>>
+  <span style="margin-left: 5px;"><%=article.title%></span>
+</div>
+<div class="main-content">
+  <div class="article-render-box">
+    <h2 class="title"><%=article.title%></h2>
+    <div class="info-wrap">
+      <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻"/>
+      <div class="fn-left author mar-l10"><%=article.author%></div>
+      <div class="fn-left line-h"></div>
+      <div class="fn-left date"><%=article.date%></div>
+    </div>
+    <% if(article.tag && article.tag.length > 0) { %>
+      <div class="a-tag-view">
+        <% article.tag.forEach(function(tag, index){ %>
+          <div class="tag-cell"><%=tag.text%></div>
+        <% }); %>
+      </div>
+    <% } %>
+    <div class="detail-view" id="article-detail">
+    </div>
+
+    <div class="line"></div>
+    <% if(next.href) { %>
+      <a class="relative-link" href="<%=next.href%>">上一篇：<%=next.title%></a>
+    <% } %>
+    <% if(prev.href) { %>
+      <a class="relative-link" href="<%=prev.href%>">下一篇：<%=prev.title%></a>
+    <% } %>
+    <a class="back-btn" href="/about/news.html">返回新闻中心</a>
   </div>
 </div>

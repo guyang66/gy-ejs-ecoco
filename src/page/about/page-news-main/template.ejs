@@ -4,10 +4,10 @@
     <div class="news-content">
       <div class="news-view">
         <div class="left-wrap fn-left">
-          <div class="tabs-view">
+          <div class="tabs-view" key="all">
             <div class="text-wrap">
               <% categoryData.forEach(function(cate, index){ %>
-                <div class="tab-cell fn-left <% if(index === 0){ %>active<% } %>">
+                <div class="tab-cell fn-left <% if(index === 0){ %>active<% } %>" key="<%=cate.key%>">
                   <%=cate.text%>
                 </div>
               <% }); %>
@@ -15,12 +15,12 @@
             <div class="tab-line"></div>
           </div>
           <div class="article-view">
-            <% articleList.forEach(function(news, index){ %>
+            <% articleList.forEach(function(news){ %>
               <div class="article-item">
                 <div class="tit">
                   <a href="<%=news.href%>"><%=news.title%></a>
                   <% if(news.tag && news.tag.length > 0) { %>
-                    <% news.tag.forEach(function(tag, index){ %>
+                    <% news.tag.forEach(function(tag){ %>
                       <span class="tag"><%=tag.text%></span>
                     <% }); %>
                   <% } %>
@@ -65,16 +65,16 @@
           </div>
           <div class="news-link-view">
             <div class="tit">热门文章</div>
-            <% articleList.slice(0,5).forEach(function(news, index){ %>
+            <% articleList.filter(function (v) { return !!v.isHot}).forEach(function(news){ %>
               <a class="news-item-wrap"  href="<%=news.href%>">
                 <div class="point fn-left"></div>
                 <div class="news-item fn-left"><%=news.title%></div>
               </a>
             <% }); %>
           </div>
-          <div class="news-link-view">
+          <div class="news-link-view mar-b40">
             <div class="tit">最新文章</div>
-            <% articleList.slice(0,5).forEach(function(news, index){ %>
+            <% articleList.slice(0,5).forEach(function(news){ %>
               <a class="news-item-wrap"  href="<%=news.href%>">
                 <div class="point fn-left"></div>
                 <div class="news-item fn-left"><%=news.title%></div>
@@ -87,23 +87,3 @@
   </div>
     <%=formView%>
 </section>
-<script>
-  $(function() {
-    $('.news-view .tabs-view .tab-cell').on('click',function (){
-      let index = $(this).index()
-      let viewLeftPadding = 12,cellLeftMargin = 12,cellRightMargin = 12
-      let firstNodeWidth = 28
-      let cellPadding = 6 + 6
-      if(index === 0){
-        $('.news-view .tab-line').css({left: (viewLeftPadding + cellLeftMargin) + 'px', width: (firstNodeWidth + cellPadding) + 'px'})
-      } else {
-        let target = viewLeftPadding + cellLeftMargin
-        for(let i = 0; i < index; i++){
-          target = target + $('.news-view .tabs-view .tab-cell').eq(i).width() + cellPadding + cellLeftMargin + cellRightMargin
-        }
-        $('.news-view .tab-line').css({left: target + 'px',width: $(this).width() + cellPadding + 'px'})
-      }
-    })
-
-  })
-</script>
