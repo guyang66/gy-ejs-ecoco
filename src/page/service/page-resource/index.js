@@ -11,8 +11,8 @@ const formView = form()
 
 const container = template({formView, newsData, downloadData});
 export default htmlRender({
-  key: 'banana',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'resource',
+  navKey: 'service', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
   tabsData,

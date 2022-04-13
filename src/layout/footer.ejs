@@ -2,11 +2,11 @@
 <footer class="footer-wrap">
   <div class="footer-content pad20">
     <div class="footer-top-wrap mar-t40">
-      <% footerData.forEach(function(column, count){ %>
+      <% footerData.forEach(function(column){ %>
         <div class="footer-item-wrap fn-left mar-r30">
           <div class="item-title mar-b10"><%=column.title%></div>
-          <% column.child.forEach(function(item, count){ %>
-            <div class="item-text item-hover"><%=item.title%></div>
+          <% column.child.forEach(function(item){ %>
+            <a class="item-text item-hover" href="<%=item.link%>" <% if(item.target){ %>target="<%=item.target%>" <% } %> ><%=item.title%></a>
           <% }); %>
         </div>
       <% }); %>
@@ -30,13 +30,13 @@
     <div class="footer-middle-wrap mar-t20">
       <div class="middle-cell">
         <span class="txt">热门链接：</span>
-        <a class="txt link-text mar-r10">数字化</a>
-        <a class="txt link-text mar-r10">数字孪生</a>
-        <a class="txt link-text mar-r10">反季水果</a>
-        <a class="txt link-text mar-r10">产品发布</a>
-        <a class="txt link-text mar-r10">最新获奖</a>
-        <a class="txt link-text mar-r10">品牌官宣</a>
-        <a class="txt link-text mar-r10">天眼杀</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=digital" target="_blank">数字化</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=sjdh" target="_blank">数机大会</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=fruit" target="_blank">水果</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=vegetable" target="_blank">蔬菜</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=brand" target="_blank">品牌官宣</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=ai" target="_blank">智能应用</a>
+        <a class="txt link-text mar-r10" href="/about/tag.html?tag=product" target="_blank">智能产品</a>
       </div>
     </div>
     <div class="footer-middle-wrap mar-t20">

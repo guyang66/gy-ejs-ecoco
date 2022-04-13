@@ -36,6 +36,7 @@ const container = template({formView, bannerView, productView, staticsView, cust
 const hasBanner = false
 export default htmlRender({
   key: 'index',
+  navKey: 'index',
   container,
   bannerData,
   hasBanner,

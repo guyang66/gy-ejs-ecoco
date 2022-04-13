@@ -11,8 +11,12 @@ import { arrayToObj } from '@/utils/utils';
 
 import footerData from '@/data/menu/footer'
 const { router, name, logo, telicon } = configs;
-const routerMaps = arrayToObj(router, 'name');
+const routerMaps = arrayToObj(router, 'key');
 
+const getPageTitle = (key) => {
+  console.log(routerMaps)
+  return routerMaps[key] ? `${routerMaps[key].title}` : 'yy科技'
+}
 
 /**
  *
@@ -23,8 +27,10 @@ const routerMaps = arrayToObj(router, 'name');
  * @param {tabsData} 页面内tabs页锚点标题
  */
 
+
 const htmlRender = ({
   key,
+  navKey,
   hasBanner = true,
   hasFooter = true,
   container,
@@ -33,10 +39,11 @@ const htmlRender = ({
 }) => {
   return layout({
     key, // 页面独立key
+    navKey,
     tabsData,
     ...configs,
-    title: `默认标题`, // 页面标题
-    header: header({ key, logo, menus, telicon, hasBanner}),
+    title: getPageTitle(key),
+    header: header({ key, navKey, logo, menus, telicon, hasBanner}),
     banner: hasBanner ? banner({bannerData}) : '',
     tabs: tabs({tabsData}),
     container: container || '',

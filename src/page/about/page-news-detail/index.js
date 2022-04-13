@@ -9,8 +9,8 @@ const tabsData = [];
 const formView = form()
 const container = template({formView, articleList, tagList, searchHot});
 export default htmlRender({
-  key: 'banana',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'news-detail',
+  navKey: 'about', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   hasBanner: false,
   tabsData,

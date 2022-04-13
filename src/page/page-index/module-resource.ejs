@@ -27,12 +27,14 @@
             </div>
             <div class="right-view fn-right">
                 <% resourceData.content.data.forEach(function(resource,index){ %>
-                    <div class="resource-cell fn-left <% if((index + 1) % 4 !== 0){ %>mar-r24<% } %> <% if( index < resourceData.content.data.length - 4){ %>mar-b24<% } %>">
+                    <a class="resource-cell fn-left <% if((index + 1) % 4 !== 0){ %>mar-r24<% } %> <% if( index < resourceData.content.data.length - 4){ %>mar-b24<% } %>"
+                       href="<%=resource.href%>"
+                    >
                         <div class="icon-wrap">
                             <img src="<%=resource.icon%>" alt="<%=resource.alt%>"/>
                         </div>
                         <div class="txt"><%=resource.text%></div>
-                    </div>
+                    </a>
                 <% }); %>
             </div>
         </div>

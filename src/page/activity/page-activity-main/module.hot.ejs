@@ -27,7 +27,7 @@
             <% } %>
             <div class="desc"><%=item.desc%></div>
 
-            <div class="btn"><%=item.btnText%></div>
+            <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
           </div>
 
           <% if(item.type && item.type === 'new') { %>

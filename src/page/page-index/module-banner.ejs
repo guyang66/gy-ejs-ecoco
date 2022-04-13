@@ -36,10 +36,10 @@
     <div class="column-wrap">
         <div class="column-content">
             <% columnData.content.forEach(function(columnItem){ %>
-                <div class="column-cell fn-left">
+                <a class="column-cell fn-left" href="<%=columnItem.href%>" <% if(columnItem.target){ %>target="<%=columnItem.target%>" <% } %>>
                     <span class="tit main-content-title color-white"><%=columnItem.title%></span>
                     <div class="desc color-white"><%=columnItem.text%></div>
-                </div>
+                </a>
             <% }); %>
         </div>
     </div>

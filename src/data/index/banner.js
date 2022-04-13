@@ -13,9 +13,10 @@ const data = {
       "btnText": "申请试用",
       "alt": "yy科技官网",
       "action": "",
-      "href": "/banana.html",
+      "href": "/form.html",
       "button": true,
       "style": "black",
+      "target": "_blank",
       "backgroundImg": a1
     },
     {
@@ -24,8 +25,9 @@ const data = {
       "desc": ["iconfont-国内功能很强大且图标内容很丰富的矢量图标库,提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造,设计和前端开发的便捷工具"],
       "btnText": "查看详情",
       "alt": "知识付费",
-      "href": "/banana.html",
+      "href": "/service/resource.html",
       "button": true,
+      "target": "_blank",
       "backgroundImg": a2
     },
     {
@@ -38,7 +40,8 @@ const data = {
       "btnText": "立即加入",
       "button": true,
       "alt": "奈门摩尔",
-      "href": "/banana.html",
+      "target": "_blank",
+      "href": "/form.html",
       "backgroundImg": a3
     },
     {
@@ -50,9 +53,10 @@ const data = {
       ],
       "button": true,
       "alt": "伊泽瑞尔",
-      "href": "/banana.html",
+      "href": "/about/news/9.html",
       "btnText": "查看更多",
       "type": "black",
+      "target": "_blank",
       "backgroundImg": a4
     },
     {
@@ -65,7 +69,7 @@ const data = {
       "button": true,
       "alt": "畅销小说",
       "nofollow": true,
-      "href": "/banana.html",
+      "href": "/about/news/13.html",
       "target": "_blank",
       "backgroundImg": a5
     }

@@ -43,43 +43,51 @@ const data = {
     data: [
       {
         icon: c1,
-        alt: '客户服务',
+        alt: '资料下载',
         text: '资料下载',
+        href: '/service/resource.html'
       },
       {
         icon: c2,
-        alt: '客户服务',
+        alt: '操作文档',
         text: '操作文档',
+        href: '/service/help.html'
       },
       {
         icon: c3,
-        alt: '客户服务',
+        alt: '工具介绍',
         text: '工具介绍',
+        href: '/service/help.html'
       },
       {
         icon: c4,
-        alt: '客户服务',
+        alt: '在线问答',
         text: '在线问答',
+        href: '/service/help.html'
       },
       {
         icon: c5,
-        alt: '客户服务',
+        alt: '资源上传',
         text: '资源上传',
+        href: '/service/resource.html'
       },
       {
         icon: c6,
-        alt: '客户服务',
+        alt: '分享平台',
         text: '分享平台',
+        href: '/activity.html'
       },
       {
         icon: c7,
-        alt: '客户服务',
+        alt: '产品演示',
         text: '产品演示',
+        href: '/service/resource.html'
       },
       {
         icon: c8,
-        alt: '客户服务',
+        alt: '活动预热',
         text: '活动预热',
+        href: '/activity.html'
       }
     ]
   }

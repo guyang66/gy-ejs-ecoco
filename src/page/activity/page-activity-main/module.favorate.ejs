@@ -30,7 +30,7 @@
                   <div class="ad-text"><%=ad%></div>
                 </div>
                 <% }); %>
-                <a class="btn" href="<%=item.href%>"><%=item.btnText%></a>
+                <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
               </div>
             </div>
             <div class="bottom-wrap">
@@ -51,7 +51,7 @@
                 <span class="tag fn-left mar-r10 <% if(tag.key === 'fill'){ %>s-fill<% } %> <% if(tag.key === 'outline'){ %>s-outline<% } %>"><%=tag.text%></span>
               <% }); %>
             </div>
-            <a class="btn"><%=item.btnText%></a>
+            <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
           </div>
         <% } %>
       <% }); %>

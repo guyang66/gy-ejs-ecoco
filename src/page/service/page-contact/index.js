@@ -22,8 +22,8 @@ const addressView = address({addressData})
 
 const container = template({formView, contactView, addressView});
 export default htmlRender({
-  key: 'banana',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'contact',
+  navKey: 'service', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
   tabsData,

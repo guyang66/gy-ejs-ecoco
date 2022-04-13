@@ -28,8 +28,8 @@ const hotView = hot({hotData})
 
 const container = template({formView, favoriteView, brandView, hotView});
 export default htmlRender({
-  key: 'digital',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'activity',
+  navKey: 'activity', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
   tabsData,

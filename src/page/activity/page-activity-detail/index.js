@@ -8,7 +8,7 @@ const tabsData = [];
 const formView = form()
 const container = template({formView, detailData});
 export default htmlRender({
-  key: 'digital',
+  key: 'activity-detail',
   hasBanner: false,
   navKey: 'activity', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,

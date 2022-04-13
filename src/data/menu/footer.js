@@ -3,92 +3,83 @@ const data = [
     title: '关于我们',
     child: [{
       title: '了解我们',
-      link: '/banana.html',
+      link: '/about/company.html',
     },{
       title: '文档中心',
-      link: '/banana.html',
+      link: '/service/resource.html',
     },{
       title: '联系我们',
-      link: '/banana.html',
+      link: '/service/contact.html',
     },{
       title: '人才招聘',
-      link: '/banana.html',
+      link: '/service/contact.html',
     }]
   },
   {
     title: '产品体系',
     child: [{
-      title: '了解我们',
-      link: '/banana.html',
+      title: '水果联盟',
+      link: '/product/fruits/banana.html',
     },{
-      title: '文档中心',
-      link: '/banana.html',
+      title: '素菜',
+      link: '/product/vegetables/amaranthus.html',
     },{
-      title: '联系我们',
-      link: '/banana.html',
+      title: '智能系统',
+      link: '/product/ai/speech.html',
     },{
-      title: '人才招聘',
-      link: '/banana.html',
+      title: '数据服务',
+      link: '/product/dataserver/offlinealgorithm.html',
     }]
   },
   {
     title: '解决方案',
     child: [{
       title: '游戏行业',
-      link: '/banana.html',
+      link: '/solution/game.html',
     },{
       title: '电商行业',
-      link: '/banana.html',
+      link: '/solution/online.html',
     },{
       title: '金融行业',
-      link: '/banana.html',
+      link: '/solution/finance.html',
     },{
-      title: '汽车行业',
-      link: '/banana.html',
+      title: '教育行业',
+      link: '/solution/education.html',
     },{
       title: '餐饮行业',
-      link: '/banana.html',
+      link: '/solution/food.html',
     },{
-      title: '旅游行业',
-      link: '/banana.html',
+      title: '私有化行业',
+      link: '/solution/personal.html',
     },{
       title: '大数据行业',
-      link: '/banana.html',
+      link: '/solution/bigdata.html',
     }]
   },
   {
     title: '用户中心',
     child: [{
       title: '产品手册',
-      link: '/banana.html',
+      link: '/service/help.html',
     },{
       title: '使用手册',
-      link: '/banana.html',
+      link: '/service/help.html',
     },{
       title: '技术文档',
-      link: '/banana.html',
+      link: '/service/help.html',
     },{
       title: '更多资料',
-      link: '/banana.html',
+      link: '/service/resource.html',
     }]
   },
   {
     title: '服务与支持',
     child: [{
-      title: '了解我们',
-      link: '/banana.html',
-    },{
-      title: '文档中心',
-      link: '/banana.html',
-    },{
-      title: '联系我们',
-      link: '/banana.html',
-    },{
       title: '精彩活动',
-      link: '/banana.html',
+      link: '/activity.html',
     },{
       title: '人才招聘',
-      link: '/banana.html',
+      link: '/about/joinus.html',
     }]
   },
   {
@@ -96,9 +87,11 @@ const data = [
     child: [{
       title: 'bootstrap中文网',
       link: 'https://www.bootcss.com/',
+      target: '_blank'
     },{
       title: '百度',
       link: 'https://www.baidu.com',
+      target: '_blank'
     }]
   },
 ]

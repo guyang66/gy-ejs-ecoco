@@ -39,7 +39,7 @@ const historyView = history({historyData})
 const caseView = cases({caseData})
 const container = template({formView, advantageView, coreView, applyView, historyView, caseView});
 export default htmlRender({
-  key: 'banana',
+  key: 'grape',
   navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,

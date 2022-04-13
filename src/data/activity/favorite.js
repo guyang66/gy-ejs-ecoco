@@ -44,6 +44,7 @@ const data = {
       name: '看守无人机',
       desc: '超高续航，耐力十足，现在购买即送收纳盒',
       btnText: '查看详情',
+      href: '/activity/detail.html',
       bg: b1,
       tag: [
         {
@@ -63,6 +64,7 @@ const data = {
       desc: '智能马桶，现免费试用1个月，先到先得',
       btnText: '申请试用',
       bg: b2,
+      href: '/activity/detail.html',
       tag: [
         {
           key: 'fill',
@@ -81,6 +83,7 @@ const data = {
       desc: '智能研判系统，在线直播，直播购买',
       btnText: '点击查看',
       bg: b3,
+      href: '/activity/detail.html',
       tag: [
         {
           key: 'fill',
@@ -98,6 +101,7 @@ const data = {
       name: '巴西瓜子',
       desc: '巴西瓜子，毛利互相可拉到烧烤店啊啊',
       btnText: '申请试用',
+      href: '/activity/detail.html',
       bg: b4,
       tag: [
         {
@@ -120,6 +124,7 @@ const data = {
       name: '智能语音',
       desc: '智能语音，现免费试用1个月，先到先得',
       btnText: '申请试用',
+      href: '/activity/detail.html',
       bg: b5,
       tag: [
         {
@@ -138,6 +143,7 @@ const data = {
       name: '智能在线客户',
       desc: '智能在线客户，上千套模板训练，效率100%',
       btnText: '查看详情',
+      href: '/activity/detail.html',
       bg: b6,
       tag: [
         {
@@ -160,6 +166,7 @@ const data = {
       name: '蔬菜沙拉',
       desc: '多种果蔬多重营养，呵护你的全家健康',
       btnText: '立即购买',
+      href: '/activity/detail.html',
       bg: b7,
       tag: [
         {

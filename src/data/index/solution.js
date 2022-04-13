@@ -22,6 +22,7 @@ const data = {
       ],
       icon: a1,
       alt: '解决方案',
+      href: '/solution/education.html',
       cover: null
     },
     {
@@ -33,6 +34,7 @@ const data = {
         '没胃口阿斯达克',
         '可控制的增量'
       ],
+      href: '/solution/finance.html',
       icon: a2,
       alt: '解决方案',
       cover: null
@@ -46,6 +48,7 @@ const data = {
         '领先的行业顾问',
         '适合人群'
       ],
+      href: '/solution/online.html',
       icon: a3,
       alt: '解决方案',
       cover: null
@@ -59,6 +62,7 @@ const data = {
         '全领域投资',
         '种植100%产出'
       ],
+      href: '/solution/bigdata.html',
       icon: a4,
       alt: '解决方案',
       cover: null
@@ -72,6 +76,7 @@ const data = {
         '工具智能化',
         '排毒养眼化'
       ],
+      href: '/solution/personal.html',
       icon: a5,
       alt: '解决方案',
       cover: null
@@ -85,6 +90,7 @@ const data = {
         '资源陷阱排查',
         '扫码即可'
       ],
+      href: '/solution/game.html',
       icon: a6,
       alt: '解决方案',
       cover: null
@@ -98,6 +104,7 @@ const data = {
         '全域领先策划',
         '指哪打哪策略'
       ],
+      href: '/solution/food.html',
       icon: a7,
       alt: '解决方案',
       cover: null
@@ -111,6 +118,7 @@ const data = {
         '临时变道加塞',
         '全自动发放'
       ],
+      href: '/solution/traffic.html',
       icon: a8,
       alt: '解决方案',
       cover: null
@@ -124,6 +132,7 @@ const data = {
         '0风险投入',
         '全天候补'
       ],
+      href: '/solution/manufacture.html',
       icon: a9,
       alt: '解决方案',
       cover: null

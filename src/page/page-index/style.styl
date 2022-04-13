@@ -85,8 +85,9 @@
           height 100%
           position relative
           .column-cell
-            width 25%
-            height 100%
+            width calc(25% - 48px)
+            height 47px
+            display block
             padding 24px
             cursor pointer
             transition all 0.3s ease-in-out
@@ -102,6 +103,7 @@
               text-align center
               font-size 14px
           .column-cell:hover
+            display block
             background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
     .product-wrap
       width 100%
@@ -708,6 +710,7 @@
                 width 100%
                 text-align center
                 font-size 14px
+                color #333333
                 font-family "PingFang SC"
             .resource-cell:hover
               transition all 0.3s ease-in-out

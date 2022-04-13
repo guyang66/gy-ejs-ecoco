@@ -45,8 +45,8 @@ const caseView = cases({caseData})
 const recommendView = recommend({recommendData})
 const container = template({formView, painView, frameworkView,advantageView, applyView,recommendView, caseView});
 export default htmlRender({
-  key: 'banana',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'personal',
+  navKey: 'solution', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
   tabsData,

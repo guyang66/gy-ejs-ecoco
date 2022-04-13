@@ -7,7 +7,7 @@
     </a>
     <ul class="header-nav fn-left">
       <% menus.forEach(function(nav, index){ %>
-        <li class="header-item <% if(key === nav.name){ %>active<% } %>">
+        <li class="header-item <% if(key === nav.name || navKey === nav.name){ %>active<% } %>">
           <!-- 没有二级导航栏的就直接跳转 -->
           <% if(nav.hasHref){%>
             <a href="<%=nav.href%>"><%= nav.title %></a>

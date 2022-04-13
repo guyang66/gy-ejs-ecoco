@@ -46,8 +46,8 @@ const prizeView = prize({prizeData})
 
 const container = template({formView, usView, teamView, valueView, lifeView, historyView, prizeView});
 export default htmlRender({
-  key: 'banana',
-  navKey: 'product', // 用于导航栏item active判断，即属于哪一个导航栏模块
+  key: 'company',
+  navKey: 'about', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   bannerData,
   tabsData,
