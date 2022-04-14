@@ -450,19 +450,25 @@ module.exports = [
     key: 'contact',
     name: 'service/contact',
     path: 'page/service/page-contact',
-    title: '活动列表'
+    title: '联系我们'
   },
   {
     key: 'help',
     name: 'service/help',
     path: 'page/service/page-help',
-    title: '活动详情'
+    title: '帮助中心'
   },
   {
     key: 'resource',
     name: 'service/resource',
     path: 'page/service/page-resource',
-    title: '活动列表'
+    title: '资源中心'
+  },
+  {
+    key: 'declare',
+    name: 'service/declare',
+    path: 'page/service/page-declare',
+    title: '隐私政策'
   },
 
   // 了解我们

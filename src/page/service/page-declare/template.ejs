@@ -1,0 +1,38 @@
+<section class="declare-main-wrap">
+    <div class="declare-wrap">
+        <div class="declare-content">
+            <div class="fake-header"></div>
+
+            <div class="module-article-crumbs mar-t20">
+                <span style="margin-right: 10px;"><a href="/service/help.html">帮助中心</a></span>>
+                <span style="margin-left: 5px;">隐私政策声明</span>
+            </div>
+
+            <div class="main-view">
+                <div class="module-article-main-view">
+                    <div class="info-view" style="width: 1280px;padding: 32px">
+                        <% detailData.content.forEach(function(item){ %>
+                            <div class="info-item">
+                                <% if(item.key === 'img') { %>
+                                <div class="img-item mar-t10 mar-b10">
+                                    <img src="<%=item.data%>" alt="<%=detailData.title%>"/>
+                                </div>
+
+                                <!--可以多定义一些自定义样式-->
+                                <% } else if(item.key === 'title-text'){ %>
+                                  <span class="title-text-item mar-t10"><%=item.data%></span>
+                                <% } else if(item.key === 'text'){ %>
+                                <div class="normal-text-item mar-t20 mar-b20">
+                                    <%=item.data%>
+                                </div>
+                                <% } %>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <%=formView%>
+</section>

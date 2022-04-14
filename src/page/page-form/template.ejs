@@ -3,9 +3,9 @@
     <div class="fake-header"></div>
     <div class="form-content">
       <div class="form-view">
-        <h2 class="title-view mar-t20">免费试用</h2>
-        <div class="desc-view mar-t20">留下你的联系方式，我们会尽快和你取得联系</div>
-        <div class="info-view mar-t20">
+        <h2 class="title-view">免费产品试用</h2>
+        <div class="desc-view">留下你的联系方式，我们会尽快和你取得联系</div>
+        <div class="info-view mar-t10">
           <div class="left-view fn-left">
             <img class="cover" src="/assets/images/common/form.jpg" alt="合作"/>
             <div class="logo-view">
@@ -18,80 +18,110 @@
           </div>
           <div class="right-view fn-right">
             <form>
-              <div style="height: 40px;width: 100%">
-                <div class="input-title fn-left"><span class="start">*</span>您的手机号：</div>
-                <div class="normal-input-wrap fn-left">
-                  <input name="phone" placeholder="请输入您的手机号" autocomplete="off"/>
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">*</span>您的手机号：</div>
+                  <div class="normal-input-wrap fn-left">
+                    <input name="phone" placeholder="请输入您的手机号" autocomplete="off"/>
+                  </div>
+                </div>
+                <div class="form-verify mar-l110">
+                  <div class="phone-input-error">请填写您的手机号</div>
                 </div>
               </div>
-              <div class="form-verify">
-                <div class="phone-input-error">请填写您的手机号</div>
-              </div>
 
 
-              <div class="code-input-wrap">
-                <div class="verify-code-wrap">
-                  <input name="code" placeholder="请输入验证码" autocomplete="off"/>
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">*</span>验证码：</div>
+                  <div class="code-input-wrap fn-right">
+                    <div class="verify-code-wrap">
+                      <input name="code" placeholder="请输入验证码" autocomplete="off"/>
+                    </div>
+                    <div class="send-button" second="-1">获取验证码</div>
+                  </div>
                 </div>
-                <div class="send-button" second="-1">获取验证码</div>
-              </div>
-              <div class="form-verify">
-                <div class="code-input-error">请填写您的验证码</div>
-              </div>
-
-
-              <div class="normal-input-wrap">
-                <input name="name" placeholder="请输入您的姓名" autocomplete="off"/>
-              </div>
-              <div class="form-verify">
-                <div class="name-input-error">请填写您的姓名</div>
-              </div>
-
-
-              <div class="normal-input-wrap">
-                <input name="company" placeholder="请输入您的公司名称" autocomplete="off"/>
-              </div>
-              <div class="form-verify">
-                <div class="company-input-error">请填写您的公司名称</div>
-              </div>
-
-
-              <div class="normal-input-wrap">
-                <input name="position" placeholder="请输入您的职位" autocomplete="off"/>
-              </div>
-              <div class="form-verify">
-                <div class="email-input-error">请填写您的职位</div>
-              </div>
-
-
-              <div class="normal-input-wrap cursor-pointer">
-                <input class="cursor-pointer" name="need" placeholder="请选择具体需求" disabled="disabled" autocomplete="off"/>
-                <div class="select-icon">
-                  <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg>
-                </div>
-                <div class="select-view">
-                  <div class="select-cell">成为合作伙伴</div>
-                  <div class="select-cell">商务合作</div>
-                  <div class="select-cell">智能系统</div>
-                  <div class="select-cell">水果素菜联盟</div>
-                  <div class="select-cell">免费试用产品</div>
+                <div class="form-verify mar-l110">
+                  <div class="code-input-error">请填写您的验证码</div>
                 </div>
               </div>
-              <div class="form-verify">
-                <div class="need-input-error">请选择您的需求</div>
+
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">*</span>您的姓名：</div>
+                  <div class="normal-input-wrap fn-right">
+                    <input name="name" placeholder="请输入您的姓名" autocomplete="off"/>
+                  </div>
+                </div>
+                <div class="form-verify mar-l110">
+                  <div class="name-input-error">请填写您的姓名</div>
+                </div>
               </div>
 
-
-              <div class="declare-wrap cursor-pointer">
-                <input name="declare" class="radio-box" type="checkbox" style="cursor: pointer"/>
-                <div class="declare-text declare-action">我已阅读并同意《隐私政策声明》</div>
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">*</span>您所在公司：</div>
+                  <div class="normal-input-wrap fn-right">
+                    <input name="company" placeholder="请输入您的公司名称" autocomplete="off"/>
+                  </div>
+                </div>
+                <div class="form-verify mar-l110">
+                  <div class="company-input-error">请填写您的公司名称</div>
+                </div>
               </div>
-              <div class="form-verify">
-                <div class="declare-input-error">请查看并同意隐私政策声明</div>
+
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">&nbsp;</span>您的职位：</div>
+                  <div class="normal-input-wrap fn-right">
+                    <input name="position" placeholder="请输入您的职位" autocomplete="off"/>
+                  </div>
+
+                </div>
+                <div class="form-verify mar-l110">
+                  <div class="position-input-error">请填写您的职位</div>
+                </div>
               </div>
 
+              <div class="form-cell-item h-64">
+                <div class="h-40">
+                  <div class="input-title fn-left"><span class="start">*</span>您的需求：</div>
+                  <div class="normal-input-wrap cursor-pointer fn-right">
+                    <input class="cursor-pointer" name="need" placeholder="请选择具体需求" disabled="disabled" autocomplete="off"/>
+                    <div class="select-icon">
+                      <img src="/assets/images/common/tabxiala.svg" alt="下拉"/>
+                    </div>
+                    <div class="select-view">
+                      <div class="select-cell">成为合作伙伴</div>
+                      <div class="select-cell">商务合作</div>
+                      <div class="select-cell">智能系统</div>
+                      <div class="select-cell">水果素菜联盟</div>
+                      <div class="select-cell">免费试用产品</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-verify mar-l110">
+                  <div class="need-input-error">请选择您的需求</div>
+                </div>
+              </div>
 
-              <div class="button-submit">立即提交</div>
+              <div class="form-cell-item">
+                <div>
+                  <div class="declare-wrap cursor-pointer">
+                    <input name="declare" class="radio-box" type="checkbox" style="cursor: pointer"/>
+                    <a class="declare-text declare-action" href="/service/declare.html" target="_blank">我已阅读并同意《隐私政策声明》</a>
+                  </div>
+                </div>
+                <div class="form-verify">
+                  <div class="declare-input-error">请查看并同意隐私政策声明</div>
+                </div>
+              </div>
+
+              <div class="form-cell-item">
+                <div class="h-40">
+                  <div class="button-submit">立即提交</div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -100,8 +130,214 @@
   </div>
 </section>
 <script>
+  // 调整表单居中
   $(function() {
     $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
-    $('.form-view').css({marginTop: (Math.max($(window).height(), 778) - 778 - 64) / 2 + 'px'})
+    $('.form-view').css({marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'})
+
+    $(window).resize(function() {
+      $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
+      $('.form-view').css({marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'})
+    });
+
+
+    /**************  发送验证码  **************/
+    let intervalInstance
+    const TIME_INTERVAL = 59
+
+    function startInterval () {
+      intervalInstance = setInterval(function (){
+        let num = $('.send-button').attr("second")
+        if(num < 0) {
+          $('.send-button').text(TIME_INTERVAL + 's之后重发')
+          $('.send-button').attr("second",TIME_INTERVAL)
+          return
+        }
+        let number = $('.send-button').attr("second")
+        $('.send-button').text((number - 1) + 's之后重发')
+        $('.send-button').attr("second",(number - 1))
+
+        if(number <=1 ){
+          $('.send-button').text("获取验证码")
+          $('.send-button').attr("second",-1)
+          clearInterval(intervalInstance)
+          intervalInstance = -1
+        }
+      },1000)
+    }
+    $('.send-button').on('click',function (){
+      if(intervalInstance > 0){
+        return
+      }
+      let phone = $("input[name='phone']").val()
+      if(!(/^1[3456789]\d{9}$/.test(phone))){
+        alert('手机号码格式错误')
+        return
+      }
+      //todo: ajax 调用后端接口发验证码
+      let mockResult = {
+        success: true,
+        data: 'ok',
+        error: null
+      }
+      if (mockResult.success) {
+        alert('发送验证码成功，清注意查收')
+        startInterval()
+      } else {
+        alert('发送验证码失败，' + error.errorMsg)
+      }
+    })
+    /**************  发送验证码  **************/
+
+
+    /**************  验证表单  **************/
+    // 提交表单
+    $('.button-submit').on('click',function (){
+      // 恢复初始状态
+      $('.form-verify div').css({height: '0'})
+      let verifyResult = verifyFormInfo()
+      if(!verifyResult){
+        return
+      }
+
+      let code = $("input[name='code']").val()
+      let phone = $("input[name='phone']").val()
+
+      //todo： 拿到code 和 phone 用ajax调接口验证验证码，验证成功进行下一步。
+      let mockResult = {
+        success: true,
+        data: 'ok',
+        error: null
+      }
+
+      if (mockResult.success) {
+        // alert('校验验证码不需要交互，校验成功进行下一步，否则alert错误信息')
+        nextStep()
+      } else {
+        alert(error.errorMsg)
+      }
+    })
+
+    // 校验输入值准确性
+    function verifyFormInfo () {
+      let result = true
+      let phone = $("input[name='phone']").val()
+      let code = $("input[name='code']").val()
+      let name = $("input[name='name']").val()
+      let company = $("input[name='company']").val()
+      let position = $("input[name='position']").val()
+      let need = $("input[name='need']").val()
+      let declare = $("input[name='declare']:checked").val()
+
+      if(!phone || phone === ''){
+        $('.form-verify .phone-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        $('.form-verify .phone-input-error').text('请填写您的手机号')
+        result = false
+      }
+
+      if(!(/^1[3456789]\d{9}$/.test(phone))) {
+        $('.form-verify .phone-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        $('.form-verify .phone-input-error').text('手机号码格式错误')
+        result = false
+      }
+
+      if(!code || code === ''){
+        $('.form-verify .code-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        result = false
+      }
+
+      if(!name || name === ''){
+        $('.form-verify .name-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        result = false
+      }
+
+      if(!company || company === ''){
+        $('.form-verify .company-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        result = false
+      }
+
+      // 职位非必填
+      // if(!position || position === ''){
+      //   $('.form-verify .position-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      //   $('.form-verify .position-input-error').text('请填写您的职位')
+      //   result = false
+      // }
+
+      //  如有有邮箱，可用于验证邮箱
+      // let reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/
+      // if(!reg.test(email)){
+      //   $('.form-verify .email-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      //   $('.form-verify .email-input-error').text('邮箱格式错误')
+      //   result = false
+      // }
+
+      if(!need || need === ''){
+        $('.form-verify .need-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        result = false
+      }
+
+      if(!(declare && declare === 'on')){
+        $('.form-verify .declare-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+        result = false
+      }
+
+      return result
+    }
+
+    // 下一步
+    function nextStep() {
+      let params = {
+        company: $("input[name='company']").val(),
+        name: $("input[name='name']").val(),
+        phone: $("input[name='phone']").val(),
+        need: $("input[name='need']").val(),
+        position: $("input[name='position']").val(),
+        origin: window.location.href,
+        remark: '',
+        date: new Date().toLocaleDateString()
+      }
+      //todo: 拿到params  调用ajax 把信息保存到后台
+      let mockResult = {
+        success: true,
+        data: 'ok',
+        error: null
+      }
+
+      if (mockResult.success) {
+        alert('保存成功，倒计时3秒自动关闭弹窗...')
+        nextStep()
+      } else {
+        alert(error.errorMsg)
+      }
+    }
+
+    function nextStep() {
+      //todo: 后续操作,比如cookie、session相关、清空input、初始状体恢复
+    }
+
+    /**************  验证表单  **************/
+
+
+
+    // 其他点击事件
+    $('.select-view').hide()
+
+    $('.normal-input-wrap.cursor-pointer').on('click', function (e){
+      e.stopPropagation();
+      $('.select-view').show()
+    })
+
+    $('.select-cell').on('click',function (e){
+      e.stopPropagation();
+      $("input[name='need']").val($(this).text())
+      $(this).addClass('select-cell-active').siblings().removeClass('select-cell-active')
+      $('.need-input-error').css({height: 0})
+      $('.select-view').hide()
+    })
+
+    $(document).on('click',function (){
+      $('.select-view').hide()
+    })
+
   })
 </script>

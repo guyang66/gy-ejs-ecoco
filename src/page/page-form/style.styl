@@ -6,7 +6,9 @@
     background #ffffff
     overflow hidden
     position relative
-    min-height 100%
+    background-image url('../../assets/images/cssBg/bg_form2.jpg')
+    background-repeat repeat
+    background-size 100%
     .form-content
       width 1280px
       margin 0 auto
@@ -15,12 +17,11 @@
         width 1280px
         min-height 100px
         background-color #f7f9fa
-        border-radius 40px
+        border-radius 10px
         position relative
-        overflow hidden
-        padding 60px
+        padding 20px
         .title-view
-          font-size 36px
+          font-size 28px
           text-align center
         .desc-view
           text-align center
@@ -28,7 +29,8 @@
           color #666666
         .info-view
           width 100%
-          height 520px
+          height 508px
+          border-radius 10px
           .left-view
             width 620px
             height 100%
@@ -53,98 +55,49 @@
             form
               width 100%
               padding 12px 24px
-              .input-title
-                color #666666
-                font-size 16px
-                height 36px
-                font-family "PingFang SC"
-                line-height 36px
-                .start
-                  color red
+              .h-64
+                height 64px
+              .form-cell-item
+                width 100%
+                .h-40
+                  height 40px
+                .input-title
+                  width 110px
+                  color #666666
+                  font-size 16px
                   height 36px
+                  font-family "PingFang SC"
                   line-height 36px
-                  margin-right 4px
-              .mar-t24
-                margin-top 24px
-              .form-verify
-                width 100%
-                height 24px
-                div
-                  line-height 24px
-                  color #f5222d
-                  height 0
-                  font-size 12px
-                  overflow hidden
-                  width 100%
-              .normal-input-wrap
-                width auto
-                height 40px
-                border 1px solid #D9D9D9
-                border-radius 4px
-                position relative
-                .select-view
-                  width 98%
-                  height 98%
-                  border none
-                .cursor-pointer
-                  cursor pointer
-                input
-                  height 100%
-                  border none
-                  font-size 14px
-                  color #787878
-                  width calc(100% - 24px)
-                  margin-left 12px
-                  outline none
-                  &::placeholder
-                    color rgba(122,139,166, 0.45)
-                input:disabled
-                  background-color rgba(255,255,255,0)
-                .select-icon
-                  position absolute
-                  width 14px
-                  height 14px
-                  right 12px
-                  top 12px
-                .select-view
-                  width 585px
-                  height 208px
-                  padding-top 4px
-                  padding-bottom 4px
-                  position absolute
-                  background-color #FFFFFF
-                  box-shadow 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d
-                  z-index 999
-                  top 42px
-                  border-radius 2px
-                  display none
-                  .select-cell
+                  .start
+                    color red
+                    height 36px
+                    line-height 36px
+                    margin-right 4px
+                .mar-t24
+                  margin-top 24px
+                .mar-l110
+                  margin-left 110px
+                .form-verify
+                  width calc( 100% - 110px)
+                  height 24px
+                  div
+                    line-height 24px
+                    color #f5222d
+                    height 0
+                    font-size 12px
+                    overflow hidden
                     width 100%
-                    height 40px
-                    padding-left 12px
-                    padding-right 12px
-                    font-size 14px
-                    color #787878
-                    line-height 40px
-                  .select-cell:hover
-                    background-color rgb(245,245,245)
-                  .select-cell-active
-                    background-color #4169E1
-                    color #FFFFFF
-                  .select-cell-active:hover
-                    background-color #4169E1
-              .cursor-pointer
-                cursor pointer
-              .code-input-wrap
-                width 100%
-                height 40px
-                position relative
-                .verify-code-wrap
-                  float left
-                  width calc(100% - 144px - 16px)
+                .normal-input-wrap
+                  width calc(100% - 110px)
                   height 40px
                   border 1px solid #D9D9D9
                   border-radius 4px
+                  position relative
+                  .select-view
+                    width 100%
+                    border none
+                  .cursor-pointer
+                    cursor pointer
                   input
                     height 100%
                     border none
@@ -155,47 +108,107 @@
                     outline none
                     &::placeholder
                       color rgba(122,139,166, 0.45)
-                .send-button
-                  margin-left 16px
-                  width 144px
+                  input:disabled
+                    background-color rgba(255,255,255,0)
+                  .select-icon
+                    position absolute
+                    width 14px
+                    height 14px
+                    right 16px
+                    top 13px
+                    img
+                      width 100%
+                      height 1005
+                  .select-view
+                    width 100%
+                    height 208px
+                    padding-top 4px
+                    padding-bottom 4px
+                    position absolute
+                    background-color #FFFFFF
+                    box-shadow 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d
+                    z-index 999
+                    top 42px
+                    border-radius 2px
+                    display none
+                    .select-cell
+                      width 100%
+                      height 40px
+                      padding-left 12px
+                      padding-right 12px
+                      font-size 14px
+                      color #787878
+                      line-height 40px
+                    .select-cell:hover
+                      background-color rgb(245,245,245)
+                    .select-cell-active
+                      background-color #4169E1
+                      color #FFFFFF
+                    .select-cell-active:hover
+                      background-color #4169E1
+                .cursor-pointer
+                  cursor pointer
+                .code-input-wrap
+                  width calc(100% - 110px)
                   height 40px
-                  float left
-                  background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
-                  cursor pointer
-                  border-radius 4px
-                  font-size 14px
-                  color #ffffff
-                  text-align center
-                  line-height 40px
-              .declare-wrap
-                width 584px
-                height 24px
-                position relative
-                .radio-box
-                  float left
-                  width 16px
-                  margin-top 4px
-                  height 16px
-                  background: #FFFFFF
-                  border 1px solid #D9D9D9
-                  border-radius: 2px
-                .declare-text
-                  float left
-                  font-size 14px
-                  color #787878
+                  position relative
+                  .verify-code-wrap
+                    float left
+                    width calc(100% - 144px - 16px)
+                    height 40px
+                    border 1px solid #D9D9D9
+                    border-radius 4px
+                    input
+                      height 100%
+                      border none
+                      font-size 14px
+                      color #787878
+                      width calc(100% - 24px)
+                      margin-left 12px
+                      outline none
+                      &::placeholder
+                        color rgba(122,139,166, 0.45)
+                  .send-button
+                    margin-left 16px
+                    width 144px
+                    height 40px
+                    float left
+                    background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+                    cursor pointer
+                    border-radius 4px
+                    font-size 14px
+                    color #ffffff
+                    text-align center
+                    line-height 40px
+                .declare-wrap
+                  width 584px
                   height 24px
-                  line-height 24px
-                  margin-left 16px
+                  position relative
+                  .radio-box
+                    float left
+                    width 16px
+                    margin-top 4px
+                    height 16px
+                    background: #FFFFFF
+                    border 1px solid #D9D9D9
+                    border-radius: 2px
+                  .declare-text
+                    float left
+                    font-size 14px
+                    color #787878
+                    height 24px
+                    line-height 24px
+                    margin-left 16px
+                    cursor pointer
+                  .declare-text:hover
+                    color #4169E1
+                .button-submit
+                  background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+                  border-radius 4px
+                  height 40px
+                  line-height 40px
+                  text-align center
                   cursor pointer
-                .declare-text:hover
-                  color #4169E1
-              .button-submit
-                background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
-                border-radius 4px
-                height 40px
-                line-height 40px
-                text-align center
-                cursor pointer
-                font-size 18px
-                color #FFFFFF
+                  font-size 18px
+                  color #FFFFFF
 
