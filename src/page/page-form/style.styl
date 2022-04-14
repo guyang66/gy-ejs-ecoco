@@ -1,124 +1,201 @@
 @import "@/styles/layout.styl";
-@import 'swiper/dist/css/swiper.css';
-.tag-main-wrap
-  .tag-wrap
+.form-main-wrap
+  height 100%
+  .form-wrap
     width 100%
-    background rgb(246,247,249)
+    background #ffffff
     overflow hidden
     position relative
-    .tag-content
+    min-height 100%
+    .form-content
       width 1280px
       margin 0 auto
       position relative
-      .title-view
-        width 100%
+      .form-view
+        width 1280px
         min-height 100px
-        background-color #ffffff
-        margin-top 40px
-        padding 24px
-        .title-wrap
-          .tit
-            color #181818
-            font-family "PingFang SC"
-            font-weight 500
-            font-size 24px
-            line-height 36px
-          .desc
-            color #333333
-            font-size 14px
-            line-height 28px
-            text-align justify
-            max-width 1200px
-      .content-view
-        width 100%
-        height auto
-        .left-view
-          width 880px
-          min-height 100px
-          margin-bottom 60px
-          .cell-view
-            background-color #ffffff
-            padding 24px
-            .tit
-              color #181818
-              font-family PingFangSC-light
-              font-weight bold
-              font-size 16px
-            .cell-item
+        background-color #f7f9fa
+        border-radius 40px
+        position relative
+        overflow hidden
+        padding 60px
+        .title-view
+          font-size 36px
+          text-align center
+        .desc-view
+          text-align center
+          font-size 16px
+          color #666666
+        .info-view
+          width 100%
+          height 520px
+          .left-view
+            width 620px
+            height 100%
+            background-color rgb(252,252,252)
+            .cover
               width 100%
-              background-color orange
-              height 50px
-              line-height 50px
-              color #ffffff
-              font-size 14px
-              padding 0 24px
-        .right-view
-          width calc(100% - 880px - 40px)
-          min-height 20px
-          margin-bottom 60px
-          .side-view
-            width 100%
-            border-radius 2px
+              height 375px
+            .logo-view
+              width 100%
+              height calc(100% - 375px)
+              .logo-cell
+                width 20%
+                height 50%
+                padding 12px
+                img
+                  width 100%
+                  height 100%
+          .right-view
+            width calc(100% - 620px)
+            height 100%
             background-color #ffffff
-            .title
-              color #181818
-              font-family PingFangSC-light
-              font-weight bold
-              font-size 16px
-            .desc
-              color #999999
-              font-size 16px
-              line-height 24px
-              text-align justify
-            .text
-              color #333333
-              font-size 16px
-              line-height 24px
-              text-align justify
-            .product-item
-              width calc(100% - 24px)
-              border 1px solid #4169E1
-              padding 6px 12px
-              display inline-block
-              transition all 0.3s ease-in-out
-              border-radius 2px
-              position relative
-              cursor pointer
-              overflow hidden
-              .icon-img
-                width 30px
-                height 30px
-                transition all 0.3s ease-in-out
-                margin-top 3px
-              .title
-                margin-left 12px
-                height 36px
-                line-height 36px
-                font-family PingFangSC-light
-                transition all 0.3s ease-in-out
+            form
+              width 100%
+              padding 12px 24px
+              .input-title
                 color #666666
-                font-size 14px
-              .mar-l48
-                margin-left 48px
-              .arrow-img
-                width 32px
-                height 32px
-                position absolute
-                transition all 0.3s ease-in-out
-                display none
-                right 12px
-                top 6px
-            .product-item:hover
-              background-image linear-gradient(90deg, rgb(83, 96, 251) 0%, rgb(1, 187, 221) 96%)
-              transition all 0.3s ease-in-out
-              border 1px solid transparent
-              .icon-img
-                display none
-                transition all 0.3s ease-in-out
-              .title
-                margin-left 12px
-                color white
-                transition all 0.3s ease-in-out
-              .arrow-img
-                display block
+                font-size 16px
+                height 36px
+                font-family "PingFang SC"
+                line-height 36px
+                .start
+                  color red
+                  height 36px
+                  line-height 36px
+                  margin-right 4px
+              .mar-t24
+                margin-top 24px
+              .form-verify
+                width 100%
+                height 24px
+                div
+                  line-height 24px
+                  color #f5222d
+                  height 0
+                  font-size 12px
+                  overflow hidden
+                  width 100%
+              .normal-input-wrap
+                width auto
+                height 40px
+                border 1px solid #D9D9D9
+                border-radius 4px
+                position relative
+                .select-view
+                  width 98%
+                  height 98%
+                  border none
+                .cursor-pointer
+                  cursor pointer
+                input
+                  height 100%
+                  border none
+                  font-size 14px
+                  color #787878
+                  width calc(100% - 24px)
+                  margin-left 12px
+                  outline none
+                  &::placeholder
+                    color rgba(122,139,166, 0.45)
+                input:disabled
+                  background-color rgba(255,255,255,0)
+                .select-icon
+                  position absolute
+                  width 14px
+                  height 14px
+                  right 12px
+                  top 12px
+                .select-view
+                  width 585px
+                  height 208px
+                  padding-top 4px
+                  padding-bottom 4px
+                  position absolute
+                  background-color #FFFFFF
+                  box-shadow 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d
+                  z-index 999
+                  top 42px
+                  border-radius 2px
+                  display none
+                  .select-cell
+                    width 100%
+                    height 40px
+                    padding-left 12px
+                    padding-right 12px
+                    font-size 14px
+                    color #787878
+                    line-height 40px
+                  .select-cell:hover
+                    background-color rgb(245,245,245)
+                  .select-cell-active
+                    background-color #4169E1
+                    color #FFFFFF
+                  .select-cell-active:hover
+                    background-color #4169E1
+              .cursor-pointer
+                cursor pointer
+              .code-input-wrap
+                width 100%
+                height 40px
+                position relative
+                .verify-code-wrap
+                  float left
+                  width calc(100% - 144px - 16px)
+                  height 40px
+                  border 1px solid #D9D9D9
+                  border-radius 4px
+                  input
+                    height 100%
+                    border none
+                    font-size 14px
+                    color #787878
+                    width calc(100% - 24px)
+                    margin-left 12px
+                    outline none
+                    &::placeholder
+                      color rgba(122,139,166, 0.45)
+                .send-button
+                  margin-left 16px
+                  width 144px
+                  height 40px
+                  float left
+                  background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+                  cursor pointer
+                  border-radius 4px
+                  font-size 14px
+                  color #ffffff
+                  text-align center
+                  line-height 40px
+              .declare-wrap
+                width 584px
+                height 24px
+                position relative
+                .radio-box
+                  float left
+                  width 16px
+                  margin-top 4px
+                  height 16px
+                  background: #FFFFFF
+                  border 1px solid #D9D9D9
+                  border-radius: 2px
+                .declare-text
+                  float left
+                  font-size 14px
+                  color #787878
+                  height 24px
+                  line-height 24px
+                  margin-left 16px
+                  cursor pointer
+                .declare-text:hover
+                  color #4169E1
+              .button-submit
+                background-image linear-gradient(90deg, #5360fb 0%, #01bbdd  96%)
+                border-radius 4px
+                height 40px
+                line-height 40px
+                text-align center
+                cursor pointer
+                font-size 18px
+                color #FFFFFF
 

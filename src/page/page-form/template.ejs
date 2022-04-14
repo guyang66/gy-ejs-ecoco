@@ -1,13 +1,107 @@
-<section class="tag-main-wrap">
-  <div class="tag-wrap">
-    <div class="tag-content">
-      <div class="fake-header"></div>
-      <div class="tag-view">
-        <div class="title-view" style="font-size: 68px;color: orange">
-          这是表单
+<section class="form-main-wrap">
+  <div class="form-wrap">
+    <div class="fake-header"></div>
+    <div class="form-content">
+      <div class="form-view">
+        <h2 class="title-view mar-t20">免费试用</h2>
+        <div class="desc-view mar-t20">留下你的联系方式，我们会尽快和你取得联系</div>
+        <div class="info-view mar-t20">
+          <div class="left-view fn-left">
+            <img class="cover" src="/assets/images/common/form.jpg" alt="合作"/>
+            <div class="logo-view">
+              <% logoData.forEach(function(item){ %>
+                <div class="logo-cell fn-left">
+                  <img src="<%=item%>" alt="logo"/>
+                </div>
+              <% }) %>
+            </div>
+          </div>
+          <div class="right-view fn-right">
+            <form>
+              <div style="height: 40px;width: 100%">
+                <div class="input-title fn-left"><span class="start">*</span>您的手机号：</div>
+                <div class="normal-input-wrap fn-left">
+                  <input name="phone" placeholder="请输入您的手机号" autocomplete="off"/>
+                </div>
+              </div>
+              <div class="form-verify">
+                <div class="phone-input-error">请填写您的手机号</div>
+              </div>
+
+
+              <div class="code-input-wrap">
+                <div class="verify-code-wrap">
+                  <input name="code" placeholder="请输入验证码" autocomplete="off"/>
+                </div>
+                <div class="send-button" second="-1">获取验证码</div>
+              </div>
+              <div class="form-verify">
+                <div class="code-input-error">请填写您的验证码</div>
+              </div>
+
+
+              <div class="normal-input-wrap">
+                <input name="name" placeholder="请输入您的姓名" autocomplete="off"/>
+              </div>
+              <div class="form-verify">
+                <div class="name-input-error">请填写您的姓名</div>
+              </div>
+
+
+              <div class="normal-input-wrap">
+                <input name="company" placeholder="请输入您的公司名称" autocomplete="off"/>
+              </div>
+              <div class="form-verify">
+                <div class="company-input-error">请填写您的公司名称</div>
+              </div>
+
+
+              <div class="normal-input-wrap">
+                <input name="position" placeholder="请输入您的职位" autocomplete="off"/>
+              </div>
+              <div class="form-verify">
+                <div class="email-input-error">请填写您的职位</div>
+              </div>
+
+
+              <div class="normal-input-wrap cursor-pointer">
+                <input class="cursor-pointer" name="need" placeholder="请选择具体需求" disabled="disabled" autocomplete="off"/>
+                <div class="select-icon">
+                  <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg>
+                </div>
+                <div class="select-view">
+                  <div class="select-cell">成为合作伙伴</div>
+                  <div class="select-cell">商务合作</div>
+                  <div class="select-cell">智能系统</div>
+                  <div class="select-cell">水果素菜联盟</div>
+                  <div class="select-cell">免费试用产品</div>
+                </div>
+              </div>
+              <div class="form-verify">
+                <div class="need-input-error">请选择您的需求</div>
+              </div>
+
+
+              <div class="declare-wrap cursor-pointer">
+                <input name="declare" class="radio-box" type="checkbox" style="cursor: pointer"/>
+                <div class="declare-text declare-action">我已阅读并同意《隐私政策声明》</div>
+              </div>
+              <div class="form-verify">
+                <div class="declare-input-error">请查看并同意隐私政策声明</div>
+              </div>
+
+
+              <div class="button-submit">立即提交</div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-    <%=formView%>
 </section>
+<script>
+  $(function() {
+    $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
+    $('.form-view').css({marginTop: (Math.max($(window).height(), 778) - 778 - 64) / 2 + 'px'})
+  })
+</script>
