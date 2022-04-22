@@ -14,17 +14,16 @@
                         <% detailData.content.forEach(function(item){ %>
                             <div class="info-item">
                                 <% if(item.key === 'img') { %>
-                                <div class="img-item mar-t10 mar-b10">
-                                    <img src="<%=item.data%>" alt="<%=detailData.title%>"/>
-                                </div>
-
+                                    <div class="img-item mar-t10 mar-b10">
+                                        <img src="<%=item.data%>" alt="<%=detailData.title%>"/>
+                                    </div>
                                 <!--可以多定义一些自定义样式-->
                                 <% } else if(item.key === 'title-text'){ %>
                                   <span class="title-text-item mar-t10"><%=item.data%></span>
                                 <% } else if(item.key === 'text'){ %>
-                                <div class="normal-text-item mar-t20 mar-b20">
-                                    <%=item.data%>
-                                </div>
+                                    <div class="normal-text-item mar-t20 mar-b20">
+                                        <%=item.data%>
+                                    </div>
                                 <% } %>
                             </div>
                         <% }); %>

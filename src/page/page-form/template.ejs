@@ -212,7 +212,7 @@
 
       if (mockResult.success) {
         // alert('校验验证码不需要交互，校验成功进行下一步，否则alert错误信息')
-        nextStep()
+        sendAction()
       } else {
         alert(error.errorMsg)
       }
@@ -285,7 +285,7 @@
     }
 
     // 下一步
-    function nextStep() {
+    function sendAction() {
       let params = {
         company: $("input[name='company']").val(),
         name: $("input[name='name']").val(),
@@ -316,7 +316,6 @@
     }
 
     /**************  验证表单  **************/
-
 
 
     // 其他点击事件

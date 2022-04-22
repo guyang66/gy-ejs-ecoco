@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');  // css抽离
 const CopyWebpackPlugin = require("copy-webpack-plugin"); // 静态文件复制
 
 const settings = require('./settings');
+const newsPlugin = require('./plugins/news')
 const plugins = [];
 
 settings.routers.forEach(page => {
@@ -43,6 +44,9 @@ plugins.push(
   new MiniCssExtractPlugin({
     filename: settings.filename_css,
   })
+);
+plugins.push(
+  new newsPlugin()
 );
 
 if (process.env.NODE_ENV === 'development') {

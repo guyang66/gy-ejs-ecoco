@@ -283,13 +283,13 @@ module.exports = [
     key: 'puti',
     name: 'product/ai/puti',
     path: 'page/product/ai/page-puti',
-    title: '数字云'
+    title: '菩提'
   },
   {
     key: 'shuying',
     name: 'product/ai/shuying',
     path: 'page/product/ai/page-shuying',
-    title: '数字云'
+    title: '数影'
   },
   {
     key: 'tianyan',

@@ -1,6 +1,8 @@
 const path =  require('path');
 const routers = require('../src/config/router'); // 静态路由
 const articleList = require('../src/data/about/news/list')
+const pkg = require('../package.json')
+const publicPath = 'https://cdn.yyyangyang.com/'+ pkg.name +'/' + pkg.version
 
 // 配置项
 const settings = {
@@ -12,6 +14,7 @@ const settings = {
   pathDist: path.resolve(__dirname, '../dist'), // 打包后文件公共目录
   filename_js: "js/[name].[fullhash:8].js", // 打包后js文件路径和名称
   filename_css: "css/[name].[fullhash:8].css", // 打包后css文件路径和名称
+  defaultPublicPath: publicPath,
   resolveAlias: { // 别名配置
     '@': path.join(__dirname, '../src'),
     '@mock': path.join(__dirname, '../mock')
