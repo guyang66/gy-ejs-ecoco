@@ -404,6 +404,95 @@
           font-size 12px
           text-align center
           color rgba(255,255,255,0.3)
+
+  .side-menu-wrap
+    position fixed
+    right 32px
+    width 48px
+    z-index 999
+    height 234px
+    top 480px
+    .contact-wrap
+      width 48px
+      cursor pointer
+      height 160px
+      display block
+      background-image linear-gradient(180deg, #5360fb 0%, #01bbdd  96%)
+      border-radius 24px
+      position relative
+      .contact-text
+        width 16px
+        color #FFFFFF
+        letter-spacing 0
+        font-size 16px
+        text-align justify
+        position absolute
+        left 16px
+        top 50%
+        transform translateY(-50%)
+    .side-icon-wrap
+      width 48px
+      height 114px
+      cursor pointer
+      margin-top 16px
+      border-radius 24px
+      margin-bottom 20px
+      background-color #FFFFFF
+      box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+      padding 12px
+      .line
+        width 100%
+        height 1px
+        background-color rgba(0,0,0,0.15)
+      .icon
+        height 35px
+        width 100%
+        img
+          width 100%
+          height 100%
+    .top-click
+      width 48px
+      height 48px
+      border-radius 24px
+      box-shadow 0 0 14px 0 rgba(0,0,0,0.15)
+      background-color #FFFFFF
+      padding 14px
+      cursor pointer
+      img
+        width 100%
+        height 100%
+    .show-guide-view
+      width 260px
+      background-color #ffffff
+      box-shadow 0 10px 33px 0 rgba(0,21,41,.08)
+      position absolute
+      right 65px
+      top 24px
+      height 96px
+      padding 20px
+      border-radius 5px
+      .guide-main-view
+        width 100%
+        .guide-title,.guide-desc
+          font-size 16px
+          color #374567
+          font-weight 400
+          height 32px
+          text-align center
+          line-height 32px
+        .guide-desc
+          color #4169E1
+          display block
+        .guide-desc:hover
+          text-decoration underline
+    .show-guide-view:before
+      border 8px solid transparent
+      border-left 10px solid #fff
+      top 16px
+      content " "
+      position absolute
+      right -18px
+
 @keyframes breath {
   0% {
     transform: scale(1)

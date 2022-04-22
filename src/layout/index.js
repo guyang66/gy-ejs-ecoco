@@ -2,6 +2,7 @@ import layout from './layout';
 import header from './header';
 import footer from './footer';
 
+import sideMenu from '@/component/sideMenus'
 import banner from '@/component/banner';
 import tabs from '@/component/tabs';
 import menus from '@/data/menu'
@@ -42,6 +43,7 @@ const htmlRender = ({
   navKey,
   hasBanner = true,
   hasFooter = true,
+  hasSideMenu = true,
   container,
   bannerData = {},
   tabsData = [],
@@ -51,6 +53,7 @@ const htmlRender = ({
     navKey,
     tabsData,
     ...configs,
+    sideMenu: hasSideMenu ? sideMenu() : '',
     title: getPageTitle(key,'title'),
     keywords: getPageTitle(key, 'keywords'),
     description: getPageTitle(key, 'description'),

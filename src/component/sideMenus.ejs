@@ -1,0 +1,67 @@
+<!-- mod-sideMenu -->
+<section class="side-menu-wrap">
+  <div class="side-icon-wrap">
+    <div class="icon mar-b10 service">
+      <img class="active" src="/assets/images/common/kefu-h.svg" alt="客服" style="display: none"/>
+      <img class="normal" src="/assets/images/common/kefu-n.svg" alt="客服"/>
+      <div class="show-guide-view service-dialog" style="display: none">
+        <div class="guide-main-view">
+          <div class="guide-title">有什么可以帮到您的吗？</div>
+          <a class="guide-desc">请帮我转到人工客服</a>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="icon mar-t10 phone">
+      <img class="active" src="/assets/images/common/lianxi-h.svg" alt="电话联系" style="display: none"/>
+      <img class="normal" src="/assets/images/common/lianxi-n.svg" alt="客服"/>
+      <div class="show-guide-view phone-dialog" style="display: none">
+        <div class="guide-main-view">
+          <div class="guide-title">业务合作电话请咨询</div>
+          <a class="guide-desc">888-888-8888</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="contact-wrap contact-action" href="/form.html" target="_blank">
+    <div class="contact-text">联系我们</div>
+  </a>
+  <div class="top-click mar-t20">
+    <img src="/assets/images/common/dingbu.svg" al="回到顶部"/>
+  </div>
+</section>
+<script>
+  // 导航
+  $('.side-menu-wrap .top-click').on('click',function (){
+    $("html,body").animate({
+      scrollTop: 0
+    }, 500);
+  })
+
+  $('.side-menu-wrap .side-icon-wrap .service').on('mouseenter',function (){
+    $(this).children('.active').show()
+    $(this).children('.normal').hide()
+    $('.side-menu-wrap .side-icon-wrap .service-dialog').show()
+  })
+  $('.side-menu-wrap .side-icon-wrap .service').on('mouseleave',function (){
+    $(this).children('.active').hide()
+    $(this).children('.normal').show()
+    $('.side-menu-wrap .side-icon-wrap .service-dialog').hide()
+  })
+
+  $('.side-menu-wrap .side-icon-wrap .phone').on('mouseenter',function (){
+    $(this).children('.active').show()
+    $(this).children('.normal').hide()
+    $('.side-menu-wrap .side-icon-wrap .phone-dialog').show()
+  })
+  $('.side-menu-wrap .side-icon-wrap .phone').on('mouseleave',function (){
+    $(this).children('.active').hide()
+    $(this).children('.normal').show()
+    $('.side-menu-wrap .side-icon-wrap .phone-dialog').hide()
+  })
+
+  $('.guide-close-view').on('click', function (){
+    $(this).css({display: 'none'})
+    $('.show-guide-view').css({display: 'none'})
+  })
+</script>
