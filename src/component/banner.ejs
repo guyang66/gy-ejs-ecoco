@@ -8,7 +8,7 @@
             <p class="title"><%= bannerData.title %></p>
             <p class="txt"><%= bannerData.text %></p>
             <% if(bannerData.button) { %>
-                <p class="button">查看详情</p>
+                <a class="button" href="<%=bannerData.href%>">查看详情</a>
             <% } %>
         </div>
 

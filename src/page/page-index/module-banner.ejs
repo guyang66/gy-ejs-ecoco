@@ -12,8 +12,8 @@
                                 <% }) %>
                             </div>
                             <% if(banner.button){ %>
-                                <% if(banner.action === 'other'){ %>
-                                    <div class="main-btn other-action"><%=banner.btnText%></div>
+                                <% if(banner.action === 'product-video'){ %>
+                                    <div class="main-btn product-video-action"><%=banner.btnText%></div>
                                 <% } else { %>
                                     <a class="main-btn"
                                     <% if(banner.nofollow){ %> ref="nofollow" <% } %>
@@ -66,6 +66,24 @@
       let index = $(this).index();
       bannerSwiper.slideTo(index + 1);
     })
+
+    $(".product-video-action").on("click",function (){
+      let modal = new Custombox.modal({
+        content: {
+          effect: 'fadein',
+          target: '#product-video-dialog',
+          onClose: function (){
+            console.log('接机')
+            videojs('product-video-player').pause()
+          },
+        }
+      });
+      modal.open();
+      setTimeout(function (){
+        videojs('product-video-player').play()
+      },300)
+    })
+
   })
 
 </script>
