@@ -130,6 +130,25 @@
   </div>
 </section>
 <script>
+
+  // 解析url query 参数
+  function getQueryVariable(variable)
+  {
+    let query = window.location.search.substring(1);
+    let vars = query.split("&");
+    for (let i=0;i<vars.length;i++) {
+      let pair = vars[i].split("=");
+      if(pair[0] === variable){return pair[1];}
+    }
+    return false;
+  }
+
+  let entry  = getQueryVariable('entry')
+  if(entry === 'resource'){
+    $('.form-main-wrap .form-view .title-view').text('资源下载')
+    $('.form-main-wrap .form-view .desc-view').text('填写您的信息即可下载相关资源')
+  }
+
   // 调整表单居中
   $(function() {
     $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
@@ -171,20 +190,42 @@
       }
       let phone = $("input[name='phone']").val()
       if(!(/^1[3456789]\d{9}$/.test(phone))){
-        alert('手机号码格式错误')
+        $.toast({
+          loader: false,
+          text:'手机号码格式有误!',
+          position: 'top-center',
+          icon: 'error',
+          hideAfter: 2000,
+          allowToastClose: false
+        })
         return
       }
       //todo: ajax 调用后端接口发验证码
       let mockResult = {
         success: true,
         data: 'ok',
-        error: null
+        errorCode: null,
+        errorMessage: null
       }
       if (mockResult.success) {
-        alert('发送验证码成功，清注意查收')
+        $.toast({
+          loader: false,
+          text:'验证码发送成功!',
+          position: 'top-center',
+          allowToastClose: false,
+          hideAfter: 3000,
+          icon: 'success'
+        })
         startInterval()
       } else {
-        alert('发送验证码失败，' + error.errorMsg)
+        $.toast({
+          loader: false,
+          text:'验证码发送失败' + ((data && data.error) ? ('(' + data.error.message + ')') : '' ) + '!',
+          position: 'top-center',
+          icon: 'error',
+          hideAfter: 2000,
+          allowToastClose: false
+        })
       }
     })
     /**************  发送验证码  **************/
@@ -207,14 +248,22 @@
       let mockResult = {
         success: true,
         data: 'ok',
-        error: null
+        errorCode: null,
+        errorMessage: null,
       }
 
       if (mockResult.success) {
         // alert('校验验证码不需要交互，校验成功进行下一步，否则alert错误信息')
         sendAction()
       } else {
-        alert(error.errorMsg)
+        $.toast({
+          loader: false,
+          text:'' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '' ) + '!',
+          position: 'top-center',
+          icon: 'error',
+          hideAfter: 2000,
+          allowToastClose: false
+        })
       }
     })
 
@@ -300,23 +349,55 @@
       let mockResult = {
         success: true,
         data: 'ok',
-        error: null
+        errorCode: null,
+        errorMessage: null,
       }
 
       if (mockResult.success) {
-        alert('保存成功，倒计时3秒自动关闭弹窗...')
+        $.toast({
+          loader: false,
+          text:'提交成功！',
+          allowToastClose: false,
+          position: 'mid-center',
+          icon: 'success'
+        })
         nextStep()
       } else {
-        alert(error.errorMsg)
+        $.toast({
+          loader: false,
+          text:'' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '' ) + '!',
+          position: 'top-center',
+          icon: 'error',
+          hideAfter: 2000,
+          allowToastClose: false
+        })
       }
     }
 
     function nextStep() {
-      //todo: 后续操作,比如cookie、session相关、清空input、初始状体恢复
+
+      $.cookie("phone",$("input[name='phone']").val(),{expires: 1})
+      $.cookie("name",$("input[name='name']").val(),{expires: 1})
+
+      $("input[name='phone']").val("")
+      $("input[name='code']").val("")
+      $("input[name='name']").val("")
+      $("input[name='company']").val("")
+      $("input[name='need']").val("")
+      $("input[name='position']").val("")
+
+      // 如果是资源中心跳转过来的，还需跳转回去
+      if(localStorage.getItem('pageRedirect')){
+        let str = localStorage.getItem('pageRedirect')
+        let object = JSON.parse(str)
+        localStorage.removeItem('pageRedirect')
+        localStorage.setItem('pageScroll', object.scrollY)
+        window.location.href = object.redirect
+      }
+
     }
 
     /**************  验证表单  **************/
-
 
     // 其他点击事件
     $('.select-view').hide()

@@ -10,6 +10,7 @@ export default htmlRender({
   key: 'form',
   hasBanner: false,
   hasFooter: false,
+  hasSideMenu: false,
   navKey: 'form', // 用于导航栏item active判断，即属于哪一个导航栏模块
   container,
   tabsData,

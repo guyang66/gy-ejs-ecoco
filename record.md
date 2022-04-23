@@ -6,3 +6,5 @@ scp source.tag.gz root@121.40.230.6:/opt/workspace
 4、命名习惯
 5、position 根据index 来定位
 6、死链
+7、tdk、cdn plugin
+8、表单跳转状态保留

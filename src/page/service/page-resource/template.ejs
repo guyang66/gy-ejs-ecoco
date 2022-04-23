@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="btn-wrap">
-                  <span>点击下载</span>
+                  <span class="txt">点击下载</span>
                   <img src="/assets/images/common/xiangyou-fill.svg" alt="下载"/>
                 </div>
               </div>
@@ -108,3 +108,33 @@
 
   <%=formView%>
 </section>
+<script>
+  $(function() {
+    $('.resource-main-wrap .btn-wrap').on('click',function (){
+      console.log('>>')
+      let name = $.cookie("name")
+      let phone = $.cookie("phone")
+      if(!name || !phone){
+        let target = {
+          scrollY: window.scrollY,
+          redirect: '' + window.location.pathname + window.location.search
+        }
+        localStorage.setItem('pageRedirect', JSON.stringify(target))
+        window.location.href = '/form.html?entry=resource'
+        return
+      }
+      let a = document.createElement('a')
+      a.href = '/assets/pdf/1.pdf'
+      a.download = '/assets/pdf/1.pdf'
+      a.click()
+    })
+  })
+
+  $(document).ready(function () {
+    let scroll = localStorage.getItem('pageScroll')
+    if(scroll){
+      $('html, body').animate({scrollTop: scroll}, 500);
+      localStorage.removeItem('pageScroll')
+    }
+  })
+</script>
