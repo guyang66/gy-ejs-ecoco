@@ -29,10 +29,6 @@ tgz
 *.tar.gz
 .vscode
 jsconfig.json
-.eslintignore
-.eslintrc
-.prettierignore
-.prettierrc.js
 
 /script/filter/tmp*
 /script/filter/entryFilters.js

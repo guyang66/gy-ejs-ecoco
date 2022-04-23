@@ -1,0 +1,15 @@
+/build/*
+/out/*
+/node_modules/*
+/mock/*
+/src/assets/*
+/script/*
+/public/*
+/scripts/*
+/seo/*
+
+config-overrides.js
+commitlint.conifg.js
+config-overrides.js
+.prettierrc.js
+.eslintrc.js

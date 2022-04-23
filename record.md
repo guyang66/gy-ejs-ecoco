@@ -8,3 +8,4 @@ scp source.tag.gz root@121.40.230.6:/opt/workspace
 6、死链
 7、tdk、cdn plugin
 8、表单跳转状态保留
+9、性能优化、首页预加载、图片压缩、cdn、缓存
