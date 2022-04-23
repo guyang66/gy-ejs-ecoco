@@ -1,4 +1,4 @@
 const data = {
-  content: []
-}
-export default data
+  content: [],
+};
+export default data;

@@ -1,48 +1,49 @@
-import p1 from '@/assets/images/product/ai/discriminate/case/c1.svg'
-import p2 from '@/assets/images/product/ai/discriminate/case/c2.svg'
-import p3 from '@/assets/images/product/ai/discriminate/case/c3.svg'
+import p1 from "@/assets/images/product/ai/discriminate/case/c1.svg";
+import p2 from "@/assets/images/product/ai/discriminate/case/c2.svg";
+import p3 from "@/assets/images/product/ai/discriminate/case/c3.svg";
 
 const data = {
-  pointTitle: '背景说明',
-  pointTitle2: '价值说明',
-  style: 'black',
-  bg: '#212121',
-  content: [{
-      "name": "近卫力量酒馆",
-      "desc": "魔兽争霸3-冰封王座的多人实时对战自定义地图",
-      "logo": p1,
-      "alt": "近卫力量酒馆",
-      "painPoint": [
+  pointTitle: "背景说明",
+  pointTitle2: "价值说明",
+  style: "black",
+  bg: "#212121",
+  content: [
+    {
+      name: "近卫力量酒馆",
+      desc: "魔兽争霸3-冰封王座的多人实时对战自定义地图",
+      logo: p1,
+      alt: "近卫力量酒馆",
+      painPoint: [
         "即使以半人马的标准来衡量，他们的族长Bradwarden的身材仍然称得上是“远古巨兽”。即使他的同胞们都已被天灾军团腐化而变节但Bradwarden却依然谨守着他的尊严不为所动。由于不得不依靠打倒自己的同胞才能逃出生天，这使得他变得愤怒而无情，他矢志要向天灾军团复仇。",
       ],
-      "solution": [
+      solution: [
         "半人马酋长力量的初始值和成长都比较突出，对于这个技能就比较肉的英雄来说，成长的优秀注定了他是一个非常优秀的肉块，智力和敏捷的数值都相对较差，但并不会影响人马能力的发挥，初始攻击较高，适合补刀，护甲也属于一个不错的数值，近600的血量让大部分对他的攻击欲望也不是很强，其他的数值均属中庸。",
-      ]
-    },
-    {
-      "name": "撼地神牛集团",
-      "desc": "是一个热门的团控英雄",
-      "logo": p2,
-      "alt": "撼地神牛集团",
-      "painPoint": [
-        "EarthShaker，在贫瘠之地，传说有群牛头人贤者，世代在此播种收割。他们的思想与脚下的这片褐土地结合在一起。他们的精神力能引导土壤的流向。这些战士仅凭一时兴起就能制造出深深的沟壑，因此让人感到畏惧。他们的力量是如此强大，以至于他们每次使用魔法都会对大地造成强烈的震动。"
       ],
-      "solution": [
-        "为了保护世界之树——自然界所有生命的源泉，Raigor加入到近卫军团中。凭借对大地的熟悉，Raigor能够熟练运用许多相关法术，他运用图腾进行攻击造成的伤害也非常惊人。作为一个力量型英雄，实际上走的是智力型，其超大范围晕技加上时间很长，在团战当中很受欢迎。",
-      ]
     },
     {
-      "name": "霹雳布袋戏",
-      "desc": "精灵天下·猂野兽脉之王",
-      "logo": p3,
-      "alt": "霹雳布袋戏",
-      "painPoint": [
+      name: "撼地神牛集团",
+      desc: "是一个热门的团控英雄",
+      logo: p2,
+      alt: "撼地神牛集团",
+      painPoint: [
+        "EarthShaker，在贫瘠之地，传说有群牛头人贤者，世代在此播种收割。他们的思想与脚下的这片褐土地结合在一起。他们的精神力能引导土壤的流向。这些战士仅凭一时兴起就能制造出深深的沟壑，因此让人感到畏惧。他们的力量是如此强大，以至于他们每次使用魔法都会对大地造成强烈的震动。",
+      ],
+      solution: [
+        "为了保护世界之树——自然界所有生命的源泉，Raigor加入到近卫军团中。凭借对大地的熟悉，Raigor能够熟练运用许多相关法术，他运用图腾进行攻击造成的伤害也非常惊人。作为一个力量型英雄，实际上走的是智力型，其超大范围晕技加上时间很长，在团战当中很受欢迎。",
+      ],
+    },
+    {
+      name: "霹雳布袋戏",
+      desc: "精灵天下·猂野兽脉之王",
+      logo: p3,
+      alt: "霹雳布袋戏",
+      painPoint: [
         "虩的真正身分，豪壮雄猛，为精灵天下猂野兽脉之主，过去性格自负而好战，一度遭恨吾峰改造为弃神类虩，以灼世烈眼残杀精灵、镇守封印。在恢复神智之后，因兽脉部下几乎死绝，一改过去性格，开始会谨慎而行，但言谈中仍不减当年风采，深得部下信赖与敬仰。",
       ],
-      "solution": [
+      solution: [
         "精灵天下·猂野兽脉之王，被尊为兽王，豪壮雄猛，性格自负而好战。久远前精幽大战时受袭击后失去踪迹，遭恨吾峰所擒，被改造为弃神类·虩，以灼世烈眼残杀精灵、镇守封印。曾与禁城一脉的天织王女琥珀相爱并定下终身，即使长期被剥夺原有意识、化身为弃神类·虩时，仍对琥珀有深深的执念和温存。",
-      ]
-    }
-  ]
-}
-export default data
+      ],
+    },
+  ],
+};
+export default data;

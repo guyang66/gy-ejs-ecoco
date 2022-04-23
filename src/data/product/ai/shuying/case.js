@@ -1,48 +1,49 @@
-import p1 from '@/assets/images/product/ai/shuying/case/c1.svg'
-import p2 from '@/assets/images/product/ai/shuying/case/c2.svg'
-import p3 from '@/assets/images/product/ai/shuying/case/c3.svg'
+import p1 from "@/assets/images/product/ai/shuying/case/c1.svg";
+import p2 from "@/assets/images/product/ai/shuying/case/c2.svg";
+import p3 from "@/assets/images/product/ai/shuying/case/c3.svg";
 
 const data = {
-  pointTitle: '背景说明',
-  pointTitle2: '价值说明',
-  style: 'black',
-  bg: '#212121',
-  content: [{
-      "name": "魔芙湖——七色地狱",
-      "desc": "魔兽争霸3-冰封王座的多人实时对战自定义地图",
-      "logo": p1,
-      "alt": "魔芙湖——七色地狱",
-      "painPoint": [
+  pointTitle: "背景说明",
+  pointTitle2: "价值说明",
+  style: "black",
+  bg: "#212121",
+  content: [
+    {
+      name: "魔芙湖——七色地狱",
+      desc: "魔兽争霸3-冰封王座的多人实时对战自定义地图",
+      logo: p1,
+      alt: "魔芙湖——七色地狱",
+      painPoint: [
         "生物化学的三个主要分支：普通生物化学研究包括动植物中普遍存在的生化现象；植物生物化学主要研究自养生物和其他植物的特定生化过程；而人类或医药生物化学则关注人类和人类疾病相关的生化性质。",
       ],
-      "solution": [
+      solution: [
         "大而复杂的生物分子在体内也可降解到非常简单的程度。当生物分子被水解时，即可发现构成它们的基本单位，如蛋白质中的氨基酸，核酸中的核苷酸，脂类中脂肪酸及糖类中的单糖等。这些小而简单的分子可以看作生物分子的构件，或称作“构件分子”。",
-      ]
-    },
-    {
-      "name": "欧米咖先锋队",
-      "desc": "是一个热门的团控英雄",
-      "logo": p2,
-      "alt": "欧米咖先锋队",
-      "painPoint": [
-        "80年代符号人工智能停滞不前，很多人认为符号系统永远不可能模仿人类所有的认知过程，特别是感知，机器人，机器学习和模式识别。很多研究者开始关注子符号方法解决特定的人工智能问题。"
       ],
-      "solution": [
-        "生物化学（Biochemistry）这一名词的出现大约在19世纪末、20世纪初，但它的起源可追溯得更远，其早期的历史是生理学和化学的早期历史的一部分。例如18世纪80年代，A.-L.拉瓦锡证明呼吸与燃烧一样是氧化作用。",
-      ]
     },
     {
-      "name": "红发海贼团",
-      "desc": "天下猂野兽脉之主",
-      "logo": p3,
-      "alt": "红发海贼团",
-      "painPoint": [
+      name: "欧米咖先锋队",
+      desc: "是一个热门的团控英雄",
+      logo: p2,
+      alt: "欧米咖先锋队",
+      painPoint: [
+        "80年代符号人工智能停滞不前，很多人认为符号系统永远不可能模仿人类所有的认知过程，特别是感知，机器人，机器学习和模式识别。很多研究者开始关注子符号方法解决特定的人工智能问题。",
+      ],
+      solution: [
+        "生物化学（Biochemistry）这一名词的出现大约在19世纪末、20世纪初，但它的起源可追溯得更远，其早期的历史是生理学和化学的早期历史的一部分。例如18世纪80年代，A.-L.拉瓦锡证明呼吸与燃烧一样是氧化作用。",
+      ],
+    },
+    {
+      name: "红发海贼团",
+      desc: "天下猂野兽脉之主",
+      logo: p3,
+      alt: "红发海贼团",
+      painPoint: [
         "范式同时也给研究者提供一个与其他领域沟通的共同语言--如决策论和经济学（也使用ABSTRACT AGENTS的概念）。90年代智能AGENT范式被广泛接受。AGENT体系结构和认知体系结构研究者设计出一些系统来处理多ANGENT系统中智能AGENT之间的相互作用。",
       ],
-      "solution": [
+      solution: [
         "精灵天下·猂野兽脉之王，被尊为兽王，豪壮雄猛，性格自负而好战。久远前精幽大战时受袭击后失去踪迹，遭恨吾峰所擒，被改造为弃神类·虩，以灼世烈眼残杀精灵、镇守封印。曾与禁城一脉的天织王女琥珀相爱并定下终身，即使长期被剥夺原有意识、化身为弃神类·虩时，仍对琥珀有深深的执念和温存。",
-      ]
-    }
-  ]
-}
-export default data
+      ],
+    },
+  ],
+};
+export default data;
