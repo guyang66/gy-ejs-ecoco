@@ -13,20 +13,31 @@ import hotData from "@/data/activity/hot";
 const tabsData = [{
   name: '产品活动',
   anchor: 'favorite',
-},{
+}, {
   name: '热门活动',
   anchor: 'hot',
-},{
+}, {
   name: '品牌活动',
   anchor: 'brand',
 }];
 
 const formView = form()
-const favoriteView = favorite({favoriteData})
-const brandView = brand({brandData})
-const hotView = hot({hotData})
+const favoriteView = favorite({
+  favoriteData
+})
+const brandView = brand({
+  brandData
+})
+const hotView = hot({
+  hotData
+})
 
-const container = template({formView, favoriteView, brandView, hotView});
+const container = template({
+  formView,
+  favoriteView,
+  brandView,
+  hotView
+});
 export default htmlRender({
   key: 'activity',
   navKey: 'activity', // 用于导航栏item active判断，即属于哪一个导航栏模块

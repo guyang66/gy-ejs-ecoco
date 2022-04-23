@@ -1,59 +1,59 @@
-<div class="case-one-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>"<% } %>>
-    <div class="case-content">
-        <!--标题-->
-        <% if(caseData.title) { %>
-            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
-        <% } else { %>
-            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
-        <% } %>
+<div class="case-one-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>" <% } %>>
+  <div class="case-content">
+    <!--标题-->
+    <% if(caseData.title) { %>
+    <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
+    <% } else { %>
+    <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(caseData.desc) { %>
-        <div class="c-module-desc"><%=caseData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(caseData.desc) { %>
+    <div class="c-module-desc"><%=caseData.desc%></div>
+    <% } %>
 
-        <div class="case-view">
-            <div class="case-wrap">
-                <div class="case-top">
-                    <div class="logo-wrap fn-left">
-                        <img src="<%=caseData.content.logo%>"/>
-                    </div>
-                    <div class="title-info-wrap fn-left">
-                        <div class="title-info-container">
-                            <div class="tit color-black2"><%=caseData.content.name%></div>
-                            <div class="desc color-black6"><%=caseData.content.desc%></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-bottom">
-                    <div class="info-title-wrap">
-                        <div class="info-title-icon">
-                            <img src="/assets/images/common/tixing.svg" alt="客户案例"/>
-                        </div>
-                        <div class="main-content-title2 fn-left"><%=caseData.pointTitle%></div>
-                    </div>
-                    <% caseData.content.painPoint.forEach(function(des){ %>
-                    <div class="info-content-wrap">
-                        <div class="point"></div>
-                        <div class="info-item-text fn-left main-content-text"><%=des%></div>
-                    </div>
-                    <% }); %>
-
-                    <div class="info-title-wrap" style="margin-top: 32px">
-                        <div class="info-title-icon">
-                            <img src="/assets/images/common/shuju.svg" alt="客户案例"/>
-                        </div>
-                        <div class="main-content-title2 fn-left"><%=caseData.pointTitle2%></div>
-                    </div>
-
-                    <% caseData.content.solution.forEach(function(value){ %>
-                    <div class="info-content-wrap">
-                        <div class="point"></div>
-                        <div class="info-item-text fn-left main-content-text"><%=value%></div>
-                    </div>
-                    <% }); %>
-                </div>
+    <div class="case-view">
+      <div class="case-wrap">
+        <div class="case-top">
+          <div class="logo-wrap fn-left">
+            <img src="<%=caseData.content.logo%>" />
+          </div>
+          <div class="title-info-wrap fn-left">
+            <div class="title-info-container">
+              <div class="tit color-black2"><%=caseData.content.name%></div>
+              <div class="desc color-black6"><%=caseData.content.desc%></div>
             </div>
+          </div>
         </div>
+        <div class="case-bottom">
+          <div class="info-title-wrap">
+            <div class="info-title-icon">
+              <img src="/assets/images/common/tixing.svg" alt="客户案例" />
+            </div>
+            <div class="main-content-title2 fn-left"><%=caseData.pointTitle%></div>
+          </div>
+          <% caseData.content.painPoint.forEach(function(des){ %>
+          <div class="info-content-wrap">
+            <div class="point"></div>
+            <div class="info-item-text fn-left main-content-text"><%=des%></div>
+          </div>
+          <% }); %>
+
+          <div class="info-title-wrap" style="margin-top: 32px">
+            <div class="info-title-icon">
+              <img src="/assets/images/common/shuju.svg" alt="客户案例" />
+            </div>
+            <div class="main-content-title2 fn-left"><%=caseData.pointTitle2%></div>
+          </div>
+
+          <% caseData.content.solution.forEach(function(value){ %>
+          <div class="info-content-wrap">
+            <div class="point"></div>
+            <div class="info-item-text fn-left main-content-text"><%=value%></div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

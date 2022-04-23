@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended'],
+  // extends: ['airbnb-base'],
   parser: 'babel-eslint',
   env: {
     browser: true,
@@ -26,7 +26,7 @@ module.exports = {
     // 每个缩进级别由 2 个空格组成, 而不是使用 tab
     indent: [
       'error',
-      4,
+      2,
       {
         // switch 语句缩进 2 个空格
         SwitchCase: 1,

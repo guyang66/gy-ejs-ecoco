@@ -1,5 +1,4 @@
-const data = [
-  {
+const data = [{
     key: 'all',
     text: '全部',
   },

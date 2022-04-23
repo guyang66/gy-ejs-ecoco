@@ -1,32 +1,32 @@
 <div class="news-wrap">
   <div class="news-content">
-      <% if(newsData.title) { %>
-        <div class="c-module-title transition-hide-bottom <% if(!newsData.desc){ %>c-module-b-60<% } %>"><%=newsData.title%></div>
-      <% } else { %>
-        <div class="c-module-title transition-hide-bottom <% if(!newsData.desc){ %>c-module-b-60<% } %>">资讯速递</div>
-      <% } %>
+    <% if(newsData.title) { %>
+    <div class="c-module-title transition-hide-bottom <% if(!newsData.desc){ %>c-module-b-60<% } %>"><%=newsData.title%></div>
+    <% } else { %>
+    <div class="c-module-title transition-hide-bottom <% if(!newsData.desc){ %>c-module-b-60<% } %>">资讯速递</div>
+    <% } %>
 
-      <!--描述-->
-      <% if(newsData.desc) { %>
-        <div class="c-module-desc transition-hide-bottom"><%=newsData.desc%></div>
-      <% } %>
+    <!--描述-->
+    <% if(newsData.desc) { %>
+    <div class="c-module-desc transition-hide-bottom"><%=newsData.desc%></div>
+    <% } %>
 
     <div class="news-view transition-hide-bottom">
       <div class="left-view fn-left">
         <% newsData.content.forEach(function(news){ %>
-          <div class="icon-wrap" style="display: none">
-            <img src="<%=news.cover%>" alt="新闻动态"/>
-          </div>
+        <div class="icon-wrap" style="display: none">
+          <img src="<%=news.cover%>" alt="新闻动态" />
+        </div>
         <% }); %>
       </div>
       <div class="right-view fn-right">
         <% newsData.content.forEach(function(news,index){ %>
-          <div class="news-cell fn-left <% if((index + 1) % 2 !== 0){ %>mar-r24<% } %> <% if( index < newsData.content.length - 2){ %>mar-b24<% } %>">
-            <div class="tit"><%=news.title%></div>
-            <div class="summary"><%=news.summary%></div>
-            <div class="date"><%=news.date%></div>
-            <a class="btn" href="<%=news.href%>" target="_blank">查看详情 ></a>
-          </div>
+        <div class="news-cell fn-left <% if((index + 1) % 2 !== 0){ %>mar-r24<% } %> <% if( index < newsData.content.length - 2){ %>mar-b24<% } %>">
+          <div class="tit"><%=news.title%></div>
+          <div class="summary"><%=news.summary%></div>
+          <div class="date"><%=news.date%></div>
+          <a class="btn" href="<%=news.href%>" target="_blank">查看详情 ></a>
+        </div>
         <% }); %>
       </div>
     </div>
@@ -37,7 +37,7 @@
 <script>
   $('.news-wrap .news-cell').eq(0).addClass('news-cell-active')
   $('.news-wrap .left-view .icon-wrap').eq(0).show()
-  $('.news-wrap .news-cell').on('mouseenter',function (){
+  $('.news-wrap .news-cell').on('mouseenter', function() {
     $(this).addClass('news-cell-active').siblings().removeClass('news-cell-active')
     $('.news-wrap .left-view .icon-wrap').eq($(this).index()).show().siblings().hide()
   })

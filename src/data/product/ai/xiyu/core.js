@@ -9,8 +9,7 @@ import a7 from '@/assets/images/product/ai/xiyu/core/c7.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "大娃",
       "text": "大无穷，巨大化，丹田是施展力量的关键，想要抓葫芦兄妹、炼制雌雄七心丹，以便身怀七艺劈山救亲",
       "icon": a1,

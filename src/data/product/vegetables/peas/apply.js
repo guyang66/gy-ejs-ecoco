@@ -5,8 +5,7 @@ import p10 from '@/assets/images/product/logo/vegetables/qiezi.svg'
 import p14 from '@/assets/images/product/logo/vegetables/xiancai.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "黑奶奶",
       "height": 728,
@@ -21,15 +20,13 @@ const data = {
         "时发芽和出苗均受影响。苋菜不耐寒，生长中遇 0℃",
         "低温就受冻死亡，温度低于10℃植株生长缓慢 ， 最适生长温度为23~27℃，超过35℃时"
       ],
-      "products": [
-        {
-          "name": "茄子",
-          "icon": p10,
-          "key": "eggplant",
-          "alt": "大葱",
-          "href": "/product/vegetables/eggplant.html"
-        }
-      ]
+      "products": [{
+        "name": "茄子",
+        "icon": p10,
+        "key": "eggplant",
+        "alt": "大葱",
+        "href": "/product/vegetables/eggplant.html"
+      }]
     },
     {
       "image": a2,
@@ -46,15 +43,13 @@ const data = {
         "雷云形成过程中，由于雷云中电荷的聚积",
         "且雷电能量巨大，可瞬间造成被击物折损、坍塌等物理损坏和电击损"
       ],
-      "products": [
-        {
-          "name": "苋菜",
-          "icon": p14,
-          "key": "amaranthus",
-          "alt": "苋菜",
-          "href": "/product/vegetables/amaranthus.html"
-        },
-      ]
+      "products": [{
+        "name": "苋菜",
+        "icon": p14,
+        "key": "amaranthus",
+        "alt": "苋菜",
+        "href": "/product/vegetables/amaranthus.html"
+      }, ]
     }
   ]
 }

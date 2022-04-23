@@ -8,8 +8,7 @@ import a6 from '@/assets/images/solution/education/advantage/a6.svg'
 
 const ad = {
   title: '方案优势',
-  content: [
-    {
+  content: [{
       "title": "易于燃脂",
       "desc": null,
       "text": "一般而言，跑步是一项有氧运动（跑步速度会影响心率，但一般而言认为跑步的心率应控制在有氧心养成易瘦体质",

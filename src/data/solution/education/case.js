@@ -8,8 +8,7 @@ const data = {
   pointTitle: '背景说明',
   pointTitle2: '价值说明',
   viewHeight: 198,
-  content: [
-    {
+  content: [{
       "name": "印巴特利",
       "desc": "",
       "logo": p1,
@@ -48,4 +47,3 @@ const data = {
   ]
 }
 export default data
-

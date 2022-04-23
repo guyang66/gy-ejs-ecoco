@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/ai/uav/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "柳傲天",
       "text": "为倡导男女平等，圣上推出女子入学政策，却遭到保守势力的暗中反对",
       "icon": a1,

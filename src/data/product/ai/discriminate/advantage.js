@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/discriminate/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "技术顶尖",
       "desc": null,
       "text": "假设采样频率为Fs，信号频率F，采样点数为N。那么FFT之后结果就是一个为N点的复数。每一个点就对应着一个频率点",

@@ -9,8 +9,7 @@ const core = {
   title: '核心功能',
   bg: '#F4F4F4',
   scale: '80%',
-  content: [
-    {
+  content: [{
       "title": " 品质柔嫩",
       "text": "红油抄手是四川和重庆著名的特色小吃。此种小吃柔嫩鲜美，汤汁微辣吃，红油抄手是抄手最为著名的品种之一。部为多",
       "icon": a1,

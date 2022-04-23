@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/digital/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "数字信号",
       "desc": null,
       "cellHeight": 112,

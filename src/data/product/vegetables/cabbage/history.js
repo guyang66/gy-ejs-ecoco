@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2020-12-01",
           "content": "再加入少量的植物油",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "世界主要水果总产量中保持着第二至第三位",

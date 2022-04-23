@@ -4,8 +4,7 @@ import a3 from '@/assets/images/solution/personal/apply/a3.jpg'
 
 const data = {
   title: '使用场景',
-  content: [
-    {
+  content: [{
       "cover": a1,
       "title": "黑箱测试",
       "data": [

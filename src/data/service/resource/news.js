@@ -3,8 +3,7 @@ import a2 from '@/assets/images/service/resource/news/a2.png'
 import a3 from '@/assets/images/service/resource/news/a3.png'
 
 const data = {
-  content: [
-    {
+  content: [{
       index: 0,
       key: '',
       cover: a1,

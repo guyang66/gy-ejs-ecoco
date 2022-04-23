@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/shuying/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "集成方法",
       "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",
       "icon": a1,

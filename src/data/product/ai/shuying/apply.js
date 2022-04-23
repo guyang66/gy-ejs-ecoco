@@ -12,8 +12,7 @@ import p6 from '@/assets/images/product/logo/ai/puti.svg'
 
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "人机对抗",
       "height": 728,
@@ -28,8 +27,7 @@ const data = {
         "智能AGENT范式智能AGENT是一个会感知环境并作出行",
         "范式同时也给研究者提供一个与其他领域沟通的共同语言"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "天眼杀",
           "icon": p1,
           "key": "tianyan",
@@ -60,8 +58,7 @@ const data = {
         "智能是否可以使用高级符号表达，如词和想法",
         "而强人工智能则暂时处于瓶颈，还需要科学家们和人类的努力"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "AI语音",
           "icon": p3,
           "key": "yuyin",
@@ -100,15 +97,13 @@ const data = {
         "原生质层比细胞壁的伸缩性大",
         "细胞壁具有全渗透性"
       ],
-      "products": [
-        {
-          "name": "菩提",
-          "icon": p6,
-          "key": "puti",
-          "alt": "菩提",
-          "href": "/product/ai/puti.html"
-        }
-      ]
+      "products": [{
+        "name": "菩提",
+        "icon": p6,
+        "key": "puti",
+        "alt": "菩提",
+        "href": "/product/ai/puti.html"
+      }]
     }
   ]
 }

@@ -1,7 +1,6 @@
 const data = {
   secTitle: '找不到你想要的答案？看看这里吧',
-  content: [
-    {
+  content: [{
       index: 0,
       title: '产品问题',
       data: [

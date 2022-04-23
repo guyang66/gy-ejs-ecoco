@@ -20,48 +20,155 @@ import g1 from '@/assets/images/logo/other/g1.svg'
 import g2 from '@/assets/images/logo/other/g2.svg'
 
 const logo = {
-  content: [
-    {normal: b1, active: b2},
-    {normal: a1, active: a2},
-    {normal: e1, active: e2},
-    {normal: g1, active: g2},
-    {normal: f1, active: f2},
-    {normal: d1, active: d2},
+  content: [{
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: e1,
+      active: e2
+    },
+    {
+      normal: g1,
+      active: g2
+    },
+    {
+      normal: f1,
+      active: f2
+    },
+    {
+      normal: d1,
+      active: d2
+    },
 
-    {normal: d1, active: d2},
-    {normal: b1, active: b2},
-    {normal: e1, active: e2},
-    {normal: d1, active: d2},
-    {normal: a1, active: a2},
-    {normal: e1, active: e2},
+    {
+      normal: d1,
+      active: d2
+    },
+    {
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: e1,
+      active: e2
+    },
+    {
+      normal: d1,
+      active: d2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: e1,
+      active: e2
+    },
 
-    {normal: c1, active: c2},
-    {normal: d1, active: d2},
-    {normal: a1, active: a2},
-    {normal: b1, active: b2},
-    {normal: a1, active: a2},
-    {normal: c1, active: c2},
+    {
+      normal: c1,
+      active: c2
+    },
+    {
+      normal: d1,
+      active: d2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: c1,
+      active: c2
+    },
 
-    {normal: b1, active: b2},
-    {normal: f1, active: f2},
-    {normal: g1, active: g2},
-    {normal: c1, active: c2},
-    {normal: a1, active: a2},
-    {normal: d1, active: d2},
+    {
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: f1,
+      active: f2
+    },
+    {
+      normal: g1,
+      active: g2
+    },
+    {
+      normal: c1,
+      active: c2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: d1,
+      active: d2
+    },
 
-    {normal: f1, active: f2},
-    {normal: b1, active: b2},
-    {normal: a1, active: a2},
-    {normal: d1, active: d2},
-    {normal: a1, active: a2},
-    {normal: e1, active: e2},
+    {
+      normal: f1,
+      active: f2
+    },
+    {
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: d1,
+      active: d2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: e1,
+      active: e2
+    },
 
-    {normal: b1, active: b2},
-    {normal: a1, active: a2},
-    {normal: f1, active: f2},
-    {normal: a1, active: a2},
-    {normal: e1, active: e2},
-    {normal: c1, active: c2},
+    {
+      normal: b1,
+      active: b2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: f1,
+      active: f2
+    },
+    {
+      normal: a1,
+      active: a2
+    },
+    {
+      normal: e1,
+      active: e2
+    },
+    {
+      normal: c1,
+      active: c2
+    },
   ]
 }
 export default logo

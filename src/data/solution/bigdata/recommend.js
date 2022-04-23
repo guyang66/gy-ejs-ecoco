@@ -5,8 +5,7 @@ import a3 from '@/assets/images/product/logo/dataserver/julei.svg'
 const ad = {
   title: '相关推荐',
   bg: '#fafaff',
-  content: [
-    {
+  content: [{
       title: '苹果',
       icon: a1,
       alt: '苹果',

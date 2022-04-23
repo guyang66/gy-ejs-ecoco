@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/shuying/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "研究范畴",
       "desc": null,
       "text": "对于人的思维模拟可以从两条道路进行，一是结构模拟，仿照人脑的结构机制，制造出“类人脑”的机器",

@@ -9,8 +9,7 @@ import main from '@/assets/images/activity/favorite/main.svg'
 const data = {
   title: '猜你喜欢',
   desc: '大牌特价，猜你喜欢，各种优惠尽请期待',
-  content: [
-    {
+  content: [{
       index: 0,
       key: 'main',
       name: '水果零售价',
@@ -23,8 +22,7 @@ const data = {
         '新鲜不隔夜，无中间差价',
         '放心购买，最低7.6折起'
       ],
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '精选特价'
         },
@@ -46,8 +44,7 @@ const data = {
       btnText: '查看详情',
       href: '/activity/detail.html',
       bg: b1,
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '新用户特享'
         },
@@ -65,8 +62,7 @@ const data = {
       btnText: '申请试用',
       bg: b2,
       href: '/activity/detail.html',
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '新人特惠'
         },
@@ -84,8 +80,7 @@ const data = {
       btnText: '点击查看',
       bg: b3,
       href: '/activity/detail.html',
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '直播疯抢'
         },
@@ -103,8 +98,7 @@ const data = {
       btnText: '申请试用',
       href: '/activity/detail.html',
       bg: b4,
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '新人特惠'
         },
@@ -126,8 +120,7 @@ const data = {
       btnText: '申请试用',
       href: '/activity/detail.html',
       bg: b5,
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '新人特享'
         },
@@ -145,8 +138,7 @@ const data = {
       btnText: '查看详情',
       href: '/activity/detail.html',
       bg: b6,
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '0元购买'
         },
@@ -168,8 +160,7 @@ const data = {
       btnText: '立即购买',
       href: '/activity/detail.html',
       bg: b7,
-      tag: [
-        {
+      tag: [{
           key: 'fill',
           text: '超级批发日'
         },

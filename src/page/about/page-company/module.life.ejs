@@ -1,32 +1,32 @@
 <div class="life-wrap">
   <div class="life-content">
     <% if(lifeData.title) { %>
-      <div class="c-module-title <% if(!lifeData.desc){ %>c-module-b-60<% } %>"><%=lifeData.title%></div>
+    <div class="c-module-title <% if(!lifeData.desc){ %>c-module-b-60<% } %>"><%=lifeData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!lifeData.desc){ %>c-module-b-60<% } %>">生活节奏</div>
+    <div class="c-module-title <% if(!lifeData.desc){ %>c-module-b-60<% } %>">生活节奏</div>
     <% } %>
 
     <!--描述-->
     <% if(lifeData.desc) { %>
-      <div class="c-module-desc"><%=lifeData.desc%></div>
+    <div class="c-module-desc"><%=lifeData.desc%></div>
     <% } %>
 
     <div class="life-view">
       <% lifeData.content.forEach(function(item,index){ %>
-        <div class="life-cell">
-          <div class="info-wrap <% if(index % 2 === 0){ %>fn-left<% } else { %>fn-right<% } %>">
-            <div class="order">0<%=index + 1%></div>
-            <div class="p-absolute">
-              <div class="title mar-t10"><%=item.title%></div>
-              <div class="line"></div>
-              <% item.data.forEach(function(dt){ %>
-                <div class="tit"><%=dt.title%></div>
-                <div class="txt"><%=dt.text%></div>
-              <% }); %>
-            </div>
+      <div class="life-cell">
+        <div class="info-wrap <% if(index % 2 === 0){ %>fn-left<% } else { %>fn-right<% } %>">
+          <div class="order">0<%=index + 1%></div>
+          <div class="p-absolute">
+            <div class="title mar-t10"><%=item.title%></div>
+            <div class="line"></div>
+            <% item.data.forEach(function(dt){ %>
+            <div class="tit"><%=dt.title%></div>
+            <div class="txt"><%=dt.text%></div>
+            <% }); %>
           </div>
-          <img class="img-wrap <% if(index % 2 === 0){ %>fn-right<% } else { %>fn-left<% } %>" src="<%=item.cover%>" alt="生活"/>
         </div>
+        <img class="img-wrap <% if(index % 2 === 0){ %>fn-right<% } else { %>fn-left<% } %>" src="<%=item.cover%>" alt="生活" />
+      </div>
       <% }); %>
     </div>
   </div>

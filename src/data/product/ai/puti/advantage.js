@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/puti/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "兼容性强",
       "desc": null,
       "text": "系统带来的理念是，融合企业对客户和员工管理的全过程，比如客户电话热线（投诉、订购）、电话回访",

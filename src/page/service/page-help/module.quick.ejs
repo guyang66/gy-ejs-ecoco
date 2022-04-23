@@ -1,37 +1,37 @@
 <div class="help-quick-wrap">
   <div class="help-quick-content">
     <% if(quickData.title) { %>
-      <div class="c-module-title <% if(!quickData.desc){ %>c-module-b-60<% } %>"><%=quickData.title%></div>
+    <div class="c-module-title <% if(!quickData.desc){ %>c-module-b-60<% } %>"><%=quickData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!quickData.desc){ %>c-module-b-60<% } %>">快速导航</div>
+    <div class="c-module-title <% if(!quickData.desc){ %>c-module-b-60<% } %>">快速导航</div>
     <% } %>
 
     <!--描述-->
     <% if(quickData.desc) { %>
-      <div class="c-module-desc"><%=quickData.desc%></div>
+    <div class="c-module-desc"><%=quickData.desc%></div>
     <% } %>
 
     <div class="quick-view">
       <% quickData.content.forEach(function(item, index){ %>
-        <div class="quick-cell fn-left box-shadow-2 <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
-          <div class="top-view">
-            <div class="icon fn-left">
-              <img src="<%=item.icon%>" alt="<%=item.alt%>"/>
-            </div>
-            <div class="c-title title"><%=item.title%></div>
-            <div class="desc"><%=item.desc%></div>
+      <div class="quick-cell fn-left box-shadow-2 <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+        <div class="top-view">
+          <div class="icon fn-left">
+            <img src="<%=item.icon%>" alt="<%=item.alt%>" />
           </div>
-          <div class="line mar-t30 mar-b30"></div>
-          <div class="info-wrap">
-            <% item.data.forEach(function(itm, index){ %>
-              <div class="item-wrap fn-left">
-                <div class="point fn-left"></div>
-                <div class="text"><%=itm%></div>
-              </div>
-            <% }); %>
-          </div>
-          <div class="btn"><%=item.btnText%> > </div>
+          <div class="c-title title"><%=item.title%></div>
+          <div class="desc"><%=item.desc%></div>
         </div>
+        <div class="line mar-t30 mar-b30"></div>
+        <div class="info-wrap">
+          <% item.data.forEach(function(itm, index){ %>
+          <div class="item-wrap fn-left">
+            <div class="point fn-left"></div>
+            <div class="text"><%=itm%></div>
+          </div>
+          <% }); %>
+        </div>
+        <div class="btn"><%=item.btnText%> > </div>
+      </div>
       <% }); %>
     </div>
   </div>

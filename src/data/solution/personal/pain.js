@@ -6,8 +6,7 @@ import a4 from '@/assets/images/solution/personal/pain/p4.svg'
 const ad = {
   title: '行业痛点',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "产品不完善",
       "desc": null,
       "text": "不能保证解是最佳的。因为贪心算法总是从局部出发，并没从整体考虑",

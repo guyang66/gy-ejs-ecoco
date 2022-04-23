@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/offline-develop/advantage/a4.
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "冀州",
       "desc": null,
       "text": "春秋时期，河北省北部属于燕国，南部属于中山国、赵国和魏国、西北部属代国",

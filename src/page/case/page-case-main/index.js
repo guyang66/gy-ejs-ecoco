@@ -8,7 +8,11 @@ import casesData from "@/data/case/cases";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, tagData, casesData});
+const container = template({
+  formView,
+  tagData,
+  casesData
+});
 export default htmlRender({
   key: 'case',
   navKey: 'cases', // 用于导航栏item active判断，即属于哪一个导航栏模块

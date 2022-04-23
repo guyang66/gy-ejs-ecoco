@@ -7,7 +7,11 @@ import recommendData from "@/data/case/recommend";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, detailData, recommendData});
+const container = template({
+  formView,
+  detailData,
+  recommendData
+});
 export default htmlRender({
   key: 'case-detail',
   navKey: 'cases', // 用于导航栏item active判断，即属于哪一个导航栏模块

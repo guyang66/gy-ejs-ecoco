@@ -5,8 +5,7 @@ import c4 from '@/assets/images/service/contact/address/a4.svg'
 import c5 from '@/assets/images/service/contact/address/a5.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       icon: c1,
       alt: '杭州',
       title: '杭州（总部）',

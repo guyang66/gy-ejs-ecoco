@@ -12,11 +12,9 @@ import a11 from '@/assets/images/about/company/prize/a11.svg'
 import a12 from '@/assets/images/about/company/prize/a12.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       index: 0,
-      data: [
-        {
+      data: [{
           icon: a1,
           text: '2016年最具潜力企业奖'
         },
@@ -36,8 +34,7 @@ const data = {
     },
     {
       index: 1,
-      data: [
-        {
+      data: [{
           icon: a5,
           text: 'YOUNG GO 企业美好奖'
         },
@@ -57,8 +54,7 @@ const data = {
     },
     {
       index: 2,
-      data: [
-        {
+      data: [{
           icon: a9,
           text: '2021最具魅力企业奖'
         },

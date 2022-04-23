@@ -22,17 +22,47 @@ import certifyData from '@/data/index/certify'
 import resourceData from '@/data/index/resource'
 import newsData from '@/data/index/news'
 
-const bannerView = banner({bannerData, columnData})
-const logoView = logo({logoData})
-const productView = product({productData})
-const staticsView = statics({staticsData})
-const customerView = customer({customerData})
-const solutionView = solution({solutionData})
-const certifyView = certify({certifyData})
-const resourceView = resource({resourceData})
-const newsView = news({newsData})
+const bannerView = banner({
+  bannerData,
+  columnData
+})
+const logoView = logo({
+  logoData
+})
+const productView = product({
+  productData
+})
+const staticsView = statics({
+  staticsData
+})
+const customerView = customer({
+  customerData
+})
+const solutionView = solution({
+  solutionData
+})
+const certifyView = certify({
+  certifyData
+})
+const resourceView = resource({
+  resourceData
+})
+const newsView = news({
+  newsData
+})
 const formView = form()
-const container = template({formView, bannerView, productView, staticsView, customerView, newsView, certifyView, solutionView, resourceView, logoView});
+const container = template({
+  formView,
+  bannerView,
+  productView,
+  staticsView,
+  customerView,
+  newsView,
+  certifyView,
+  solutionView,
+  resourceView,
+  logoView
+});
 const hasBanner = false
 export default htmlRender({
   key: 'index',

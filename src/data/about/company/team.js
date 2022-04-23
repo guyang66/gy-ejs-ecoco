@@ -4,8 +4,7 @@ import a3 from '@/assets/images/about/company/team/a3.svg'
 
 const data = {
   bg: '#ffffff',
-  content: [
-    {
+  content: [{
       icon: a1,
       name: '法里奥',
       title: 'yy科技联合创始人兼CEO',

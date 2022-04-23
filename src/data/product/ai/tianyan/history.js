@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2018-12-01",
           "content": "1927年：查尔斯·林白（1902─1974）",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "1940年：温斯顿·丘吉尔（1874─1965）",
@@ -60,8 +57,7 @@ const history = {
     },
     {
       key: 3,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "英女皇伊丽莎白二世（b. 1926））",

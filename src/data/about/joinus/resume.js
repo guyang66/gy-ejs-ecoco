@@ -1,13 +1,11 @@
 const data = {
   bg: '#ffffff',
   href: 'https://www.zhipin.com',
-  tabs: [
-    {
+  tabs: [{
       key: 'society',
       name: '社会招聘',
-      content: [
-        {
-          index : 0,
+      content: [{
+          index: 0,
           title: '数据开发工程师（杭州）',
           desc: '杭州研发中心急招数据开发工程师，年龄不限',
           category: 'data',
@@ -19,12 +17,10 @@ const data = {
           experience: '1~3年',
           education: '不限',
           href: 'https://www.zhipin.com',
-          tag: [
-            {
-              key: 'quick',
-              text: '急'
-            }
-          ],
+          tag: [{
+            key: 'quick',
+            text: '急'
+          }],
           duty: {
             title: '岗位职责',
             data: [
@@ -53,7 +49,7 @@ const data = {
 
         },
         {
-          index : 0,
+          index: 0,
           title: '数据开发工程师（上海）',
           desc: '基于HADOOP和MPP大数据平台，负责数据接入、数据清洗、数据加工',
           category: 'data',
@@ -65,12 +61,10 @@ const data = {
           experience: '1~3年',
           education: '不限',
           href: 'https://www.zhipin.com',
-          tag: [
-            {
-              key: 'quick',
-              text: '急'
-            }
-          ],
+          tag: [{
+            key: 'quick',
+            text: '急'
+          }],
           duty: {
             title: '岗位职责',
             data: [
@@ -98,7 +92,7 @@ const data = {
           }
         },
         {
-          index : 1,
+          index: 1,
           title: 'SDR专员',
           category: 'operating',
           categoryString: '运营类',
@@ -128,7 +122,7 @@ const data = {
           }
         },
         {
-          index : 2,
+          index: 2,
           title: '视频剪辑',
           desc: '负责公司产品的视频后期处理，对视频制作数量负责',
           category: 'function',
@@ -164,7 +158,7 @@ const data = {
 
         },
         {
-          index : 3,
+          index: 3,
           title: '销售顾问',
           category: 'sells',
           categoryString: '销售类',
@@ -206,9 +200,8 @@ const data = {
     {
       key: 'practice',
       name: '岗前实习',
-      content: [
-        {
-          index : 0,
+      content: [{
+          index: 0,
           title: 'Java实习生',
           desc: '负责事业部产品（Saas）核心功能研发',
           category: 'technology',
@@ -238,7 +231,7 @@ const data = {
           }
         },
         {
-          index : 1,
+          index: 1,
           title: '运营实习生',
           category: 'operating',
           categoryString: '品牌类',
@@ -270,8 +263,7 @@ const data = {
       ]
     }
   ],
-  category: [
-    {
+  category: [{
       key: 'technology',
       name: '技术',
     },
@@ -304,8 +296,7 @@ const data = {
       name: '其他',
     },
   ],
-  place: [
-    {
+  place: [{
       key: 'hangzhou',
       name: '杭州',
     },

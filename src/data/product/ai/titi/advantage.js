@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/titi/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "恶魔猎手",
       "desc": null,
       "text": "恶魔猎手是被暗夜精灵族社会排斥的黑暗战士。他们在很久以前就和黑暗力量立下契约，要用自己可怕的力量于混乱的力量对抗到底",

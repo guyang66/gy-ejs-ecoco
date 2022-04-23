@@ -25,8 +25,7 @@ import t7 from '@/assets/images/index/customer/cover7.png'
 
 const data = {
   title: '1000+客户的信任和共同选择',
-  content: [
-    {
+  content: [{
       title: '零售行业',
       icon: i2,
       alt: '客户选择',
@@ -35,7 +34,7 @@ const data = {
       name: '某著名僵尸代驯养集团',
       speaker: '肖恩',
       logo: [
-        d2,e2,f2
+        d2, e2, f2
       ]
     },
     {
@@ -46,7 +45,7 @@ const data = {
       data: '她获得过除诺贝尔文学奖之外的大多数重量级国际文学奖,并被多伦多大学等十多所院校授予荣誉博士学位。她的作品已被译成三十多种文字。2017年,阿特伍德获卡夫卡奖和德国书业和平奖。',
       name: 'xxx公司',
       logo: [
-        a2,b2,c2
+        a2, b2, c2
       ]
     },
     {
@@ -58,7 +57,7 @@ const data = {
       name: '才华有限包装公司',
       speaker: '李四',
       logo: [
-        d2,g2,a2
+        d2, g2, a2
       ]
     },
     {
@@ -70,7 +69,7 @@ const data = {
       name: '杭州萧山吴彦祖',
       speaker: '吴宴卒',
       logo: [
-        c2,e2,d2
+        c2, e2, d2
       ]
     },
     {
@@ -81,7 +80,7 @@ const data = {
       data: '亚索是一个百折不屈的艾欧尼亚人，也是一名身手敏捷的御风剑客。这位生性自负的年轻人，被误认为杀害长老的凶手——由于无法证明自己的清白，他出于自卫而杀死了自己的哥哥。',
       name: '夏威夷科尔加所会场',
       logo: [
-        b2,e2,d2
+        b2, e2, d2
       ]
     },
     {
@@ -93,7 +92,7 @@ const data = {
       name: '复仇者联盟',
       speaker: '金刚狼',
       logo: [
-        f2,b2,e2
+        f2, b2, e2
       ]
     },
     {
@@ -105,7 +104,7 @@ const data = {
       name: 'dota allstarts 联盟',
       speaker: '祈求者',
       logo: [
-        e2,c2,a2
+        e2, c2, a2
       ]
     }
   ]

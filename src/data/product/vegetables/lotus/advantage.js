@@ -8,8 +8,7 @@ import a6 from '@/assets/images/product/vegetables/lotus/advantage/a6.svg'
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "天空星",
       "desc": null,
       "text": "植株丛生，具匐匍茎，矮型的高3.5米以下，一般高不及2米，高型的高4～5米，假茎均浓绿而带黑斑，被白粉，尤以上部为多",

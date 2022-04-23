@@ -1,26 +1,25 @@
 import c1 from '@/assets/images/product/dataserver/cluster/case/c1.svg'
-import c2 from  '@/assets/images/product/fruits/apple/case/c2.svg'
+import c2 from '@/assets/images/product/fruits/apple/case/c2.svg'
 import c3 from '@/assets/images/product/fruits/apple/case/c3.svg'
-import c4 from  '@/assets/images/product/fruits/apple/case/c4.svg'
+import c4 from '@/assets/images/product/fruits/apple/case/c4.svg'
 import c5 from '@/assets/images/product/fruits/apple/case/c5.svg'
 import c6 from '@/assets/images/product/fruits/apple/case/c6.svg'
 import c7 from '@/assets/images/product/fruits/apple/case/c1.svg'
 import c8 from '@/assets/images/product/fruits/grape/case/c1.svg'
-import c9 from  '@/assets/images/product/fruits/grape/case/c2.svg'
+import c9 from '@/assets/images/product/fruits/grape/case/c2.svg'
 import c10 from '@/assets/images/product/fruits/grape/case/c3.svg'
-import c11 from  '@/assets/images/product/fruits/grape/case/c4.svg'
+import c11 from '@/assets/images/product/fruits/grape/case/c4.svg'
 import c12 from '@/assets/images/product/fruits/grape/case/c5.svg'
 import c13 from '@/assets/images/product/fruits/grape/case/c6.svg'
 import c14 from '@/assets/images/product/fruits/orange/case/c5.svg'
 import c15 from '@/assets/images/product/fruits/litchi/case/c1.svg'
-import c16 from  '@/assets/images/product/fruits/litchi/case/c2.svg'
+import c16 from '@/assets/images/product/fruits/litchi/case/c2.svg'
 import c17 from '@/assets/images/product/fruits/litchi/case/c3.svg'
-import c18 from  '@/assets/images/product/fruits/litchi/case/c4.svg'
+import c18 from '@/assets/images/product/fruits/litchi/case/c4.svg'
 import c19 from '@/assets/images/product/fruits/litchi/case/c5.svg'
 import c20 from '@/assets/images/product/fruits/litchi/case/c6.svg'
 
-const data1 = [
-  {
+const data1 = [{
     index: 0,
     key: '',
     title: '菲克尼尼1',

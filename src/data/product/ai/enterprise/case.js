@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "正义联盟",
       "desc": "2017年11月16日在中国内地部分影院提前点映",
       "logo": p1,
@@ -47,4 +46,3 @@ const data = {
   ]
 }
 export default data
-

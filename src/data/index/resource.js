@@ -1,4 +1,3 @@
-
 import a1 from '@/assets/images/index/resource/a1.svg'
 import a2 from '@/assets/images/index/resource/a2.svg'
 import a3 from '@/assets/images/index/resource/a3.svg'
@@ -18,8 +17,7 @@ const data = {
   desc: '海量资源任你下载，精彩活动等你来玩转',
   content: {
     title: '为您提供1000+类目资料，累计100+合作供应商，实时在线200000+用户。优秀的资源提供者，多方维护，实时共享，保证您的需求随时可以被满足。',
-    advantage: [
-      {
+    advantage: [{
         icon: a1,
         text: '纯天然加工',
         alt: '客户服务',
@@ -40,8 +38,7 @@ const data = {
         alt: '客户服务',
       }
     ],
-    data: [
-      {
+    data: [{
         icon: c1,
         alt: '资料下载',
         text: '资料下载',

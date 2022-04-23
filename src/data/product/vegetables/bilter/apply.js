@@ -5,8 +5,7 @@ import p1 from '@/assets/images/product/logo/vegetables/baicai.svg'
 import p2 from '@/assets/images/product/logo/vegetables/caitai.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "浸种催芽",
       "height": 728,
@@ -21,15 +20,13 @@ const data = {
         "面沾污物，使水分和氧气容易透进，加快萌芽速度，这样经过3-4天，大部分种子",
         "点播即可。但为了防止种子带菌"
       ],
-      "products": [
-        {
-          "name": "白菜",
-          "icon": p1,
-          "key": "baicai",
-          "alt": "白菜",
-          "href": "/product/vegetables/cabbage.html"
-        }
-      ]
+      "products": [{
+        "name": "白菜",
+        "icon": p1,
+        "key": "baicai",
+        "alt": "白菜",
+        "href": "/product/vegetables/cabbage.html"
+      }]
     },
     {
       "image": a2,
@@ -46,15 +43,13 @@ const data = {
         "薄膜覆盖，实行膜下水肥一体化灌溉技术",
         "植植期一般为7-8月，此期气候适宜，易管理，采收损"
       ],
-      "products": [
-        {
-          "name": "菜苔",
-          "icon": p2,
-          "key": "bolt",
-          "alt": "菜苔",
-          "href": "/product/vegetables/bolt.html"
-        }
-      ]
+      "products": [{
+        "name": "菜苔",
+        "icon": p2,
+        "key": "bolt",
+        "alt": "菜苔",
+        "href": "/product/vegetables/bolt.html"
+      }]
     }
   ]
 }

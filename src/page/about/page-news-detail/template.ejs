@@ -8,29 +8,29 @@
         <div class="tag-view">
           <div class="tit">热门标签</div>
           <% tagList.forEach(function(tag){ %>
-            <a class="tag-item" href="/about/tag.html?tag=<%=tag.key%>"><%=tag.text%></a>
+          <a class="tag-item" href="/about/tag.html?tag=<%=tag.key%>"><%=tag.text%></a>
           <% }); %>
         </div>
         <div class="news-link-view">
           <div class="tit">热门文章</div>
           <% articleList.filter(function (v) { return !!v.isHot}).slice(0,5).forEach(function(news){ %>
-            <a class="news-item-wrap"  href="<%=news.href%>">
-              <div class="point fn-left"></div>
-              <div class="news-item fn-left"><%=news.title%></div>
-            </a>
+          <a class="news-item-wrap" href="<%=news.href%>">
+            <div class="point fn-left"></div>
+            <div class="news-item fn-left"><%=news.title%></div>
+          </a>
           <% }); %>
         </div>
         <div class="news-link-view mar-b40">
           <div class="tit">最新文章</div>
           <% articleList.slice(0,5).forEach(function(news){ %>
-            <a class="news-item-wrap"  href="<%=news.href%>">
-              <div class="point fn-left"></div>
-              <div class="news-item fn-left"><%=news.title%></div>
-            </a>
+          <a class="news-item-wrap" href="<%=news.href%>">
+            <div class="point fn-left"></div>
+            <div class="news-item fn-left"><%=news.title%></div>
+          </a>
           <% }); %>
         </div>
       </div>
     </div>
   </div>
-    <%=formView%>
+  <%=formView%>
 </section>

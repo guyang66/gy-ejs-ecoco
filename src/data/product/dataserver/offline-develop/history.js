@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "1966-01-05",
           "content": "直隶总督兼任北洋大臣，总督夏在天津",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "河北省生产总值实现40391.3亿元",

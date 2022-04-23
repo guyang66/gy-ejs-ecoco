@@ -1,58 +1,58 @@
-<div class="core-1-4-black-white" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>"<% } %>>
-    <div class="core-content">
-        <!--标题-->
-        <% if(coreData.title) { %>
-            <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
-        <% } else { %>
-           <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
-        <% } %>
+<div class="core-1-4-black-white" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>" <% } %>>
+  <div class="core-content">
+    <!--标题-->
+    <% if(coreData.title) { %>
+    <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
+    <% } else { %>
+    <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(coreData.desc) { %>
-            <div class="c-module-desc"><%=coreData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(coreData.desc) { %>
+    <div class="c-module-desc"><%=coreData.desc%></div>
+    <% } %>
 
-        <!--内容-->
-        <div class="core-view c-module-b-60">
-            <div class="slider-wrap">
-                <ul class="tabs-box" style="width: <%=coreData.content.length * 308 %>px">
-                    <% coreData.content.forEach(function(item, index){ %>
-                        <li class="core-1-4-cell fn-left <% if(index % 2 === 0){ %>bg-black3<% } else {%>bg-white<% } %>">
-                            <div class="content-view">
-                                <img class="img-icon" src="<%=item.icon%>"/>
-                                <div class="tit mar-t20 <% if(index % 2 === 0){ %>color-white<% } else {%>color-black2<% } %>"><%=item.title%></div>
-                                <div class="desc mar-t10 <% if(index % 2 === 0){ %>color-white<% } else {%>color-black3<% } %>"><%=item.text%></div>
-                            </div>
-                        </li>
-                    <% }); %>
-                </ul>
+    <!--内容-->
+    <div class="core-view c-module-b-60">
+      <div class="slider-wrap">
+        <ul class="tabs-box" style="width: <%=coreData.content.length * 308 %>px">
+          <% coreData.content.forEach(function(item, index){ %>
+          <li class="core-1-4-cell fn-left <% if(index % 2 === 0){ %>bg-black3<% } else {%>bg-white<% } %>">
+            <div class="content-view">
+              <img class="img-icon" src="<%=item.icon%>" />
+              <div class="tit mar-t20 <% if(index % 2 === 0){ %>color-white<% } else {%>color-black2<% } %>"><%=item.title%></div>
+              <div class="desc mar-t10 <% if(index % 2 === 0){ %>color-white<% } else {%>color-black3<% } %>"><%=item.text%></div>
             </div>
-            <div class="arrow-left-wrap" style="display: none">
-                <img src="/assets/images/common/left-d.svg"/>
-            </div>
-            <div class="arrow-right-wrap" style="display: none">
-               <img src="/assets/images/common/right-d.svg"/>
-            </div>
-        </div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+      <div class="arrow-left-wrap" style="display: none">
+        <img src="/assets/images/common/left-d.svg" />
+      </div>
+      <div class="arrow-right-wrap" style="display: none">
+        <img src="/assets/images/common/right-d.svg" />
+      </div>
     </div>
+  </div>
 </div>
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
 
     let count = $('.core-1-4-black-white .core-view .core-1-4-cell').length
     let visibleCellCount = 4 // 可可视区域最多看见cell个数
     let boxSize = $('.core-1-4-black-white .core-view .core-1-4-cell').width()
 
     // 初始化
-    if(count > 4) {
+    if (count > 4) {
       $('.core-1-4-black-white .arrow-right-wrap').show()
     }
 
-    $('.core-1-4-black-white .arrow-left-wrap').on('click', function (){
+    $('.core-1-4-black-white .arrow-left-wrap').on('click', function() {
 
       let slideLength = parseInt($(".core-1-4-black-white .slider-wrap ul").css("left"))
       // 正在执行动画
-      if($(".core-1-4-black-white .slider-wrap ul:animated").length !== 0){
+      if ($(".core-1-4-black-white .slider-wrap ul:animated").length !== 0) {
         return
       }
 
@@ -62,24 +62,24 @@
       })
 
       // 处于中间位置
-      if(slideLength < 0){
+      if (slideLength < 0) {
         $('.core-1-4-black-white .arrow-right-wrap').show()
 
       }
 
       // 触底判断
-      if ( slideLength === 0 - boxSize) {
+      if (slideLength === 0 - boxSize) {
         $(this).hide()
       }
 
     })
 
-    $('.core-1-4-black-white .arrow-right-wrap').on('click', function (){
+    $('.core-1-4-black-white .arrow-right-wrap').on('click', function() {
 
       let slideLength = parseInt($(".core-1-4-black-white .slider-wrap ul").css("left"))
 
       // 正在执行动画
-      if($(".core-1-4-black-white .slider-wrap ul:animated").length !== 0){
+      if ($(".core-1-4-black-white .slider-wrap ul:animated").length !== 0) {
         return
       }
 
@@ -87,11 +87,11 @@
         left: '-=' + boxSize
       })
 
-      if(slideLength > (0 - ($('.core-1-4-black-white ul.tabs-box li').length - visibleCellCount) * boxSize )){
+      if (slideLength > (0 - ($('.core-1-4-black-white ul.tabs-box li').length - visibleCellCount) * boxSize)) {
         $('.core-1-4-black-white .arrow-left-wrap').show()
       }
 
-      if (slideLength - boxSize === (0 - ($('.core-1-4-black-white ul.tabs-box li').length - visibleCellCount) * boxSize )) {
+      if (slideLength - boxSize === (0 - ($('.core-1-4-black-white ul.tabs-box li').length - visibleCellCount) * boxSize)) {
         $(this).hide()
       }
     })

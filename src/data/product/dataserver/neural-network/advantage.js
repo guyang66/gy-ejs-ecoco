@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/neural-network/advantage/a4.s
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "大气环流",
       "desc": null,
       "text": "地理因素对气候形成的影响表现在地球形状、地球运动、海陆分布和气流",

@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/ai/algorithm/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "基于规则",
       "text": "同时采用多种推荐技术给出多种推荐结果，为用户提供参考,根据问题背景和实际情况或要求决定变换采用不同的推荐技术",
       "icon": a1,

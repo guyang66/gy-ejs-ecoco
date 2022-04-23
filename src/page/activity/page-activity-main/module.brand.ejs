@@ -1,28 +1,28 @@
 <div class="activity-brand-wrap">
   <div class="activity-brand-content">
     <% if(brandData.title) { %>
-      <div class="c-module-title <% if(!brandData.desc){ %>c-module-b-60<% } %>"><%=brandData.title%></div>
+    <div class="c-module-title <% if(!brandData.desc){ %>c-module-b-60<% } %>"><%=brandData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!brandData.desc){ %>c-module-b-60<% } %>">品牌活动</div>
+    <div class="c-module-title <% if(!brandData.desc){ %>c-module-b-60<% } %>">品牌活动</div>
     <% } %>
 
     <!--描述-->
     <% if(brandData.desc) { %>
-      <div class="c-module-desc"><%=brandData.desc%></div>
+    <div class="c-module-desc"><%=brandData.desc%></div>
     <% } %>
 
     <div class="brand-view">
       <% brandData.content.forEach(function(item,index){ %>
-        <div class="brand-cell mar-b40 <% if(index % 2 === 0){ %> fn-left <% } else { %> fn-right <% } %>">
-          <div class="info-wrap fn-left">
-            <div class="title"><%=item.title%></div>
-            <div class="desc"><%=item.desc%></div>
-            <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
-          </div>
-          <div class="cover-wrap fn-right">
-            <img src="<%=item.cover%>" alt="活动"/>
-          </div>
+      <div class="brand-cell mar-b40 <% if(index % 2 === 0){ %> fn-left <% } else { %> fn-right <% } %>">
+        <div class="info-wrap fn-left">
+          <div class="title"><%=item.title%></div>
+          <div class="desc"><%=item.desc%></div>
+          <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
         </div>
+        <div class="cover-wrap fn-right">
+          <img src="<%=item.cover%>" alt="活动" />
+        </div>
+      </div>
       <% }); %>
     </div>
   </div>

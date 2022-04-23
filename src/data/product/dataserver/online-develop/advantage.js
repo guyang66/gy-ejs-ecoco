@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/online-develop/advantage/a4.s
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "娜迦海妖",
       "desc": null,
       "text": "激流与魔王降临的双减甲能效果能很大限度的加成物理伤害",

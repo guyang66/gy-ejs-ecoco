@@ -11,16 +11,24 @@ import addressData from "@/data/service/contact/address";
 const tabsData = [{
   name: '联系方式',
   anchor: 'contact',
-},{
+}, {
   name: '公司地址',
   anchor: 'address',
 }];
 
 const formView = form()
-const contactView = contact({contactData})
-const addressView = address({addressData})
+const contactView = contact({
+  contactData
+})
+const addressView = address({
+  addressData
+})
 
-const container = template({formView, contactView, addressView});
+const container = template({
+  formView,
+  contactView,
+  addressView
+});
 export default htmlRender({
   key: 'contact',
   navKey: 'service', // 用于导航栏item active判断，即属于哪一个导航栏模块

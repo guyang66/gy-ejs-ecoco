@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/speech/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "文档可靠",
       "text": "尽管最初傅里叶分析是作为热过程的解析分析的工具，但是其思想方法仍然具有典型的还原论和分析主义的特征,的函数通过一定的分解",
       "icon": a1,

@@ -18,8 +18,7 @@ import p14 from '@/assets/images/product/logo/vegetables/xiancai.svg'
 import p15 from '@/assets/images/product/logo/vegetables/xianggu.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "芹菜杀张飞",
       "height": 728,
@@ -34,8 +33,7 @@ const data = {
         "时发芽和出苗均受影响。苋菜不耐寒，生长中遇 0℃",
         "低温就受冻死亡，温度低于10℃植株生长缓慢 ， 最适生长温度为23~27℃，超过35℃时"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "红萝卜",
           "icon": p4,
           "key": "radish",
@@ -66,8 +64,7 @@ const data = {
         "雷云经过消化产生一种抗氧化剂，可以抑制肠内细菌荷的聚积",
         "菜中具有许多药理活性成分，主要活性成分包括"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "南瓜",
           "icon": p8,
           "key": "pumpkin",

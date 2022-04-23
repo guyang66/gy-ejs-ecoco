@@ -8,8 +8,7 @@ import p12 from '@/assets/images/product/logo/vegetables/shengjiang.svg'
 import p13 from '@/assets/images/product/logo/vegetables/wandou.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "小鸡炖蘑菇",
       "height": 728,
@@ -57,8 +56,7 @@ const data = {
         "雷云形成过程中，由于雷云中电荷的聚积",
         "且雷电能量巨大，可瞬间造成被击物折损、坍塌等物理损坏和电击损"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "生姜",
           "icon": p12,
           "key": "ginger",

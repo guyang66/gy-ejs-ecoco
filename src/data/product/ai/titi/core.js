@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/titi/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "玉蝴蝶流",
       "text": "曾经用这招大败韩国很多职业选手，暴雪也因此修改了大树站立时的护甲",
       "icon": a1,

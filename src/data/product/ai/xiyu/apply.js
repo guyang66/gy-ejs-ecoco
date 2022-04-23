@@ -5,8 +5,7 @@ import p1 from '@/assets/images/product/logo/ai/qiyeyun.svg'
 import p2 from '@/assets/images/product/logo/ai/wurenji.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "罗摩祖师",
       "height": 728,
@@ -21,15 +20,13 @@ const data = {
         "与在京城中担任驿站马夫的江阿生（郑雨盛饰）结为夫妻",
         "谁想飞来横祸，令江阿生命悬一线。原来曾静并非凡人"
       ],
-      "products": [
-        {
-          "name": "企业云",
-          "icon": p1,
-          "key": "enterprise",
-          "alt": "enterprise",
-          "href": "/product/ai/enterprise.html"
-        }
-      ]
+      "products": [{
+        "name": "企业云",
+        "icon": p1,
+        "key": "enterprise",
+        "alt": "enterprise",
+        "href": "/product/ai/enterprise.html"
+      }]
     },
     {
       "image": a2,
@@ -45,15 +42,13 @@ const data = {
         "十八岁的奇女子，新婚之夜仅因为丈夫“不行”就心狠手辣刺死丈夫全家",
         "平常对世事冷冷淡淡，独来独往，不轻易出手",
       ],
-      "products": [
-        {
-          "name": "智能无人机",
-          "icon": p2,
-          "key": "uav",
-          "alt": "智能无人机",
-          "href": "/product/ai/uav.html"
-        }
-      ]
+      "products": [{
+        "name": "智能无人机",
+        "icon": p2,
+        "key": "uav",
+        "alt": "智能无人机",
+        "href": "/product/ai/uav.html"
+      }]
     }
   ]
 }

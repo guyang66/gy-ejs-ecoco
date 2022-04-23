@@ -5,8 +5,7 @@ import a3 from '@/assets/images/product/logo/ai/tianyan.svg'
 const ad = {
   title: '相关推荐',
   bg: '#fafaff',
-  content: [
-    {
+  content: [{
       title: '清水',
       icon: a1,
       alt: '清水',

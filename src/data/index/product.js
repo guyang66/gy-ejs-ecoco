@@ -8,19 +8,16 @@ import a6 from '@/assets/images/index/product/a6.svg'
 const data = {
   title: '产品体系',
   desc: '打造全域产品，帮助企业快速锁定业务',
-  content: [
-    {
+  content: [{
       name: '水果云',
       desc: '长久以来人们对“水果之王”的争论不休。其实就各种水果的营养价值而言，很多水果的营养价值都相当高，不分伯仲',
       icon: a2,
       iconH: a1,
       alt: '水果',
-      button: [
-        {
-          text: '了解详情',
-          href: '/'
-        }
-      ]
+      button: [{
+        text: '了解详情',
+        href: '/'
+      }]
     },
     {
       name: '蔬菜联盟',
@@ -28,12 +25,10 @@ const data = {
       icon: a4,
       iconH: a3,
       alt: '蔬菜联盟',
-      button: [
-        {
-          text: '了解详情',
-          href: '/'
-        }
-      ]
+      button: [{
+        text: '了解详情',
+        href: '/'
+      }]
     },
     {
       name: '智能引擎',
@@ -41,12 +36,10 @@ const data = {
       icon: a6,
       iconH: a5,
       alt: '智能引擎',
-      button: [
-        {
-          text: '了解详情',
-          href: '/'
-        }
-      ]
+      button: [{
+        text: '了解详情',
+        href: '/'
+      }]
     }
   ]
 }

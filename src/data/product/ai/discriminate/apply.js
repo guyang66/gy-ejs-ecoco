@@ -7,8 +7,7 @@ import p4 from '@/assets/images/product/logo/ai/puti.svg'
 import p5 from '@/assets/images/product/logo/ai/wurenji.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "数字化改革",
       "height": 728,
@@ -23,15 +22,13 @@ const data = {
         "统计模式识别、结构模式识别、模糊模式识别",
         "至今借助于各种理论提出了数以千计的分割算法，而且这方面的研究仍然在积极地进行"
       ],
-      "products": [
-        {
-          "name": "colgi",
-          "icon": p1,
-          "key": "colgi",
-          "alt": "colgi",
-          "href": "/product/ai/colgi.html"
-        },
-      ]
+      "products": [{
+        "name": "colgi",
+        "icon": p1,
+        "key": "colgi",
+        "alt": "colgi",
+        "href": "/product/ai/colgi.html"
+      }, ]
     },
     {
       "image": a2,
@@ -48,8 +45,7 @@ const data = {
         "研究已经有几十年的历史，一直都受到人们的高度重视",
         "至今借助于各种理论提出了数以千计的分割算法，而且这方面的研究仍然在积极地进行着"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "titi",
           "icon": p3,
           "key": "titi",

@@ -8,10 +8,11 @@
     "dev": "./script/filter/filter_start.sh -f $ENTRY_FILTER",
     "build": "cross-env NODE_ENV=production webpack --progress --config build/webpack.config.js",
     "tar": "",
-    "eslint": "eslint . --ext .js,.ejs",
-    "eslint-fix": "eslint . --ext .js,.ejs --fix"
+    "eslint": "eslint . --ext .js",
+    "eslint-fix": "eslint . --ext .js --fix"
   },
   "devDependencies": {
+    "@angelventura/eslint-plugin-ejs": "^0.2.0",
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/plugin-proposal-class-properties": "^7.16.7",

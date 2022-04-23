@@ -8,8 +8,7 @@ import p13 from '@/assets/images/product/logo/vegetables/wandou.svg'
 import p15 from '@/assets/images/product/logo/vegetables/xianggu.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "时光穿梭机",
       "height": 728,
@@ -24,8 +23,7 @@ const data = {
         "时发芽和出苗均受影响。苋菜不耐寒，生长中遇 0℃",
         "低温就受冻死亡，温度低于10℃植株生长缓慢 ， 最适生长温度为23~27℃，超过35℃时"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "黄瓜",
           "icon": p5,
           "key": "cucumber",
@@ -63,15 +61,13 @@ const data = {
         "雷云形成过程中，由于雷云中电荷的聚积",
         "且雷电能量巨大，可瞬间造成被击物折损、坍塌等物理损坏和电击损"
       ],
-      "products": [
-        {
-          "name": "香菇",
-          "icon": p15,
-          "key": "mushroom",
-          "alt": "香菇",
-          "href": "/product/vegetables/mushroom.html"
-        }
-      ]
+      "products": [{
+        "name": "香菇",
+        "icon": p15,
+        "key": "mushroom",
+        "alt": "香菇",
+        "href": "/product/vegetables/mushroom.html"
+      }]
     }
   ]
 }

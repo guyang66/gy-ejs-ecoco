@@ -1,42 +1,40 @@
 <div class="resource-wrap">
-    <div class="resource-content">
-        <% if(resourceData.title) { %>
-            <div class="c-module-title transition-hide-bottom <% if(!resourceData.desc){ %>c-module-b-60<% } %>"><%=resourceData.title%></div>
-        <% } else { %>
-            <div class="c-module-title transition-hide-bottom <% if(!resourceData.desc){ %>c-module-b-60<% } %>">资源中心</div>
-        <% } %>
+  <div class="resource-content">
+    <% if(resourceData.title) { %>
+    <div class="c-module-title transition-hide-bottom <% if(!resourceData.desc){ %>c-module-b-60<% } %>"><%=resourceData.title%></div>
+    <% } else { %>
+    <div class="c-module-title transition-hide-bottom <% if(!resourceData.desc){ %>c-module-b-60<% } %>">资源中心</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(resourceData.desc) { %>
-            <div class="c-module-desc transition-hide-bottom"><%=resourceData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(resourceData.desc) { %>
+    <div class="c-module-desc transition-hide-bottom"><%=resourceData.desc%></div>
+    <% } %>
 
-        <div class="resource-view transition-hide-bottom">
-            <div class="left-view fn-left">
-                <div class="top-view">
-                   <div class="tit"><%=resourceData.content.title%></div>
-                </div>
-                <div class="bottom-view">
-                    <% resourceData.content.advantage.forEach(function(ad,index){ %>
-                        <div class="advantage-cell fn-left">
-                            <img class="icon fn-left" src="<%=ad.icon%>" alt="<%=ad.alt%>"/>
-                            <div class="text"><%=ad.text%></div>
-                        </div>
-                    <% }); %>
-                </div>
-            </div>
-            <div class="right-view fn-right">
-                <% resourceData.content.data.forEach(function(resource,index){ %>
-                    <a class="resource-cell fn-left <% if((index + 1) % 4 !== 0){ %>mar-r24<% } %> <% if( index < resourceData.content.data.length - 4){ %>mar-b24<% } %>"
-                       href="<%=resource.href%>"
-                    >
-                        <div class="icon-wrap">
-                            <img src="<%=resource.icon%>" alt="<%=resource.alt%>"/>
-                        </div>
-                        <div class="txt"><%=resource.text%></div>
-                    </a>
-                <% }); %>
-            </div>
+    <div class="resource-view transition-hide-bottom">
+      <div class="left-view fn-left">
+        <div class="top-view">
+          <div class="tit"><%=resourceData.content.title%></div>
         </div>
+        <div class="bottom-view">
+          <% resourceData.content.advantage.forEach(function(ad,index){ %>
+          <div class="advantage-cell fn-left">
+            <img class="icon fn-left" src="<%=ad.icon%>" alt="<%=ad.alt%>" />
+            <div class="text"><%=ad.text%></div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+      <div class="right-view fn-right">
+        <% resourceData.content.data.forEach(function(resource,index){ %>
+        <a class="resource-cell fn-left <% if((index + 1) % 4 !== 0){ %>mar-r24<% } %> <% if( index < resourceData.content.data.length - 4){ %>mar-b24<% } %>" href="<%=resource.href%>">
+          <div class="icon-wrap">
+            <img src="<%=resource.icon%>" alt="<%=resource.alt%>" />
+          </div>
+          <div class="txt"><%=resource.text%></div>
+        </a>
+        <% }); %>
+      </div>
     </div>
+  </div>
 </div>

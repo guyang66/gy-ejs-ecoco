@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/offline-develop/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "虚无法球",
       "text": "卡萨丁向目标发射虚无法球，造成65/95/125/155/185(+0.7AP)魔法伤害并打断目标的技能引导",
       "icon": a1,

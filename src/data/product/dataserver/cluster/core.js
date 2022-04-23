@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/cluster/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "医卜星相",
       "text": "这一个秘密，是童姥和李秋水临死前才发现。童姥临死前大笑“不是她，不是她”，李秋水临死前苦笑“是她，是她”，正所谓“同一笑，到头万事俱空”",
       "icon": a1,

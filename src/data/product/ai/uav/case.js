@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "wings",
       "desc": "wings护国之翼",
       "logo": p1,
@@ -47,4 +46,3 @@ const data = {
   ]
 }
 export default data
-

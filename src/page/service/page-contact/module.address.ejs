@@ -1,9 +1,9 @@
 <div class="address-wrap">
   <div class="address-content">
     <% if(addressData.title) { %>
-      <div class="c-module-title <% if(!addressData.desc){ %>c-module-b-60<% } %>"><%=addressData.title%></div>
+    <div class="c-module-title <% if(!addressData.desc){ %>c-module-b-60<% } %>"><%=addressData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!addressData.desc){ %>c-module-b-60<% } %>">公司地址</div>
+    <div class="c-module-title <% if(!addressData.desc){ %>c-module-b-60<% } %>">公司地址</div>
     <% } %>
 
     <!--描述-->
@@ -13,11 +13,11 @@
 
     <div class="address-view">
       <% addressData.content.forEach(function(item, index){ %>
-        <div class="address-cell mar-b40 fn-left <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
-          <img class="icon box-shadow-1" src="<%=item.icon%>" alt="<%=item.alt%>">
-          <div class="title mar-t20"><%=item.title%></div>
-          <div class="text mar-t10"><%=item.text%></div>
-        </div>
+      <div class="address-cell mar-b40 fn-left <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+        <img class="icon box-shadow-1" src="<%=item.icon%>" alt="<%=item.alt%>">
+        <div class="title mar-t20"><%=item.title%></div>
+        <div class="text mar-t10"><%=item.text%></div>
+      </div>
       <% }); %>
     </div>
   </div>

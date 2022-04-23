@@ -7,7 +7,12 @@ import searchHot from "@/data/about/news/search";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, articleList, tagList, searchHot});
+const container = template({
+  formView,
+  articleList,
+  tagList,
+  searchHot
+});
 export default htmlRender({
   key: 'news-detail',
   navKey: 'about', // 用于导航栏item active判断，即属于哪一个导航栏模块

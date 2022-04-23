@@ -1,28 +1,28 @@
-<div class="core-n-3-wrap" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>"<% } %>>
-    <div class="core-content">
-        <!--标题-->
-        <% if(coreData.title) { %>
-            <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
-        <% } else { %>
-            <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
-        <% } %>
+<div class="core-n-3-wrap" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>" <% } %>>
+  <div class="core-content">
+    <!--标题-->
+    <% if(coreData.title) { %>
+    <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
+    <% } else { %>
+    <div class="c-module-title <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(coreData.desc) { %>
-            <div class="c-module-desc"><%=coreData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(coreData.desc) { %>
+    <div class="c-module-desc"><%=coreData.desc%></div>
+    <% } %>
 
-        <!--内容-->
-        <div class="core-view c-module-b-60">
-            <% coreData.content.forEach(function(item, index){ %>
-                <div class="core-n-3-cell fn-left <% if((index + 1) % 3 !== 0){ %>mar-r25<% } %>" <% if(coreData.viewHeight){ %>style="height: <%=coreData.viewHeight%>px"<% } %>>
-                    <img class="img-wrap" src="<%=item.icon%>" alt="<%=item.alt%>" <% if(coreData.scale){ %>style="height: <%=coreData.scale%>"<% } %> />
-                    <div class="info-wrap">
-                        <div class="main-content-title"><%=item.title%></div>
-                        <div class="main-content-text mar-t10"><%=item.text%></div>
-                    </div>
-                </div>
-            <% }); %>
+    <!--内容-->
+    <div class="core-view c-module-b-60">
+      <% coreData.content.forEach(function(item, index){ %>
+      <div class="core-n-3-cell fn-left <% if((index + 1) % 3 !== 0){ %>mar-r25<% } %>" <% if(coreData.viewHeight){ %>style="height: <%=coreData.viewHeight%>px" <% } %>>
+        <img class="img-wrap" src="<%=item.icon%>" alt="<%=item.alt%>" <% if(coreData.scale){ %>style="height: <%=coreData.scale%>" <% } %> />
+        <div class="info-wrap">
+          <div class="main-content-title"><%=item.title%></div>
+          <div class="main-content-text mar-t10"><%=item.text%></div>
         </div>
+      </div>
+      <% }); %>
     </div>
+  </div>
 </div>

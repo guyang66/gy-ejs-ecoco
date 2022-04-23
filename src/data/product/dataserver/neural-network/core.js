@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/neural-network/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "温带沙漠气候",
       "text": "温带大陆性干旱与半干旱气候。也称温带荒漠和温带草原气候，主要分布于亚洲和北美大陆的腹地以及南美巴塔哥尼亚高原和潘帕斯等地。亚洲和北美的此类气候区距海遥远，深入内陆",
       "icon": a1,

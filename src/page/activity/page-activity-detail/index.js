@@ -6,7 +6,10 @@ import detailData from "@/data/activity/example";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, detailData});
+const container = template({
+  formView,
+  detailData
+});
 export default htmlRender({
   key: 'activity-detail',
   hasBanner: false,

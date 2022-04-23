@@ -6,8 +6,7 @@ import p2 from '@/assets/images/product/logo/dataserver/lixiankaifa.svg'
 import p1 from '@/assets/images/product/logo/dataserver/shishikaifa.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "matlab聚类分析",
       "height": 728,
@@ -21,15 +20,13 @@ const data = {
         "遗下的影子融于法轮融上，形成双手朝天，两足并合立地之状，拱卫天地！涅盘经轮包含佛陀慈悲为怀、普渡众生的本性，成为[悲天悯人]的护法神兵",
         "为如来神掌第五式[迎佛西天]之护法神兵"
       ],
-      "products": [
-        {
-          "name": "智能推荐系统",
-          "icon": p3,
-          "key": "recommend",
-          "alt": "智能推荐系统",
-          "href": "/product/dataserver/recommend.html"
-        }
-      ]
+      "products": [{
+        "name": "智能推荐系统",
+        "icon": p3,
+        "key": "recommend",
+        "alt": "智能推荐系统",
+        "href": "/product/dataserver/recommend.html"
+      }]
     },
     {
       "image": a2,
@@ -46,8 +43,7 @@ const data = {
         "围攻天之国善见城。光明隐灭，神力变得微不足道，众神",
         "佛法无边也不能干扰乾坤法则。眼见帝释天绝望沮丧，佛祖本着好生之德毅然取出佛心植入帝释天体内"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "实时开发",
           "icon": p1,
           "key": "sskf",

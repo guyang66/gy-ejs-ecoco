@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2018-12-01",
           "content": "其中A和B为矩阵",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "大残缺往往就得不出理想的结果",

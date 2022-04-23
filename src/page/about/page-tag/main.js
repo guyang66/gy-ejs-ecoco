@@ -3,13 +3,13 @@ import '@/styles/article.styl'
 import Swiper from 'swiper';
 import tagList from "@/data/about/tag/tag";
 
-$(function() {
+$(function () {
 
   let tag = getQueryVariable('tag')
-  if(tag && tag !== ''){
+  if (tag && tag !== '') {
     let target = tagList[0]
-    for(let i =0; i< tagList.length;i++){
-      if(tag === tagList[i].key){
+    for (let i = 0; i < tagList.length; i++) {
+      if (tag === tagList[i].key) {
         target = tagList[i]
         break
       }
@@ -27,10 +27,11 @@ $(function() {
 function getQueryVariable(variable) {
   let query = window.location.search.substring(1);
   let vars = query.split("&");
-  for (let i=0;i<vars.length;i++) {
+  for (let i = 0; i < vars.length; i++) {
     let pair = vars[i].split("=");
-    if(pair[0] === variable){return pair[1];}
+    if (pair[0] === variable) {
+      return pair[1];
+    }
   }
   return false;
 }
-

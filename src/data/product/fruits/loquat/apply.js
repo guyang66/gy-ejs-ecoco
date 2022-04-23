@@ -7,8 +7,7 @@ import p11 from '@/assets/images/product/logo/fruits/pingguo.svg'
 import p22 from '@/assets/images/product/logo/fruits/shuimitao.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "哼唧打算人",
       "height": 760,
@@ -28,8 +27,7 @@ const data = {
         "发病初期使用柔水通3000倍+70%纳米欣700倍+80%大生500倍连续喷施2～3次（可兼防叶斑病）。",
         "发病中期使用12%腈菌唑800倍+24%应得1000倍+50%甲基托布津（水剂）600倍喷雾2～3次，每7天一次。"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "猕猴桃",
           "icon": p8,
           "key": "kiwi",
@@ -61,8 +59,7 @@ const data = {
         "经常翻土晒地，通过农事操作和阳光直照破坏地下虫卵。",
         "药剂防治：在发病初期或每年3、4月和10、11月份1.8%阿维菌素3000倍+40%辛硫磷600灌根或3%地虫杀星（每亩4千克）撒施。"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "橘子",
           "icon": p4,
           "key": "orange",

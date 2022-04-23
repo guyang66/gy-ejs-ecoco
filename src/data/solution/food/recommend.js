@@ -5,8 +5,7 @@ import a3 from '@/assets/images/product/logo/dataserver/tuijiansuanfa.svg'
 const ad = {
   title: '相关推荐',
   bg: '#fafaff',
-  content: [
-    {
+  content: [{
       title: 'AI语音',
       icon: a1,
       alt: 'AI语音',

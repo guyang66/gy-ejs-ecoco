@@ -4,8 +4,7 @@ import a3 from '@/assets/images/solution/food/apply/a3.png'
 
 const data = {
   title: '使用场景',
-  content: [
-    {
+  content: [{
       "cover": a1,
       "title": "桌游开发",
       "data": [

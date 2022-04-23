@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/enterprise/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "雷古鲁斯",
       "desc": null,
       "text": "撒加等被哈迪斯复活的圣斗士们去圣域刺杀雅典娜时因为不信任他们，而派了缪、聂普尼奥、莱米、古加多",

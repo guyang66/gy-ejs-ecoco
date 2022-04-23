@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/tianyan/advantage/main.png'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "洞察之头",
       "desc": null,
       "text": "青藏高原青海两地外景群，如宁夏西吉火石寨、贵德地质公园、坎布拉森林公园等",

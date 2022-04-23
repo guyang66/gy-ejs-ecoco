@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/online-develop/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "毁灭阴影",
       "text": "影魔对其正前方区域释放毁灭能量，对该区域中的敌人造成伤害。在目标身上施加一个可以叠加的连中效果",
       "icon": a1,

@@ -9,8 +9,7 @@ const core = {
   title: '核心功能',
   bg: '#F4F4F4',
   scale: '80%',
-  content: [
-    {
+  content: [{
       "title": "孜然牛肉",
       "text": "锌是一种有助于合成蛋白质、促进肌肉生长的抗氧化剂。锌与谷氨酸盐和维生素B6共同作用是：能增强免疫系统",
       "icon": a1,

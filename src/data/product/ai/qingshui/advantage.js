@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/qingshui/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "一流技术",
       "desc": null,
       "text": "务信息综合应用平台等各部门各警种相对独立的智慧警务系统整合统一",

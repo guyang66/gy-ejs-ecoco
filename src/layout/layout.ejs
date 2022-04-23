@@ -24,28 +24,31 @@
   <script src="/assets/plugins/jquery.cookie.js"></script>
   <script src="/assets/plugins/jquery.toast.js"></script>
   <script src="/assets/js/common.js"></script>
-  <script>videojs.options.flash.swf = "/assets/plugins/video-js/video-js.swf";</script>
+  <script>
+    videojs.options.flash.swf = "/assets/plugins/video-js/video-js.swf";
+  </script>
 </head>
 
 <body class="main-layout wrap-<%= key %>">
 
-    <%= header %>
+  <%= header %>
 
-    <%= banner %>
+  <%= banner %>
 
-    <% if(tabsData.length) { %>
-      <%= tabs %>
-    <% } %>
+  <% if(tabsData.length) { %>
+  <%= tabs %>
+  <% } %>
 
-    <!-- main-wrap -->
-    <section class="main-wrap">
-      <div class="main-content">
-        <%= container %>
-      </div>
-    </section>
+  <!-- main-wrap -->
+  <section class="main-wrap">
+    <div class="main-content">
+      <%= container %>
+    </div>
+  </section>
 
-    <%= footer %>
+  <%= footer %>
 
-    <%= sideMenu %>
+  <%= sideMenu %>
 </body>
+
 </html>

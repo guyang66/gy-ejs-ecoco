@@ -1,9 +1,9 @@
 <div class="team-wrap">
   <div class="team-content">
     <% if(teamData.title) { %>
-      <div class="c-module-title <% if(!teamData.desc){ %>c-module-b-60<% } %>"><%=teamData.title%></div>
+    <div class="c-module-title <% if(!teamData.desc){ %>c-module-b-60<% } %>"><%=teamData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!teamData.desc){ %>c-module-b-60<% } %>">创始团队</div>
+    <div class="c-module-title <% if(!teamData.desc){ %>c-module-b-60<% } %>">创始团队</div>
     <% } %>
 
     <!--描述-->
@@ -13,11 +13,11 @@
 
     <div class="team-view">
       <% teamData.content.forEach(function(item, index){ %>
-        <div class="team-cell fn-left <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
-          <img class="icon" src="<%=item.icon%>" alt="创始团队"/>
-          <div class="title"><%=item.name%>（<%=item.title%>）</div>
-          <div class="desc"><%=item.desc%></div>
-        </div>
+      <div class="team-cell fn-left <% if((index + 1) % 3 !== 0){ %>mar-r40<% } %>">
+        <img class="icon" src="<%=item.icon%>" alt="创始团队" />
+        <div class="title"><%=item.name%>（<%=item.title%>）</div>
+        <div class="desc"><%=item.desc%></div>
+      </div>
       <% }); %>
     </div>
   </div>

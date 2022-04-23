@@ -11,8 +11,7 @@ import a9 from '@/assets/images/activity/hot/d2.png'
 const data = {
   title: '热门活动',
   desc: '课程教学，直播带货，跟着老师学习走向成功',
-  content: [
-    {
+  content: [{
       index: 0,
       title: '直播课程——全量统计（三）',
       desc: '手把手叫你如何搭建数据库全量统计，实战训练第一讲：快速上手webpack，插件化和矢量化，网站排名监控、传播数据分析、网站访问数量统计分析、访问人群分析、咨询统计分析、网页浏览深度统计分析、热门关键字访问统计分析。',
@@ -21,7 +20,7 @@ const data = {
       href: '/activity/detail.html',
       btnText: '点击查看',
       cover: a1,
-      type : 'vip'
+      type: 'vip'
     },
     {
       index: 1,
@@ -32,7 +31,7 @@ const data = {
       href: '/activity/detail.html',
       btnText: '点击查看',
       cover: a2,
-      type : 'vip'
+      type: 'vip'
     },
     {
       index: 2,
@@ -43,7 +42,7 @@ const data = {
       href: '/activity/detail.html',
       btnText: '点击查看',
       cover: a3,
-      type : 'new'
+      type: 'new'
     },
     {
       index: 3,
@@ -64,7 +63,7 @@ const data = {
       href: '/activity/detail.html',
       btnText: '点击查看',
       cover: a5,
-      type : 'vip'
+      type: 'vip'
     },
     {
       index: 5,

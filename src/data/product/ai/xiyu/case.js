@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "精舞门",
       "desc": "传说葫芦山里关着蝎子精和蛇精",
       "logo": p1,
@@ -47,4 +46,3 @@ const data = {
   ]
 }
 export default data
-

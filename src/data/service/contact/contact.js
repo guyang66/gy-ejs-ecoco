@@ -4,8 +4,7 @@ import c3 from '@/assets/images/service/contact/contact/c3.svg'
 
 const data = {
   desc: '欢迎志同道合的朋友前来合作，一起共赢',
-  content: [
-    {
+  content: [{
       icon: c1,
       alt: '电话',
       title: '电话',

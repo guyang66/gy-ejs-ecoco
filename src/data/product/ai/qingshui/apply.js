@@ -5,8 +5,7 @@ import p1 from '@/assets/images/product/logo/ai/colgi.svg'
 import p2 from '@/assets/images/product/logo/ai/shuziyun.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "轨迹研判系统",
       "height": 728,
@@ -23,15 +22,13 @@ const data = {
         "描述系统的方法还有符号、单位脉冲响应、差分方程和图形",
         "系统是一个动态和复杂的整体，相互作用结构和功能的单位"
       ],
-      "products": [
-        {
-          "name": "colgi",
-          "icon": p1,
-          "key": "colgi",
-          "alt": "colgi",
-          "href": "/product/ai/colgi.html"
-        }
-      ]
+      "products": [{
+        "name": "colgi",
+        "icon": p1,
+        "key": "colgi",
+        "alt": "colgi",
+        "href": "/product/ai/colgi.html"
+      }]
     },
     {
       "image": a2,
@@ -49,15 +46,13 @@ const data = {
         "我国自然科学基金委地学部也于2002年3月提出了21世纪初的地球科学战略重点",
         "系统仿真的基本方法是建立系统的结构模型和量化分析模型"
       ],
-      "products": [
-        {
-          "name": "数字云",
-          "icon": p2,
-          "key": "digital",
-          "alt": "digital",
-          "href": "/product/ai/digital.html"
-        }
-      ]
+      "products": [{
+        "name": "数字云",
+        "icon": p2,
+        "key": "digital",
+        "alt": "digital",
+        "href": "/product/ai/digital.html"
+      }]
     }
   ]
 }

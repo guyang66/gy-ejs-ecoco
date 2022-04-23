@@ -9,7 +9,11 @@ import downloadData from "@/data/service/resource/download";
 const tabsData = [];
 const formView = form()
 
-const container = template({formView, newsData, downloadData});
+const container = template({
+  formView,
+  newsData,
+  downloadData
+});
 export default htmlRender({
   key: 'resource',
   navKey: 'service', // 用于导航栏item active判断，即属于哪一个导航栏模块

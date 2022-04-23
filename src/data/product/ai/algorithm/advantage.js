@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/algorithm/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "确切性",
       "desc": null,
       "text": "算法（Algorithm）是指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制",

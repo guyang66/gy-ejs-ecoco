@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "沃尔特·怀特",
       "desc": "杰西试图洗心革面，去镇上找新工作",
       "logo": p1,
@@ -47,4 +46,3 @@ const data = {
   ]
 }
 export default data
-

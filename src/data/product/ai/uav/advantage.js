@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/uav/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "干支",
       "desc": null,
       "text": "夫干犹木之干，强而为阳；支犹木之枝，弱而为阴。昔盘古氏明 天地之道，达阴阳之变为三才。首君以天地既分之后，先有天而后有地",

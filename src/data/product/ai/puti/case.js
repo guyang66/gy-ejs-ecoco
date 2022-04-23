@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "天地会",
       "desc": "黑白通吃，左右逢源",
       "logo": p1,
@@ -47,4 +46,3 @@ const data = {
   ]
 }
 export default data
-

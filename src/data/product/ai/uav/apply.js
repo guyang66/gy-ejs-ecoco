@@ -6,8 +6,7 @@ import p2 from '@/assets/images/product/logo/ai/shibie.svg'
 import p3 from '@/assets/images/product/logo/ai/suanfa.svg'
 import p4 from '@/assets/images/product/logo/ai/qingshui.svg'
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "暗隐之径",
       "height": 728,
@@ -22,8 +21,7 @@ const data = {
         "魔芋性寒、味平，入药可消肿去毒，主治痈疮、肿毒、瘰疬等症",
         "利用价值较高的魔芋有花魔芋、白魔芋、田阳魔芋、西盟魔芋"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "AI语音",
           "icon": p1,
           "key": "speech",
@@ -61,15 +59,13 @@ const data = {
         "魔芋播种时已在地表覆盖了松毛、秸秆，抑制了大量杂草的生恐",
         "病害主要有软腐病、根腐病、叶枯病和白绢病"
       ],
-      "products": [
-        {
-          "name": "清水",
-          "icon": p4,
-          "key": "qingshui",
-          "alt": "qingshui",
-          "href": "/product/ai/qingshui.html"
-        }
-      ]
+      "products": [{
+        "name": "清水",
+        "icon": p4,
+        "key": "qingshui",
+        "alt": "qingshui",
+        "href": "/product/ai/qingshui.html"
+      }]
     }
   ]
 }

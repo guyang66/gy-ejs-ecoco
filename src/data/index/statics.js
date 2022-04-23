@@ -1,7 +1,6 @@
 const data = {
   title: '全国羊毛销量数据领跑者',
-  content: [
-    {
+  content: [{
       key: '',
       number: 60000,
       text: "60,000",

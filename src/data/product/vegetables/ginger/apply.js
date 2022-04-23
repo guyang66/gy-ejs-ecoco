@@ -6,8 +6,7 @@ import p8 from '@/assets/images/product/logo/vegetables/nangua.svg'
 
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "真空1比1",
       "height": 728,
@@ -22,15 +21,13 @@ const data = {
         "时发芽和出苗均受影响。苋菜不耐寒，生长中遇 0℃",
         "低温就受冻死亡，温度低于10℃植株生长缓慢 ， 最适生长温度为23~27℃，超过35℃时"
       ],
-      "products": [
-        {
-          "name": "苦瓜",
-          "icon": p6,
-          "key": "bilter",
-          "alt": "苦瓜",
-          "href": "/product/vegetables/bilter.html"
-        }
-      ]
+      "products": [{
+        "name": "苦瓜",
+        "icon": p6,
+        "key": "bilter",
+        "alt": "苦瓜",
+        "href": "/product/vegetables/bilter.html"
+      }]
     },
     {
       "image": a2,
@@ -47,15 +44,13 @@ const data = {
         "雷云形成过程中，由于雷云中电荷的聚积",
         "且雷电能量巨大，可瞬间造成被击物折损、坍塌等物理损坏和电击损"
       ],
-      "products": [
-        {
-          "name": "南瓜",
-          "icon": p8,
-          "key": "pumpkin",
-          "alt": "南瓜",
-          "href": "/product/vegetables/pumpkin.html"
-        }
-      ]
+      "products": [{
+        "name": "南瓜",
+        "icon": p8,
+        "key": "pumpkin",
+        "alt": "南瓜",
+        "href": "/product/vegetables/pumpkin.html"
+      }]
     }
   ]
 }

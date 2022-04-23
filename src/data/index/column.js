@@ -1,6 +1,5 @@
 const column = {
-  content: [
-    {
+  content: [{
       title: '走进科学',
       text: '走向用多久的爱仕达收到',
       href: 'http://www.baidu.com',

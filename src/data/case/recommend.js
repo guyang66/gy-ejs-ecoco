@@ -4,13 +4,11 @@ import p7 from '@/assets/images/product/logo/ai/shibie.svg'
 import p8 from '@/assets/images/product/logo/ai/yuyin.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       key: 'product',
       title: '相关产品',
       desc: '',
-      data: [
-        {
+      data: [{
           "name": "企业的好帮手——AI语音",
           "icon": p8,
           "key": "yuyin",
@@ -45,8 +43,7 @@ const data = {
       key: 'solution',
       title: '行业解决方案',
       desc: '',
-      data: [
-        {
+      data: [{
           "name": "教育行业解决方案",
           "href": "/solution/education.html"
         },

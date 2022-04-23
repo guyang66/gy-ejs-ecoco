@@ -1,21 +1,21 @@
-<div class="solution-education-framework-wrap" <% if(frameworkData.bg){ %>style="background: <%=frameworkData.bg%>"<% } %>>
+<div class="solution-education-framework-wrap" <% if(frameworkData.bg){ %>style="background: <%=frameworkData.bg%>" <% } %>>
   <div class="framework-content">
     <% if(frameworkData.title) { %>
-      <div class="c-module-title <% if(!frameworkData.desc){ %>c-module-b-60<% } %>"><%=frameworkData.title%></div>
+    <div class="c-module-title <% if(!frameworkData.desc){ %>c-module-b-60<% } %>"><%=frameworkData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!frameworkData.desc){ %>c-module-b-60<% } %>">方案架构</div>
+    <div class="c-module-title <% if(!frameworkData.desc){ %>c-module-b-60<% } %>">方案架构</div>
     <% } %>
 
     <!--描述-->
     <% if(frameworkData.desc) { %>
-      <div class="c-module-desc"><%=frameworkData.desc%></div>
+    <div class="c-module-desc"><%=frameworkData.desc%></div>
     <% } %>
 
     <div class="framework-view">
       <div class="top-view mar-b20">
         <div class="title fn-left"><%=frameworkData.content.top.title%></div>
         <% frameworkData.content.top.content.forEach(function(item){ %>
-          <div class="item dt1 w-212 mar-r20 fn-left mar-t20"><%=item%></div>
+        <div class="item dt1 w-212 mar-r20 fn-left mar-t20"><%=item%></div>
         <% }); %>
       </div>
       <div class="middle-view mar-b20">
@@ -26,22 +26,22 @@
           <div class="sec-top-view mar-t20 mar-b20">
             <div class="sec-title fn-left"><%=frameworkData.content.middle.top.title%></div>
             <% frameworkData.content.middle.top.content.forEach(function(item){ %>
-              <div class="item dt3 w-178 mar-r20 fn-left mar-t20"><%=item%></div>
+            <div class="item dt3 w-178 mar-r20 fn-left mar-t20"><%=item%></div>
             <% }); %>
           </div>
           <div class="sec-middle-view">
             <% frameworkData.content.middle.middle.forEach(function(item){ %>
-              <div class="sec-cell-view mar-r20 fn-left">
-                <div class="th-title"><%=item.title%></div>
-                <% item.content.forEach(function(val, count){ %>
-                  <div class="th-content-view fn-left mar-r10 <% if(count < 1){ %>mar-l10<% } %>">
-                    <div class="fo-title"><%=val.title%></div>
-                    <% val.content.forEach(function(obj){ %>
-                      <div class="item dt3 w-auto-10 mar-l10 mar-b10 fn-left "><%=obj%></div>
-                    <% }); %>
-                  </div>
+            <div class="sec-cell-view mar-r20 fn-left">
+              <div class="th-title"><%=item.title%></div>
+              <% item.content.forEach(function(val, count){ %>
+              <div class="th-content-view fn-left mar-r10 <% if(count < 1){ %>mar-l10<% } %>">
+                <div class="fo-title"><%=val.title%></div>
+                <% val.content.forEach(function(obj){ %>
+                <div class="item dt3 w-auto-10 mar-l10 mar-b10 fn-left "><%=obj%></div>
                 <% }); %>
               </div>
+              <% }); %>
+            </div>
             <% }); %>
           </div>
           <div class="sec-top-view mar-t20 mar-b20">

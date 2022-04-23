@@ -9,7 +9,13 @@ import recommendData from "@/data/case/recommend";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, articleList, resourceList, tagList, recommendData});
+const container = template({
+  formView,
+  articleList,
+  resourceList,
+  tagList,
+  recommendData
+});
 export default htmlRender({
   key: 'tag',
   hasBanner: false,

@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/cluster/advantage/a4.svg'
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "佛光初现",
       "desc": null,
       "text": "掌气幻化为巨大的佛座莲台，将敌我双方包围其中",

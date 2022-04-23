@@ -1,29 +1,27 @@
-<div class="case-layout-n-2-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>"<% } %>>
-    <div class="case-content">
-        <!--标题-->
-        <% if(caseData.title) { %>
-            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
-        <% } else { %>
-            <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
-        <% } %>
+<div class="case-layout-n-2-wrap" <% if(caseData.bg){ %>style="background: <%=caseData.bg%>" <% } %>>
+  <div class="case-content">
+    <!--标题-->
+    <% if(caseData.title) { %>
+    <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>"><%=caseData.title%></div>
+    <% } else { %>
+    <div class="c-module-title <% if(!caseData.desc){ %>c-module-b-60<% } %>">客户案例</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(caseData.desc) { %>
-            <div class="c-module-desc"><%=caseData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(caseData.desc) { %>
+    <div class="c-module-desc"><%=caseData.desc%></div>
+    <% } %>
 
-        <div class="case-view">
-            <% caseData.content.forEach(function(item, index){ %>
-                <div class="case-layout-n-2-cell fn-left <% if((index + 1) % 2 !== 0){ %>mar-r24<% } %> <% if( index < caseData.content.length - 2){ %>mar-b24<% } %>"
-                     <% if(caseData.viewHeight){ %>style="height: <%=caseData.viewHeight%>px"<% } %>
-                >
-                    <div class="img-wrap fn-left">
-                        <img src="<%=item.logo%>" alt="<%=item.alt%>"/>
-                    </div>
-                    <div class="tit main-content-title"><%=item.name%></div>
-                    <div class="desc main-content-text"><%=item.solution%></div>
-                </div>
-            <% }) %>
+    <div class="case-view">
+      <% caseData.content.forEach(function(item, index){ %>
+      <div class="case-layout-n-2-cell fn-left <% if((index + 1) % 2 !== 0){ %>mar-r24<% } %> <% if( index < caseData.content.length - 2){ %>mar-b24<% } %>" <% if(caseData.viewHeight){ %>style="height: <%=caseData.viewHeight%>px" <% } %>>
+        <div class="img-wrap fn-left">
+          <img src="<%=item.logo%>" alt="<%=item.alt%>" />
         </div>
+        <div class="tit main-content-title"><%=item.name%></div>
+        <div class="desc main-content-text"><%=item.solution%></div>
+      </div>
+      <% }) %>
     </div>
+  </div>
 </div>

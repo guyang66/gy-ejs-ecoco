@@ -9,8 +9,7 @@ import p4 from '@/assets/images/product/logo/dataserver/tuijiansuanfa.svg'
 import p5 from '@/assets/images/product/logo/dataserver/julei.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "应用开发",
       "height": 728,
@@ -25,15 +24,13 @@ const data = {
         "傀儡大师操纵着，通过位面裂口进入世界的傀儡?尽管众",
         "纷纭，但根本没有人能看透他那黑暗光环下的层层邪恶"
       ],
-      "products": [
-        {
-          "name": "神经网络",
-          "icon": p3,
-          "key": "sjwl",
-          "alt": "神经网络",
-          "href": "/product/dataserver/neuralnetwork.html"
-        }
-      ]
+      "products": [{
+        "name": "神经网络",
+        "icon": p3,
+        "key": "sjwl",
+        "alt": "神经网络",
+        "href": "/product/dataserver/neuralnetwork.html"
+      }]
     },
     {
       "image": a2,
@@ -49,8 +46,7 @@ const data = {
         "西田敦子称，在最初创作时，她制作了一个类似“竖",
         "2民间一直有个传闻，“Pikachu”这个名字是由“pika”"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "实时开发",
           "icon": p2,
           "key": "sskf",
@@ -80,8 +76,7 @@ const data = {
         "皮卡丘存在性别差异，雌性的皮卡丘尾巴上有一个爱心形状",
         "雄性皮卡丘耳朵上的黑色部分比雌性更少"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "智能推荐系统",
           "icon": p4,
           "key": "sskf",

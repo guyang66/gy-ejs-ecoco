@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/offline-algorithm/core/c4.svg
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "类金属",
       "text": "利用稀有气体极不活泼的化学性质，有的生产部门常用它们来作保护气",
       "icon": a1,

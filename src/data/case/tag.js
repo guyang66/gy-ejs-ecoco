@@ -1,5 +1,4 @@
-const data = [
-  {
+const data = [{
     index: 0,
     key: 'fnkk',
     name: '菲克尼尼',

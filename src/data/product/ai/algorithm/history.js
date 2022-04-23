@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2018-12-01",
           "content": "以电力为基础的电动制表机，用以储存计算资料",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2019-08-14",
           "content": "集成电路数字机",
@@ -60,8 +57,7 @@ const history = {
     },
     {
       key: 3,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2020-10-30",
           "content": "第一台使用图形用户界面的电脑",

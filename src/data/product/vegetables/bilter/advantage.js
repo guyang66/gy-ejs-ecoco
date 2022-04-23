@@ -8,8 +8,7 @@ import a6 from '@/assets/images/product/vegetables/bilter/advantage/a6.svg'
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "无冕之王",
       "desc": null,
       "text": "春秋之际，百家争鸣，唐氏族中有一能人，成为墨家之主墨子门徒，习得冠绝天下的机关术。秦灭六国之后",

@@ -1,7 +1,7 @@
 import c1 from '@/assets/images/product/fruits/fig/case/c1.svg'
-import c2 from  '@/assets/images/product/fruits/fig/case/c2.svg'
+import c2 from '@/assets/images/product/fruits/fig/case/c2.svg'
 import c3 from '@/assets/images/product/fruits/fig/case/c3.svg'
-import c4 from  '@/assets/images/product/fruits/fig/case/c4.svg'
+import c4 from '@/assets/images/product/fruits/fig/case/c4.svg'
 import c5 from '@/assets/images/product/fruits/fig/case/c5.svg'
 import c6 from '@/assets/images/product/fruits/fig/case/c6.svg'
 
@@ -9,11 +9,9 @@ const data = {
   bg: '#f4f4f4',
   pointTitle: '痛点描述',
   pointTitle2: '价值说明',
-  content: [
-    {
+  content: [{
       key: 1,
-      data:  [
-        {
+      data: [{
           "name": "哈分卡卡",
           "cover": c1,
           "logo": c1,
@@ -45,8 +43,7 @@ const data = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "name": "翡翠嫦",
           "cover": c3,
           "logo": c3,
@@ -78,8 +75,7 @@ const data = {
     },
     {
       key: 3,
-      data: [
-        {
+      data: [{
           "name": "钱德勒教堂",
           "cover": c4,
           "logo": c4,
@@ -112,4 +108,3 @@ const data = {
   ]
 }
 export default data
-

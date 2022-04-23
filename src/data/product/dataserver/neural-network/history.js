@@ -1,9 +1,7 @@
 const history = {
-  content: [
-    {
+  content: [{
       key: 1,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "1966-01-05",
           "content": "H氢,英国贵族亨利.卡文迪西(1731-1810)",
@@ -31,8 +29,7 @@ const history = {
     },
     {
       key: 2,
-      data: [
-        {
+      data: [{
           "mode": "top",
           "year": "2021-08-04",
           "content": "B 硼 1808年，法国人约瑟夫.路易.吕萨克",

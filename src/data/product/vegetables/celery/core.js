@@ -9,8 +9,7 @@ const core = {
   title: '核心功能',
   bg: '#F4F4F4',
   scale: '80%',
-  content: [
-    {
+  content: [{
       "title": "凤求凰",
       "text": "鑫共同回归校园演绎一对恋人 [1]  ；随后，白鹿正式签约欢娱影摄，在剧中饰演武艺高强、性格泼辣的女将军邓婵玉",
       "icon": a1,

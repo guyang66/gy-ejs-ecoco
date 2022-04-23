@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/ai/puti/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "古树",
       "text": "暗夜精灵的一些建筑物实际上是有思想并可以移动的树，比如采集资源或制造部队",
       "icon": a1,

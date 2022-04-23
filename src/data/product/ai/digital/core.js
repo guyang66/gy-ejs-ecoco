@@ -8,8 +8,7 @@ import a6 from '@/assets/images/product/ai/digital/core/c6.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "加密存储",
       "text": "在传统的信息系统中，一般采用加密方式来确保存储数据的安全性和隐私性．在云中，似乎也可以这样做，但实现起来却不那么容易．在基础设施即服务云模式中",
       "icon": a1,

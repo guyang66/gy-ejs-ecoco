@@ -6,8 +6,7 @@ import p2 from '@/assets/images/product/logo/ai/suanfa.svg'
 import p3 from '@/assets/images/product/logo/ai/titi.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "双子系统",
       "height": 728,
@@ -22,8 +21,7 @@ const data = {
         "他曾是皮尔特沃夫一位发明家的助手，不过因为自己千篇一律的生活而感到无聊，后来和一个名为金克丝的蓝头发小疯子交上了朋友",
         "恐吓一直伴随着炼金男爵和普通市民之流"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "数字云",
           "icon": p1,
           "key": "digital",
@@ -54,15 +52,13 @@ const data = {
         "于魔法的约德尔巫师。几乎没有哪个凡人敢碰的恐",
         "至今数授是一个才华横溢但古怪反常的约德尔科学家"
       ],
-      "products": [
-        {
-          "name": "titi",
-          "icon": p3,
-          "key": "titi",
-          "alt": "titi",
-          "href": "/product/ai/titi.html"
-        }
-      ]
+      "products": [{
+        "name": "titi",
+        "icon": p3,
+        "key": "titi",
+        "alt": "titi",
+        "href": "/product/ai/titi.html"
+      }]
     }
   ]
 }

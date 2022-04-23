@@ -8,21 +8,29 @@ import tabs from '@/component/tabs';
 import menus from '@/data/menu'
 
 import configs from '@/config';
-import { arrayToObj } from '@/utils/utils';
+import {
+  arrayToObj
+} from '@/utils/utils';
 
 import footerData from '@/data/menu/footer'
-const { tdkSettings, router, name, logo, telicon } = configs;
+const {
+  tdkSettings,
+  router,
+  name,
+  logo,
+  telicon
+} = configs;
 const routerMaps = arrayToObj(router, 'key');
 const tdkMaps = arrayToObj(tdkSettings, 'name');
 
 const getPageTitle = (key, type) => {
   // return routerMaps[key] ? `${routerMaps[key].title}` : 'yy科技'
 
-  if(key === 'newsDetail'){
+  if (key === 'newsDetail') {
     // 新闻详情页没法匹配到，打包的时候再插入
     return ''
   }
-  if(tdkMaps[key]){
+  if (tdkMaps[key]) {
     return `${tdkMaps[key][type]}`
   }
   return `${tdkMaps['default'][type]}`
@@ -54,14 +62,28 @@ const htmlRender = ({
     tabsData,
     ...configs,
     sideMenu: hasSideMenu ? sideMenu() : '',
-    title: getPageTitle(key,'title'),
+    title: getPageTitle(key, 'title'),
     keywords: getPageTitle(key, 'keywords'),
     description: getPageTitle(key, 'description'),
-    header: header({ key, navKey, logo, menus, telicon, hasBanner}),
-    banner: hasBanner ? banner({bannerData}) : '',
-    tabs: tabs({tabsData}),
+    header: header({
+      key,
+      navKey,
+      logo,
+      menus,
+      telicon,
+      hasBanner
+    }),
+    banner: hasBanner ? banner({
+      bannerData
+    }) : '',
+    tabs: tabs({
+      tabsData
+    }),
     container: container || '',
-    footer: hasFooter ? footer({footerData, logo}) : ''
+    footer: hasFooter ? footer({
+      footerData,
+      logo
+    }) : ''
   });
 }
 

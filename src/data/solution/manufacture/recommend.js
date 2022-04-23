@@ -5,8 +5,7 @@ import a3 from '@/assets/images/product/logo/vegetables/xiancai.svg'
 const ad = {
   title: '相关推荐',
   bg: '#fafaff',
-  content: [
-    {
+  content: [{
       title: '枇杷',
       icon: a1,
       alt: '枇杷',

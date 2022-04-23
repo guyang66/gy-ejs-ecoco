@@ -1,35 +1,35 @@
-<div class="core-layout-fade-wrap" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>"<% } %>>
-    <div class="core-content">
-        <!--标题-->
-        <% if(coreData.title) { %>
-            <div class="c-module-title color-white <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
-        <% } else { %>
-            <div class="c-module-title color-white <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
-        <% } %>
+<div class="core-layout-fade-wrap" <% if(coreData.bg){ %>style="background: <%=coreData.bg%>" <% } %>>
+  <div class="core-content">
+    <!--标题-->
+    <% if(coreData.title) { %>
+    <div class="c-module-title color-white <% if(!coreData.desc){ %>c-module-b-60<% } %>"><%=coreData.title%></div>
+    <% } else { %>
+    <div class="c-module-title color-white <% if(!coreData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(coreData.desc) { %>
-        <div class="c-module-desc color-white"><%=coreData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(coreData.desc) { %>
+    <div class="c-module-desc color-white"><%=coreData.desc%></div>
+    <% } %>
 
-        <div class="core-view c-module-b-60">
-            <% coreData.content.forEach(function(item){ %>
-                <div class="core-layout-fade-cell fn-left">
-                    <div class="info-wrap">
+    <div class="core-view c-module-b-60">
+      <% coreData.content.forEach(function(item){ %>
+      <div class="core-layout-fade-cell fn-left">
+        <div class="info-wrap">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                            <line class="top" x1="0" y1="0" x2="1914" y2="0"/>
-                            <line class="left" x1="0" y1="300" x2="0" y2="-600"/>
-                            <line class="bottom" x1="638" y1="300" x2="-1276" y2="300"/>
-                            <line class="right" x1="638" y1="0" x2="638" y2="900"/>
-                        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <line class="top" x1="0" y1="0" x2="1914" y2="0" />
+            <line class="left" x1="0" y1="300" x2="0" y2="-600" />
+            <line class="bottom" x1="638" y1="300" x2="-1276" y2="300" />
+            <line class="right" x1="638" y1="0" x2="638" y2="900" />
+          </svg>
 
-                        <img class="icon-view" src="<%=item.icon%>" alt="<%=item.alt%>"/>
-                        <div class="tit main-content-title color-white"><%=item.title%></div>
-                        <div class="txt main-content-text color-white"><%=item.text%></div>
-                    </div>
-                </div>
-            <% }); %>
+          <img class="icon-view" src="<%=item.icon%>" alt="<%=item.alt%>" />
+          <div class="tit main-content-title color-white"><%=item.title%></div>
+          <div class="txt main-content-text color-white"><%=item.text%></div>
         </div>
+      </div>
+      <% }); %>
     </div>
+  </div>
 </div>

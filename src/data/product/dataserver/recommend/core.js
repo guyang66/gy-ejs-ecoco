@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/recommend/core/c4.svg'
 const core = {
   title: '核心功能',
   bg: '#333333',
-  content: [
-    {
+  content: [{
       "title": "暗影冲刺",
       "text": "裂魂人盯紧一个敌方单位，开始无视一切物体的冲刺。途中经过的所有敌方单位和目标单位都将受到巨力",
       "icon": a1,

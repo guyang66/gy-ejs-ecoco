@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/xiyu/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "尼奥",
       "desc": null,
       "text": "本集中尼奥的身体和思想意外分离，后者再度陷入到“母体”中，尼奥与特工史密斯将展开一场绝命殊死战",

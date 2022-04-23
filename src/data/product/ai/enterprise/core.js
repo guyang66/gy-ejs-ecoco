@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/enterprise/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "信息资源管理",
       "text": "ERP 的提出与计算机技术的高度发展是分不开的，用户对系统有更大的主动性，作为计算机辅助管理所涉及的功能已远远超过 MRP II 的范围",
       "icon": a1,

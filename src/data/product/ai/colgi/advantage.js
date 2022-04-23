@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/colgi/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "提莫",
       "desc": null,
       "text": "不惧艰难险阻、不惧坎坷危途，提莫怀着无比的热情和欢欣的精神探索着整个世界。作为一个约德尔人",

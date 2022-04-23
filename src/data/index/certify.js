@@ -21,8 +21,7 @@ import a20 from '@/assets/images/index/certify/a20.svg'
 
 const data = {
   title: '安全、可靠的优质供应商',
-  content: [
-    {
+  content: [{
       index: 1,
       name: 'c++ 20000',
       icon: a1,

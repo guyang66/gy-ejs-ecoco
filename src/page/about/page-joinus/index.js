@@ -13,20 +13,31 @@ import resumeData from "@/data/about/joinus/resume";
 const tabsData = [{
   name: '工作环境',
   anchor: 'env',
-},{
+}, {
   name: '福利待遇',
   anchor: 'welfare',
-},{
+}, {
   name: '简历投递',
   anchor: 'resume',
 }];
 
 const formView = form()
-const envView = env({envData})
-const welfareView = welfare({welfareData})
-const resumeView = resume({resumeData})
+const envView = env({
+  envData
+})
+const welfareView = welfare({
+  welfareData
+})
+const resumeView = resume({
+  resumeData
+})
 
-const container = template({formView, envView, welfareView, resumeView});
+const container = template({
+  formView,
+  envView,
+  welfareView,
+  resumeView
+});
 export default htmlRender({
   key: 'joinus',
   navKey: 'about', // 用于导航栏item active判断，即属于哪一个导航栏模块

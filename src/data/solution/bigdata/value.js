@@ -4,8 +4,7 @@ import a3 from '@/assets/images/solution/bigdata/apply/a3.png'
 
 const data = {
   title: '使用场景',
-  content: [
-    {
+  content: [{
       "cover": a1,
       "title": "基因重组",
       "data": [

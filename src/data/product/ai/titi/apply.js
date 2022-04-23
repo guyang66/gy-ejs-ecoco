@@ -8,8 +8,7 @@ import p4 from '@/assets/images/product/logo/ai/qingshui.svg'
 import p5 from '@/assets/images/product/logo/ai/suanfa.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "守望者女猎流",
       "height": 728,
@@ -24,8 +23,7 @@ const data = {
         "暴兵流的话就再补一个BR若干BM月井若干小精灵（到处放）",
         "没HP就隐身。如果是HUM速矿的话，把HT分成2队"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "colgi",
           "icon": p1,
           "key": "colgi",
@@ -57,8 +55,7 @@ const data = {
         "压制，是不二选择，冰箭减速加AC齐射可以点倒任意一个单",
         "叉型闪电的威力也不容小视，小精灵可以在对手基地附近造起古树商店，给对手以压迫式的感觉，一举将对手扼杀在前期",
       ],
-      "products": [
-        {
+      "products": [{
           "name": "细雨",
           "icon": p3,
           "key": "xiyu",

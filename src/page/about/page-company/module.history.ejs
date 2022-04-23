@@ -1,21 +1,21 @@
 <div class="history-wrap">
   <div class="history-content">
     <% if(historyData.title) { %>
-      <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>"><%=historyData.title%></div>
+    <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>"><%=historyData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>">成长轨迹</div>
+    <div class="c-module-title <% if(!historyData.desc){ %>c-module-b-60<% } %>">成长轨迹</div>
     <% } %>
 
     <!--描述-->
     <% if(historyData.desc) { %>
-      <div class="c-module-desc"><%=historyData.desc%></div>
+    <div class="c-module-desc"><%=historyData.desc%></div>
     <% } %>
 
     <div class="history-view">
       <div class="tabs-wrap-view">
         <div class="tabs-view">
           <% historyData.tabs.forEach(function(tab, count){ %>
-            <div class="tab-cell fn-left <% if(count === 0){ %>active<% } %>"><%=tab.text%></div>
+          <div class="tab-cell fn-left <% if(count === 0){ %>active<% } %>"><%=tab.text%></div>
           <% }); %>
         </div>
       </div>
@@ -23,24 +23,24 @@
         <div class="title-wrap history-swiper-container">
           <div class="swiper-wrapper" style="background: #ffffff;overflow: hidden">
             <% historyData.content.forEach(function(item){ %>
-              <div class="item-cell swiper-slide">
-                <div class="item-left fn-left">
-                  <% item.data.forEach(function(itm, count){ %>
-                    <div class="item-left-cell <% if(count === 0){ %>item-left-cell-active<% } %>">
-                      <div class="date"><%=itm.date%></div>
-                      <div class="tit"><%=itm.title%></div>
-                      <div class="list-wrap">
-                        <div class="point"></div>
-                        <div class="line"></div>
-                      </div>
-                    </div>
-                    <div class="item-right" <% if(count === 0){ %>style="display: block"<% } %>>
-                      <div class="desc"><%=itm.desc%></div>
-                      <img class="img mar-t20" src="<%=itm.cover%>" alt="图"/>
-                    </div>
-                  <% }); %>
+            <div class="item-cell swiper-slide">
+              <div class="item-left fn-left">
+                <% item.data.forEach(function(itm, count){ %>
+                <div class="item-left-cell <% if(count === 0){ %>item-left-cell-active<% } %>">
+                  <div class="date"><%=itm.date%></div>
+                  <div class="tit"><%=itm.title%></div>
+                  <div class="list-wrap">
+                    <div class="point"></div>
+                    <div class="line"></div>
+                  </div>
                 </div>
+                <div class="item-right" <% if(count === 0){ %>style="display: block" <% } %>>
+                  <div class="desc"><%=itm.desc%></div>
+                  <img class="img mar-t20" src="<%=itm.cover%>" alt="图" />
+                </div>
+                <% }); %>
               </div>
+            </div>
             <% }); %>
           </div>
         </div>
@@ -50,7 +50,7 @@
 </div>
 <script>
   $(function() {
-    $('.item-left-cell').on('mouseenter',function (){
+    $('.item-left-cell').on('mouseenter', function() {
       $(this).siblings('.item-right').hide()
       $(this).next().show()
       $(this).siblings().removeClass('item-left-cell-active')

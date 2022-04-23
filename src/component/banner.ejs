@@ -1,21 +1,21 @@
 <!-- banner-wrap -->
 <div class="banner-wrap" style="<%=bannerData.style%>">
-    <% if(bannerData.useBg) { %>
-         <img class="bg-banner" src="<%=bannerData.bg%>" style="position: absolute;left:0;width: 1920px;top:0;height: 424px;" alt="智能引擎"/>
-    <% } %>
-    <div class="banner-content">
-        <div class="banner-txt-wrap fn-left">
-            <p class="title"><%= bannerData.title %></p>
-            <p class="txt"><%= bannerData.text %></p>
-            <% if(bannerData.button) { %>
-                <a class="button" href="<%=bannerData.href%>">查看详情</a>
-            <% } %>
-        </div>
-
-        <% if(bannerData.hasFigure) { %>
-            <div class="banner-figure-wrap fn-right">
-                <img src="<%=bannerData.figure%>" style="width: <%=bannerData.figureWidth%>px;height: <%=bannerData.figureHeight%>px"/>
-            </div>
-        <% } %>
+  <% if(bannerData.useBg) { %>
+  <img class="bg-banner" src="<%=bannerData.bg%>" style="position: absolute;left:0;width: 1920px;top:0;height: 424px;" alt="智能引擎" />
+  <% } %>
+  <div class="banner-content">
+    <div class="banner-txt-wrap fn-left">
+      <p class="title"><%= bannerData.title %></p>
+      <p class="txt"><%= bannerData.text %></p>
+      <% if(bannerData.button) { %>
+      <a class="button" href="<%=bannerData.href%>">查看详情</a>
+      <% } %>
     </div>
+
+    <% if(bannerData.hasFigure) { %>
+    <div class="banner-figure-wrap fn-right">
+      <img src="<%=bannerData.figure%>" style="width: <%=bannerData.figureWidth%>px;height: <%=bannerData.figureHeight%>px" />
+    </div>
+    <% } %>
+  </div>
 </div>

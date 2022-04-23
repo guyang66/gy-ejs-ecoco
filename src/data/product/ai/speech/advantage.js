@@ -7,8 +7,7 @@ import cover from '@/assets/images/product/ai/speech/advantage/main.jpg'
 const ad = {
   title: '产品优势',
   cover: cover,
-  content: [
-    {
+  content: [{
       "title": "发音器官",
       "desc": null,
       "text": "声音的高低。它决定于音波的频率，即发音体在每秒钟内振动的次数。振动的次数多，频率大，声音就高，反之就低",

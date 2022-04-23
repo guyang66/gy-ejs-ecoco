@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/colgi/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "线性变换",
       "text": "线性变换的特征向量是指在变换下方向不变，或者简单地乘以一个缩放因子的非零向",
       "icon": a1,

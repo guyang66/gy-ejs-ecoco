@@ -7,8 +7,7 @@ const data = {
   pointTitle2: '价值说明',
   style: 'black',
   bg: '#212121',
-  content: [
-    {
+  content: [{
       "name": "水果忍者集团",
       "desc": "助力12届水果忍者大师赛高光项目",
       "logo": p1,
@@ -48,4 +47,3 @@ const data = {
   ]
 }
 export default data
-

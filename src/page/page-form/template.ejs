@@ -7,12 +7,12 @@
         <div class="desc-view">留下你的联系方式，我们会尽快和你取得联系</div>
         <div class="info-view mar-t10">
           <div class="left-view fn-left">
-            <img class="cover" src="/assets/images/common/form.jpg" alt="合作"/>
+            <img class="cover" src="/assets/images/common/form.jpg" alt="合作" />
             <div class="logo-view">
               <% logoData.forEach(function(item){ %>
-                <div class="logo-cell fn-left">
-                  <img src="<%=item%>" alt="logo"/>
-                </div>
+              <div class="logo-cell fn-left">
+                <img src="<%=item%>" alt="logo" />
+              </div>
               <% }) %>
             </div>
           </div>
@@ -22,7 +22,7 @@
                 <div class="h-40">
                   <div class="input-title fn-left"><span class="start">*</span>您的手机号：</div>
                   <div class="normal-input-wrap fn-left">
-                    <input name="phone" placeholder="请输入您的手机号" autocomplete="off"/>
+                    <input name="phone" placeholder="请输入您的手机号" autocomplete="off" />
                   </div>
                 </div>
                 <div class="form-verify mar-l110">
@@ -36,7 +36,7 @@
                   <div class="input-title fn-left"><span class="start">*</span>验证码：</div>
                   <div class="code-input-wrap fn-right">
                     <div class="verify-code-wrap">
-                      <input name="code" placeholder="请输入验证码" autocomplete="off"/>
+                      <input name="code" placeholder="请输入验证码" autocomplete="off" />
                     </div>
                     <div class="send-button" second="-1">获取验证码</div>
                   </div>
@@ -50,7 +50,7 @@
                 <div class="h-40">
                   <div class="input-title fn-left"><span class="start">*</span>您的姓名：</div>
                   <div class="normal-input-wrap fn-right">
-                    <input name="name" placeholder="请输入您的姓名" autocomplete="off"/>
+                    <input name="name" placeholder="请输入您的姓名" autocomplete="off" />
                   </div>
                 </div>
                 <div class="form-verify mar-l110">
@@ -62,7 +62,7 @@
                 <div class="h-40">
                   <div class="input-title fn-left"><span class="start">*</span>您所在公司：</div>
                   <div class="normal-input-wrap fn-right">
-                    <input name="company" placeholder="请输入您的公司名称" autocomplete="off"/>
+                    <input name="company" placeholder="请输入您的公司名称" autocomplete="off" />
                   </div>
                 </div>
                 <div class="form-verify mar-l110">
@@ -74,7 +74,7 @@
                 <div class="h-40">
                   <div class="input-title fn-left"><span class="start">&nbsp;</span>您的职位：</div>
                   <div class="normal-input-wrap fn-right">
-                    <input name="position" placeholder="请输入您的职位" autocomplete="off"/>
+                    <input name="position" placeholder="请输入您的职位" autocomplete="off" />
                   </div>
 
                 </div>
@@ -87,9 +87,9 @@
                 <div class="h-40">
                   <div class="input-title fn-left"><span class="start">*</span>您的需求：</div>
                   <div class="normal-input-wrap cursor-pointer fn-right">
-                    <input class="cursor-pointer" name="need" placeholder="请选择具体需求" disabled="disabled" autocomplete="off"/>
+                    <input class="cursor-pointer" name="need" placeholder="请选择具体需求" disabled="disabled" autocomplete="off" />
                     <div class="select-icon">
-                      <img src="/assets/images/common/tabxiala.svg" alt="下拉"/>
+                      <img src="/assets/images/common/tabxiala.svg" alt="下拉" />
                     </div>
                     <div class="select-view">
                       <div class="select-cell">成为合作伙伴</div>
@@ -108,7 +108,7 @@
               <div class="form-cell-item">
                 <div>
                   <div class="declare-wrap cursor-pointer">
-                    <input name="declare" class="radio-box" type="checkbox" style="cursor: pointer"/>
+                    <input name="declare" class="radio-box" type="checkbox" style="cursor: pointer" />
                     <a class="declare-text declare-action" href="/service/declare.html" target="_blank">我已阅读并同意《隐私政策声明》</a>
                   </div>
                 </div>
@@ -130,33 +130,41 @@
   </div>
 </section>
 <script>
-
   // 解析url query 参数
-  function getQueryVariable(variable)
-  {
+  function getQueryVariable(variable) {
     let query = window.location.search.substring(1);
     let vars = query.split("&");
-    for (let i=0;i<vars.length;i++) {
+    for (let i = 0; i < vars.length; i++) {
       let pair = vars[i].split("=");
-      if(pair[0] === variable){return pair[1];}
+      if (pair[0] === variable) {
+        return pair[1];
+      }
     }
     return false;
   }
 
-  let entry  = getQueryVariable('entry')
-  if(entry === 'resource'){
+  let entry = getQueryVariable('entry')
+  if (entry === 'resource') {
     $('.form-main-wrap .form-view .title-view').text('资源下载')
     $('.form-main-wrap .form-view .desc-view').text('填写您的信息即可下载相关资源')
   }
 
   // 调整表单居中
   $(function() {
-    $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
-    $('.form-view').css({marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'})
+    $('.form-wrap').css({
+      minHeight: Math.max($(window).height(), 778) + 'px'
+    })
+    $('.form-view').css({
+      marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'
+    })
 
     $(window).resize(function() {
-      $('.form-wrap').css({minHeight: Math.max($(window).height(), 778) + 'px'})
-      $('.form-view').css({marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'})
+      $('.form-wrap').css({
+        minHeight: Math.max($(window).height(), 778) + 'px'
+      })
+      $('.form-view').css({
+        marginTop: Math.max((Math.max($(window).height(), 778) - 778 - 64) / 2, 24) + 'px'
+      })
     });
 
 
@@ -164,35 +172,35 @@
     let intervalInstance
     const TIME_INTERVAL = 59
 
-    function startInterval () {
-      intervalInstance = setInterval(function (){
+    function startInterval() {
+      intervalInstance = setInterval(function() {
         let num = $('.send-button').attr("second")
-        if(num < 0) {
+        if (num < 0) {
           $('.send-button').text(TIME_INTERVAL + 's之后重发')
-          $('.send-button').attr("second",TIME_INTERVAL)
+          $('.send-button').attr("second", TIME_INTERVAL)
           return
         }
         let number = $('.send-button').attr("second")
         $('.send-button').text((number - 1) + 's之后重发')
-        $('.send-button').attr("second",(number - 1))
+        $('.send-button').attr("second", (number - 1))
 
-        if(number <=1 ){
+        if (number <= 1) {
           $('.send-button').text("获取验证码")
-          $('.send-button').attr("second",-1)
+          $('.send-button').attr("second", -1)
           clearInterval(intervalInstance)
           intervalInstance = -1
         }
-      },1000)
+      }, 1000)
     }
-    $('.send-button').on('click',function (){
-      if(intervalInstance > 0){
+    $('.send-button').on('click', function() {
+      if (intervalInstance > 0) {
         return
       }
       let phone = $("input[name='phone']").val()
-      if(!(/^1[3456789]\d{9}$/.test(phone))){
+      if (!(/^1[3456789]\d{9}$/.test(phone))) {
         $.toast({
           loader: false,
-          text:'手机号码格式有误!',
+          text: '手机号码格式有误!',
           position: 'top-center',
           icon: 'error',
           hideAfter: 2000,
@@ -210,7 +218,7 @@
       if (mockResult.success) {
         $.toast({
           loader: false,
-          text:'验证码发送成功!',
+          text: '验证码发送成功!',
           position: 'top-center',
           allowToastClose: false,
           hideAfter: 3000,
@@ -220,7 +228,7 @@
       } else {
         $.toast({
           loader: false,
-          text:'验证码发送失败' + ((data && data.error) ? ('(' + data.error.message + ')') : '' ) + '!',
+          text: '验证码发送失败' + ((data && data.error) ? ('(' + data.error.message + ')') : '') + '!',
           position: 'top-center',
           icon: 'error',
           hideAfter: 2000,
@@ -233,11 +241,13 @@
 
     /**************  验证表单  **************/
     // 提交表单
-    $('.button-submit').on('click',function (){
+    $('.button-submit').on('click', function() {
       // 恢复初始状态
-      $('.form-verify div').css({height: '0'})
+      $('.form-verify div').css({
+        height: '0'
+      })
       let verifyResult = verifyFormInfo()
-      if(!verifyResult){
+      if (!verifyResult) {
         return
       }
 
@@ -258,7 +268,7 @@
       } else {
         $.toast({
           loader: false,
-          text:'' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '' ) + '!',
+          text: '' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '') + '!',
           position: 'top-center',
           icon: 'error',
           hideAfter: 2000,
@@ -268,7 +278,7 @@
     })
 
     // 校验输入值准确性
-    function verifyFormInfo () {
+    function verifyFormInfo() {
       let result = true
       let phone = $("input[name='phone']").val()
       let code = $("input[name='code']").val()
@@ -278,30 +288,45 @@
       let need = $("input[name='need']").val()
       let declare = $("input[name='declare']:checked").val()
 
-      if(!phone || phone === ''){
-        $('.form-verify .phone-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!phone || phone === '') {
+        $('.form-verify .phone-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         $('.form-verify .phone-input-error').text('请填写您的手机号')
         result = false
       }
 
-      if(!(/^1[3456789]\d{9}$/.test(phone))) {
-        $('.form-verify .phone-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!(/^1[3456789]\d{9}$/.test(phone))) {
+        $('.form-verify .phone-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         $('.form-verify .phone-input-error').text('手机号码格式错误')
         result = false
       }
 
-      if(!code || code === ''){
-        $('.form-verify .code-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!code || code === '') {
+        $('.form-verify .code-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         result = false
       }
 
-      if(!name || name === ''){
-        $('.form-verify .name-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!name || name === '') {
+        $('.form-verify .name-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         result = false
       }
 
-      if(!company || company === ''){
-        $('.form-verify .company-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!company || company === '') {
+        $('.form-verify .company-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         result = false
       }
 
@@ -320,13 +345,19 @@
       //   result = false
       // }
 
-      if(!need || need === ''){
-        $('.form-verify .need-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!need || need === '') {
+        $('.form-verify .need-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         result = false
       }
 
-      if(!(declare && declare === 'on')){
-        $('.form-verify .declare-input-error').css({height: '24px', transition: 'all 0.3s ease-in-out'})
+      if (!(declare && declare === 'on')) {
+        $('.form-verify .declare-input-error').css({
+          height: '24px',
+          transition: 'all 0.3s ease-in-out'
+        })
         result = false
       }
 
@@ -356,7 +387,7 @@
       if (mockResult.success) {
         $.toast({
           loader: false,
-          text:'提交成功！',
+          text: '提交成功！',
           allowToastClose: false,
           position: 'mid-center',
           icon: 'success'
@@ -365,7 +396,7 @@
       } else {
         $.toast({
           loader: false,
-          text:'' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '' ) + '!',
+          text: '' + ((mockResult && mockResult.error) ? ('(' + mockResult.error.message + ')') : '') + '!',
           position: 'top-center',
           icon: 'error',
           hideAfter: 2000,
@@ -376,8 +407,12 @@
 
     function nextStep() {
 
-      $.cookie("phone",$("input[name='phone']").val(),{expires: 1})
-      $.cookie("name",$("input[name='name']").val(),{expires: 1})
+      $.cookie("phone", $("input[name='phone']").val(), {
+        expires: 1
+      })
+      $.cookie("name", $("input[name='name']").val(), {
+        expires: 1
+      })
 
       $("input[name='phone']").val("")
       $("input[name='code']").val("")
@@ -387,7 +422,7 @@
       $("input[name='position']").val("")
 
       // 如果是资源中心跳转过来的，还需跳转回去
-      if(localStorage.getItem('pageRedirect')){
+      if (localStorage.getItem('pageRedirect')) {
         let str = localStorage.getItem('pageRedirect')
         let object = JSON.parse(str)
         localStorage.removeItem('pageRedirect')
@@ -402,20 +437,22 @@
     // 其他点击事件
     $('.select-view').hide()
 
-    $('.normal-input-wrap.cursor-pointer').on('click', function (e){
+    $('.normal-input-wrap.cursor-pointer').on('click', function(e) {
       e.stopPropagation();
       $('.select-view').show()
     })
 
-    $('.select-cell').on('click',function (e){
+    $('.select-cell').on('click', function(e) {
       e.stopPropagation();
       $("input[name='need']").val($(this).text())
       $(this).addClass('select-cell-active').siblings().removeClass('select-cell-active')
-      $('.need-input-error').css({height: 0})
+      $('.need-input-error').css({
+        height: 0
+      })
       $('.select-view').hide()
     })
 
-    $(document).on('click',function (){
+    $(document).on('click', function() {
       $('.select-view').hide()
     })
 

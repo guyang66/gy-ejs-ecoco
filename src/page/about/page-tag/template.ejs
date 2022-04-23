@@ -5,10 +5,10 @@
       <div class="tag-view">
         <div class="title-view">
           <% tagList.slice(0,1).forEach(function(tag){ %>
-            <div class="title-wrap">
-              <div class="tit"><%=tag.text%></div>
-              <div class="desc"><%=tag.desc%></div>
-            </div>
+          <div class="title-wrap">
+            <div class="tit"><%=tag.text%></div>
+            <div class="desc"><%=tag.desc%></div>
+          </div>
           <% }); %>
         </div>
 
@@ -17,46 +17,46 @@
             <div class="cell-view">
               <div class="tit"><span class="tag-title">数字化</span>相关文章</div>
               <% [1,2,3,4].forEach(function(v){ %>
-                <div class="cell-item mar-t20">这里是相关的文章cell...</div>
+              <div class="cell-item mar-t20">这里是相关的文章cell...</div>
               <% }); %>
             </div>
 
             <div class="cell-view mar-t20">
               <div class="tit"><span class="tag-title">数字化</span>相关资源</div>
               <% [1,2,3,4,5].forEach(function(v){ %>
-                <div class="cell-item mar-t20">这里是相关的资源cell...</div>
+              <div class="cell-item mar-t20">这里是相关的资源cell...</div>
               <% }); %>
             </div>
 
             <div class="cell-view mar-t20">
               <div class="tit"><span class="tag-title">数字化</span>相关案例</div>
               <% [1,2].forEach(function(v){ %>
-                <div class="cell-item mar-t20">这里是相关的案例cell...</div>
+              <div class="cell-item mar-t20">这里是相关的案例cell...</div>
               <% }); %>
             </div>
 
             <div class="cell-view mar-t20">
               <div class="tit"><span class="tag-title">数字化</span>相关其他的东东</div>
               <% [1,2,3].forEach(function(v){ %>
-                <div class="cell-item mar-t20">这里是相关的其他东东cell...</div>
+              <div class="cell-item mar-t20">这里是相关的其他东东cell...</div>
               <% }); %>
             </div>
 
           </div>
           <div class="right-view fn-right">
             <% recommendData.content.forEach(function(rec, index){ %>
-              <div class="fn-right side-view box-shadow-1 pad20 <% if(index > 0){ %>mar-t40<% } %>">
-                <div class="title mar-b10"><%=rec.title%></div>
-                <% rec.data.forEach(function(item){ %>
-                <a class="product-item mar-t10 mar-b10" href="<%=item.href%>">
-                  <% if(item.icon) { %>
-                  <img class="icon-img fn-left" src="<%=item.icon%>" alt="<%=item.alt%>"/>
-                  <% } %>
-                  <div class="title <% if(item.icon){ %>mar-l48<% } %>"><%=item.name%></div>
-                  <img class="arrow-img" src="/assets/images/common/xiangyou-white.svg"/>
-                </a>
-                <% }); %>
-              </div>
+            <div class="fn-right side-view box-shadow-1 pad20 <% if(index > 0){ %>mar-t40<% } %>">
+              <div class="title mar-b10"><%=rec.title%></div>
+              <% rec.data.forEach(function(item){ %>
+              <a class="product-item mar-t10 mar-b10" href="<%=item.href%>">
+                <% if(item.icon) { %>
+                <img class="icon-img fn-left" src="<%=item.icon%>" alt="<%=item.alt%>" />
+                <% } %>
+                <div class="title <% if(item.icon){ %>mar-l48<% } %>"><%=item.name%></div>
+                <img class="arrow-img" src="/assets/images/common/xiangyou-white.svg" />
+              </a>
+              <% }); %>
+            </div>
             <% }); %>
           </div>
         </div>
@@ -64,5 +64,5 @@
       </div>
     </div>
   </div>
-    <%=formView%>
+  <%=formView%>
 </section>

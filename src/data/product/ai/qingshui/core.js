@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/qingshui/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "剪辑",
       "text": "丁·麦克米兰，一个有家庭的男人，在忠诚于同一家公司15年后突然发现自己被解雇了",
       "icon": a1,

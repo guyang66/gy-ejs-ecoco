@@ -19,31 +19,51 @@ import recommendData from "@/data/solution/game/recommend";
 const tabsData = [{
   name: '行业痛点',
   anchor: 'pain',
-},{
+}, {
   name: '方案架构',
   anchor: 'framework',
-},{
+}, {
   name: '方案优势',
   anchor: 'advantage',
-},{
+}, {
   name: '应用场景',
   anchor: 'apply',
-},{
+}, {
   name: '客户案例',
   anchor: 'case',
-},{
+}, {
   name: '相关推荐',
   anchor: 'recommend',
 }];
 
 const formView = form()
-const painView = pain({advantageData: painData})
-const advantageView = advantage({advantageData})
-const frameworkView = framework({frameworkData})
-const applyView = apply({applyData})
-const caseView = cases({caseData})
-const recommendView = recommend({recommendData})
-const container = template({formView, painView, frameworkView,advantageView, applyView,recommendView, caseView});
+const painView = pain({
+  advantageData: painData
+})
+const advantageView = advantage({
+  advantageData
+})
+const frameworkView = framework({
+  frameworkData
+})
+const applyView = apply({
+  applyData
+})
+const caseView = cases({
+  caseData
+})
+const recommendView = recommend({
+  recommendData
+})
+const container = template({
+  formView,
+  painView,
+  frameworkView,
+  advantageView,
+  applyView,
+  recommendView,
+  caseView
+});
 export default htmlRender({
   key: 'game',
   navKey: 'solution', // 用于导航栏item active判断，即属于哪一个导航栏模块

@@ -1,56 +1,56 @@
 <div class="activity-hot-wrap">
   <div class="activity-hot-content">
     <% if(hotData.title) { %>
-      <div class="c-module-title <% if(!hotData.desc){ %>c-module-b-60<% } %>"><%=hotData.title%></div>
+    <div class="c-module-title <% if(!hotData.desc){ %>c-module-b-60<% } %>"><%=hotData.title%></div>
     <% } else { %>
-      <div class="c-module-title <% if(!hotData.desc){ %>c-module-b-60<% } %>">热门活动</div>
+    <div class="c-module-title <% if(!hotData.desc){ %>c-module-b-60<% } %>">热门活动</div>
     <% } %>
 
     <!--描述-->
     <% if(hotData.desc) { %>
-      <div class="c-module-desc"><%=hotData.desc%></div>
+    <div class="c-module-desc"><%=hotData.desc%></div>
     <% } %>
 
     <div class="hot-view">
       <% hotData.content.forEach(function(item,index){ %>
-        <div class="hot-cell mar-b40 fn-left <% if((index + 1) % 3 !==0 ){ %>mar-r40<% } %>">
-          <div class="cover-wrap">
-            <img src="<%=item.cover%>" alt="活动"/>
-          </div>
-          <div class="info-wrap">
-            <div class="title"><%=item.title%></div>
-            <% if(item.date && item.date !== '') { %>
-              <div class="date">开始时间：<%=item.date%></div>
-            <% } %>
-            <% if(item.location && item.location !== '') { %>
-              <div class="location">活动地点：<%=item.location%></div>
-            <% } %>
-            <div class="desc"><%=item.desc%></div>
-
-            <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
-          </div>
-
-          <% if(item.type && item.type === 'new') { %>
-            <div class="tag-wrap">
-              <div class="mask mask-red">
-              </div>
-              <div class="reg-wrap">
-                <div class="text">NEW</div>
-              </div>
-            </div>
-          <% } %>
-
-          <% if(item.type && item.type === 'vip') { %>
-            <div class="tag-wrap">
-              <div class="mask mask-black">
-              </div>
-              <div class="reg-wrap">
-                <div class="text">VIP</div>
-              </div>
-            </div>
-          <% } %>
-
+      <div class="hot-cell mar-b40 fn-left <% if((index + 1) % 3 !==0 ){ %>mar-r40<% } %>">
+        <div class="cover-wrap">
+          <img src="<%=item.cover%>" alt="活动" />
         </div>
+        <div class="info-wrap">
+          <div class="title"><%=item.title%></div>
+          <% if(item.date && item.date !== '') { %>
+          <div class="date">开始时间：<%=item.date%></div>
+          <% } %>
+          <% if(item.location && item.location !== '') { %>
+          <div class="location">活动地点：<%=item.location%></div>
+          <% } %>
+          <div class="desc"><%=item.desc%></div>
+
+          <a class="btn" href="<%=item.href%>" target="_blank"><%=item.btnText%></a>
+        </div>
+
+        <% if(item.type && item.type === 'new') { %>
+        <div class="tag-wrap">
+          <div class="mask mask-red">
+          </div>
+          <div class="reg-wrap">
+            <div class="text">NEW</div>
+          </div>
+        </div>
+        <% } %>
+
+        <% if(item.type && item.type === 'vip') { %>
+        <div class="tag-wrap">
+          <div class="mask mask-black">
+          </div>
+          <div class="reg-wrap">
+            <div class="text">VIP</div>
+          </div>
+        </div>
+        <% } %>
+
+      </div>
       <% }); %>
     </div>
   </div>

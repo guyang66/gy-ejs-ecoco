@@ -19,23 +19,22 @@ import a18 from '@/assets/images/about/joinus/env/a18.jpeg'
 
 const data = {
   desc: '环境美好，依山傍水，园区生活气息等你来打卡',
-  content: [
-    {
+  content: [{
       index: 0,
       data: [
-        a1,a2,a3,a4,a5
+        a1, a2, a3, a4, a5
       ]
     },
     {
       index: 0,
       data: [
-        a6,a7,a8,a9,a10,a11
+        a6, a7, a8, a9, a10, a11
       ]
     },
     {
       index: 0,
       data: [
-        a12,a13,a14,a15,a16,a17,a18
+        a12, a13, a14, a15, a16, a17, a18
       ]
     }
   ]

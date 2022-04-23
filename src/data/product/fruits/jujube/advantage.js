@@ -7,8 +7,7 @@ import a6 from '@/assets/images/product/fruits/jujube/advantage/a6.svg'
 
 const ad = {
   title: '产品特性',
-  content: [
-    {
+  content: [{
       "title": "鲜嫩可口",
       "desc": null,
       "text": "成熟的水蜜桃略呈球形，表面裹着一层细小的绒毛（这说明了毛桃和水蜜桃是一种的），青里泛白，白里透红。一个桃子一般重一百克到二百克，大的重三百多克",

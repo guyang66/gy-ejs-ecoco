@@ -5,8 +5,7 @@ import a4 from '@/assets/images/banner/index/4.png'
 import a5 from '@/assets/images/banner/index/5.png'
 
 const data = {
-  content: [
-    {
+  content: [{
       "title": "yy科技官网",
       "key": "banner_yy",
       "desc": ["本网站所有图片素材均来自阿里巴巴矢量图标库或者淘宝、某图网购买，仅做个人学习使用。如有侵权请联系13588295865@163.com删除，欢迎大家一起学习进步"],

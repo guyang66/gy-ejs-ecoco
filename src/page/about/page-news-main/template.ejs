@@ -7,9 +7,9 @@
           <div class="tabs-view" key="all">
             <div class="text-wrap">
               <% categoryData.forEach(function(cate, index){ %>
-                <div class="tab-cell fn-left <% if(index === 0){ %>active<% } %>" key="<%=cate.key%>">
-                  <%=cate.text%>
-                </div>
+              <div class="tab-cell fn-left <% if(index === 0){ %>active<% } %>" key="<%=cate.key%>">
+                <%=cate.text%>
+              </div>
               <% }); %>
             </div>
             <div class="tab-line"></div>
@@ -17,30 +17,30 @@
           <div class="article-view">
             <div id="article-list">
               <% articleList.slice(0,10).forEach(function(news){ %>
-                <div class="article-item">
-                  <div class="tit">
-                    <a href="<%=news.href%>"><%=news.title%></a>
-                    <% if(news.tag && news.tag.length > 0) { %>
-                      <% news.tag.forEach(function(tag){ %>
-                       <span class="tag"><%=tag%></span>
-                      <% }); %>
-                    <% } %>
-                  </div>
-                  <div class="wrap">
-                    <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻"/>
-                    <div class="fn-left author mar-l10"><%=news.author%></div>
-                    <div class="fn-left line"></div>
-                    <div class="fn-left date"><%=news.date%></div>
-                  </div>
-                  <% if(news.cover) { %>
-                    <div class="cover-wrap">
-                      <img alt="cover" src="<%=news.cover%>"/>
-                    </div>
+              <div class="article-item">
+                <div class="tit">
+                  <a href="<%=news.href%>"><%=news.title%></a>
+                  <% if(news.tag && news.tag.length > 0) { %>
+                  <% news.tag.forEach(function(tag){ %>
+                  <span class="tag"><%=tag%></span>
+                  <% }); %>
                   <% } %>
-                  <div class="desc <% if(news.cover){ %>w-small<% } %>"><%=news.summary%></div>
-                  <a class="btn" href="<%=news.href%>">查看详情 > </a>
-                  <div class="seq-line"></div>
                 </div>
+                <div class="wrap">
+                  <img class="icon fn-left" src="/assets/images/common/xinwen.svg" alt="新闻" />
+                  <div class="fn-left author mar-l10"><%=news.author%></div>
+                  <div class="fn-left line"></div>
+                  <div class="fn-left date"><%=news.date%></div>
+                </div>
+                <% if(news.cover) { %>
+                <div class="cover-wrap">
+                  <img alt="cover" src="<%=news.cover%>" />
+                </div>
+                <% } %>
+                <div class="desc <% if(news.cover){ %>w-small<% } %>"><%=news.summary%></div>
+                <a class="btn" href="<%=news.href%>">查看详情 > </a>
+                <div class="seq-line"></div>
+              </div>
               <% }); %>
             </div>
             <div id="pages"></div>
@@ -56,37 +56,37 @@
             <div class="search-text">
               热门搜索：
               <% searchHot.forEach(function(search){ %>
-                <span class="search-item"><%=search%></span>
+              <span class="search-item"><%=search%></span>
               <% }); %>
             </div>
           </div>
           <div class="tag-view">
             <div class="tit">热门标签</div>
             <% tagList.forEach(function(tag){ %>
-              <a class="tag-item" href="/about/tag.html?tag=<%=tag.key%>"><%=tag.text%></a>
+            <a class="tag-item" href="/about/tag.html?tag=<%=tag.key%>"><%=tag.text%></a>
             <% }); %>
           </div>
           <div class="news-link-view">
             <div class="tit">热门文章</div>
             <% articleList.filter(function (v) { return !!v.isHot}).forEach(function(news){ %>
-              <a class="news-item-wrap"  href="<%=news.href%>">
-                <div class="point fn-left"></div>
-                <div class="news-item fn-left"><%=news.title%></div>
-              </a>
+            <a class="news-item-wrap" href="<%=news.href%>">
+              <div class="point fn-left"></div>
+              <div class="news-item fn-left"><%=news.title%></div>
+            </a>
             <% }); %>
           </div>
           <div class="news-link-view mar-b40">
             <div class="tit">最新文章</div>
             <% articleList.slice(0,5).forEach(function(news){ %>
-              <a class="news-item-wrap"  href="<%=news.href%>">
-                <div class="point fn-left"></div>
-                <div class="news-item fn-left"><%=news.title%></div>
-              </a>
+            <a class="news-item-wrap" href="<%=news.href%>">
+              <div class="point fn-left"></div>
+              <div class="news-item fn-left"><%=news.title%></div>
+            </a>
             <% }); %>
           </div>
         </div>
       </div>
     </div>
   </div>
-    <%=formView%>
+  <%=formView%>
 </section>

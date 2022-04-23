@@ -5,7 +5,9 @@ import logoData from "@/data/form/logo";
 
 const tabsData = [];
 
-const container = template({logoData});
+const container = template({
+  logoData
+});
 export default htmlRender({
   key: 'form',
   hasBanner: false,

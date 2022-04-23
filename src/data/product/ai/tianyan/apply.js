@@ -12,8 +12,7 @@ import p6 from '@/assets/images/product/logo/ai/qiyeyun.svg'
 
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "炼金魔女",
       "height": 728,
@@ -27,8 +26,7 @@ const data = {
         "每晚杀人后可以查验一名玩家的具体身份，第一晚以后查验到纯白之女时，纯白之女死亡",
         "蚀时狼妃每晚可以率先睁眼，选择场上任意一位玩家封锁到时间的夹缝中",
       ],
-      "products": [
-        {
+      "products": [{
           "name": "AI算法",
           "icon": p1,
           "key": "algorithm",
@@ -67,15 +65,13 @@ const data = {
         "暗恋者属于民牌。首夜选择暗恋任意一名角色，暗恋对象不知道被暗恋。暗恋者胜利目标始终与暗恋对象相同",
         "无特殊技能，和普通平民一致"
       ],
-      "products": [
-        {
-          "name": "菩提",
-          "icon": p4,
-          "key": "puti",
-          "alt": "puti",
-          "href": "/product/ai/puti.html"
-        },
-      ]
+      "products": [{
+        "name": "菩提",
+        "icon": p4,
+        "key": "puti",
+        "alt": "puti",
+        "href": "/product/ai/puti.html"
+      }, ]
     },
     {
       "image": a4,
@@ -91,15 +87,13 @@ const data = {
         "每晚在其他狼人行动结束后，可以再单独袭击一名玩家",
         "每天晚上可以查看一位玩家的身份是好人还是狼人"
       ],
-      "products": [
-        {
-          "name": "智能无人机",
-          "icon": p5,
-          "key": "uav",
-          "alt": "uav",
-          "href": "/product/ai/uav.html"
-        },
-      ]
+      "products": [{
+        "name": "智能无人机",
+        "icon": p5,
+        "key": "uav",
+        "alt": "uav",
+        "href": "/product/ai/uav.html"
+      }, ]
     },
     {
       "image": a4,
@@ -117,15 +111,13 @@ const data = {
         "从第二晚开始，每晚都可以狩猎一个人。若是好人，次日猎魔人出局",
         "守墓人可以得知上一个白天被放逐的玩家是好人或是狼人"
       ],
-      "products": [
-        {
-          "name": "企业云",
-          "icon": p6,
-          "key": "enterprise",
-          "alt": "enterprise",
-          "href": "/product/ai/enterprise.html"
-        },
-      ]
+      "products": [{
+        "name": "企业云",
+        "icon": p6,
+        "key": "enterprise",
+        "alt": "enterprise",
+        "href": "/product/ai/enterprise.html"
+      }, ]
     }
   ]
 }

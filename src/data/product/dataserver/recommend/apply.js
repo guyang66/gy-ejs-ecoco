@@ -6,8 +6,7 @@ import p2 from '@/assets/images/product/logo/dataserver/shishikaifa.svg'
 import p3 from '@/assets/images/product/logo/dataserver/shenjingwangluo.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "智能推荐马桶",
       "height": 728,
@@ -22,15 +21,13 @@ const data = {
         "2002年，世界青年锦标赛，主场作战的博尔特以20秒61夺得了200米金牌",
         "2004年，博尔特成为职业运动员。这一年，在百慕大举行的加勒比共同田"
       ],
-      "products": [
-        {
-          "name": "神经网络",
-          "icon": p3,
-          "key": "sjwl",
-          "alt": "神经网络",
-          "href": "/product/dataserver/neuralnetwork.html"
-        }
-      ]
+      "products": [{
+        "name": "神经网络",
+        "icon": p3,
+        "key": "sjwl",
+        "alt": "神经网络",
+        "href": "/product/dataserver/neuralnetwork.html"
+      }]
     },
     {
       "image": a2,
@@ -47,8 +44,7 @@ const data = {
         "自然界存在的糖以及核酸、淀粉、纤维素中的糖单元，都为D-构型",
         "2也实现了他们在世锦赛上的接力3连冠"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "实时开发",
           "icon": p2,
           "key": "sskf",

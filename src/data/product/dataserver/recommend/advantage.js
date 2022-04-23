@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/recommend/advantage/a4.svg'
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "千里大追捕",
       "desc": null,
       "text": "黑熊大怪窃取了金丝猴π博士提炼出的一块珍贵的黑基因晶体",

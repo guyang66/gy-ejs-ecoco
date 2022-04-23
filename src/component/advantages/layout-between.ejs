@@ -1,31 +1,31 @@
-<div class="advantage-layout-between-wrap" <% if(advantageData.bg){ %>style="background: <%=advantageData.bg%>"<% } %> >
-    <div class="advantage-content">
-        <!--标题-->
-        <% if(advantageData.title) { %>
-            <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>"><%=advantageData.title%></div>
-        <% } else { %>
-            <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>">产品优势</div>
-        <% } %>
+<div class="advantage-layout-between-wrap" <% if(advantageData.bg){ %>style="background: <%=advantageData.bg%>" <% }%> >
+  <div class="advantage-content">
+    <!--标题-->
+    <% if(advantageData.title) { %>
+    <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>"><%=advantageData.title%></div>
+    <% } else { %>
+    <div class="c-module-title <% if(!advantageData.desc){ %>c-module-b-60<% } %>">产品优势</div>
+    <% } %>
 
-        <!--描述-->
-        <% if(advantageData.desc) { %>
-            <div class="c-module-desc"><%=advantageData.desc%></div>
-        <% } %>
+    <!--描述-->
+    <% if(advantageData.desc) { %>
+    <div class="c-module-desc"><%=advantageData.desc%></div>
+    <% } %>
 
-        <!--内容-->
-        <div class="advantage-view c-module-b-60">
-            <div class="middle-view fn-left">
-                <img src="<%=advantageData.cover%>"/>
-                <div class="left-t"></div>
-                <div class="left-d"></div>
-            </div>
-            <% advantageData.content.forEach(function(item, index){ %>
-                <div class="info-wrap info-wrap-<%=index%>" <% if(item.cellHeight){ %>style="height: <%=item.cellHeight%>px"<% } %>>
-                    <img class="fn-left" src="<%=item.icon%>"/>
-                    <div class="tit main-content-title"><%=item.title%></div>
-                    <div class="txt main-content-text"><%=item.text%></div>
-                </div>
-            <% }); %>
-        </div>
+    <!--内容-->
+    <div class="advantage-view c-module-b-60">
+      <div class="middle-view fn-left">
+        <img src="<%=advantageData.cover%>" />
+        <div class="left-t"></div>
+        <div class="left-d"></div>
+      </div>
+      <% advantageData.content.forEach(function(item, index){ %>
+      <div class="info-wrap info-wrap-<%=index%>" <% if(item.cellHeight){ %>style="height: <%=item.cellHeight%>px" <% } %>>
+        <img class="fn-left" src="<%=item.icon%>" />
+        <div class="tit main-content-title"><%=item.title%></div>
+        <div class="txt main-content-text"><%=item.text%></div>
+      </div>
+      <% }); %>
     </div>
+  </div>
 </div>

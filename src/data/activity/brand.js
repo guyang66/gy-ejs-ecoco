@@ -12,8 +12,7 @@ import b10 from '@/assets/images/activity/brand/b10.jpg'
 const data = {
   title: '品牌活动',
   desc: '品牌宣传，带你打卡各个城市，边走边学',
-  content:[
-    {
+  content: [{
       index: 0,
       cover: b1,
       title: '城市大数据服务，带你走向胜利，无情宣发，剑指出路',

@@ -6,8 +6,7 @@ import a4 from '@/assets/images/product/dataserver/offline-algorithm/advantage/a
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "黄巾起义",
       "desc": null,
       "text": "东汉末年，皇帝昏聩，宦官专权，民不聊生",

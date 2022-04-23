@@ -10,8 +10,7 @@ import p5 from '@/assets/images/product/logo/ai/wurenji.svg'
 import p6 from '@/assets/images/product/logo/ai/yuyin.svg'
 import p7 from '@/assets/images/product/logo/ai/qingshui.svg'
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "推荐系统算法",
       "height": 1024,
@@ -31,8 +30,7 @@ const data = {
         "其基本思想非常易于理解，在日常生活中，人们往往会利用好朋友的推荐来进行一些选择",
         "于协同过滤的推荐系统可以说是从用户的角度来进行相应推荐的"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "AI语音",
           "icon": p6,
           "key": "yuyin",
@@ -84,15 +82,13 @@ const data = {
         "贪心算法可解决的问题通常大部分都有如下的特性",
         "至今借助于各种理论提出了数以千计的分割算法，而且这方面的研究仍然在积极地进行着"
       ],
-      "products": [
-        {
-          "name": "数影",
-          "icon": p3,
-          "key": "shuying",
-          "alt": "数影",
-          "href": "/product/ai/shuying.html"
-        }
-      ]
+      "products": [{
+        "name": "数影",
+        "icon": p3,
+        "key": "shuying",
+        "alt": "数影",
+        "href": "/product/ai/shuying.html"
+      }]
     },
     {
       "image": a3,
@@ -114,15 +110,13 @@ const data = {
         "第一步是由一个产生函数从当前解产生一个位于解空间的新解",
         "模拟退火算法与初始值无关，算法求得的解与初始解状态S(是算法迭代的起点)无关"
       ],
-      "products": [
-        {
-          "name": "企业云",
-          "icon": p2,
-          "key": "enterprise",
-          "alt": "企业云",
-          "href": "/product/ai/enterprise.html"
-        }
-      ]
+      "products": [{
+        "name": "企业云",
+        "icon": p2,
+        "key": "enterprise",
+        "alt": "企业云",
+        "href": "/product/ai/enterprise.html"
+      }]
     },
   ]
 }

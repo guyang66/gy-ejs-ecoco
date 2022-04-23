@@ -15,8 +15,7 @@ import p13 from '@/assets/images/product/logo/vegetables/wandou.svg'
 
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "拉倒生炒",
       "height": 728,
@@ -30,8 +29,7 @@ const data = {
         "大嘴花（Chomper）又名食人花，是益智策略类塔防御战游戏《植物大战僵尸》系列中的一种植物道具，能够一口吞掉僵尸，但咀嚼时很容易受到攻击利",
         "在前面放一个坚果或高坚果或再在前面放一个大嘴花或在大嘴花上放一个南瓜罩",
       ],
-      "products": [
-        {
+      "products": [{
           "name": "白菜",
           "icon": p1,
           "key": "baicai",
@@ -83,8 +81,7 @@ const data = {
         "雷云形成过程中，由于雷云中电荷的聚积",
         "且雷电能量巨大，可瞬间造成被击物折损、坍塌等物理损坏和电击损"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "大葱",
           "icon": p3,
           "key": "onion",
@@ -115,8 +112,7 @@ const data = {
         "滚筒能以4000/s的攻击力压毁植物，但会被尖锐植物扎破",
         "由僵尸推着滚筒出现，视为两个目标"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "茄子",
           "icon": p10,
           "key": "eggplant",

@@ -6,7 +6,10 @@ import detailData from "@/data/service/declare/main";
 const tabsData = [];
 
 const formView = form()
-const container = template({formView, detailData});
+const container = template({
+  formView,
+  detailData
+});
 export default htmlRender({
   key: 'declare',
   navKey: 'service', // 用于导航栏item active判断，即属于哪一个导航栏模块

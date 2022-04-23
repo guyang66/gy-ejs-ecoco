@@ -5,8 +5,7 @@ import p1 from '@/assets/images/product/logo/ai/qiyeyun.svg'
 import p2 from '@/assets/images/product/logo/ai/suanfa.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "数字化改革",
       "height": 728,
@@ -21,15 +20,13 @@ const data = {
         "技术需要解决的难题，同时也是数字信号的基本问题",
         "就其容量而言，对集成电路来说，也是难于处理的"
       ],
-      "products": [
-        {
-          "name": "企业云",
-          "icon": p1,
-          "key": "enterprise",
-          "alt": "企业云",
-          "href": "/product/ai/enterprise.html"
-        },
-      ]
+      "products": [{
+        "name": "企业云",
+        "icon": p1,
+        "key": "enterprise",
+        "alt": "企业云",
+        "href": "/product/ai/enterprise.html"
+      }, ]
     },
     {
       "image": a2,
@@ -46,15 +43,13 @@ const data = {
         "在基础设施即服务云模式中，由于授权给用户使用的虚拟资源可以被用户完全控制视",
         "加密，数据无法处理；不加密，数据的安全性和隐私性得不到保证．"
       ],
-      "products": [
-        {
-          "name": "AI算法",
-          "icon": p2,
-          "key": "algorithm",
-          "alt": "AI算法",
-          "href": "/product/ai/algorithm.html"
-        }
-      ]
+      "products": [{
+        "name": "AI算法",
+        "icon": p2,
+        "key": "algorithm",
+        "alt": "AI算法",
+        "href": "/product/ai/algorithm.html"
+      }]
     }
   ]
 }

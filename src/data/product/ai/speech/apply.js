@@ -8,8 +8,7 @@ import p4 from '@/assets/images/product/logo/ai/tianyan.svg'
 
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "QJ语音",
       "height": 728,
@@ -24,8 +23,7 @@ const data = {
         "这可以采用乒乓RAM的方法来完成。这种方式决定了实现FFT运算的最大时间",
         "其接收时间为4096个数据周期,这样FFT的最大运算时间就是4096个数据周期"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "AI算法",
           "icon": p3,
           "key": "algorithm",
@@ -63,15 +61,13 @@ const data = {
         "根据旋转因子的对称性和周期性，在利用ROM存储旋转因子时",
         "实际上只需做三个复数乘法运算，即只须计算BWk1、CWk2和DWk3的值即可"
       ],
-      "products": [
-        {
-          "name": "天眼杀",
-          "icon": p4,
-          "key": "tianyan",
-          "alt": "天眼杀",
-          "href": "/product/ai/tianyan.html"
-        }
-      ]
+      "products": [{
+        "name": "天眼杀",
+        "icon": p4,
+        "key": "tianyan",
+        "alt": "天眼杀",
+        "href": "/product/ai/tianyan.html"
+      }]
     }
   ]
 }

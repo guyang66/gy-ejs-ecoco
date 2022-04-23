@@ -10,8 +10,7 @@ import a9 from '@/assets/images/index/solution/a9.svg'
 
 const data = {
   title: '全域场景下的智能解决方案',
-  content: [
-    {
+  content: [{
       name: '教育0',
       title: '教育行业解决方案',
       desc: '对于问题的实际分析，决定了解决方案的针对性和有效性，如果解决方案本身有欠缺，那么可能在执行中导致更多的问题，达不到预期的效果',

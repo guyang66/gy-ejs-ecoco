@@ -7,8 +7,7 @@ import a5 from '@/assets/images/product/ai/tianyan/core/c5.svg'
 const core = {
   title: '核心功能',
   bg: '#F4F4F4',
-  content: [
-    {
+  content: [{
       "title": "经济商业类",
       "text": "植《时代》第3期，（P37-43）在《环球经济》一栏中刊载了题为《中国的全新盛会》（China’s new party）的报道多",
       "icon": a1,

@@ -8,8 +8,7 @@ import a6 from '@/assets/images/product/vegetables/cabbage/advantage/a6.svg'
 const ad = {
   title: '产品优势',
   desc: '',
-  content: [
-    {
+  content: [{
       "title": "富含肌氨酸",
       "desc": null,
       "text": "牛肉中的肌氨酸含量比任何其它食品都高，它对增长肌肉、增强力量特别有效。在进行训练的头几秒钟里，肌氨酸是肌肉燃料之源",

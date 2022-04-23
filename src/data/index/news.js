@@ -4,8 +4,7 @@ import a3 from '@/assets/images/news/14/cover.png'
 import a4 from '@/assets/images/news/13/cover.png'
 
 const data = {
-  content: [
-    {
+  content: [{
       cover: a1,
       title: '《绣春刀》2014年8月7日于中国内地上映',
       href: '/about/news/16.html',

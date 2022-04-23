@@ -6,8 +6,7 @@ import p2 from '@/assets/images/product/logo/dataserver/shishikaifa.svg'
 import p3 from '@/assets/images/product/logo/dataserver/shenjingwangluo.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "离线分类算法",
       "height": 728,
@@ -22,8 +21,7 @@ const data = {
         "东吴自孙权死后，内乱不止。吴主孙亮被独揽大权的孙琳所废",
         "却因为国力衰微和奸臣陷害，只能退避沓中屯田"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "实时开发",
           "icon": p2,
           "key": "sskf",
@@ -54,15 +52,13 @@ const data = {
         "自然界存在的糖以及核酸、淀粉、纤维素中的糖单元，都为D-构型",
         "20世纪60年代的“反应停悲剧”就是一个突出的例子"
       ],
-      "products": [
-        {
-          "name": "神经网络",
-          "icon": p3,
-          "key": "sjwl",
-          "alt": "神经网络",
-          "href": "/product/dataserver/neuralnetwork.html"
-        }
-      ]
+      "products": [{
+        "name": "神经网络",
+        "icon": p3,
+        "key": "sjwl",
+        "alt": "神经网络",
+        "href": "/product/dataserver/neuralnetwork.html"
+      }]
     }
   ]
 }

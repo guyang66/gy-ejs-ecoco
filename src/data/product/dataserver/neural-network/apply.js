@@ -8,8 +8,7 @@ import p4 from '@/assets/images/product/logo/dataserver/tuijiansuanfa.svg'
 import p5 from '@/assets/images/product/logo/dataserver/julei.svg'
 
 const data = {
-  content: [
-    {
+  content: [{
       "image": a1,
       "alt": "三突触",
       "height": 728,
@@ -23,8 +22,7 @@ const data = {
         "热带雨林气候（也称赤道雨林气候）的特点是：全年高温多雨",
         "而我国的西北地区年降水量多在400毫米以下"
       ],
-      "products": [
-        {
+      "products": [{
           "name": "实时开发",
           "icon": p2,
           "key": "sskf",
@@ -76,15 +74,13 @@ const data = {
         "其形成原因有：夏季阳光直射点在北半球，中国各地获得的太阳光热普",
         "加之北方因纬度较高，白昼又比较长，获得的光热相对增多，缩短了与南方的气温差距，因而全国普遍高温",
       ],
-      "products": [
-        {
-          "name": "聚类算法",
-          "icon": p5,
-          "key": "cluster",
-          "alt": "聚类算法",
-          "href": "/product/dataserver/cluster.html"
-        },
-      ]
+      "products": [{
+        "name": "聚类算法",
+        "icon": p5,
+        "key": "cluster",
+        "alt": "聚类算法",
+        "href": "/product/dataserver/cluster.html"
+      }, ]
     }
   ]
 }
