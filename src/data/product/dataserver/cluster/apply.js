@@ -1,5 +1,5 @@
 import a1 from "@/assets/images/product/dataserver/cluster/apply/a1.png";
-import a2 from "@/assets/images/product/dataserver/cluster/apply/a2.jpg";
+import a2 from "@/assets/images/product/dataserver/cluster/apply/a2.png";
 
 import p3 from "@/assets/images/product/logo/dataserver/tuijiansuanfa.svg";
 import p2 from "@/assets/images/product/logo/dataserver/lixiankaifa.svg";

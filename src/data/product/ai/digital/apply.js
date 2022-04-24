@@ -1,5 +1,5 @@
 import a1 from "@/assets/images/product/ai/digital/apply/a1.jpg";
-import a2 from "@/assets/images/product/ai/digital/apply/a2.jpg";
+import a2 from "@/assets/images/product/ai/digital/apply/a2.png";
 
 import p1 from "@/assets/images/product/logo/ai/qiyeyun.svg";
 import p2 from "@/assets/images/product/logo/ai/suanfa.svg";

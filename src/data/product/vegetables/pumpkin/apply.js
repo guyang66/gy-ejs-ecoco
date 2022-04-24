@@ -1,21 +1,10 @@
-import a1 from "@/assets/images/product/vegetables/pumpkin/apply/a1.jpg";
+import a1 from "@/assets/images/product/vegetables/pumpkin/apply/a1.png";
 import a2 from "@/assets/images/product/vegetables/pumpkin/apply/a2.png";
 
 import p1 from "@/assets/images/product/logo/vegetables/baicai.svg";
-import p2 from "@/assets/images/product/logo/vegetables/caitai.svg";
-import p3 from "@/assets/images/product/logo/vegetables/dacong.svg";
-import p4 from "@/assets/images/product/logo/vegetables/hongluobu.svg";
-import p5 from "@/assets/images/product/logo/vegetables/huanggua.svg";
 import p6 from "@/assets/images/product/logo/vegetables/kugua.svg";
-import p7 from "@/assets/images/product/logo/vegetables/lajiao.svg";
-import p8 from "@/assets/images/product/logo/vegetables/nangua.svg";
-import p9 from "@/assets/images/product/logo/vegetables/ou.svg";
 import p10 from "@/assets/images/product/logo/vegetables/qiezi.svg";
 import p11 from "@/assets/images/product/logo/vegetables/qincai.svg";
-import p12 from "@/assets/images/product/logo/vegetables/shengjiang.svg";
-import p13 from "@/assets/images/product/logo/vegetables/wandou.svg";
-import p14 from "@/assets/images/product/logo/vegetables/xiancai.svg";
-import p15 from "@/assets/images/product/logo/vegetables/xianggu.svg";
 
 const data = {
   content: [

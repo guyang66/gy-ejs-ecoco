@@ -1,5 +1,5 @@
-import a1 from "@/assets/images/product/vegetables/mushroom/apply/a1.jpg";
-import a2 from "@/assets/images/product/vegetables/mushroom/apply/a2.png";
+import a1 from "@/assets/images/product/vegetables/mushroom/apply/a1.png";
+import a2 from "@/assets/images/product/vegetables/mushroom/apply/a2.jpg";
 
 import p3 from "@/assets/images/product/logo/vegetables/dacong.svg";
 import p4 from "@/assets/images/product/logo/vegetables/hongluobu.svg";
