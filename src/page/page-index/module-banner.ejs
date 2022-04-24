@@ -2,13 +2,13 @@
   <div class="swiper-container-banner">
     <div class="swiper-wrapper">
       <% bannerData.content.forEach(function(banner){ %>
-      <div class="swiper-slide swiper-no-swiping">
+      <div class="swiper-slide swiper-no-swiping" type="<%=banner.type%>" >
         <div class="full-banner-wrap" style="background-image: url('<%=banner.backgroundImg%>')">
           <div class="banner-content-wrap">
-            <div class="main-title <% if(banner.type === 'black'){ %>banner-black<% } %>"><%=banner.title%></div>
+            <div class="main-title <% if(banner.type === 'white'){ %>banner-black<% } %>"><%=banner.title%></div>
             <div class="desc-item-wrap">
               <% banner.desc.forEach(function(desc){ %>
-              <div class="main-desc <% if(banner.type === 'black'){ %>banner-black<% } %>"><%=desc%></div>
+              <div class="main-desc <% if(banner.type === 'white'){ %>banner-black<% } %>"><%=desc%></div>
               <% }) %>
             </div>
             <% if(banner.button){ %>
@@ -54,7 +54,22 @@
       autoplayDisableOnInteraction: false,
       watchSlidesVisibility: true,
       onSlideChangeStart: function(swiper) {
-        // do something to change css
+        // swiper 左右各有一个复制的cell ，用于过渡
+        if(swiper.activeIndex === 4){
+          $(".header-content .logo .v-img").attr('src','/assets/images/logo/blue.svg')
+          $(".header-content .tel .tel-img").attr('src','/assets/images/phone/phone-blue.svg')
+          $(".header-content .tel .tel-t").addClass('tel-t-white')
+          $(".header-content .header-nav a").addClass('t-white')
+          $(".header-content .header-nav .empty-span").addClass('t-white-t')
+          $(".header-bg").css('background', '#FFFFFF')
+        } else {
+          $(".header-content .logo .v-img").attr('src','/assets/images/logo/white.svg')
+          $(".header-content .tel .tel-img").attr('src','/assets/images/phone/phone-white.svg')
+          $(".header-content .tel .tel-t").removeClass('tel-t-white')
+          $(".header-content .header-nav a").removeClass('t-white')
+          $(".header-content .header-nav .empty-span").removeClass('t-white-t')
+          $(".header-bg").css('background', '#181616')
+        }
       }
     });
 

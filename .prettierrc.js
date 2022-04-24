@@ -1,5 +1,7 @@
 module.exports = {
   tabWidth: 2,
-  singleQuote: true,
+  singleQuote: false,
+  // quoteProps: "preserve",
+  // parser: "json",
   bracketSpacing: true
 }

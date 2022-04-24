@@ -1,12 +1,12 @@
 <!-- header-wrap -->
 <header class="header-wrap header-absolute">
-  <div class="header-bg" <% if(!hasBanner){ %>style="opacity: 1" <% } %>></div>
+  <div class="header-bg" <% if(!hasBanner){ %>style="opacity: 1" <% } %> ></div>
   <div class="header-content">
     <a class="logo fn-left" href="/">
       <img class="v-img" src="<%= logo %>" alt="" />
     </a>
     <ul class="header-nav fn-left">
-      <% menus.forEach(function(nav, index){ %>
+      <% menus.forEach(function(nav){ %>
       <li class="header-item <% if(key === nav.name || navKey === nav.name){ %>active<% } %>">
         <!-- 没有二级导航栏的就直接跳转 -->
         <% if(nav.hasHref){%>
@@ -50,7 +50,7 @@
               </div>
               <% }); %>
               <% } else if (childNav.layout === 'normal-cell'){ %>
-              <% childNav.content.forEach(function(contentItem, count){ %>
+              <% childNav.content.forEach(function(contentItem){ %>
               <div class="content-item-wrap-cell mar-b20">
                 <div class="content-item-title"><%=contentItem.title%></div>
                 <div class="content-item-desc"><%=contentItem.desc%></div>
@@ -105,7 +105,10 @@
       </li>
       <% }); %>
     </ul>
-    <a class="tel fn-right" href="tel:111-111-1111"><img src="<%= telicon %>" alt="自定义alt" />888-888-8888</a>
+    <a class="tel fn-right" href="tel:888-888-8888">
+      <img class="tel-img" src="<%= telicon %>" alt="联系我们" />
+      <span class="tel-t">888-888-8888</span>
+    </a>
   </div>
 </header>
 <script>
