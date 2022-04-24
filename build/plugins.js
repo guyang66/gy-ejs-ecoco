@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // html解析
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // 清除历史文件
@@ -72,6 +73,10 @@ if (process.env.NODE_ENV === 'development') {
         {
           from: settings.pathStaticCopy[0],
           to: settings.pathStaticCopy[1]
+        },
+        {
+          from: path.resolve(__dirname, '../seo/sitemap.xml'),
+          to: path.resolve(__dirname, '../dist/')
         }
       ]
     })

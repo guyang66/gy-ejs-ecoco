@@ -5,7 +5,7 @@
       <div class="swiper-slide swiper-no-swiping" type="<%=banner.type%>" >
         <div class="full-banner-wrap" style="background-image: url('<%=banner.backgroundImg%>')">
           <div class="banner-content-wrap">
-            <div class="main-title <% if(banner.type === 'white'){ %>banner-black<% } %>"><%=banner.title%></div>
+            <h1 class="main-title <% if(banner.type === 'white'){ %>banner-black<% } %>"><%=banner.title%></h1>
             <div class="desc-item-wrap">
               <% banner.desc.forEach(function(desc){ %>
               <div class="main-desc <% if(banner.type === 'white'){ %>banner-black<% } %>"><%=desc%></div>
@@ -33,7 +33,7 @@
     <div class="column-content">
       <% columnData.content.forEach(function(columnItem){ %>
       <a class="column-cell fn-left" href="<%=columnItem.href%>" <% if(columnItem.target){ %>target="<%=columnItem.target%>" <% } %>>
-        <span class="tit main-content-title color-white"><%=columnItem.title%></span>
+        <h2 class="tit main-content-title color-white"><%=columnItem.title%></h2>
         <div class="desc color-white"><%=columnItem.text%></div>
       </a>
       <% }); %>

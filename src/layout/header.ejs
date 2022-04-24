@@ -3,7 +3,7 @@
   <div class="header-bg" <% if(!hasBanner){ %>style="opacity: 1" <% } %> ></div>
   <div class="header-content">
     <a class="logo fn-left" href="/">
-      <img class="v-img" src="<%= logo %>" alt="" />
+      <img class="v-img" src="<%= logo %>" alt="yy科技" />
     </a>
     <ul class="header-nav fn-left">
       <% menus.forEach(function(nav){ %>
@@ -61,7 +61,7 @@
               <% childNav.content.forEach(function(contentItem, idx){ %>
               <div class="content-item-wrap-cell-n-4 <% if((idx + 1) % 4 !== 0 ){ %>mar-r20<% } %> <% if(idx <  childNav.content.length - 1 - 4 ){ %>mar-b20<% } %>">
                 <div class="icon-img-wrap">
-                  <img src="<%=contentItem.icon%>" />
+                  <img src="<%=contentItem.icon%>" alt="yy科技" />
                 </div>
                 <div class="content-item-title"><%=contentItem.title%></div>
                 <div class="content-item-desc"><%=contentItem.desc%></div>
@@ -78,8 +78,8 @@
           <div class="m-view-wrap pad20">
             <% nav.children.forEach(function(childNav){ %>
             <a class="m-n-4-cell-wrap fn-left" href="<%=childNav.href%>">
-              <img class="icon icon-active" src="<%=childNav.iconH%>" style="display: none" />
-              <img class="icon icon-normal" src="<%=childNav.iconN%>" style="display: block" />
+              <img class="icon icon-active" src="<%=childNav.iconH%>" style="display: none" alt="yy科技" />
+              <img class="icon icon-normal" src="<%=childNav.iconN%>" style="display: block" alt="yy科技"  />
               <div class="title"><%=childNav.name%></div>
               <div class="desc"><%=childNav.desc%></div>
             </a>
