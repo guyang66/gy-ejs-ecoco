@@ -1,12 +1,12 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import logoData from "@/data/form/logo";
+import form from '@/component/form';
+import logoData from '@/data/form/logo';
 
 const tabsData = [];
 
 const container = template({
-  logoData
+  logoData,
 });
 export default htmlRender({
   key: 'form',

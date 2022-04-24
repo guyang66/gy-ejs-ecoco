@@ -1,59 +1,65 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import advantage from '@/component/advantages/layout-between'
-import core from '@/component/core/1-4-black-white'
-import apply from '@/component/apply/layout_tabs'
-import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-3'
+import form from '@/component/form';
+import advantage from '@/component/advantages/layout-between';
+import core from '@/component/core/1-4-black-white';
+import apply from '@/component/apply/layout_tabs';
+import history from '@/component/history/layout-slide';
+import cases from '@/component/case/layout-3';
 
-import bannerData from "@/data/product/ai/shuying/banner";
-import advantageData from "@/data/product/ai/shuying/advantage";
-import coreData from "@/data/product/ai/shuying/core";
-import applyData from "@/data/product/ai/shuying/apply";
-import historyData from "@/data/product/ai/shuying/history";
-import caseData from "@/data/product/ai/shuying/case";
+import bannerData from '@/data/product/ai/shuying/banner';
+import advantageData from '@/data/product/ai/shuying/advantage';
+import coreData from '@/data/product/ai/shuying/core';
+import applyData from '@/data/product/ai/shuying/apply';
+import historyData from '@/data/product/ai/shuying/history';
+import caseData from '@/data/product/ai/shuying/case';
 
-const tabsData = [{
-  name: '产品优势',
-  anchor: 'advantage',
-}, {
-  name: '核心功能',
-  anchor: 'core',
-}, {
-  name: '应用场景',
-  anchor: 'apply',
-}, {
-  name: '客户案例',
-  anchor: 'case',
-}, {
-  name: '产品动态',
-  anchor: 'history',
-}];
+const tabsData = [
+  {
+    name: '产品优势',
+    anchor: 'advantage',
+  },
+  {
+    name: '核心功能',
+    anchor: 'core',
+  },
+  {
+    name: '应用场景',
+    anchor: 'apply',
+  },
+  {
+    name: '客户案例',
+    anchor: 'case',
+  },
+  {
+    name: '产品动态',
+    anchor: 'history',
+  },
+];
 
-const formView = form()
+const formView = form();
 const advantageView = advantage({
-  advantageData
-})
+  advantageData,
+});
 const coreView = core({
-  coreData
-})
+  coreData,
+});
 const applyView = apply({
-  applyData
-})
+  applyData,
+});
 const historyView = history({
-  historyData
-})
+  historyData,
+});
 const caseView = cases({
-  caseData
-})
+  caseData,
+});
 const container = template({
   formView,
   advantageView,
   coreView,
   applyView,
   historyView,
-  caseView
+  caseView,
 });
 export default htmlRender({
   key: 'shuying',

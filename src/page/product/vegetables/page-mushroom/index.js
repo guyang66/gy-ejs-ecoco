@@ -1,59 +1,65 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import advantage from '@/component/advantages/n-3-b'
-import core from '@/component/core/n-3'
-import apply from '@/component/apply/layout_tabs'
-import history from '@/component/history/layout-slide'
-import cases from '@/component/case/layout-6'
+import form from '@/component/form';
+import advantage from '@/component/advantages/n-3-b';
+import core from '@/component/core/n-3';
+import apply from '@/component/apply/layout_tabs';
+import history from '@/component/history/layout-slide';
+import cases from '@/component/case/layout-6';
 
-import bannerData from "@/data/product/vegetables/mushroom/banner";
-import advantageData from "@/data/product/vegetables/mushroom/advantage";
-import coreData from "@/data/product/vegetables/mushroom/core";
-import applyData from "@/data/product/vegetables/mushroom/apply";
-import historyData from "@/data/product/vegetables/mushroom/history";
-import caseData from "@/data/product/vegetables/mushroom/case";
+import bannerData from '@/data/product/vegetables/mushroom/banner';
+import advantageData from '@/data/product/vegetables/mushroom/advantage';
+import coreData from '@/data/product/vegetables/mushroom/core';
+import applyData from '@/data/product/vegetables/mushroom/apply';
+import historyData from '@/data/product/vegetables/mushroom/history';
+import caseData from '@/data/product/vegetables/mushroom/case';
 
-const tabsData = [{
-  name: '产品优势',
-  anchor: 'advantage',
-}, {
-  name: '核心功能',
-  anchor: 'core',
-}, {
-  name: '应用场景',
-  anchor: 'apply',
-}, {
-  name: '客户案例',
-  anchor: 'case',
-}, {
-  name: '产品动态',
-  anchor: 'history',
-}];
+const tabsData = [
+  {
+    name: '产品优势',
+    anchor: 'advantage',
+  },
+  {
+    name: '核心功能',
+    anchor: 'core',
+  },
+  {
+    name: '应用场景',
+    anchor: 'apply',
+  },
+  {
+    name: '客户案例',
+    anchor: 'case',
+  },
+  {
+    name: '产品动态',
+    anchor: 'history',
+  },
+];
 
-const formView = form()
+const formView = form();
 const advantageView = advantage({
-  advantageData
-})
+  advantageData,
+});
 const coreView = core({
-  coreData
-})
+  coreData,
+});
 const applyView = apply({
-  applyData
-})
+  applyData,
+});
 const historyView = history({
-  historyData
-})
+  historyData,
+});
 const caseView = cases({
-  caseData
-})
+  caseData,
+});
 const container = template({
   formView,
   advantageView,
   coreView,
   applyView,
   historyView,
-  caseView
+  caseView,
 });
 export default htmlRender({
   key: 'mushroom',

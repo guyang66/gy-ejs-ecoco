@@ -1,4 +1,4 @@
 import './style';
-import '@/styles/article.styl'
+import '@/styles/article.styl';
 
 import Swiper from 'swiper';

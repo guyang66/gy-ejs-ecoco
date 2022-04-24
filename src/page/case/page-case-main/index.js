@@ -1,17 +1,17 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import bannerData from "@/data/case/banner";
-import tagData from "@/data/case/tag";
-import casesData from "@/data/case/cases";
+import form from '@/component/form';
+import bannerData from '@/data/case/banner';
+import tagData from '@/data/case/tag';
+import casesData from '@/data/case/cases';
 
 const tabsData = [];
 
-const formView = form()
+const formView = form();
 const container = template({
   formView,
   tagData,
-  casesData
+  casesData,
 });
 export default htmlRender({
   key: 'case',

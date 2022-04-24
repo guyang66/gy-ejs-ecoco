@@ -1,42 +1,46 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import env from './module.env'
-import welfare from './module.welfare'
-import resume from './module.resume'
+import form from '@/component/form';
+import env from './module.env';
+import welfare from './module.welfare';
+import resume from './module.resume';
 
-import bannerData from "@/data/about/joinus/banner";
-import envData from "@/data/about/joinus/env";
-import welfareData from "@/data/about/joinus/welfare";
-import resumeData from "@/data/about/joinus/resume";
+import bannerData from '@/data/about/joinus/banner';
+import envData from '@/data/about/joinus/env';
+import welfareData from '@/data/about/joinus/welfare';
+import resumeData from '@/data/about/joinus/resume';
 
-const tabsData = [{
-  name: '工作环境',
-  anchor: 'env',
-}, {
-  name: '福利待遇',
-  anchor: 'welfare',
-}, {
-  name: '简历投递',
-  anchor: 'resume',
-}];
+const tabsData = [
+  {
+    name: '工作环境',
+    anchor: 'env',
+  },
+  {
+    name: '福利待遇',
+    anchor: 'welfare',
+  },
+  {
+    name: '简历投递',
+    anchor: 'resume',
+  },
+];
 
-const formView = form()
+const formView = form();
 const envView = env({
-  envData
-})
+  envData,
+});
 const welfareView = welfare({
-  welfareData
-})
+  welfareData,
+});
 const resumeView = resume({
-  resumeData
-})
+  resumeData,
+});
 
 const container = template({
   formView,
   envView,
   welfareView,
-  resumeView
+  resumeView,
 });
 export default htmlRender({
   key: 'joinus',

@@ -1,21 +1,21 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
+import form from '@/component/form';
 
-import bannerData from "@/data/about/news/banner";
-import categoryData from "@/data/about/news/category";
-import articleList from "@/data/about/news/list";
-import tagList from "@/data/about/tag/tag";
-import searchHot from "@/data/about/news/search";
+import bannerData from '@/data/about/news/banner';
+import categoryData from '@/data/about/news/category';
+import articleList from '@/data/about/news/list';
+import tagList from '@/data/about/tag/tag';
+import searchHot from '@/data/about/news/search';
 
 const tabsData = [];
-const formView = form()
+const formView = form();
 const container = template({
   formView,
   categoryData,
   articleList,
   tagList,
-  searchHot
+  searchHot,
 });
 export default htmlRender({
   key: 'news',

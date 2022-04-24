@@ -2,39 +2,28 @@ import layout from './layout';
 import header from './header';
 import footer from './footer';
 
-import sideMenu from '@/component/sideMenus'
+import sideMenu from '@/component/sideMenus';
 import banner from '@/component/banner';
 import tabs from '@/component/tabs';
-import menus from '@/data/menu'
+import menus from '@/data/menu';
 
 import configs from '@/config';
-import {
-  arrayToObj
-} from '@/utils/utils';
+import { arrayToObj } from '@/utils/utils';
 
-import footerData from '@/data/menu/footer'
-const {
-  tdkSettings,
-  router,
-  name,
-  logo,
-  telicon
-} = configs;
-const routerMaps = arrayToObj(router, 'key');
+import footerData from '@/data/menu/footer';
+const { tdkSettings, logo, telicon } = configs;
 const tdkMaps = arrayToObj(tdkSettings, 'name');
 
 const getPageTitle = (key, type) => {
-  // return routerMaps[key] ? `${routerMaps[key].title}` : 'yy科技'
-
   if (key === 'newsDetail') {
     // 新闻详情页没法匹配到，打包的时候再插入
-    return ''
+    return '';
   }
   if (tdkMaps[key]) {
-    return `${tdkMaps[key][type]}`
+    return `${tdkMaps[key][type]}`;
   }
-  return `${tdkMaps['default'][type]}`
-}
+  return `${tdkMaps['default'][type]}`;
+};
 
 /**
  *
@@ -44,7 +33,6 @@ const getPageTitle = (key, type) => {
  * @param {bannerData} 页面主banner图内容
  * @param {tabsData} 页面内tabs页锚点标题
  */
-
 
 const htmlRender = ({
   key,
@@ -65,26 +53,12 @@ const htmlRender = ({
     title: getPageTitle(key, 'title'),
     keywords: getPageTitle(key, 'keywords'),
     description: getPageTitle(key, 'description'),
-    header: header({
-      key,
-      navKey,
-      logo,
-      menus,
-      telicon,
-      hasBanner
-    }),
-    banner: hasBanner ? banner({
-      bannerData
-    }) : '',
-    tabs: tabs({
-      tabsData
-    }),
+    header: header({key, navKey, logo, menus, telicon, hasBanner}),
+    banner: hasBanner ? banner({bannerData,}) : '',
+    tabs: tabs({tabsData,}),
     container: container || '',
-    footer: hasFooter ? footer({
-      footerData,
-      logo
-    }) : ''
+    footer: hasFooter ? footer({footerData, logo,}) : '',
   });
-}
+};
 
 export default htmlRender;

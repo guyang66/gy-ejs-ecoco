@@ -1,42 +1,46 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import favorite from "./module.favorate.ejs";
-import brand from "./module.brand.ejs";
-import hot from "./module.hot.ejs";
+import form from '@/component/form';
+import favorite from './module.favorate.ejs';
+import brand from './module.brand.ejs';
+import hot from './module.hot.ejs';
 
-import bannerData from "@/data/activity/banner";
-import favoriteData from "@/data/activity/favorite";
-import brandData from "@/data/activity/brand";
-import hotData from "@/data/activity/hot";
+import bannerData from '@/data/activity/banner';
+import favoriteData from '@/data/activity/favorite';
+import brandData from '@/data/activity/brand';
+import hotData from '@/data/activity/hot';
 
-const tabsData = [{
-  name: '产品活动',
-  anchor: 'favorite',
-}, {
-  name: '热门活动',
-  anchor: 'hot',
-}, {
-  name: '品牌活动',
-  anchor: 'brand',
-}];
+const tabsData = [
+  {
+    name: '产品活动',
+    anchor: 'favorite',
+  },
+  {
+    name: '热门活动',
+    anchor: 'hot',
+  },
+  {
+    name: '品牌活动',
+    anchor: 'brand',
+  },
+];
 
-const formView = form()
+const formView = form();
 const favoriteView = favorite({
-  favoriteData
-})
+  favoriteData,
+});
 const brandView = brand({
-  brandData
-})
+  brandData,
+});
 const hotView = hot({
-  hotData
-})
+  hotData,
+});
 
 const container = template({
   formView,
   favoriteView,
   brandView,
-  hotView
+  hotView,
 });
 export default htmlRender({
   key: 'activity',

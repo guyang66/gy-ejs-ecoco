@@ -1,60 +1,67 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import us from './module.us'
-import team from './module.team'
-import value from './module.value'
-import life from './module.life'
-import history from './module.history'
-import prize from './module.prize'
+import form from '@/component/form';
+import us from './module.us';
+import team from './module.team';
+import value from './module.value';
+import life from './module.life';
+import history from './module.history';
+import prize from './module.prize';
 
-import bannerData from "@/data/about/company/banner";
-import usData from "@/data/about/company/us";
-import teamData from "@/data/about/company/team";
-import valueData from "@/data/about/company/value";
-import lifeData from "@/data/about/company/life";
-import historyData from "@/data/about/company/history";
-import prizeData from "@/data/about/company/prize";
+import bannerData from '@/data/about/company/banner';
+import usData from '@/data/about/company/us';
+import teamData from '@/data/about/company/team';
+import valueData from '@/data/about/company/value';
+import lifeData from '@/data/about/company/life';
+import historyData from '@/data/about/company/history';
+import prizeData from '@/data/about/company/prize';
 
-const tabsData = [{
-  name: '关于我们',
-  anchor: 'us',
-}, {
-  name: '创始团队',
-  anchor: 'team',
-}, {
-  name: '公司文化',
-  anchor: 'value',
-}, {
-  name: '生活节奏',
-  anchor: 'life',
-}, {
-  name: '成长轨迹',
-  anchor: 'history',
-}, {
-  name: '荣誉资质',
-  anchor: 'prize',
-}];
+const tabsData = [
+  {
+    name: '关于我们',
+    anchor: 'us',
+  },
+  {
+    name: '创始团队',
+    anchor: 'team',
+  },
+  {
+    name: '公司文化',
+    anchor: 'value',
+  },
+  {
+    name: '生活节奏',
+    anchor: 'life',
+  },
+  {
+    name: '成长轨迹',
+    anchor: 'history',
+  },
+  {
+    name: '荣誉资质',
+    anchor: 'prize',
+  },
+];
 
-const formView = form()
+const formView = form();
 const usView = us({
-  usData
-})
+  usData,
+});
 const teamView = team({
-  teamData
-})
+  teamData,
+});
 const valueView = value({
-  valueData
-})
+  valueData,
+});
 const lifeView = life({
-  lifeData
-})
+  lifeData,
+});
 const historyView = history({
-  historyData
-})
+  historyData,
+});
 const prizeView = prize({
-  prizeData
-})
+  prizeData,
+});
 
 const container = template({
   formView,
@@ -63,7 +70,7 @@ const container = template({
   valueView,
   lifeView,
   historyView,
-  prizeView
+  prizeView,
 });
 export default htmlRender({
   key: 'company',

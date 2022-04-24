@@ -12,5 +12,5 @@ export default {
   logo,
   tdkSettings,
   telicon,
-  router
-}
+  router,
+};

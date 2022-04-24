@@ -1,16 +1,16 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import detailData from "@/data/case/example";
-import recommendData from "@/data/case/recommend";
+import form from '@/component/form';
+import detailData from '@/data/case/example';
+import recommendData from '@/data/case/recommend';
 
 const tabsData = [];
 
-const formView = form()
+const formView = form();
 const container = template({
   formView,
   detailData,
-  recommendData
+  recommendData,
 });
 export default htmlRender({
   key: 'case-detail',

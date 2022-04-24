@@ -1,60 +1,67 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import pain from '@/component/advantages/layout-n-4'
-import framework from './module-framework'
-import advantage from '@/component/advantages/n-3-a'
-import apply from '@/component/apply/layout_float'
-import cases from '@/component/case/layout-n-2'
-import recommend from '@/component/recommend/layout-3'
+import form from '@/component/form';
+import pain from '@/component/advantages/layout-n-4';
+import framework from './module-framework';
+import advantage from '@/component/advantages/n-3-a';
+import apply from '@/component/apply/layout_float';
+import cases from '@/component/case/layout-n-2';
+import recommend from '@/component/recommend/layout-3';
 
-import bannerData from "@/data/solution/game/banner";
-import painData from "@/data/solution/game/pain";
-import advantageData from "@/data/solution/game/advantage";
-import frameworkData from "@/data/solution/game/framework";
-import applyData from "@/data/solution/game/value";
-import caseData from "@/data/solution/game/case";
-import recommendData from "@/data/solution/game/recommend";
+import bannerData from '@/data/solution/game/banner';
+import painData from '@/data/solution/game/pain';
+import advantageData from '@/data/solution/game/advantage';
+import frameworkData from '@/data/solution/game/framework';
+import applyData from '@/data/solution/game/value';
+import caseData from '@/data/solution/game/case';
+import recommendData from '@/data/solution/game/recommend';
 
-const tabsData = [{
-  name: '行业痛点',
-  anchor: 'pain',
-}, {
-  name: '方案架构',
-  anchor: 'framework',
-}, {
-  name: '方案优势',
-  anchor: 'advantage',
-}, {
-  name: '应用场景',
-  anchor: 'apply',
-}, {
-  name: '客户案例',
-  anchor: 'case',
-}, {
-  name: '相关推荐',
-  anchor: 'recommend',
-}];
+const tabsData = [
+  {
+    name: '行业痛点',
+    anchor: 'pain',
+  },
+  {
+    name: '方案架构',
+    anchor: 'framework',
+  },
+  {
+    name: '方案优势',
+    anchor: 'advantage',
+  },
+  {
+    name: '应用场景',
+    anchor: 'apply',
+  },
+  {
+    name: '客户案例',
+    anchor: 'case',
+  },
+  {
+    name: '相关推荐',
+    anchor: 'recommend',
+  },
+];
 
-const formView = form()
+const formView = form();
 const painView = pain({
-  advantageData: painData
-})
+  advantageData: painData,
+});
 const advantageView = advantage({
-  advantageData
-})
+  advantageData,
+});
 const frameworkView = framework({
-  frameworkData
-})
+  frameworkData,
+});
 const applyView = apply({
-  applyData
-})
+  applyData,
+});
 const caseView = cases({
-  caseData
-})
+  caseData,
+});
 const recommendView = recommend({
-  recommendData
-})
+  recommendData,
+});
 const container = template({
   formView,
   painView,
@@ -62,7 +69,7 @@ const container = template({
   advantageView,
   applyView,
   recommendView,
-  caseView
+  caseView,
 });
 export default htmlRender({
   key: 'game',

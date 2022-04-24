@@ -1,20 +1,20 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import articleList from "@/data/about/news/list";
-import resourceList from "@/data/service/resource/download";
-import tagList from "@/data/about/tag/tag";
-import recommendData from "@/data/case/recommend";
+import form from '@/component/form';
+import articleList from '@/data/about/news/list';
+import resourceList from '@/data/service/resource/download';
+import tagList from '@/data/about/tag/tag';
+import recommendData from '@/data/case/recommend';
 
 const tabsData = [];
 
-const formView = form()
+const formView = form();
 const container = template({
   formView,
   articleList,
   resourceList,
   tagList,
-  recommendData
+  recommendData,
 });
 export default htmlRender({
   key: 'tag',

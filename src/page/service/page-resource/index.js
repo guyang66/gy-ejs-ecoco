@@ -1,18 +1,18 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
+import form from '@/component/form';
 
-import bannerData from "@/data/service/resource/banner";
-import newsData from "@/data/service/resource/news";
-import downloadData from "@/data/service/resource/download";
+import bannerData from '@/data/service/resource/banner';
+import newsData from '@/data/service/resource/news';
+import downloadData from '@/data/service/resource/download';
 
 const tabsData = [];
-const formView = form()
+const formView = form();
 
 const container = template({
   formView,
   newsData,
-  downloadData
+  downloadData,
 });
 export default htmlRender({
   key: 'resource',

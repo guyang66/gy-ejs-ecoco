@@ -5,4 +5,4 @@ export const arrayToObj = (arrs = [], key = 'id') => {
     params[item[key]] = item;
   }
   return params;
-}
+};

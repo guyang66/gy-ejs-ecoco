@@ -1,14 +1,14 @@
 import template from './template';
 import htmlRender from '@/layout/index';
-import form from '@/component/form'
-import detailData from "@/data/activity/example";
+import form from '@/component/form';
+import detailData from '@/data/activity/example';
 
 const tabsData = [];
 
-const formView = form()
+const formView = form();
 const container = template({
   formView,
-  detailData
+  detailData,
 });
 export default htmlRender({
   key: 'activity-detail',

@@ -10,7 +10,7 @@
     "tar": "",
     "eslint": "eslint . --ext .js",
     "eslint-fix": "eslint --fix --ext .js ./src/data",
-    "beauty": "prettier --write --config .prettierrc.js ./src/data"
+    "beauty": "prettier --write --config .prettierrc.js ./src"
   },
   "devDependencies": {
     "@angelventura/eslint-plugin-ejs": "^0.2.0",
