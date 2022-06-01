@@ -13,4 +13,5 @@ scp source.tag.gz root@121.40.230.6:/opt/workspace
 11、缺点就是js散落在各处
 12、seo相关优化跟上
 13、img 打包
-14、data到底用什么格式，json？js？commonjs 风格还是es6风格
+14、data到底用什么格式，json？js？commonjs 风格还是es6风格，这点是项目思考，review
+15、对于这个项目的juery加载更多cell

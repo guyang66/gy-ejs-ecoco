@@ -149,7 +149,7 @@ module.exports = [
   },
 
   // 产品
-  // 产品-水果
+  // 产品-蔬菜
   {
     key: 'radish',
     name: 'product/vegetables/radish',
