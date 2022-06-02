@@ -17,7 +17,6 @@ $(function () {
     $('.tag-view .title-wrap .tit').text(target.text);
     $('.tag-view .title-wrap .desc').text(target.desc);
     $('.tag-view').find('.tag-title').text(target.text);
-    // todo: ...
   }
 });
 

@@ -2,6 +2,7 @@
   "name": "gy-ejs-ecoco",
   "version": "1.0.0",
   "description": "yy科技官网",
+  "license": "MIT",
   "scripts": {
     "start": "./script/filter/filter_start.sh",
     "run": "cross-env NODE_ENV=development webpack serve --config build/webpack.config.js",
