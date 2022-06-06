@@ -16,12 +16,11 @@
 重构项目：kcoco，由这个项目（ecoco）重构而来，仍然沿用了ejs模板和stylus预处理，官网扩展为服务端渲染并提供服务端支持。架构方面：
 前端采用ejs + jqeury + gulp，服务端采用：koa2 + mongodb
 
-时光穿梭： [nodejs-kcoco](https://github.com/guyang66/gy-nodejs-kcoco)
+项目源码地址： [nodejs-kcoco](https://github.com/guyang66/gy-nodejs-kcoco)
 
 管理后台：rcoco，这个项目是kcoco的双子项目，是官网内容管理后台（类似crm），采用react + webpack + stylus 架构的单页面应用
 
-时光穿梭：[react-rcoco](https://github.com/guyang66/gy-react-rcoco)
-
+项目源码地址：[react-rcoco](https://github.com/guyang66/gy-react-rcoco)
 
 首页预览图:
 
@@ -94,7 +93,9 @@ webpack5 + ejs + stylus + jquery
         ├─ utils.js               工具函数
     ├─ ...
 ```
-
+其它说明：
+1、src/page目录下以page-开头的则为页面，否则为"路由"
+2、src/assets目录下的图片均用tinypng压缩到最小
 ***
 
 ### UI排版/设计
@@ -102,11 +103,13 @@ webpack5 + ejs + stylus + jquery
 阿里巴巴矢量素材网，如果有侵权，请联系（13588295865@163.com）我删除。
 1、header高度：64px
 2、标准尺寸：1280px
-3、二级导航栏高度：50pxta
+3、二级导航栏高度：50px
     首页banner 高度535px
     内页banner 高度370 或者 370 + 64（导航栏高度，导航栏半透明） = 434px
+    banner宽度（pc端）：1920px
 4、首页无二级导航栏（tab导航），一级导航栏fix固定顶部，内页有二级导航栏，一级导航栏不fix固定顶部，二级导航栏固定顶部。
 5、主体色：#4169E1(好像也没咋用，颜色搭配太乱了，色系搭配还是得让专业的UI去敲定吧)
+6、模块标题字体：28px #181818，常规：14px #444444
 
 ***
 
@@ -180,9 +183,16 @@ sudo ./nginx -s reload
 
 ```
 访问{服务端ip}:4001/index.html即可预览
-5、如果对错误页面、404页面、重定向、缓存之类的额外需求，请自行查询nginx相关资料，自信配置。
+5、如果对错误页面、404页面、重定向、缓存之类的额外需求，请自行查询nginx相关资料，自行配置。
 
 ***
 ### License
 
 MIT
+
+***
+
+### 作者联系方式
+
+wx：gy668991
+email：13588295865@163.com

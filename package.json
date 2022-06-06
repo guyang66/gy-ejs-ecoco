@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "yy科技官网",
   "license": "MIT",
+  "author": "go young",
   "scripts": {
     "start": "./script/filter/filter_start.sh",
     "run": "cross-env NODE_ENV=development webpack serve --config build/webpack.config.js",
@@ -57,7 +58,6 @@
     "lodash": "^4.17.21",
     "swiper": "^3.4.2"
   },
-  "author": "yyyang",
   "engines": {
     "node": ">=10.13.0"
   }
