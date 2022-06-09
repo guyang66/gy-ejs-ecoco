@@ -1,5 +1,13 @@
 const settings = require('./settings');
-const filters = require('../script/filter/tmp_entrys.js')
+const chalk = require('chalk')
+let filters
+try {
+   filters = require('../script/filter/tmp_entrys.js')
+} catch (e) {
+  console.log(chalk.red('没有该文件: ./script/filter/tmp_entrys.js'))
+  console.log(chalk.cyan('==========  打包全部页面... ==============='))
+  filters = {}
+}
 
 // 多入口
 let entrys = {};

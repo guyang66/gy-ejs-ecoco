@@ -118,6 +118,11 @@ webpack5 + ejs + stylus + jquery
 npm install
 npm start
 ```
+如果是windows系统，可能写的脚本会无法运行，直接使用npm run run 编译全部文件把（然后耐心等待...）
+```
+//不使用脚本，直接运行
+npm run run
+```
 - ### 开发环境(部分编译)
 开发的时候往往不需要compile所有页面，只需要专注开发的几个页面，compile所有页面，
 一是compile所有文件时间太长、二是热更新缓慢（尤其更修改了公共组件、公共css，影响范围较大时）
